@@ -34,14 +34,20 @@ testing_totals = testing_keys.each_with_object({}) do |key, store|
   store[key] = 0
 end
 
+testing_totals["counties"] = []
+
 cases.each_with_object(testing_totals) do |test, store|
   a = test["attributes"]
 
+  store["counties"] << a["COUNTY_NAME"]
   store["cumulative"] += a["Cumulative"]
   store["deaths"] += a["Deaths"]
   store["population"] += a["POPULATION"]
   store["active"] += a["Active"]
   store["recovered"] += a["Recovered"]
 end
+
+testing_totals["counties_count"] = testing_totals["counties"].count
+testing_totals.delete("counties")
 
 pp testing_totals

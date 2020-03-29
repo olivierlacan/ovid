@@ -26,7 +26,7 @@ testing_keys = %w[
   cumulative
   deaths
   population
-  positive
+  active
   recovered
 ]
 
@@ -40,7 +40,7 @@ cases.each_with_object(testing_totals) do |test, store|
   store["cumulative"] += a["Cumulative"]
   store["deaths"] += a["Deaths"]
   store["population"] += a["POPULATION"]
-  store["positive"] += a["Active"]
+  store["active"] += a["Active"]
   store["recovered"] += a["Recovered"]
 end
 

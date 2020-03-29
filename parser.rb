@@ -150,6 +150,7 @@ testing.each_with_object(testing_totals) do |test, store|
   store["positive_emergency_admission"] += a["C_ED_Yes"]
   store["positive_unknown_emergency_admission"] += a["C_ED_NoData"]
   store["positives_total_quality"] += a["TPositive"]
+  # T_Positive can be nil, hence the `|| 0` to prevent coercion errors
   store["positives_total"] += a["T_Positive"] || 0
   store["negatives_total_quality"] += a["TNegative"]
   store["negatives_total"] += a["T_negative"]

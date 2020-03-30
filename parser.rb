@@ -128,6 +128,7 @@ testing_keys = %w[
   negatives_total
   inconclusive_total
   pending_total
+  pending_total_quality
   tests_total
   monitored_cumulative
   monitored_currently
@@ -156,7 +157,8 @@ testing.each_with_object(testing_totals) do |test, store|
   store["negatives_total_quality"] += a["TNegative"]
   store["negatives_total"] += a["T_negative"]
   store["inconclusive_total"] += a["TInconc"]
-  store["pending_total"] += a["TPending"]
+  store["pending_total"] += a["T_pending"] || 0
+  store["pending_total_quality"] += a["TPending"]
   store["tests_total"] += a["T_total"]
   store["monitored_cumulative"] += a["EverMon"]
   store["monitored_currently"] += a["MonNow"]

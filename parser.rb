@@ -180,4 +180,22 @@ end
 
 pp testing_totals
 
-case_line_data_json["features"]
+CSV.open("deaths_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
+  csv << ["Age", "Gender", "County", "EDvisit", "Hospitalized", "EventDate"]
+
+  case_line_data_json["features"].each do |record|
+    a = record["attributes"]
+
+    next unless a["Died"] == "Yes"
+
+    csv << [
+      a["Age"],
+      a["Gender"],
+      a["County"],
+      a["EDvisit"],
+      a["Hospitalized"],
+      a["EventDate"]
+    ]
+  end
+end
+

@@ -2,6 +2,7 @@ require "net/http"
 require "json"
 require "csv"
 require "date"
+require "time"
 
 case_line_data_uri = URI "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID19_Case_Line_Data/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=*&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=pjson&token="
 case_line_data_raw = Net::HTTP.get(case_line_data_uri)
@@ -161,4 +162,22 @@ testing.each_with_object(testing_totals) do |test, store|
   store["monitored_currently"] += a["MonNow"]
 end
 
+CSV.open("florida_testing_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
+  csv << testing_data_json["fields"].map { _1["name"] }
+
+  testing_data_json["features"].each do |record|
+    csv << record["attributes"].values
+  end
+end
+
+CSV.open("case_line_data_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
+  csv << case_line_data_json["fields"].map { _1["name"] }
+
+  case_line_data_json["features"].each do |record|
+    csv << record["attributes"].values
+  end
+end
+
 pp testing_totals
+
+case_line_data_json["features"]

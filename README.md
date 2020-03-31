@@ -24,7 +24,14 @@ data entry for [COVID Tracking Project][7] volunteers.
 
 ## Usage
 
+### Parser
+
 - `ruby parser.rb`
+
+### Site
+
+- `bundle install`
+- `bundle exec rerun`
 
 [1]: https://fdoh.maps.arcgis.com/home/item.html?id=d9de96980b574ccd933da024a0926f37
 [2]: https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0

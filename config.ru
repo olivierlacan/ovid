@@ -78,7 +78,7 @@ def payload(query_string)
     <h1>Florida COVID-19 Report</h1>
     <p>
       This report is generated from the Florida Department of Health's
-      <a href="https://fdoh.maps.arcgis.com/home/item.html?id=f5d69a918fb747019734d9a90cd602f4">
+      <a href="#{Flovid::TESTING_GALLERY_URL}">
       <em>COVID -19 Testing Data for the State of Florida</em></a> feature layer hosted
       on the <a href="https://fdoh.maps.arcgis.com/home/index.html">FDOH's Esri ARCGIS</a>
       account.

@@ -1,30 +1,55 @@
 require "date"
+require "time"
 require "net/http"
 require "json"
 
 class Flovid
-  TESTING_URL = "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=none&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token="
+  TESTING_FEATURE_URL = "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0?f=pjson"
+  TESTING_DATA_URL = "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=none&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson"
 
-  def self.covid_tracking_report
-    cache_key = "covid_testing_payload"
+  CACHE_KEY = "covid_testing_payload"
+  CACHE_EXPIRATION_IN_MINUTES = 15
 
-    stored_response = check_cache(cache_key)
+  def self.covid_tracking_report(query_string)
+    stored_response = check_cache(CACHE_KEY)
 
-    if stored_response
-      puts "Using stored_response: \n#{stored_response.inspect}"
+    if stored_response && !query_string.include?("reload")
+      puts "Using stored_response..."
       stored_response
     else
       puts "Generating new report ..."
-      uri = URI(TESTING_URL)
-      response = Net::HTTP.get(uri)
-      parsed_response = JSON.parse(response)
-
-      report = generate_report(parsed_response["features"])
-
-      write_cache(cache_key, report)
-
-      check_cache(cache_key)
+      get_data
     end
+  end
+
+  def self.last_edit
+    uri = URI(TESTING_FEATURE_URL)
+    response = Net::HTTP.get(uri)
+    parsed_response = JSON.parse(response)
+    Time.strptime(parsed_response["editingInfo"]["lastEditDate"].to_s, "%Q")
+  end
+
+  def self.get_data
+    uri = URI(TESTING_DATA_URL)
+    response = Net::HTTP.get(uri)
+    parsed_response = JSON.parse(response)
+
+    report = generate_report(parsed_response["features"])
+
+    # set expiration time to 15 minutes from now
+    last_fetch = Time.now
+    expiration_time = last_fetch + (CACHE_EXPIRATION_IN_MINUTES * 60)
+
+    cache = {
+      last_edited_at: last_edit.iso8601,
+      last_fetched_at: last_fetch.iso8601,
+      expires_at: expiration_time.iso8601,
+      data: report
+    }
+
+    write_cache(CACHE_KEY, cache)
+    set_expiration(CACHE_KEY, expiration_time)
+    check_cache(CACHE_KEY)
   end
 
   def self.generate_report(testing_data)
@@ -268,5 +293,9 @@ class Flovid
       cache.set(key, payload)
       cache.get(key)
     end
+  end
+
+  def self.set_expiration(key, time)
+    cache.expireat(key, time.to_i)
   end
 end

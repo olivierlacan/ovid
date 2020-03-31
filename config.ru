@@ -31,6 +31,32 @@ def payload
   <head>
     <meta charset="UTF-8">
     <title>Florida COVID-19 Report</title>
+    <style type="text/css">
+      body {
+        font-family: Tahoma, sans-serif;
+      }
+      th, td {
+        padding: 0.3rem 1rem;
+      }
+      th {
+        width: 50%;
+      }
+
+      td {
+        width: 50%;
+      }
+
+      td:first-child, th:first-child {
+        text-align: right;
+      }
+
+      td:last-child, th:last-child {
+        text-align: left;
+      }
+
+      tr:nth-child(even) { background: #CCC }
+      tr:nth-child(odd) { background: #FFF }
+    </style>
   </head>
   <body>
     <h1>Florida COVID-19 Report</h1>
@@ -41,9 +67,8 @@ def payload
       on the <a href="https://fdoh.maps.arcgis.com/home/index.html">FDOH's Esri ARCGIS</a>
       account.
     </p>
-    <ul>
-      #{report_table}
-    </ul>
+
+    #{report_table}
 
     <p><code>*</code> denotes metrics tracked by the COVID Tracking Project</p>
   </body>
@@ -55,7 +80,7 @@ def report_table
   rows = Flovid.covid_tracking_report.map do |_key, metric|
     <<~HTML
       <tr>
-        <td>#{metric[:name]}#{"*" if metric[:highlight]}</td>
+        <td title="#{metric["source"]}">#{metric[:name]}#{"*" if metric[:highlight]}</td>
         <td>#{metric[:value]}</td>
       </tr>
     HTML

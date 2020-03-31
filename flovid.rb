@@ -3,14 +3,28 @@ require "net/http"
 require "json"
 
 class Flovid
-  TESTING_URL = "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=*&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=pjson&token="
+  TESTING_URL = "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=none&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token="
 
   def self.covid_tracking_report
-    uri = URI(TESTING_URL)
-    response = Net::HTTP.get(uri)
-    parsed_response = JSON.parse(response)
+    cache_key = "covid_testing_payload"
 
-    generate_report parsed_response["features"]
+    stored_response = check_cache(cache_key)
+
+    if stored_response
+      puts "Using stored_response: \n#{stored_response.inspect}"
+      stored_response
+    else
+      puts "Generating new report ..."
+      uri = URI(TESTING_URL)
+      response = Net::HTTP.get(uri)
+      parsed_response = JSON.parse(response)
+
+      report = generate_report(parsed_response["features"])
+
+      write_cache(cache_key, report)
+
+      check_cache(cache_key)
+    end
   end
 
   def self.generate_report(testing_data)
@@ -101,33 +115,20 @@ class Flovid
     #
 
     testing_totals = relevant_keys.each_with_object({}) do |(key, metric), store|
-      store[key] = { value: 0, name: metric[:name], highlight: metric[:highlight] }
+      store[key] = {
+        value: 0,
+        name: metric[:name],
+        highlight: metric[:highlight],
+        source: metric[:source]
+      }
     end
 
     testing_data.each_with_object(testing_totals) do |test, store|
       a = test["attributes"]
 
-      store[:cumulative_hospitalized][:value] += a["C_Hosp_Yes"]
-      store[:PUIs_total][:value] += a["PUIsTotal"]
-      store[:PUIs_residents][:value] += a["PUIFLRes"]
-      store[:PUIs_non_residents][:value] += a["PUINotFLRes"]
-      store[:PUIs_residents_out][:value] += a["PUIFLResOut"]
-      store[:deaths_non_residents][:value] += a["C_NonResDeaths"]
-      store[:deaths_residents][:value] += a["FLResDeaths"]
-      store[:positive_no_emergency_admission][:value] += a["C_ED_NO"]
-      store[:positive_emergency_admission][:value] += a["C_ED_Yes"]
-      store[:positive_unknown_emergency_admission][:value] += a["C_ED_NoData"]
-      store[:positives_total_quality][:value] += a["TPositive"]
-      # T_Positive can be nil, hence the `|| 0` to prevent coercion errors
-      store[:positives_total][:value] += a["T_Positive"] || 0
-      store[:negatives_total_quality][:value] += a["TNegative"]
-      store[:negatives_total][:value] += a["T_negative"]
-      store[:inconclusive_total][:value] += a["TInconc"]
-      store[:pending_total][:value] += a["T_pending"] || 0
-      store[:pending_total_quality][:value] += a["TPending"]
-      store[:tests_total][:value] += a["T_total"]
-      store[:monitored_cumulative][:value] += a["EverMon"]
-      store[:monitored_currently][:value] += a["MonNow"]
+      relevant_keys.each do |key, value|
+        store[key][:value] += a[value[:source]] || 0
+      end
     end
   end
 
@@ -135,83 +136,98 @@ class Flovid
     {
       PUIs_total: {
         name: "PUIs - Total",
-        highlight: false
+        highlight: false,
+        source: "PUIsTotal"
       },
       PUIs_residents: {
         name: "PUI - Residents",
-        highlight: false
+        highlight: false,
+        source: "PUIFLRes"
       },
       PUIs_non_residents: {
         name: "PUI - Non-residents",
-        highlight: false
+        highlight: false,
+        source: "PUINotFLRes"
       },
       PUIs_residents_out: {
         name: "PUI - Residents Out of State",
-        highlight: false
+        highlight: false,
+        source: "PUIFLResOut"
       },
       deaths_non_residents: {
         name: "Deaths - Non-residents",
-        highlight: false
+        highlight: false,
+        source: "C_NonResDeaths"
       },
       deaths_residents: {
         name: "Deaths - Residents",
-        highlight: false
+        highlight: false,
+        source: "FLResDeaths"
       },
       positive_no_emergency_admission: {
         name: "Positive Tests - No ER Admission",
-        highlight: false
+        highlight: false,
+        source: "C_ED_NO"
       },
       positive_emergency_admission: {
         name: "Positive Tests - ER Admission",
-        highlight: false
+        highlight: false,
+        source: "C_ED_Yes"
       },
       positive_unknown_emergency_admission: {
         name: "Positive Tests - Unknown ER Admission",
-        highlight: false
+        highlight: false,
+        source: "C_ED_NoData"
       },
       positives_total_quality: {
         name: "Positive Tests - Total (Quality Control)",
-        highlight: false
+        highlight: false,
+        source: "TPositive"
       },
       negatives_total_quality: {
         name: "Negative Tests - Total (Quality Control)",
-        highlight: false
+        highlight: false,
+        source: "TNegative"
       },
       inconclusive_total: {
         name: "Inconclusive Test Results - Total",
-        highlight: false
-      },
-      pending_total_quality: {
-        name: "Pending Tests - Total (Quality Control)",
-        highlight: false
+        highlight: false,
+        source: "TInconc"
       },
       monitored_cumulative: {
         name: "Monitored - Cumulative Total",
-        highlight: false
+        highlight: false,
+        source: "EverMon"
       },
       monitored_currently: {
         name: "Monitored - Current Total",
-        highlight: false
+        highlight: false,
+        source: "MonNow"
       },
       positives_total: {
         name: "Positive Tests - Total",
-        highlight: true
+        highlight: true,
+        source: "T_positive"
       },
       negatives_total: {
         name: "Negative Tests - Total",
-        highlight: true
+        highlight: true,
+        source: "T_negative"
       },
       pending_total: {
         name: "Pending Tests - Total",
-        highlight: true
+        highlight: true,
+        source: "TPending"
       },
       cumulative_hospitalized: {
         name: "Hospitalized (cumulative)",
-        highlight: true
+        highlight: true,
+        source: "C_Hosp_Yes"
       },
       tests_total: {
         name: "Tests - Total",
-        highlight: true
+        highlight: true,
+        source: "T_total"
       }
     }
   end
@@ -229,6 +245,28 @@ class Flovid
       Redis.new(url: ENV["REDIS_URL"])
     else
       Redis.new
+    end
+  end
+
+  def self.check_cache(key)
+    payload = cache.get(key)
+
+    if payload
+      puts "cache hit for #{key}"
+      JSON.parse(payload, { symbolize_names: true })
+    else
+      puts "cache miss for #{key}"
+    end
+  end
+
+  def self.write_cache(key, value)
+    puts "cache write for #{key}"
+    payload = value.to_json
+    puts "caching serialized payload: #{payload.inspect}"
+
+    cache.multi do
+      cache.set(key, payload)
+      cache.get(key)
     end
   end
 end

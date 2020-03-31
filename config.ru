@@ -44,6 +44,8 @@ def payload
     <ul>
       #{report_table}
     </ul>
+
+    <p><code>*</code> denotes metrics tracked by the COVID Tracking Project</p>
   </body>
   </html>
   HTML
@@ -53,7 +55,7 @@ def report_table
   rows = Flovid.covid_tracking_report.map do |_key, metric|
     <<~HTML
       <tr>
-        <td>#{metric[:name]}</td>
+        <td>#{metric[:name]}#{"*" if metric[:highlight]}</td>
         <td>#{metric[:value]}</td>
       </tr>
     HTML

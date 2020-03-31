@@ -100,8 +100,8 @@ class Flovid
     #  "Shape__Length"=>1.42926667474908}
     #
 
-    testing_totals = relevant_keys.each_with_object({}) do |(key, description), store|
-      store[key] = { value: 0, name: description }
+    testing_totals = relevant_keys.each_with_object({}) do |(key, metric), store|
+      store[key] = { value: 0, name: metric[:name], highlight: metric[:highlight] }
     end
 
     testing_data.each_with_object(testing_totals) do |test, store|
@@ -133,26 +133,86 @@ class Flovid
 
   def self.relevant_keys
     {
-      cumulative_hospitalized: "Hospitalized (cumulative)",
-      PUIs_total: "PUIs - Total",
-      PUIs_residents: "PUI - Residents",
-      PUIs_non_residents: "PUI - Non-residents",
-      PUIs_residents_out: "PUI - Residents Out of State",
-      deaths_non_residents: "Deaths - Non-residents",
-      deaths_residents: "Deaths - Residents",
-      positive_no_emergency_admission: "Positive Tests - No ER Admission",
-      positive_emergency_admission: "Positive Tests - ER Admission",
-      positive_unknown_emergency_admission: "Positive Tests - Unknown ER Admission",
-      positives_total_quality: "Positive Tests - Total (Quality Control)",
-      positives_total: "Positive Tests - Total",
-      negatives_total_quality: "Negative Tests - Total (Quality Control)",
-      negatives_total: "Negative Tests - Total",
-      inconclusive_total: "Inconclusive Test Results - Total",
-      pending_total: "Pending Tests - Total",
-      pending_total_quality: "Pending Tests - Total (Quality Control)",
-      tests_total: "Tests - Total",
-      monitored_cumulative: "Monitored - Cumulative Total",
-      monitored_currently: "Monitored - Current Total"
+      PUIs_total: {
+        name: "PUIs - Total",
+        highlight: false
+      },
+      PUIs_residents: {
+        name: "PUI - Residents",
+        highlight: false
+      },
+      PUIs_non_residents: {
+        name: "PUI - Non-residents",
+        highlight: false
+      },
+      PUIs_residents_out: {
+        name: "PUI - Residents Out of State",
+        highlight: false
+      },
+      deaths_non_residents: {
+        name: "Deaths - Non-residents",
+        highlight: false
+      },
+      deaths_residents: {
+        name: "Deaths - Residents",
+        highlight: false
+      },
+      positive_no_emergency_admission: {
+        name: "Positive Tests - No ER Admission",
+        highlight: false
+      },
+      positive_emergency_admission: {
+        name: "Positive Tests - ER Admission",
+        highlight: false
+      },
+      positive_unknown_emergency_admission: {
+        name: "Positive Tests - Unknown ER Admission",
+        highlight: false
+      },
+      positives_total_quality: {
+        name: "Positive Tests - Total (Quality Control)",
+        highlight: false
+      },
+      negatives_total_quality: {
+        name: "Negative Tests - Total (Quality Control)",
+        highlight: false
+      },
+      inconclusive_total: {
+        name: "Inconclusive Test Results - Total",
+        highlight: false
+      },
+      pending_total_quality: {
+        name: "Pending Tests - Total (Quality Control)",
+        highlight: false
+      },
+      monitored_cumulative: {
+        name: "Monitored - Cumulative Total",
+        highlight: false
+      },
+      monitored_currently: {
+        name: "Monitored - Current Total",
+        highlight: false
+      },
+      positives_total: {
+        name: "Positive Tests - Total",
+        highlight: true
+      },
+      negatives_total: {
+        name: "Negative Tests - Total",
+        highlight: true
+      },
+      pending_total: {
+        name: "Pending Tests - Total",
+        highlight: true
+      },
+      cumulative_hospitalized: {
+        name: "Hospitalized (cumulative)",
+        highlight: true
+      },
+      tests_total: {
+        name: "Tests - Total",
+        highlight: true
+      }
     }
   end
 

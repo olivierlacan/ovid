@@ -164,7 +164,7 @@ testing.each_with_object(testing_totals) do |test, store|
   store["monitored_currently"] += a["MonNow"]
 end
 
-CSV.open("florida_testing_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
+CSV.open("exports/florida_testing_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
   csv << testing_data_json["fields"].map { _1["name"] }
 
   testing_data_json["features"].each do |record|
@@ -172,7 +172,7 @@ CSV.open("florida_testing_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb")
   end
 end
 
-CSV.open("case_line_data_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
+CSV.open("exports/case_line_data_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
   csv << case_line_data_json["fields"].map { _1["name"] }
 
   case_line_data_json["features"].each do |record|
@@ -182,7 +182,7 @@ end
 
 pp testing_totals
 
-CSV.open("deaths_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
+CSV.open("exports/deaths_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
   csv << ["Age", "Gender", "County", "EDvisit", "Hospitalized", "EventDate"]
 
   case_line_data_json["features"].each do |record|

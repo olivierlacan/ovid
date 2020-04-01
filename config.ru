@@ -3,12 +3,12 @@ require 'bundler'
 
 Bundler.require
 
-require "./flovid"
-require "./utah"
-require "./washington"
-require "./alaska"
-require "./georgia"
-require "./texas"
+require "./states/flovid"
+require "./states/utah"
+require "./states/washington"
+require "./states/alaska"
+require "./states/georgia"
+require "./states/texas"
 
 if Flovid.development?
   require 'dotenv'

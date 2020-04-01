@@ -3,6 +3,8 @@ require "time"
 require "net/http"
 require "json"
 
+require "./states/state"
+
 class Washington < State
   DEPARTMENT = "Washington State Department of Health"
   ACRONYM = "WSDOH"

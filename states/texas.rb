@@ -3,7 +3,7 @@ require "time"
 require "net/http"
 require "json"
 
-require "./state"
+require "./states/state"
 
 class Texas < State
   DEPARTMENT = "Texas State Department of Health"

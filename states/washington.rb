@@ -9,10 +9,6 @@ class Washington < State
   DEPARTMENT = "Washington State Department of Health"
   ACRONYM = "WSDOH"
 
-  def self.state_name
-    "Washington"
-  end
-
   def self.testing_gallery_url
     nil
   end

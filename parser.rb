@@ -199,5 +199,3 @@ CSV.open("exports/deaths_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") 
   end
 end
 
-pp case_line_data
-

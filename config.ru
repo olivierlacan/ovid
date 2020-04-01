@@ -84,28 +84,31 @@ class App
     <html>
     <head>
       <meta charset="UTF-8">
-      <title>#{class_name::STATE} COVID-19 Report</title>
+      <title>#{class_name.state_name} COVID-19 Report</title>
       <style type="text/css">
         body {
           font-family: Tahoma, sans-serif;
         }
+        table {
+          width: 100%
+        }
         th, td {
           padding: 0.3rem 1rem;
-        }
-        th {
-          width: 50%;
-        }
-
-        td {
-          width: 50%;
         }
 
         td:first-child, th:first-child {
           text-align: right;
+          width: 25%;
+        }
+
+        td:nth-child(2), th:nth-child(2) {
+          text-align: right;
+          width: 5%;
         }
 
         td:last-child, th:last-child {
           text-align: left;
+          width: 70%;
         }
 
         tr:nth-child(even) { background: #CCC }
@@ -118,11 +121,12 @@ class App
           <li><a href="/alaska">Alaska</a></li>
           <li><a href="/">Florida</a></li>
           <li><a href="/georgia">Georgia</a></li>
+          <li><a href="/texas">Texas</a></li>
           <li><a href="/utah">Utah</a></li>
           <li><a href="/washington">Washington</a></li>
         </ul>
       </nav>
-      <h1>#{class_name::STATE} COVID-19 Report</h1>
+      <h1>#{class_name.state_name} COVID-19 Report</h1>
       <p>
         This report is generated from the #{class_name::DEPARTMENT}'s COVID-19
         <a href="#{class_name&.testing_gallery_url || class_name.testing_feature_url}">
@@ -160,6 +164,7 @@ class App
         <tr>
           <td title="#{metric[:source]}">#{metric[:name]}#{"*" if metric[:highlight]}</td>
           <td>#{metric[:value]}</td>
+          <td>#{metric[:description]}</td>
         </tr>
       HTML
     end.join("\n")
@@ -169,6 +174,7 @@ class App
         <tr>
           <th>Metric</th>
           <th>Value</th>
+          <th>Description</th>
         </tr>
         #{rows}
       </table>

@@ -3,14 +3,15 @@ require "time"
 require "net/http"
 require "json"
 
-class Flovid
-  STATE = "Florida"
+require "./state"
+
+class Flovid < State
   DEPARTMENT = "Florida Department of Health"
   ACRONYM = "FDOH"
 
-  CACHE_KEY = "covid_#{STATE.downcase}"
-  CACHE_EXPIRATION_IN_MINUTES = 15
-
+  def self.state_name
+    "Florida"
+  end
 
   def self.testing_gallery_url
     "https://fdoh.maps.arcgis.com/home/item.html?id=d9de96980b574ccd933da024a0926f37"
@@ -26,153 +27,6 @@ class Flovid
 
   def self.dashboard_url
     "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
-  end
-
-  def self.covid_tracking_report(query_string)
-    stored_response = check_cache(CACHE_KEY)
-
-    if stored_response && !query_string.include?("reload")
-      puts "Using stored_response..."
-      stored_response
-    else
-      puts "Generating new report ..."
-      get_data
-    end
-  end
-
-  def self.last_edit
-    uri = URI(testing_feature_url)
-    response = Net::HTTP.get(uri)
-    parsed_response = JSON.parse(response)
-    Time.strptime(parsed_response["editingInfo"]["lastEditDate"].to_s, "%Q")
-  end
-
-  def self.get_data
-    uri = URI(testing_data_url)
-    response = Net::HTTP.get(uri)
-    parsed_response = JSON.parse(response)
-
-    report = generate_report(parsed_response["features"])
-
-    # set expiration time to 15 minutes from now
-    last_fetch = Time.now
-    expiration_time = last_fetch + (CACHE_EXPIRATION_IN_MINUTES * 60)
-
-    cache = {
-      last_edited_at: last_edit.iso8601,
-      last_fetched_at: last_fetch.iso8601,
-      expires_at: expiration_time.iso8601,
-      data: report
-    }
-
-    write_cache(CACHE_KEY, cache)
-    set_expiration(CACHE_KEY, expiration_time)
-    check_cache(CACHE_KEY)
-  end
-
-  def self.generate_report(testing_data)
-    # Example testing_data:
-    #
-    # {"OBJECTID_12_13"=>1,
-    #  "OBJECTID"=>1,
-    #  "DEPCODE"=>21,
-    #  "COUNTY"=>"041",
-    #  "COUNTYNAME"=>"GILCHRIST",
-    #  "DATESTAMP"=>"2000-05-16T00:00:00.000Z",
-    #  "ShapeSTAre"=>9908353355.45099,
-    #  "ShapeSTLen"=>487300.011359113,
-    #  "OBJECTID_1"=>21,
-    #  "County_1"=>"Gilchrist",
-    #  "State"=>"FL",
-    #  "OBJECTID_12"=>"1",
-    #  "DEPCODE_1"=>21,
-    #  "COUNTYN"=>"41",
-    #  "PUIsTotal"=>32,
-    #  "Age_0_4"=>3,
-    #  "Age_5_14"=>0,
-    #  "Age_15_24"=>4,
-    #  "Age_25_34"=>3,
-    #  "Age_35_44"=>7,
-    #  "Age_45_54"=>3,
-    #  "Age_55_64"=>3,
-    #  "Age_65_74"=>3,
-    #  "Age_75_84"=>4,
-    #  "Age_85plus"=>2,
-    #  "Age_Unkn"=>0,
-    #  "C_Age_0_4"=>0,
-    #  "C_Age_5_14"=>0,
-    #  "C_Age_15_24"=>0,
-    #  "C_Age_25_34"=>0,
-    #  "C_Age_35_44"=>0,
-    #  "C_Age_45_54"=>0,
-    #  "C_Age_55_64"=>0,
-    #  "C_Age_65_74"=>0,
-    #  "C_Age_75_84"=>0,
-    #  "C_Age_85plus"=>0,
-    #  "PUIAgeAvrg"=>"0",
-    #  "PUIAgeRange"=>"0 to 89",
-    #  "C_AgeAvrg"=>"46",
-    #  "C_AgeRange"=>"NA",
-    #  "C_AllResTypes"=>0,
-    #  "C_NonResDeaths"=>0,
-    #  "PUIFemale"=>17,
-    #  "PUIMale"=>15,
-    #  "PUISexUnkn"=>0,
-    #  "PUIFLRes"=>32,
-    #  "PUINotFLRes"=>0,
-    #  "PUIFLResOut"=>0,
-    #  "PUITravelNo"=>5,
-    #  "PUITravelUnkn"=>27,
-    #  "PUITravelYes"=>0,
-    #  "C_ED_NO"=>0,
-    #  "C_ED_NoData"=>0,
-    #  "C_ED_Yes"=>0,
-    #  "C_Hosp_No"=>0,
-    #  "C_Hosp_Nodata"=>0,
-    #  "C_Hosp_Yes"=>0,
-    #  "FLResDeaths"=>0,
-    #  "PUILab_Yes"=>32,
-    #  "TPositive"=>0,
-    #  "TNegative"=>32,
-    #  "TInconc"=>0,
-    #  "TPending"=>0,
-    #  "PUIContNo"=>1,
-    #  "PUIContUnkn"=>2,
-    #  "PUIContYes"=>0,
-    #  "CasesAll"=>0,
-    #  "C_Men"=>0,
-    #  "C_Women"=>0,
-    #  "C_FLRes"=>0,
-    #  "C_NotFLRes"=>0,
-    #  "C_FLResOut"=>0,
-    #  "T_NegRes"=>32,
-    #  "T_NegNotFLRes"=>0,
-    #  "T_total"=>32,
-    #  "T_negative"=>32,
-    #  "T_positive"=>0,
-    #  "Deaths"=>0,
-    #  "EverMon"=>0,
-    #  "MonNow"=>0,
-    #  "Shape__Area"=>0.0858306455302227,
-    #  "Shape__Length"=>1.42926667474908}
-    #
-
-    testing_totals = relevant_keys.each_with_object({}) do |(key, metric), store|
-      store[key] = {
-        value: 0,
-        name: metric[:name],
-        highlight: metric[:highlight],
-        source: metric[:source]
-      }
-    end
-
-    testing_data.each_with_object(testing_totals) do |test, store|
-      a = test["attributes"]
-
-      relevant_keys.each do |key, value|
-        store[key][:value] += a[value[:source]] || 0
-      end
-    end
   end
 
   def self.relevant_keys
@@ -349,48 +203,6 @@ class Flovid
         source: "C_NonResDeaths"
       }
     }
-  end
-
-  def self.production?
-    ENV["RACK_ENV"] == "production"
-  end
-
-  def self.development?
-    !production?
-  end
-
-  def self.cache
-    @redis ||= if production?
-      Redis.new(url: ENV["REDIS_URL"])
-    else
-      Redis.new
-    end
-  end
-
-  def self.check_cache(key)
-    payload = cache.get(key)
-
-    if payload
-      puts "cache hit for #{key}"
-      JSON.parse(payload, { symbolize_names: true })
-    else
-      puts "cache miss for #{key}"
-    end
-  end
-
-  def self.write_cache(key, value)
-    puts "cache write for #{key}"
-    payload = value.to_json
-    puts "caching serialized payload: #{payload.inspect}"
-
-    cache.multi do
-      cache.set(key, payload)
-      cache.get(key)
-    end
-  end
-
-  def self.set_expiration(key, time)
-    cache.expireat(key, time.to_i)
   end
 
   def self.nomenclature

@@ -3,13 +3,11 @@ require "time"
 require "net/http"
 require "json"
 
-class Alaska
-  STATE = "Alaska"
+require "./state"
+
+class Alaska < State
   DEPARTMENT = "Alaska Department of Health and Social Services"
   ACRONYM = "ADHSS"
-
-  CACHE_KEY = "covid_#{STATE.downcase}"
-  CACHE_EXPIRATION_IN_MINUTES = 15
 
   def self.testing_gallery_url
     nil
@@ -31,49 +29,7 @@ class Alaska
     "https://coronavirus-response-alaska-dhss.hub.arcgis.com/"
   end
 
-  def self.covid_tracking_report(query_string)
-    stored_response = check_cache(CACHE_KEY)
-
-    if stored_response && !query_string.include?("reload")
-      puts "Using stored_response..."
-      stored_response
-    else
-      puts "Generating new report ..."
-      get_data
-    end
-  end
-
-  def self.last_edit
-    uri = URI(testing_feature_url)
-    response = Net::HTTP.get(uri)
-    parsed_response = JSON.parse(response)
-    Time.strptime(parsed_response["editingInfo"]["lastEditDate"].to_s, "%Q")
-  end
-
-  def self.get_data
-    uri = URI(testing_data_url)
-    response = Net::HTTP.get(uri)
-    parsed_response = JSON.parse(response)
-
-    report = generate_report(parsed_response["features"])
-
-    # set expiration time to 15 minutes from now
-    last_fetch = Time.now
-    expiration_time = last_fetch + (CACHE_EXPIRATION_IN_MINUTES * 60)
-
-    cache = {
-      last_edited_at: last_edit.iso8601,
-      last_fetched_at: last_fetch.iso8601,
-      expires_at: expiration_time.iso8601,
-      data: report
-    }
-
-    write_cache(CACHE_KEY, cache)
-    set_expiration(CACHE_KEY, expiration_time)
-    check_cache(CACHE_KEY)
-  end
-
-  def self.generate_report(data)
+  def self.relevant_keys
     # Example data:
     #
     # name: "Fairbanks North Star Borough",
@@ -97,84 +53,25 @@ class Alaska
     # EditDate_1584379187045: null,
     # Editor_1584379187045: null,
     # ObjectId: 6
-
-    totals = relevant_keys.each_with_object({}) do |(key, metric), store|
-      store[key] = {
-        value: 0,
-        name: metric[:name],
-        highlight: metric[:highlight],
-        source: metric[:source]
-      }
-    end
-
-    data.each_with_object(totals) do |test, store|
-      a = test["attributes"]
-
-      relevant_keys.each do |key, value|
-        store[key][:value] += a[value[:source]] || 0
-      end
-    end
-  end
-
-  def self.relevant_keys
     {
       confirmed: {
-        name: "Positives (From Boroughs)",
+        name: "Positives (Boroughs)",
+        description: "Tallied from individual borough cases.",
         highlight: true,
         source: "confirmed"
       },
       deaths: {
-        name: "Deaths (From Boroughs)",
+        name: "Deaths (Boroughs)",
+        description: "Tallied from individual borough cases.",
         highlight: true,
         source: "deaths"
       },
       tested: {
-        name: "Tested (From Boroughs)",
+        name: "Tested (Boroughs)",
+        description: "Tallied from individual borough cases.",
         highlight: true,
         source: "tested"
       }
     }
-  end
-
-  def self.production?
-    ENV["RACK_ENV"] == "production"
-  end
-
-  def self.development?
-    !production?
-  end
-
-  def self.cache
-    @redis ||= if production?
-      Redis.new(url: ENV["REDIS_URL"])
-    else
-      Redis.new
-    end
-  end
-
-  def self.check_cache(key)
-    payload = cache.get(key)
-
-    if payload
-      puts "cache hit for #{key}"
-      JSON.parse(payload, { symbolize_names: true })
-    else
-      puts "cache miss for #{key}"
-    end
-  end
-
-  def self.write_cache(key, value)
-    puts "cache write for #{key}"
-    payload = value.to_json
-    puts "caching serialized payload: #{payload.inspect}"
-
-    cache.multi do
-      cache.set(key, payload)
-      cache.get(key)
-    end
-  end
-
-  def self.set_expiration(key, time)
-    cache.expireat(key, time.to_i)
   end
 end

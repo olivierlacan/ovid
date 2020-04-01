@@ -3,13 +3,11 @@ require "time"
 require "net/http"
 require "json"
 
-class Utah
-  STATE = "Utah"
+require "./state"
+
+class Utah < State
   DEPARTMENT = "Utah Department of Health"
   ACRONYM = "UDOH"
-
-  CACHE_KEY = "covid_#{STATE.downcase}"
-  CACHE_EXPIRATION_IN_MINUTES = 15
 
   def self.testing_gallery_url
     nil
@@ -27,49 +25,7 @@ class Utah
     "https://www.arcgis.com/apps/opsdashboard/index.html#/cf15d9e3af9c4d2b8b08c9d3ef59697e"
   end
 
-  def self.covid_tracking_report(query_string)
-    stored_response = check_cache(CACHE_KEY)
-
-    if stored_response && !query_string.include?("reload")
-      puts "Using stored_response..."
-      stored_response
-    else
-      puts "Generating new report ..."
-      get_data
-    end
-  end
-
-  def self.last_edit
-    uri = URI(testing_feature_url)
-    response = Net::HTTP.get(uri)
-    parsed_response = JSON.parse(response)
-    Time.strptime(parsed_response["editingInfo"]["lastEditDate"].to_s, "%Q")
-  end
-
-  def self.get_data
-    uri = URI(testing_data_url)
-    response = Net::HTTP.get(uri)
-    parsed_response = JSON.parse(response)
-
-    report = generate_report(parsed_response["features"])
-
-    # set expiration time to 15 minutes from now
-    last_fetch = Time.now
-    expiration_time = last_fetch + (CACHE_EXPIRATION_IN_MINUTES * 60)
-
-    cache = {
-      last_edited_at: last_edit.iso8601,
-      last_fetched_at: last_fetch.iso8601,
-      expires_at: expiration_time.iso8601,
-      data: report
-    }
-
-    write_cache(CACHE_KEY, cache)
-    set_expiration(CACHE_KEY, expiration_time)
-    check_cache(CACHE_KEY)
-  end
-
-  def self.generate_report(data)
+  def self.relevant_keys
     # Example data:
     #
     # OBJECTID: 11,
@@ -81,26 +37,6 @@ class Utah
     # COVID_Cases_Non_Utah_Resident: 0,
     # COVID_Cases_Total: 84
     #
-
-    totals = relevant_keys.each_with_object({}) do |(key, metric), store|
-      store[key] = {
-        value: 0,
-        name: metric[:name],
-        highlight: metric[:highlight],
-        source: metric[:source]
-      }
-    end
-
-    data.each_with_object(totals) do |test, store|
-      a = test["attributes"]
-
-      relevant_keys.each do |key, value|
-        store[key][:value] += a[value[:source]] || 0
-      end
-    end
-  end
-
-  def self.relevant_keys
     {
       Cases_Utah_Resident: {
         name: "Positives - Utah Resident",
@@ -118,47 +54,5 @@ class Utah
         source: "COVID_Cases_Total"
       }
     }
-  end
-
-  def self.production?
-    ENV["RACK_ENV"] == "production"
-  end
-
-  def self.development?
-    !production?
-  end
-
-  def self.cache
-    @redis ||= if production?
-      Redis.new(url: ENV["REDIS_URL"])
-    else
-      Redis.new
-    end
-  end
-
-  def self.check_cache(key)
-    payload = cache.get(key)
-
-    if payload
-      puts "cache hit for #{key}"
-      JSON.parse(payload, { symbolize_names: true })
-    else
-      puts "cache miss for #{key}"
-    end
-  end
-
-  def self.write_cache(key, value)
-    puts "cache write for #{key}"
-    payload = value.to_json
-    puts "caching serialized payload: #{payload.inspect}"
-
-    cache.multi do
-      cache.set(key, payload)
-      cache.get(key)
-    end
-  end
-
-  def self.set_expiration(key, time)
-    cache.expireat(key, time.to_i)
   end
 end

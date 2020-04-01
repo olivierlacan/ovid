@@ -13,10 +13,6 @@ class Alaska < State
     nil
   end
 
-  def self.testing_gallery_url
-    nil
-  end
-
   def self.testing_feature_url
     "https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/Cases_current/FeatureServer/0?f=json"
   end

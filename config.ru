@@ -101,10 +101,12 @@ class App
       </nav>
       <h1>#{class_name::STATE} COVID-19 Report</h1>
       <p>
-        This report is generated from the #{class_name::STATE} Department of Health's
+        This report is generated from the #{class_name::DEPARTMENT}'s COVID-19
         <a href="#{class_name&.testing_gallery_url || class_name.testing_feature_url}">
-        <em>COVID -19 Data for the State of #{class_name::STATE}</em></a> feature layer hosted
-        on the #{class_name::ACRONYM}'s Esri ARCGIS</a> account.
+        ArcGIS feature layer</a>.
+        <br />
+        #{class_name::ACRONYM} maintains a <a href="#{class_name.dashboard_url}">dashboard</a> representation of this
+        data which is created from the same source.
       </p>
 
       #{report_table(report[:data])}
@@ -121,6 +123,7 @@ class App
 
         #{class_name.nomenclature if defined?(class_name.nomenclature)}
 
+        <hr />
         <p><a href="https://github.com/olivierlacan/covid-19-fdoh-testing-data-parser/">Source code for this website</a></p>
       </footer>
     </body>

@@ -99,4 +99,30 @@ class California < State
       }
     }
   end
+
+  def self.generate_report(testing_data)
+    testing_totals = relevant_keys.each_with_object({}) do |(key, metric), store|
+      store[key] = {
+        value: 0,
+        name: metric[:name],
+        description: metric[:description],
+        highlight: metric[:highlight],
+        source: metric[:source]
+      }
+    end
+
+    testing_data.each_with_object(testing_totals) do |test, store|
+      a = test["attributes"]
+
+      next if a["STATE_NAME"] != "California"
+
+      relevant_keys.each do |key, value|
+        if value[:total]
+          store[key][:value] = a[value[:source]]
+        else
+          store[key][:value] += a[value[:source]] || 0
+        end
+      end
+    end
+  end
 end

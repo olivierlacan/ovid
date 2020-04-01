@@ -185,19 +185,19 @@ pp testing_totals
 CSV.open("exports/deaths_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
   csv << ["Age", "Gender", "County", "EDvisit", "Hospitalized", "EventDate"]
 
-  case_line_data_json["features"].each do |record|
+  case_line_data_json["features"].filter { _1["attributes"]["Died"] == "Yes" }.sort_by { _1["attributes"]["Age"]}.each do |record|
     a = record["attributes"]
 
-    next unless a["Died"] == "Yes"
-
     csv << [
+      Time.strptime(a["EventDate"].to_s, "%Q") ,
       a["Age"],
       a["Gender"],
       a["County"],
       a["EDvisit"],
-      a["Hospitalized"],
-      a["EventDate"]
+      a["Hospitalized"]
     ]
   end
 end
+
+pp case_line_data
 

@@ -8,6 +8,7 @@ require "./utah"
 require "./washington"
 require "./alaska"
 require "./georgia"
+require "./texas"
 
 if Flovid.development?
   require 'dotenv'
@@ -48,6 +49,12 @@ app = Hanami::Router.new do
     [
       200, {"Content-Type" => "text/html"},
       StringIO.new(App.payload(env["QUERY_STRING"], Georgia))
+    ]
+  }
+  get "/texas", to: ->(env) {
+    [
+      200, {"Content-Type" => "text/html"},
+      StringIO.new(App.payload(env["QUERY_STRING"], Texas))
     ]
   }
 end

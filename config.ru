@@ -148,6 +148,8 @@ class App
           refresh this page until then to get new data.
         </p>
 
+        <a href="?reload">Force reload</a>
+
         #{class_name.nomenclature if defined?(class_name.nomenclature)}
 
         <hr />

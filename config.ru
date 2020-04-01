@@ -92,6 +92,13 @@ class App
       </style>
     </head>
     <body>
+      <nav>
+        <ul>
+          <li><a href="/">Florida</a></li>
+          <li><a href="/utah">Utah</a></li>
+          <li><a href="/washington">Washington</a></li>
+        </ul>
+      </nav>
       <h1>#{class_name::STATE} COVID-19 Report</h1>
       <p>
         This report is generated from the #{class_name::STATE} Department of Health's

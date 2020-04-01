@@ -1,0 +1,64 @@
+Age,Gender,County,EDvisit,Hospitalized,EventDate
+74,Male,Broward,Yes,Yes,1583798400000
+77,Male,Broward,Yes,Yes,1584230400000
+94,Male,Broward,Yes,Yes,1583625600000
+96,Female,Broward,NA,Yes,1584230400000
+92,Male,Broward,No,No,1584403200000
+75,Male,Broward,Yes,Yes,1584403200000
+70,Male,Broward,NA,Yes,1584230400000
+84,Female,Broward,Yes,Yes,1584662400000
+79,Female,Broward,Yes,Yes,1585094400000
+93,Female,Broward,NA,Yes,1585008000000
+67,Male,Broward,Unknown,Unknown,1585267200000
+80,Male,Citrus,Yes,Yes,1584144000000
+70,Male,Clay,Yes,Yes,1583452800000
+82,Male,Clay,Yes,Yes,1584057600000
+65,Male,Clay,No,No,1584403200000
+77,Female,Clay,Yes,Yes,1583971200000
+61,Male,Collier,Yes,No,1585440000000
+40,Male,Dade,Yes,Yes,1583884800000
+77,Male,Dade,No,No,1584489600000
+79,Male,Dade,Yes,Yes,1584230400000
+91,Male,Desoto,Yes,Yes,1584748800000
+83,Male,Duval,Yes,Yes,1583712000000
+88,Male,Duval,Yes,Yes,1583971200000
+84,Male,Duval,Yes,Yes,1583884800000
+78,Female,Highlands,Yes,Unknown,1585008000000
+69,Male,Hillsborough,Unknown,Yes,1584835200000
+71,Female,Hillsborough,Yes,No,1584057600000
+77,Female,Lee,Yes,Yes,1581897600000
+77,Male,Lee,Yes,Yes,1584057600000
+67,Male,Lee,Yes,Yes,1581724800000
+39,Male,Lee,Yes,Yes,1585094400000
+94,Male,Lee,Yes,Yes,1584835200000
+77,Male,Lee,Unknown,Yes,1585267200000
+70,Male,Manatee,Yes,Yes,1583280000000
+87,Male,Okaloosa,Yes,Yes,1584057600000
+68,Female,Orange,Unknown,Unknown,1583539200000
+79,Female,Orange,Yes,Yes,1583539200000
+73,Male,Orange,Unknown,Yes,1583971200000
+90,Male,Orange,Yes,Yes,1584489600000
+76,Female,Palm Beach,Yes,Yes,1584316800000
+81,Male,Palm Beach,Yes,Yes,1584057600000
+88,Male,Palm Beach,Yes,Yes,1583798400000
+83,Male,Palm Beach,Unknown,Yes,1583884800000
+85,Female,Palm Beach,No,No,1584144000000
+90,Female,Palm Beach,Yes,Yes,1583884800000
+84,Female,Palm Beach,Unknown,Unknown,1585267200000
+76,Female,Palm Beach,Yes,Yes,1584144000000
+67,Male,Pasco,Yes,Yes,1583625600000
+71,Female,Pasco,Yes,Yes,1583539200000
+52,Male,Pinellas,Yes,Yes,1583625600000
+67,Male,Pinellas,Yes,Yes,1584403200000
+83,Female,Pinellas,Yes,Yes,1582588800000
+64,Male,Pinellas,Yes,Yes,1584662400000
+58,Male,Pinellas,Yes,Yes,1583712000000
+71,Male,Santa Rosa,Yes,Yes,1583280000000
+81,Female,Santa Rosa,Yes,Yes,1584748800000
+81,Male,Sarasota,Yes,Yes,1584576000000
+82,Male,Sarasota,NA,Yes,1585008000000
+67,Male,St. Johns,Yes,Yes,1583712000000
+52,Male,St. Johns,Yes,Yes,1583539200000
+95,Female,St. Lucie,Yes,Yes,1585180800000
+59,Male,St. Lucie,Yes,Yes,1584403200000
+65,Male,Volusia,Yes,Yes,1583971200000

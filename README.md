@@ -1,42 +1,41 @@
-# COVID-19 Florida Department of Health Testing Data Parser
+# Ovid
 
-This simple parser retrieves testing and case line (people who tested positive)
-data from the Florida Department of Health's Esri/ARCGIS Feature Layers (data
-sets).
+Metamorphising raw COVID-19 JSON testing data from U.S. state Health Department
+into high-level aggregate counts for journalistic, epidemiologic, and data
+science purposes.
 
-## Output
-
-This project is also a [website](https://flovid.herokuapp.com) that outputs
-live aggregate metrics from the [FDOH COVID-19 Testing][1] in order to assist
-data entry for [COVID Tracking Project][7] volunteers.
+This project is currently hosted on [Heroku](https://flovid.herokuapp.com) and
+serves as a data entry support tool for [COVID Tracking Project][CTP] volunteers.
 
 ## Sources
 
-### Florida Testing from Rebekah Jones at FDOH
-- [Feature Layer][1]
-- [Fields][2]
-- [Query Interface][3]
+See individual state Ruby classes for state-specific sources. Source are
+exclusively JSON feeds from ArcGIS and not scrapped HTML from state websites
+because those have proven unreliable.
 
-### Florida COVID19 Case Line Data from Rebekah Jones at FDOH
-- [Feature Layer][4]
-- [Fields][5]
-- [Query Interface][6]
+The following methods can be inspected on each state listed in `states/`:
+- `testing_gallery_url`: URL to the general state or county gallery of ArcGIS data
+- `testing_feature_url`: URL to the ArcGIS Feature Layer used as a source
+- `testing_data_url`: URL to the JSON query outputing data from the Feature Layer.
+- `dashboard_url`: URL to the state or county dashboard we sourced to find the
+relevant Feature Layer
 
 ## Usage
 
-### Parser
+### Running Site Locally
+
+- `bundle install`
+- `bundle exec rerun` (autoreloads on code changes)
+- `bundle exec rackup` (needs to be shut down to update code)
+
+## Additional Tooling
+
+### Running Florida Case, Testing, and Deaths Parser
 
 - `ruby parser.rb`
 
-### Site
+### Running California (Sonoma County) Parser
 
-- `bundle install`
-- `bundle exec rerun`
+- `ruby parser_ca.rb`
 
-[1]: https://fdoh.maps.arcgis.com/home/item.html?id=d9de96980b574ccd933da024a0926f37
-[2]: https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0
-[3]: https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query
-[4]: https://fdoh.maps.arcgis.com/home/item.html?id=f5d69a918fb747019734d9a90cd602f4
-[5]: https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID19_Case_Line_Data/FeatureServer/0
-[6]: https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID19_Case_Line_Data/FeatureServer/0/query
-[7]: https://covidtracking.com
+[CTP]: https://covidtracking.com

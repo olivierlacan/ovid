@@ -6,6 +6,8 @@ Bundler.require
 require "./flovid"
 require "./utah"
 require "./washington"
+require "./alaska"
+require "./georgia"
 
 if Flovid.development?
   require 'dotenv'
@@ -34,6 +36,18 @@ app = Hanami::Router.new do
     [
       200, {"Content-Type" => "text/html"},
       StringIO.new(App.payload(env["QUERY_STRING"], Washington))
+    ]
+  }
+  get "/alaska", to: ->(env) {
+    [
+      200, {"Content-Type" => "text/html"},
+      StringIO.new(App.payload(env["QUERY_STRING"], Alaska))
+    ]
+  }
+  get "/georgia", to: ->(env) {
+    [
+      200, {"Content-Type" => "text/html"},
+      StringIO.new(App.payload(env["QUERY_STRING"], Georgia))
     ]
   }
 end
@@ -94,7 +108,9 @@ class App
     <body>
       <nav>
         <ul>
+          <li><a href="/alaska">Alaska</a></li>
           <li><a href="/">Florida</a></li>
+          <li><a href="/georgia">Georgia</a></li>
           <li><a href="/utah">Utah</a></li>
           <li><a href="/washington">Washington</a></li>
         </ul>

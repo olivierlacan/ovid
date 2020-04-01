@@ -3,10 +3,10 @@ require "time"
 require "net/http"
 require "json"
 
-class Washington
-  STATE = "Washington"
-  DEPARTMENT = "Washington State Department of Health"
-  ACRONYM = "WSDOH"
+class Georgia
+  STATE = "Georgia"
+  DEPARTMENT = "Georgia Department of Health and Social Services"
+  ACRONYM = "GDPH"
 
   CACHE_KEY = "covid_#{STATE.downcase}"
   CACHE_EXPIRATION_IN_MINUTES = 15
@@ -16,19 +16,19 @@ class Washington
   end
 
   def self.testing_gallery_url
-    "https://wa-geoservices.maps.arcgis.com/home/gallery.html"
+    nil
   end
 
   def self.testing_feature_url
-    "https://services8.arcgis.com/rGGrs6HCnw87OFOT/arcgis/rest/services/CountyCases/FeatureServer/0?f=json"
+    "https://services1.arcgis.com/2iUE8l8JKrP2tygQ/arcgis/rest/services/COVID_19_Cases/FeatureServer/0?f=json"
   end
 
   def self.testing_data_url
-    "https://services8.arcgis.com/rGGrs6HCnw87OFOT/arcgis/rest/services/CountyCases/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=102100&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=0&resultRecordCount=50&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token="
+    "https://services1.arcgis.com/2iUE8l8JKrP2tygQ/arcgis/rest/services/COVID_19_Cases/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=102100&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=0&resultRecordCount=50&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token="
   end
 
   def self.dashboard_url
-    "https://www.arcgis.com/apps/MapSeries/index.html?appid=84b17c2a2af8487f97a244b6126834c2"
+    "https://augustagis.maps.arcgis.com/apps/opsdashboard/index.html#/4eec20925b6b4f338368df0ffcba472d"
   end
 
   def self.covid_tracking_report(query_string)
@@ -76,18 +76,13 @@ class Washington
   def self.generate_report(data)
     # Example data:
     #
-    # OBJECTID: 5,
-    # CNTY_NAME: "Ferry",
-    # CV_PositiveCases: 1,
-    # CV_Comment: "Under Governor's Stay Home, Stay Healthy order",
-    # CV_Deaths: 0,
-    # CV_SuspectedCases: -1,
-    # CV_Updated: 1585551359000,
-    # CV_State_Cases: 4896,
-    # CV_State_Unassigned: 387,
-    # CV_State_Deaths: 195,
-    # Shape__Area: 13290534242.6094,
-    # Shape__Length: 594518.402940987
+    # OBJECTID: 46,
+    # NAME: "Worth",
+    # GlobalID: "4427d43b-ba56-410d-a125-6b31529954c1",
+    # EditDate: 1585678609363,
+    # COVID_Cases: 29,
+    # COVID_Deaths: 1,
+    # COVID_Recovered: null
 
     totals = relevant_keys.each_with_object({}) do |(key, metric), store|
       store[key] = {
@@ -109,15 +104,20 @@ class Washington
 
   def self.relevant_keys
     {
-      Positive_Cases: {
-        name: "Positives (From Counties)",
+      positives: {
+        name: "Positives (from Counties)",
         highlight: true,
-        source: "CV_PositiveCases"
+        source: "COVID_Cases"
       },
-      Deaths: {
-        name: "Deaths (From Counties)",
+      deaths: {
+        name: "Deaths (from Counties)",
         highlight: true,
-        source: "CV_Deaths"
+        source: "COVID_Deaths"
+      },
+      recovered: {
+        name: "Recovered (from Counties)",
+        highlight: true,
+        source: "COVID_Recovered"
       }
     }
   end

@@ -88,46 +88,14 @@ class App
   end
 
   def self.payload(query_string, class_name)
-    report = class_name.covid_tracking_report(query_string)
-
-    last_edit = pretty_datetime report[:last_edited_at]
-    last_fetched = pretty_datetime report[:last_fetched_at]
-    expires_at = pretty_datetime report[:expires_at]
-
     <<~HTML
     <!DOCTYPE html>
     <html>
     <head>
       <meta charset="UTF-8">
-      <title>#{class_name.state_name} COVID-19 Report</title>
+      <title>#{class_name ? class_name.state_name + " " : nil}COVID-19 Report</title>
       <style type="text/css">
-        body {
-          font-family: Tahoma, sans-serif;
-        }
-        table {
-          width: 100%
-        }
-        th, td {
-          padding: 0.3rem 1rem;
-        }
-
-        td:first-child, th:first-child {
-          text-align: right;
-          width: 25%;
-        }
-
-        td:nth-child(2), th:nth-child(2) {
-          text-align: right;
-          width: 5%;
-        }
-
-        td:last-child, th:last-child {
-          text-align: left;
-          width: 70%;
-        }
-
-        tr:nth-child(even) { background: #CCC }
-        tr:nth-child(odd) { background: #FFF }
+        #{css}
       </style>
     </head>
     <body>
@@ -135,13 +103,32 @@ class App
         <ul>
           <li><a href="/alaska">Alaska</a></li>
           <li><a href="/california">California</a></li>
-          <li><a href="/">Florida</a></li>
+          <li><a href="/florida">Florida</a></li>
           <li><a href="/georgia">Georgia</a></li>
+          <li><a href="/louisiana">Louisiana</a></li>
           <li><a href="/texas">Texas</a></li>
           <li><a href="/utah">Utah</a></li>
           <li><a href="/washington">Washington</a></li>
         </ul>
       </nav>
+
+      #{class_name ? state_page(class_name, query_string) : ""}
+
+      <hr />
+      <p><a href="https://github.com/olivierlacan/covid-19-fdoh-testing-data-parser/">Source code for this website</a></p>
+    </body>
+    </html>
+    HTML
+  end
+
+  def self.state_page(class_name, query_string)
+    report = class_name.covid_tracking_report(query_string)
+
+    last_edit = pretty_datetime report[:last_edited_at]
+    last_fetched = pretty_datetime report[:last_fetched_at]
+    expires_at = pretty_datetime report[:expires_at]
+
+    <<~HTML
       <h1>#{class_name.state_name} COVID-19 Report</h1>
       <p>
         This report is generated from the #{class_name::DEPARTMENT}'s COVID-19
@@ -167,12 +154,7 @@ class App
         <a href="?reload">Force reload</a>
 
         #{class_name.nomenclature if defined?(class_name.nomenclature)}
-
-        <hr />
-        <p><a href="https://github.com/olivierlacan/covid-19-fdoh-testing-data-parser/">Source code for this website</a></p>
       </footer>
-    </body>
-    </html>
     HTML
   end
 
@@ -196,6 +178,38 @@ class App
         </tr>
         #{rows}
       </table>
+    HTML
+  end
+
+  def self.css
+    <<~HTML
+      body {
+        font-family: Tahoma, sans-serif;
+      }
+      table {
+        width: 100%
+      }
+      th, td {
+        padding: 0.3rem 1rem;
+      }
+
+      td:first-child, th:first-child {
+        text-align: right;
+        width: 25%;
+      }
+
+      td:nth-child(2), th:nth-child(2) {
+        text-align: right;
+        width: 5%;
+      }
+
+      td:last-child, th:last-child {
+        text-align: left;
+        width: 70%;
+      }
+
+      tr:nth-child(even) { background: #CCC }
+      tr:nth-child(odd) { background: #FFF }
     HTML
   end
 end

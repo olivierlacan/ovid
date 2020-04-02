@@ -10,9 +10,11 @@ gem "rack"
 gem "redis"
 gem "bugsnag", "~> 6.13"
 gem "hanami-router"
+gem "puma"
 
 group :development do
   gem "dotenv"
   gem "rerun"
   gem "terminal-notifier"
+  gem "foreman"
 end

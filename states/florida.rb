@@ -5,7 +5,7 @@ require "json"
 
 require "./states/state"
 
-class Flovid < State
+class Florida < State
   DEPARTMENT = "Florida Department of Health"
   ACRONYM = "FDOH"
 

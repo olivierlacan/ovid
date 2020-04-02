@@ -122,7 +122,11 @@ class App
       #{class_name ? state_page(class_name, query_string) : home_page}
 
       <hr />
-      <p><a href="https://github.com/olivierlacan/covid-19-fdoh-testing-data-parser/">Source code for this website</a></p>
+      <p>
+        <a href="https://github.com/olivierlacan/ovid/">
+          Source code for this website
+        </a> - Maintained by <a href="https://olivierlacan.com">Olivier Lacan</a>
+      </p>
     </body>
     </html>
     HTML
@@ -134,12 +138,16 @@ class App
       <p>
         This project aggregates county-level data from U.S. states for
         which ArcGIS public Feature Layers (datasets) are available.
+      </p>
 
+      <p>
         While this data may not always be authoritative, it allows for
         COVID-19 case and testing information released by states in
         other avenues to be compared with raw data emanating from their
         own counties.
+      </p>
 
+      <p>
         Please corroborate this data prior to use in any journalistic or
         data scientific endeavor. State pages link to ArcGIS dashboards
         whenever possible and the source feature layers are listed to

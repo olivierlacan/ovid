@@ -221,6 +221,15 @@ class App
       body {
         font-family: Tahoma, sans-serif;
       }
+
+      nav ul {
+        padding: 0;
+      }
+      nav li {
+        list-style: none;
+        display: inline-block;
+      }
+
       table {
         width: 100%
       }

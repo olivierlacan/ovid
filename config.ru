@@ -128,7 +128,7 @@ class App
     HTML
   end
 
-  def self.home
+  def self.home_page
     <<~HTML
       <h1>Ovid</h1>
       <p>

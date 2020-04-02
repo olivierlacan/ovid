@@ -119,12 +119,30 @@ class App
         </ul>
       </nav>
 
-      #{class_name ? state_page(class_name, query_string) : ""}
+      #{class_name ? state_page(class_name, query_string) : home_page}
 
       <hr />
       <p><a href="https://github.com/olivierlacan/covid-19-fdoh-testing-data-parser/">Source code for this website</a></p>
     </body>
     </html>
+    HTML
+  end
+
+  def self.home
+    <<~HTML
+      <p>
+        Ovid aggregates county-level data from U.S. states for which ArcGIS
+        public Feature Layers (datasets) are available.
+
+        While this data may not always be authoritative, it allows for COVID-19
+        case and testing information released by states in other avenues to be
+        compared with raw data emanating from their own counties.
+
+        Please corroborate this data prior to use in any journalistic or data
+        scientific endeavor. State pages link to ArcGIS dashboards whenever
+        possible and the source feature layers are listed to help independent
+        verification.
+      </p>
     HTML
   end
 

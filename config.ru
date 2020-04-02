@@ -124,7 +124,7 @@ class App
       <hr />
       <p>
         <a href="https://github.com/olivierlacan/ovid/">Source code for this website</a>
-         - Maintained by <a href="https://olivierlacan.com">Olivier Lacan</a>
+         - Maintained by <a href="https://olivierlacan.com">Olivier Lacan</a> for <a href="https://covidtracking.com/">The COVID Tracking Project</a>
       </p>
     </body>
     </html>

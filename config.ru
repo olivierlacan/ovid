@@ -100,7 +100,7 @@ class App
     <html>
     <head>
       <meta charset="UTF-8">
-      <title>#{class_name ? class_name.state_name + " " : nil}COVID-19 Report</title>
+      <title>#{class_name ? class_name.state_name + " " : nil}Ovid COVID-19 report</title>
       <style type="text/css">
         #{css}
       </style>

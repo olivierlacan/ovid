@@ -12,6 +12,7 @@ require "./states/georgia"
 require "./states/texas"
 require "./states/california"
 require "./states/louisiana"
+require "./states/new_jersey"
 
 if State.development?
   require 'dotenv'
@@ -79,6 +80,12 @@ app = Hanami::Router.new do
       StringIO.new(App.payload(env["QUERY_STRING"], Louisiana))
     ]
   }
+  get "/new-jersey", to: ->(env) {
+    [
+      200, {"Content-Type" => "text/html"},
+      StringIO.new(App.payload(env["QUERY_STRING"], NewJersey))
+    ]
+  }
 end
 
 run app
@@ -114,6 +121,7 @@ class App
           <li><a href="/florida">Florida</a></li>
           <li><a href="/georgia">Georgia</a></li>
           <li><a href="/louisiana">Louisiana</a></li>
+          <li><a href="/new-jersey">New Jersey</a></li>
           <li><a href="/texas">Texas</a></li>
           <li><a href="/utah">Utah</a></li>
           <li><a href="/washington">Washington</a></li>

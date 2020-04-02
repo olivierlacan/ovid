@@ -130,17 +130,20 @@ class App
 
   def self.home
     <<~HTML
+      <h1>Ovid</h1>
       <p>
-        Ovid aggregates county-level data from U.S. states for which ArcGIS
-        public Feature Layers (datasets) are available.
+        This project aggregates county-level data from U.S. states for
+        which ArcGIS public Feature Layers (datasets) are available.
 
-        While this data may not always be authoritative, it allows for COVID-19
-        case and testing information released by states in other avenues to be
-        compared with raw data emanating from their own counties.
+        While this data may not always be authoritative, it allows for
+        COVID-19 case and testing information released by states in
+        other avenues to be compared with raw data emanating from their
+        own counties.
 
-        Please corroborate this data prior to use in any journalistic or data
-        scientific endeavor. State pages link to ArcGIS dashboards whenever
-        possible and the source feature layers are listed to help independent
+        Please corroborate this data prior to use in any journalistic or
+        data scientific endeavor. State pages link to ArcGIS dashboards
+        whenever possible and the source feature layers are listed to
+        help independent
         verification.
       </p>
     HTML

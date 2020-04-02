@@ -237,6 +237,12 @@ class App
         padding: 0.3rem 1rem;
       }
 
+      th {
+        position: sticky;
+        top: 15px;
+        background: white;
+      }
+
       td:first-child, th:first-child {
         text-align: right;
         width: 25%;

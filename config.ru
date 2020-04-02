@@ -108,6 +108,7 @@ class App
     <body>
       <nav>
         <ul>
+          <li><a href="/">Home</a></li>
           <li><a href="/alaska">Alaska</a></li>
           <li><a href="/california">California</a></li>
           <li><a href="/florida">Florida</a></li>

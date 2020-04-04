@@ -1,8 +1,3 @@
-require 'rubygems'
-require 'bundler'
-
-Bundler.require
-
 require "./states/state"
 require "./states/florida"
 require "./states/utah"
@@ -14,10 +9,7 @@ require "./states/california"
 require "./states/louisiana"
 require "./states/new_jersey"
 
-if State.development?
-  require 'dotenv'
-  Dotenv.load
-else
+if State.production?
   Bugsnag.configure do |config|
     config.api_key = ENV["BUGSNAG_API_KEY"]
   end

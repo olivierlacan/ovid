@@ -1,4 +1,4 @@
-Age,Gender,County,EDvisit,Hospitalized,EventDate
+EventDate,Age,Gender,County,EDvisit,Hospitalized
 2020-03-24 20:00:00 -0400,39,Male,Lee,Yes,Yes
 2020-03-10 20:00:00 -0400,40,Male,Dade,Yes,Yes
 2020-03-06 19:00:00 -0500,52,Male,St. Johns,Yes,Yes

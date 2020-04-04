@@ -43,10 +43,16 @@ class State
   end
 
   def self.last_edit
+    puts "Fetching lastEditDate from feature layer #{testing_feature_url} ..."
     uri = URI(testing_feature_url)
     response = Net::HTTP.get(uri)
     parsed_response = JSON.parse(response)
-    Time.strptime(parsed_response["editingInfo"]["lastEditDate"].to_s, "%Q")
+    puts parsed_response.inspect
+    raw_edit_date = parsed_response["editingInfo"]["lastEditDate"]
+    converted_edit_date = Time.strptime(raw_edit_date.to_s, "%Q")
+    puts "Parsed lastEditDate #{raw_edit_date} converted to #{last_edit_date} (#{ENV["TZ"]})"
+
+    converted_edit_date
   end
 
   def self.get_data

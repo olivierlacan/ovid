@@ -5,6 +5,15 @@ require "json"
 
 class State
   CACHE_EXPIRATION_IN_MINUTES = 15
+  @@state_classes = []
+
+  def self.inherited(instance)
+    @@state_classes << instance
+  end
+
+  def self.all_states
+    @@state_classes
+  end
 
   def self.state_name
     self.to_s
@@ -147,5 +156,13 @@ class State
 
   def self.set_expiration(key, time)
     cache.expireat(key, time.to_i)
+  end
+
+  def self.deconstantize
+    to_s.gsub(/([a-z])([A-Z])/, '\1 \2')
+  end
+
+  def self.parameterize
+    to_s.gsub(/([a-z])([A-Z])/, '\1-\2').downcase
   end
 end

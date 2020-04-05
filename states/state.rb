@@ -50,7 +50,7 @@ class State
     puts parsed_response.inspect
     raw_edit_date = parsed_response["editingInfo"]["lastEditDate"]
     converted_edit_date = Time.strptime(raw_edit_date.to_s, "%Q")
-    puts "Parsed lastEditDate #{raw_edit_date} converted to #{last_edit_date} (#{ENV["TZ"]})"
+    puts "Parsed lastEditDate #{raw_edit_date} converted to #{converted_edit_date} (#{ENV["TZ"]})"
 
     converted_edit_date
   end

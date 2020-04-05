@@ -8,6 +8,7 @@ require "./states/texas"
 require "./states/california"
 require "./states/louisiana"
 require "./states/new_jersey"
+require "./states/minnesota"
 
 if State.production?
   Bugsnag.configure do |config|
@@ -24,60 +25,17 @@ app = Hanami::Router.new do
       StringIO.new(App.payload(env["QUERY_STRING"], nil))
     ]
   }
-  get "/florida", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], Florida))
-    ]
-  }
-  get "/utah", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], Utah))
-    ]
-  }
-  get "/washington", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], Washington))
-    ]
-  }
-  get "/alaska", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], Alaska))
-    ]
-  }
-  get "/georgia", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], Georgia))
-    ]
-  }
-  get "/texas", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], Texas))
-    ]
-  }
-  get "/california", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], California))
-    ]
-  }
-  get "/louisiana", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], Louisiana))
-    ]
-  }
-  get "/new-jersey", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], NewJersey))
-    ]
-  }
+
+  State.all_states.each do |state|
+    get "/#{state.to_s.downcase}", to: ->(env) {
+      [
+        200, {"Content-Type" => "text/html"},
+        StringIO.new(App.payload(env["QUERY_STRING"], state))
+      ]
+    }
+  end
+
+  redirect "/florida", to: "https://o-vid.herokuapp.com/florida"
 end
 
 run app
@@ -91,6 +49,14 @@ class App
     else
       Time.parse(time).strftime(format)
     end
+  end
+
+  def self.state_links
+    State.all_states.map do |state|
+      <<~HTML
+        <li><a href="/#{state.to_s.downcase}">#{state.to_s.chomp}</a></li>
+      HTML
+    end.join("\n")
   end
 
   def self.payload(query_string, class_name)
@@ -107,16 +73,7 @@ class App
     <body>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/alaska">Alaska</a></li>
-          <li><a href="/california">California</a></li>
-          <li><a href="/florida">Florida</a></li>
-          <li><a href="/georgia">Georgia</a></li>
-          <li><a href="/louisiana">Louisiana</a></li>
-          <li><a href="/new-jersey">New Jersey</a></li>
-          <li><a href="/texas">Texas</a></li>
-          <li><a href="/utah">Utah</a></li>
-          <li><a href="/washington">Washington</a></li>
+          #{state_links}
         </ul>
       </nav>
 

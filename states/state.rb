@@ -5,6 +5,15 @@ require "json"
 
 class State
   CACHE_EXPIRATION_IN_MINUTES = 15
+  @@state_classes = []
+
+  def self.inherited(instance)
+    @@state_classes << instance
+  end
+
+  def self.all_states
+    @@state_classes
+  end
 
   def self.state_name
     self.to_s

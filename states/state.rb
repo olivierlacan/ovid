@@ -4,6 +4,8 @@ require "net/http"
 require "json"
 
 class State
+  include Comparable
+
   CACHE_EXPIRATION_IN_MINUTES = 15
   @@state_classes = []
 
@@ -12,7 +14,7 @@ class State
   end
 
   def self.all_states
-    @@state_classes
+    @@state_classes.sort
   end
 
   def self.state_name
@@ -164,5 +166,9 @@ class State
 
   def self.parameterize
     to_s.gsub(/([a-z])([A-Z])/, '\1-\2').downcase
+  end
+
+  def self.<=>(other)
+    to_s <=> other.to_s
   end
 end

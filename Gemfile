@@ -11,6 +11,7 @@ gem "redis"
 gem "bugsnag", "~> 6.13"
 gem "hanami-router"
 gem "puma"
+gem "rack-ssl-enforcer"
 
 group :development do
   gem "dotenv"

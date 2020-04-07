@@ -16,6 +16,7 @@ if State.production?
   end
 
   use Bugsnag::Rack
+  use Rack::SslEnforcer
 end
 
 app = Hanami::Router.new do

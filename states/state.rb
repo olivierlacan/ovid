@@ -26,19 +26,19 @@ class State
   end
 
   def self.testing_gallery_url
-    raise NotImplementedError
+    nil
   end
 
   def self.testing_feature_url
-    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0?f=pjson"
+    nil
   end
 
   def self.testing_data_url
-    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=none&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson"
+    nil
   end
 
   def self.dashboard_url
-    "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
+    nil
   end
 
    def self.covid_tracking_report(query_string)
@@ -66,22 +66,39 @@ class State
     converted_edit_date
   end
 
-  def self.get_data
-    uri = URI(testing_data_url)
+  def self.request(url)
+    uri = URI(url)
     response = Net::HTTP.get(uri)
-    parsed_response = JSON.parse(response)
 
-    report = generate_report(parsed_response["features"])
+    JSON.parse(response)
+  end
+
+  def self.get_data
+    if defined?(relevant_keys)
+      relevant_response = request(testing_data_url)
+      relevant_report = generate_roll_up_report(relevant_response["features"])
+    end
+
+    if defined?(aggregate_keys)
+      aggregate_response = request(aggregate_data_url)
+      aggregate_report = generate_aggregate_report(aggregate_response["features"])
+    end
 
     # set expiration time to 15 minutes from now
     last_fetch = Time.now
     expiration_time = last_fetch + (CACHE_EXPIRATION_IN_MINUTES * 60)
 
+    if defined?(aggregate_report) && !aggregate_report.nil?
+      merged_data = relevant_report.merge(aggregate_report)
+    else
+      merged_data = relevant_report
+    end
+
     cache = {
       last_edited_at: last_edit.iso8601,
       last_fetched_at: last_fetch.iso8601,
       expires_at: expiration_time.iso8601,
-      data: report
+      data: merged_data
     }
 
     write_cache(cache_key, cache)
@@ -89,19 +106,9 @@ class State
     check_cache(cache_key)
   end
 
-
-  def self.generate_report(testing_data)
-    testing_totals = relevant_keys.each_with_object({}) do |(key, metric), store|
-      store[key] = {
-        value: 0,
-        name: metric[:name],
-        description: metric[:description],
-        highlight: metric[:highlight],
-        source: metric[:source]
-      }
-    end
-
-    testing_data.each_with_object(testing_totals) do |test, store|
+  def self.generate_roll_up_report(data)
+    testing_store = initialize_store(relevant_keys)
+    data.each_with_object(testing_store) do |test, store|
       a = test["attributes"]
 
       relevant_keys.each do |key, value|
@@ -111,6 +118,34 @@ class State
           store[key][:value] += a[value[:source]] || 0
         end
       end
+    end
+  end
+
+  def self.generate_aggregate_report(data)
+    aggregate_store = initialize_store(aggregate_keys)
+
+    data.each_with_object(aggregate_store) do |data, store|
+      a = data["attributes"]
+
+      aggregate_keys.each do |key, value|
+        if value[:total]
+          store[key][:value] = a[value[:source]]
+        else
+          store[key][:value] += a[value[:source]] || 0
+        end
+      end
+    end
+  end
+
+  def self.initialize_store(key_defaults)
+    key_defaults.each_with_object({}) do |(key, metric), store|
+      store[key] = {
+        value: 0,
+        name: metric[:name],
+        description: metric[:description],
+        highlight: metric[:highlight],
+        source: metric[:source]
+      }
     end
   end
 

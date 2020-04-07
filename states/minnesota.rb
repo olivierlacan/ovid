@@ -7,8 +7,8 @@ require "json"
 require "./states/state"
 
 class Minnesota < State
-  DEPARTMENT = ""
-  ACRONYM = "GDPH"
+  DEPARTMENT = "Minnesota Department of Health"
+  ACRONYM = "MDH"
 
   def self.testing_gallery_url
     nil

@@ -130,14 +130,7 @@ class App
 
     <<~HTML
       <h1>#{class_name.state_name} COVID-19 Report</h1>
-      <p>
-        This report is generated from the #{class_name::DEPARTMENT}'s COVID-19
-        <a href="#{class_name&.testing_gallery_url || class_name.testing_feature_url}">
-        ArcGIS feature layer</a>.
-        <br />
-        #{class_name::ACRONYM} maintains a <a href="#{class_name.dashboard_url}">dashboard</a> representation of this
-        data which is created from the same source.
-      </p>
+      #{sources(class_name)}
 
       #{report_table(report[:data])}
 
@@ -155,6 +148,34 @@ class App
 
         #{class_name.nomenclature if defined?(class_name.nomenclature)}
       </footer>
+    HTML
+  end
+
+  def self.sources(class_name)
+    feature_layer = <<~HTML
+      This report is generated from the #{class_name::DEPARTMENT}'s COVID-19
+      <a href="#{class_name&.testing_gallery_url || class_name.testing_feature_url}">
+      ArcGIS feature layer</a>.
+    HTML
+
+    if !class_name.aggregate_feature_url.nil?
+      feature_layer << <<~HTML
+        An <a href="#{class_name&.aggregate_feature_url}">
+        aggregate data</a> feature layer was also used.
+      HTML
+    end
+
+    dashboard = <<~HTML
+      #{class_name::ACRONYM} maintains a <a href="#{class_name.dashboard_url}">dashboard</a> representation of this
+      data which is created from the same source.
+    HTML
+
+    <<~HTML
+      <p>
+        #{feature_layer}
+        <br />
+        #{dashboard}
+      </p>
     HTML
   end
 

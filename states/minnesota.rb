@@ -146,7 +146,7 @@ class Minnesota < State
         name: "Positives (Counties)",
         description: "Tallied from individual county cases.",
         highlight: true,
-        source: "PositiveCo"
+        source: "MLMIS_CTY"
       }
     }
   end

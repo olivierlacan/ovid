@@ -1,0 +1,14 @@
+EventDate,Age,Gender,County,EDvisit,Hospitalized
+2020-03-18 20:00:00 -0400,39,Male,Broward,Yes,Yes
+2020-03-31 20:00:00 -0400,44,Female,Dade,Yes,Yes
+2020-03-30 20:00:00 -0400,62,Female,Lee,NA,Yes
+2020-03-20 20:00:00 -0400,66,Female,Osceola,Yes,Yes
+2020-03-21 20:00:00 -0400,76,Female,Palm Beach,Yes,Yes
+2020-03-25 20:00:00 -0400,77,Female,Dade,Yes,Yes
+2020-03-31 20:00:00 -0400,78,Male,Lee,NA,Yes
+2020-03-26 20:00:00 -0400,85,Male,Pinellas,No,No
+2020-03-11 20:00:00 -0400,86,Male,Sarasota,Yes,Yes
+2020-03-31 20:00:00 -0400,86,Male,Lake,No,No
+2020-03-16 20:00:00 -0400,87,Male,Palm Beach,Yes,Yes
+2020-03-30 20:00:00 -0400,93,Male,Dade,Unknown,No
+2020-03-30 20:00:00 -0400,96,Female,Lee,NA,Yes

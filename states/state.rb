@@ -128,11 +128,7 @@ class State
       a = data["attributes"]
 
       aggregate_keys.each do |key, value|
-        if value[:total]
-          store[key][:value] = a[value[:source]]
-        else
-          store[key][:value] += a[value[:source]] || 0
-        end
+        store[key][:value] = a[value[:source]] || "N/A"
       end
     end
   end

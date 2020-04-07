@@ -1,3 +1,4 @@
+
 require "date"
 require "time"
 require "net/http"
@@ -87,35 +88,187 @@ class Minnesota < State
     # ResMsng: 109,
     # GlobalID: "dfb4650e-8629-4b9e-a2ab-8f4477f4b495"
     {
-      ethnicity_white: {
-        name: "Ethnicity - White",
-        description: "Aggregated report (not from individual case data)",
+      positives: {
+        name: "Total Cases",
+        description: "Positive cases from aggregated report (not from individual case data)",
+        highlight: true,
+        source: "TotalCases"
+      },
+      deaths: {
+        name: "Deaths",
+        description: "Deaths from aggregated report (not from individual case data)",
+        highlight: true,
+        source: "OutcmDied"
+      },
+      released_from_isolation: {
+        name: "Released from Isolation",
+        source: "RlsdFrmIsol"
+      },
+      age_range: {
+        name: "Age Range",
+        source: "AgeRng"
+      },
+      median_age: {
+        name: "Median Age",
+        source: "MedAge"
+      },
+      ever_hospitalized_yes: {
+        name: "Ever Hospitalized Yes",
+        highlight: true,
+        source: "EvrHospYes"
+      },
+      ever_hospitalized_no: {
+        name: "Ever Hospitalized No",
+        source: "EvrHospNo"
+      },
+      ever_hospitalized_missing: {
+        name: "Ever Hospitalized Missing",
+        source: "EvrHospMisng"
+      },
+      ever_icu_yes: {
+        name: "Ever ICU Yes",
+        highlight: true,
+        source: "EvrICUYes"
+      },
+      residence_private: {
+        name: "Residence - Private",
+        source: "ResPriv"
+      },
+      residence_jail: {
+        name: "Residence - Jail/Prison",
+        source: "ResJail"
+      },
+      residence_college_dorm: {
+        name: "Residence - College Dorm",
+        source: "ResCollDrm"
+      },
+      residence_assisted: {
+        name: "Residence - Assisted Living",
+        source: "ResAssLvg"
+      },
+      residence_homeless_shelter: {
+        name: "Residence - Homeless Shelter",
+        source: "ResHmlShelt"
+      },
+      residence_long_time_care_facility: {
+        name: "Residence - Long Time Care Facility",
+        source: "ResLTCF"
+      },
+      residence_long_time_acute_care: {
+        name: "Residence - Long Term Acute Care",
+        source: "ResLngTrm"
+      },
+      residence_other: {
+        name: "Residence - Other",
+        source: "ResOther"
+      },
+      residence_missing: {
+        name: "Residence - Missing",
+        source: "ResMsng"
+      },
+      healthcare_worker: {
+        name: "Healthcare Worker",
+        source: "HlthCarWrker"
+      },
+      school_children_or_employee: {
+        name: "School Children or Employee",
+        source: "SchlChldorEmp"
+      },
+      exposure_cruise_ship: {
+        name: "Exposure - Cruise Ship",
+        source: "ExpsrCrzShp"
+      },
+      exposure_international_travel: {
+        name: "Exposure - International Travel",
+        source: "ExpsrIntrntnl"
+      },
+      exposure_likely: {
+        name: "Exposure - Likely",
+        source: "ExpsrLklyExpsr"
+      },
+      exposure_another_state: {
+        name: "Exposure - Another State",
+        source: "ExpsrAnthrState"
+      },
+      exposure_in_minnesota: {
+        name: "Exposure - Minnesota Community Spread",
+        source: "ExpsrInMN"
+      },
+      exposure_missing: {
+        name: "Exposure - Missing",
+        source: "ExpsrMsng"
+      },
+      male: {
+        name: "Male",
+        source: "Male"
+      },
+      female: {
+        name: "Female",
+        source: "Female"
+      },
+      sex_missing: {
+        name: "Sex Missing",
+        source: "SexMsng"
+      },
+      race_white: {
+        name: "Race - White",
         source: "RaceWht"
       },
-      ethnicity_black: {
-        name: "Ethnicity - Black",
-        description: "Aggregated report (not from individual case data)",
+      race_black: {
+        name: "Race - Black",
         source: "RaceBlk"
       },
-      ethnicity_asian: {
-        name: "Ethnicity - Asian Pacific Islander",
-        description: "Aggregated report (not from individual case data)",
+      ethnicity_hispanic: {
+        name: "Ethnicity - Hispanic",
+        source: "EthnHisp"
+      },
+      ethnicity_non_hispanic: {
+        name: "Ethnicity - Non-Hispanic",
+        source: "EthnNonHisp"
+      },
+      race_asian: {
+        name: "Race - Asian Pacific Islander",
         source: "RaceAsnPacIsld"
       },
-      ethnicity_native: {
-        name: "Ethnicity - American Native",
-        description: "Aggregated report (not from individual case data)",
+      race_native: {
+        name: "Race - American Native",
         source: "RaceAmerIndAlaNativ"
+      },
+      race_unknown: {
+        name: "Race - Unknown",
+        source: "RaceUnk"
       },
       ethnicity_unknown: {
         name: "Ethnicity - Unknown",
-        description: "Aggregated report (not from individual case data)",
-        source: "RaceUnk"
+        source: "EthnUnk"
       },
-      ethnicity_other: {
-        name: "Ethnicity - Other",
-        description: "Aggregated report (not from individual case data)",
+      race_other: {
+        name: "Race - Other",
         source: "RaceOther"
+      },
+      test_lab_mdh: {
+        name: "Test Lab - Minnesota Department of Health",
+        source: "TstLabMDH"
+      },
+      test_lab_mayo: {
+        name: "Test Lab - Mayo Clinic",
+        source: "TstLabMayo"
+      },
+      test_lab_arup: {
+        name: "Test Lab - ARUP",
+        source: "TstLabARUP"
+      },
+      test_lab_qwest: {
+        name: "Test Lab - Qwest",
+        source: "TstLabQwest"
+      },
+      test_lab_other: {
+        name: "Test Lab - Other",
+        source: "TstLabOthr"
+      },
+      test_lab_missing: {
+        name: "Test Lab - Missing",
+        source: "TstLabMsng"
       }
     }
   end

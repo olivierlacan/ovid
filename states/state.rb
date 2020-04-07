@@ -41,6 +41,14 @@ class State
     nil
   end
 
+  def self.aggregate_feature_url
+    nil
+  end
+
+  def self.aggregate_data_url
+    nil
+  end
+
    def self.covid_tracking_report(query_string)
     stored_response = check_cache(cache_key)
 

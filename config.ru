@@ -19,20 +19,28 @@ if State.production?
 end
 
 app = Hanami::Router.new do
-  get "/", to: ->(env) {
-    [
-      200, {"Content-Type" => "text/html"},
-      StringIO.new(App.payload(env["QUERY_STRING"], nil))
-    ]
-  }
-
-  State.all_states.each do |state|
-    get "/#{state.parameterize}", to: ->(env) {
+  if ENV["REDIRECT_TO_OVID"]
+    redirect "/", to: "https://o-vid.herokuapp.com"
+  else
+    get "/", to: ->(env) {
       [
         200, {"Content-Type" => "text/html"},
-        StringIO.new(App.payload(env["QUERY_STRING"], state))
+        StringIO.new(App.payload(env["QUERY_STRING"], nil))
       ]
     }
+  end
+
+  State.all_states.each do |state|
+    if ENV["REDIRECT_TO_OVID"]
+      redirect "/#{state.parameterize}", to: "https://o-vid.herokuapp.com/#{state.parameterize}"
+    else
+      get "/#{state.parameterize}", to: ->(env) {
+        [
+          200, {"Content-Type" => "text/html"},
+          StringIO.new(App.payload(env["QUERY_STRING"], state))
+        ]
+      }
+    end
   end
 end
 
@@ -71,6 +79,7 @@ class App
     <body>
       <nav>
         <ul>
+          <li><a href="/">Home</a></li>
           #{state_links}
         </ul>
       </nav>

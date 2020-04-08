@@ -61,7 +61,7 @@ class App
   def self.state_links
     State.all_states.map do |state|
       <<~HTML
-        <li><a href="/#{state.parameterize}">#{state.deconstantize}</a></li>
+        <li><a href="/#{state.parameterize}">#{state.state_name}</a></li>
       HTML
     end.join("\n")
   end

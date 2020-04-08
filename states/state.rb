@@ -18,7 +18,7 @@ class State
   end
 
   def self.state_name
-    self.to_s
+    self.deconstantize
   end
 
   def self.cache_key

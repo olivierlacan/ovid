@@ -14,11 +14,10 @@ exclusively JSON feeds from ArcGIS and not scrapped HTML from state websites
 because those have proven unreliable.
 
 The following methods can be inspected on each state listed in `states/`:
-- `testing_gallery_url`: URL to the general state or county gallery of ArcGIS data
-- `testing_feature_url`: URL to the ArcGIS Feature Layer used as a source
-- `testing_data_url`: URL to the JSON query outputing data from the Feature Layer.
-- `dashboard_url`: URL to the state or county dashboard we sourced to find the
-relevant Feature Layer
+- `gallery_url`: general state or county gallery of ArcGIS data
+- `cases_feature_url`: individual case datra
+- `counties_feature_url`: county-level aggregate data
+- `dashboard_url`: state or county dashboard sourced for feature layers
 
 ## Usage
 

@@ -33,6 +33,7 @@ class Florida < State
     {
       positives: {
         name: "Positives",
+        description: "Includes both Florida residents and non-residents.",
         count_of_total_records: true,
         highlight: true
       },
@@ -44,6 +45,7 @@ class Florida < State
       },
       hospitalized: {
         name: "Hospitalized",
+        description: "Includes both Florida residents and non-residents unlike the FDOH dashboard which excludes non-residents in 'Hospitalizations'",
         positive_value: "Yes",
         highlight: true,
         source: "Hospitalized"

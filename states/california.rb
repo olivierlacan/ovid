@@ -10,26 +10,18 @@ class California < State
   ACRONYM = "LLUH"
 
   def self.testing_gallery_url
-    nil
-  end
-
-  def self.testing_gallery_url
     "https://covid19-lluh.hub.arcgis.com/"
   end
 
-  def self.testing_feature_url
-    "https://services7.arcgis.com/aFfS9FqkIRSo0Ceu/ArcGIS/rest/services/COVID_19_Daily_Cases_California_Counties_View_Only/FeatureServer/0?f=json"
-  end
-
-  def self.testing_data_url
-    "https://services7.arcgis.com/aFfS9FqkIRSo0Ceu/ArcGIS/rest/services/COVID_19_Daily_Cases_California_Counties_View_Only/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token="
+  def self.counties_feature_url
+    "https://services7.arcgis.com/aFfS9FqkIRSo0Ceu/ArcGIS/rest/services/COVID_19_Daily_Cases_California_Counties_View_Only/FeatureServer/0"
   end
 
   def self.dashboard_url
     "https://lluh.maps.arcgis.com/apps/opsdashboard/index.html#/0a31ad9308574e93b18980acae25f68a"
   end
 
-  def self.relevant_keys
+  def self.county_keys
     # Example data:
     #
     # OBJECTID_1: 3,
@@ -62,38 +54,32 @@ class California < State
 
     {
       Confirmed_Cases: {
-        name: "Positives (Counties)",
-        description: "Tallied from individual county cases.",
+        name: "Positives",
         highlight: true,
         source: "Confirmed_Cases"
       },
       Deaths: {
-        name: "Deaths (Counties)",
-        description: "Tallied from individual county cases.",
+        name: "Deaths",
         highlight: true,
         source: "Confirmed_Deaths"
       },
       Recovered: {
-        name: "Recovered (Counties)",
-        description: "Tallied from individual county cases.",
+        name: "Recovered",
         highlight: false,
         source: "Recovered"
       },
       New_Cases: {
-        name: "New Positives (Counties)",
-        description: "Tallied from individual county cases.",
+        name: "New Positives",
         highlight: true,
         source: "New_Cases"
       },
       New_Deaths: {
-        name: "New Deaths (Counties)",
-        description: "Tallied from individual county cases.",
+        name: "New Deaths",
         highlight: true,
         source: "New_Deaths"
       },
       Hospitalized: {
-        name: "Hospitalized (Counties)",
-        description: "Tallied from individual county cases.",
+        name: "Hospitalized",
         highlight: true,
         source: "Hospitalized"
       }

@@ -13,23 +13,111 @@ class Florida < State
     "Florida"
   end
 
-  def self.testing_gallery_url
-    "https://fdoh.maps.arcgis.com/home/item.html?id=d9de96980b574ccd933da024a0926f37"
+  def self.gallery_url
+    "https://fdoh.maps.arcgis.com/home/gallery.html"
   end
 
-  def self.testing_feature_url
-    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0?f=pjson"
+  def self.counties_feature_url
+    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0"
   end
 
-  def self.testing_data_url
-    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=none&maxAllowableOffset=&geometryPrecision=&outSR=&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson"
+  def self.cases_feature_url
+    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/ArcGIS/rest/services/Florida_COVID19_Case_Line_Data/FeatureServer/0"
   end
 
   def self.dashboard_url
     "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
   end
 
-  def self.relevant_keys
+  def self.case_keys
+    {
+      positives: {
+        name: "Positives",
+        count_of_total_records: true,
+        highlight: true
+      },
+      deaths: {
+        name: "Deaths",
+        positive_value: "Yes",
+        highlight: true,
+        source: "Died"
+      },
+      hospitalized: {
+        name: "Hospitalized",
+        positive_value: "Yes",
+        highlight: true,
+        source: "Hospitalized"
+      },
+      emergency_visits_yes: {
+        name: "Emergency Visits - Yes",
+        positive_value: "Yes",
+        highlight: true,
+        source: "EDvisit"
+      },
+      emergency_visits_no: {
+        name: "Emergency Visits",
+        positive_value: "No",
+        highlight: true,
+        source: "EDvisit"
+      },
+      travel_related_yes: {
+        name: "Travel Related - Yes",
+        positive_value: "Yes",
+        highlight: true,
+        source: "Travel_related"
+      },
+      travel_related: {
+        name: "Travel Relate - No",
+        positive_value: "No",
+        highlight: true,
+        source: "Travel_related"
+      },
+      residents: {
+        name: "Florida Residents",
+        positive_value: "FL resident",
+        highlight: true,
+        source: "Jurisdiction"
+      },
+      non_residents: {
+        name: "Non-Florida Residents",
+        positive_value: "Non-FL resident",
+        highlight: true,
+        source: "Jurisdiction"
+      },
+      not_diagnosed_in_florida: {
+        name: "Not diagnosed/isolated in Florida",
+        positive_value: "Not diagnosed/isolated in FL",
+        highlight: true,
+        source: "Jurisdiction"
+      },
+      contact: {
+        name: "Contact with COVID-19 positive",
+        positive_value: "Yes",
+        highlight: true,
+        source: "Contact"
+      },
+      female: {
+        name: "Female",
+        positive_value: "Female",
+        highlight: true,
+        source: "Gender"
+      },
+      male: {
+        name: "Male",
+        positive_value: "Male",
+        highlight: true,
+        source: "Gender"
+      },
+      unknown_gender: {
+        name: "Unknown Gender",
+        positive_value: "Unknown",
+        highlight: true,
+        source: "Gender"
+      }
+    }
+  end
+
+  def self.county_keys
     {
       age_0_to_4: {
         name: "PUIs - Age - 0 to 4",
@@ -39,7 +127,7 @@ class Florida < State
       age_5_to_14: {
         name: "PUIs - Age - 5 to 14",
         highlight: false,
-        source: "Age_15_24"
+        source: "Age_5_14"
       },
       age_15_to_24: {
         name: "PUIs - Age - 15 to 24",
@@ -116,6 +204,88 @@ class Florida < State
         highlight: false,
         source: "PUISexUnkn"
       },
+      positive_age_0_to_4: {
+        name: "Positives - Age - 0 to 4",
+        highlight: false,
+        source: "C_Age_0_4"
+      },
+      positive_age_5_to_14: {
+        name: "Positives - Age - 5 to 14",
+        highlight: false,
+        source: "C_Age_5_14"
+      },
+      positive_age_15_to_24: {
+        name: "Positives - Age - 15 to 24",
+        highlight: false,
+        source: "C_Age_15_24"
+      },
+      positive_age_25_to_34: {
+        name: "Positives - Age - 25 to 34",
+        highlight: false,
+        source: "C_Age_25_34"
+      },
+      positive_age_35_to_44: {
+        name: "Positives - Age - 35 to 44",
+        highlight: false,
+        source: "C_Age_35_44"
+      },
+      positive_age_45_to_54: {
+        name: "Positives - Age - 45 to 54",
+        highlight: false,
+        source: "C_Age_45_54"
+      },
+      positive_age_55_to_64: {
+        name: "Positives - Age - 55 to 64",
+        highlight: false,
+        source: "C_Age_55_64"
+      },
+      positive_age_65_to_74: {
+        name: "Positives - Age - 65 to 74",
+        highlight: false,
+        source: "C_Age_65_74"
+      },
+      positive_age_75_to_84: {
+        name: "Positives - Age - 75 to 84",
+        highlight: false,
+        source: "C_Age_75_84"
+      },
+      positive_age_85_and_over: {
+        name: "Positives - Age - 85 and over",
+        highlight: false,
+        source: "C_Age_85plus"
+      },
+      positive_age_unknown: {
+        name: "Positives - Age - Unknown",
+        highlight: false,
+        source: "C_Age_Unkn"
+      },
+      positive_age_average: {
+        name: "Positives - Age Average",
+        highlight: false,
+        source: "C_AgeAvrg",
+        total: true
+      },
+      positive_age_range: {
+        name: "Positives - Age Range",
+        highlight: false,
+        source: "C_AgeRange",
+        total: true
+      },
+      positive_all_residence_types: {
+        name: "Positives - All Residence Types",
+        highlight: false,
+        source: "C_AllResTypes"
+      },
+      positive_men: {
+        name: "Positives - Men",
+        highlight: false,
+        source: "C_Men"
+      },
+      positive_women: {
+        name: "Positives - Women",
+        highlight: false,
+        source: "C_Women"
+      },
       positive_no_emergency_admission: {
         name: "Positive Tests - No ER Admission",
         highlight: false,
@@ -130,16 +300,6 @@ class Florida < State
         name: "Positive Tests - Unknown ER Admission",
         highlight: false,
         source: "C_ED_NoData"
-      },
-      positives_total_quality: {
-        name: "Positive Tests - Total (Quality Control)",
-        highlight: false,
-        source: "TPositive"
-      },
-      negatives_total_quality: {
-        name: "Negative Tests - Total (Quality Control)",
-        highlight: false,
-        source: "TNegative"
       },
       inconclusive_total: {
         name: "Inconclusive Test Results - Total",
@@ -180,6 +340,21 @@ class Florida < State
         highlight: true,
         source: "C_Hosp_Yes"
       },
+      positive_florida_residents: {
+        name: "Positive - Florida Residents",
+        description: "Positive Florida Residents in Florida",
+        source: "C_FLRes"
+      },
+      positive_non_florida_residents: {
+        name: "Positive - Non-Florida Residents",
+        description: "Positive Non-Florida Residents in Florida",
+        source: "C_NotFLRes"
+      },
+      positive_florida_residents_out: {
+        name: "Positive - Florida Residents Outside Florida",
+        description: "Positive Florida Residents Not in Florida",
+        source: "C_FLResOut"
+      },
       tests_total: {
         name: "Tests - Total",
         description: "Individuals tested with results obtained or pending.",
@@ -194,6 +369,7 @@ class Florida < State
       },
       deaths_residents: {
         name: "Deaths - Residents",
+        description: "May be out of date compared to the individual case death total which is updated more frequently.",
         highlight: true,
         source: "FLResDeaths"
       },

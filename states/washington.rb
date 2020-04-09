@@ -10,26 +10,18 @@ class Washington < State
   ACRONYM = "WSDOH"
 
   def self.testing_gallery_url
-    nil
-  end
-
-  def self.testing_gallery_url
     "https://wa-geoservices.maps.arcgis.com/home/gallery.html"
   end
 
-  def self.testing_feature_url
-    "https://services8.arcgis.com/rGGrs6HCnw87OFOT/arcgis/rest/services/CountyCases/FeatureServer/0?f=json"
-  end
-
-  def self.testing_data_url
-    "https://services8.arcgis.com/rGGrs6HCnw87OFOT/arcgis/rest/services/CountyCases/FeatureServer/0/query?where=1%3D1&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&resultType=none&distance=0.0&units=esriSRUnit_Meter&returnGeodetic=false&outFields=*&returnGeometry=false&returnCentroid=false&featureEncoding=esriDefault&multipatchOption=xyFootprint&maxAllowableOffset=&geometryPrecision=&outSR=102100&datumTransformation=&applyVCSProjection=false&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&returnQueryGeometry=false&returnDistinctValues=false&cacheHint=true&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=0&resultRecordCount=50&returnZ=false&returnM=false&returnExceededLimitFeatures=true&quantizationParameters=&sqlFormat=none&f=pjson&token="
+  def self.counties_feature_url
+    "https://services8.arcgis.com/rGGrs6HCnw87OFOT/arcgis/rest/services/CountyCases/FeatureServer/0"
   end
 
   def self.dashboard_url
     "https://www.arcgis.com/apps/MapSeries/index.html?appid=84b17c2a2af8487f97a244b6126834c2"
   end
 
-  def self.relevant_keys
+  def self.county_keys
     # Example data:
     #
     # OBJECTID: 5,
@@ -46,13 +38,13 @@ class Washington < State
     # Shape__Length: 594518.402940987
     {
       Positive_Cases: {
-        name: "Positives (Counties)",
+        name: "County Positives",
         description: "Tallied from individual county cases.",
         highlight: false,
         source: "CV_PositiveCases"
       },
       Deaths: {
-        name: "Deaths (Counties)",
+        name: "County Deaths",
         description: "Tallied from individual county cases.",
         highlight: false,
         source: "CV_Deaths"

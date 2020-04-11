@@ -69,7 +69,7 @@ class Florida < State
         source: "Travel_related"
       },
       travel_related: {
-        name: "Travel Relate - No",
+        name: "Travel Related - No",
         positive_value: "No",
         highlight: true,
         source: "Travel_related"

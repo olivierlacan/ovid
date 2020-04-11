@@ -288,6 +288,21 @@ class Florida < State
         highlight: false,
         source: "C_Women"
       },
+      positive_travel: {
+        name: "Positives - Travel-Related",
+        highlight: false,
+        source: "C_TravelYes"
+      },
+      positive_travel_no: {
+        name: "Positives - Not Travel-Related",
+        highlight: false,
+        source: "C_TravelNo"
+      },
+      positive_travel_unknown: {
+        name: "Positives - Unknown Travel",
+        highlight: false,
+        source: "C_TravelUnkn"
+      },
       positive_no_emergency_admission: {
         name: "Positive Tests - No ER Admission",
         highlight: false,
@@ -310,11 +325,13 @@ class Florida < State
       },
       monitored_cumulative: {
         name: "Monitored - Cumulative Total",
+        description: "Total number of cases that were at any point being monitored",
         highlight: false,
         source: "EverMon"
       },
       monitored_currently: {
         name: "Monitored - Current Total",
+        description: "Total number of currently monitored persons by county",
         highlight: false,
         source: "MonNow"
       },
@@ -349,10 +366,40 @@ class Florida < State
         source: "TPending"
       },
       cumulative_hospitalized: {
-        name: "Hospitalized (cumulative)",
+        name: "Positives - Hospitalized",
         description: "Hospitalization occurred at any time during illness. Not count of current hospitalizations.",
         highlight: true,
         source: "C_Hosp_Yes"
+      },
+      cumulative_hospitalized: {
+        name: "Positives - Not Hospitalized",
+        description: "Confirmed positive with no hospital admission noted, which could mean a confirmed person who has not been in the hospital, a person tested while not at a hospital, or any other combination of events that lead to the 'no' designation.",
+        source: "C_Hosp_No"
+      },
+      cumulative_hospitalized_no_data: {
+        name: "Positives - No Hospitalization Data",
+        description: "Positives with no hospital admissions data",
+        source: "C_Hosp_Nodata"
+      },
+      cumulative_hospitalized_residents: {
+        name: "Positives - Hospitalization FL Residents",
+        description: "Inpatient hospitalizations of confirmed-positive Florida residents only. ",
+        source: "C_HospYes_Res"
+      },
+      cumulative_hospitalized_non_residents: {
+        name: "Positives Hospitalization Non-FL Residents",
+        description: "Inpatient hospitalizations of confirmed-positive non-Florida residents only. ",
+        source: "C_HospYes_NonRes"
+      },
+      emergency_yes_resident: {
+        name: "Emergency - Residents",
+        description: "Emergency Dept Admissions for Florida Residents Only.",
+        source: "C_EDYes_Res"
+      },
+      emergency_yes_non_resident: {
+        name: "Emergency - Non-residents",
+        description: "Emergency Dept Admissions for Non-Florida Residents.",
+        source: "C_EDYes_NonRes"
       },
       positive_florida_residents: {
         name: "Positive - Florida Residents",
@@ -369,11 +416,37 @@ class Florida < State
         description: "Positive Florida Residents Not in Florida",
         source: "C_FLResOut"
       },
+      tests_negative_residents: {
+        name: "Tests - Negative Residents",
+        description: "Total number of negative Florida Residents tested.",
+        source: "T_NegRes"
+      },
+      tests_negative_non_residents: {
+        name: "Tests - Negative Non-Residents",
+        description: "Total number of negative non-Florida residents in Florida tested.",
+        source: "T_NegNotFLRes"
+      },
+      tests_pending_residents: {
+        name: "Tests - Pending Residents",
+        description: "Total number of Florida residents in Florida with results pending.",
+        source: "T_PendRes"
+      },
+      tests_pending_non_residents: {
+        name: "Tests - Pending Non-Residents",
+        description: "Total number of non-Florida residents in Florida with results pending.",
+        source: "T_PendNotRes"
+      },
       tests_total: {
         name: "Tests - Total",
-        description: "Individuals tested with results obtained or pending.",
+        description: "Total tests administered or pending for all PUIs, including positive, negative and pending results.",
         highlight: true,
         source: "T_total"
+      },
+      tests_pending: {
+        name: "Tests - Pending",
+        description: "Total Florida and Non-Florida residents tested with results pending",
+        highlight: true,
+        source: "T_pending"
       },
       PUIs_total: {
         name: "PUIs - Total",

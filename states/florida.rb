@@ -318,9 +318,15 @@ class Florida < State
         highlight: false,
         source: "MonNow"
       },
+      cases_all: {
+        name: "Cases - All",
+        highlight: true,
+        description: "The sum total of all positive cases, including Florida residents in Florida, Florida residents outside Florida, and non-Florida residents in Florida",
+        source: "CasesAll"
+      },
       pui_lab_yes: {
         name: "PUIs - Lab - Yes",
-        description: "All persons tested with lab results on file, including negative, positive and inconclusive. This total does NOT include those who are waiting to be tested or have submitted tests to labs for which results are still pending. "
+        description: "All persons tested with lab results on file, including negative, positive and inconclusive. Does NOT include those who are waiting to be tested or have submitted tests to labs for which results are still pending. ",
         highlight: true,
         source: "PUILab_Yes"
       },

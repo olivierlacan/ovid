@@ -386,11 +386,6 @@ class Florida < State
         description: "May be out of date compared to the individual case death total which is updated more frequently.",
         highlight: true,
         source: "FLResDeaths"
-      },
-      deaths_non_residents: {
-        name: "Deaths - Non-residents",
-        highlight: false,
-        source: "C_NonResDeaths"
       }
     }
   end

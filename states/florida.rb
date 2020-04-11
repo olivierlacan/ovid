@@ -323,7 +323,7 @@ class Florida < State
         description: "All persons tested with lab results on file, including negative, positive and inconclusive. This total does NOT include those who are waiting to be tested or have submitted tests to labs for which results are still pending. "
         highlight: true,
         source: "PUILab_Yes"
-      }
+      },
       positives_total: {
         name: "Positive Tests - Total",
         description: "Florida and non-Florida residents, including residents tested outside of the Florida, and at private facilities.",

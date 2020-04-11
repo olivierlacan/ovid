@@ -18,7 +18,7 @@ class Florida < State
   end
 
   def self.counties_feature_url
-    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0"
+    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/ArcGIS/rest/services/Florida_COVID19_Cases/FeatureServer/0"
   end
 
   def self.cases_feature_url

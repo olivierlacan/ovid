@@ -46,7 +46,7 @@ class Florida < State
       hospitalized: {
         name: "Hospitalized",
         description: "Includes both Florida residents and non-residents unlike the FDOH dashboard which excludes non-residents in 'Hospitalizations'",
-        positive_value: "Yes",
+        positive_value: "YES",
         highlight: true,
         source: "Hospitalized"
       },

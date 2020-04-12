@@ -39,26 +39,33 @@ class Florida < State
       },
       deaths: {
         name: "Deaths",
-        positive_value: "Yes",
+        positive_value: "YES",
         highlight: true,
         source: "Died"
       },
-      hospitalized: {
-        name: "Hospitalized",
+      hospitalized_yes: {
+        name: "Hospitalized - Yes",
         description: "Includes both Florida residents and non-residents unlike the FDOH dashboard which excludes non-residents in 'Hospitalizations'",
         positive_value: "YES",
         highlight: true,
         source: "Hospitalized"
       },
+      hospitalized_no: {
+        name: "Hospitalized - No",
+        description: "Includes both Florida residents and non-residents unlike the FDOH dashboard which excludes non-residents in 'Hospitalizations'",
+        positive_value: "NO",
+        highlight: true,
+        source: "Hospitalized"
+      },
       emergency_visits_yes: {
         name: "Emergency Visits - Yes",
-        positive_value: "Yes",
+        positive_value: "YES",
         highlight: true,
         source: "EDvisit"
       },
       emergency_visits_no: {
-        name: "Emergency Visits",
-        positive_value: "No",
+        name: "Emergency Visits - No",
+        positive_value: "NO",
         highlight: true,
         source: "EDvisit"
       },
@@ -68,7 +75,7 @@ class Florida < State
         highlight: true,
         source: "Travel_related"
       },
-      travel_related: {
+      travel_related_no: {
         name: "Travel Related - No",
         positive_value: "No",
         highlight: true,
@@ -92,9 +99,15 @@ class Florida < State
         highlight: true,
         source: "Jurisdiction"
       },
-      contact: {
-        name: "Contact with COVID-19 positive",
-        positive_value: "Yes",
+      contact_yes: {
+        name: "Contact with COVID-19 positive - Yes",
+        positive_value: "YES",
+        highlight: true,
+        source: "Contact"
+      },
+      contact_no: {
+        name: "Contact with COVID-19 positive - No",
+        positive_value: "NO",
         highlight: true,
         source: "Contact"
       },

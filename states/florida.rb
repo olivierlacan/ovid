@@ -39,7 +39,7 @@ class Florida < State
       },
       deaths: {
         name: "Deaths",
-        positive_value: "YES",
+        positive_value: "Yes",
         highlight: true,
         source: "Died"
       },

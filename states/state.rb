@@ -168,6 +168,9 @@ class State
 
       response = get("#{counties_feature_url}/query", query)
 
+      county_deaths_report = generate_deaths_by_county_report(
+        response["features"]
+      )
       county_report = generate_county_report(
         response["features"],
         initialize_store(county_keys)
@@ -177,9 +180,9 @@ class State
     merged_data = {
       edited_at: last_edit,
       fetched_at: Time.now,
-      data: county_report
+      data: county_report,
+      death_data: county_deaths_report
     }
-
 
     save_in_cache county_cache_key, merged_data
   end
@@ -230,6 +233,10 @@ class State
         puts "All records (#{record_total}) can be fetched in a single request!"
       end
 
+      case_death_report = generate_deaths_by_county_from_case_report(
+        @response_data
+      )
+
       case_report = generate_case_report(
         @response_data,
         initialize_store(case_keys)
@@ -238,7 +245,8 @@ class State
       merged_data = {
         edited_at: last_edit,
         fetched_at: Time.now,
-        data: case_report
+        data: case_report,
+        death_data: case_death_report
       }
 
       save_in_cache case_cache_key, merged_data
@@ -263,6 +271,14 @@ class State
     end
   end
 
+  def self.generate_deaths_by_county_report(data)
+    data.map do |d|
+      a = d["attributes"]
+
+      { county: a["COUNTYNAME"], deaths: a["FLResDeaths"] }
+    end
+  end
+
   def self.generate_county_report(data, store)
     data.each_with_object(store) do |item, memo|
       a = item["attributes"]
@@ -274,6 +290,14 @@ class State
           memo[key][:value] += a[value[:source]] || 0
         end
       end
+    end
+  end
+
+  def self.generate_deaths_by_county_from_case_report(data)
+    key = case_keys[:deaths]
+    deaths_only = data.select { _1["attributes"][key[:source]] == key[:positive_value] }
+    deaths_only.group_by { _1["attributes"]["County"] }.map do
+      { county: _1.first, deaths: _1.last["attributes"][key[:source]] }
     end
   end
 

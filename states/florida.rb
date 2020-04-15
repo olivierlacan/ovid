@@ -331,6 +331,34 @@ class Florida < State
         highlight: false,
         source: "C_ED_NoData"
       },
+      positives_race_white: {
+        name: "Positives - Race - White",
+        source: "C_RaceWhite"
+      },
+      positives_race_black: {
+        name: "Positives - Race - Black",
+        source: "C_RaceBlack"
+      },
+      positives_race_other: {
+        name: "Positives - Race - Other",
+        source: "C_RaceOther"
+      },
+      positives_race_unknown: {
+        name: "Positives - Race - Unknown",
+        source: "C_RaceUnknown"
+      },
+      positives_hispanic_yes: {
+        name: "Positives - Hispanic - Yes",
+        source: "C_HispanicYES"
+      },
+      positives_hispanic_no: {
+        name: "Positives - Hispanic - No",
+        source: "C_HispanicNO"
+      },
+      positives_hispanic_unknown: {
+        name: "Positives - Hispanic - Unknown",
+        source: "C_HispanicUnk"
+      },
       inconclusive_total: {
         name: "Inconclusive Test Results - Total",
         highlight: false,

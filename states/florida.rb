@@ -274,10 +274,10 @@ class Florida < State
         highlight: false,
         source: "C_Age_Unkn"
       },
-      positive_age_average: {
-        name: "Positives - Age Average",
+      positive_age_median: {
+        name: "Positives - Age - Median",
         highlight: false,
-        source: "C_AgeAvrg",
+        source: "C_AgeMedian",
         total: true
       },
       positive_age_range: {
@@ -300,21 +300,6 @@ class Florida < State
         name: "Positives - Women",
         highlight: false,
         source: "C_Women"
-      },
-      positive_travel: {
-        name: "Positives - Travel-Related",
-        highlight: false,
-        source: "C_TravelYes"
-      },
-      positive_travel_no: {
-        name: "Positives - Not Travel-Related",
-        highlight: false,
-        source: "C_TravelNo"
-      },
-      positive_travel_unknown: {
-        name: "Positives - Unknown Travel",
-        highlight: false,
-        source: "C_TravelUnkn"
       },
       positive_no_emergency_admission: {
         name: "Positive Tests - No ER Admission",

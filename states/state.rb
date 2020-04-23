@@ -355,7 +355,7 @@ class State
         if value[:total]
           memo[key][:value] = a[value[:source]]
         else
-          memo[key][:value] += a[value[:source]] || 0
+          memo[key][:value] += a[value[:source]].to_i || 0
         end
       end
     end

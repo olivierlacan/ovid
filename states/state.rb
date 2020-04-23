@@ -53,6 +53,10 @@ class State
     nil
   end
 
+  def self.hospitals_keys
+    nil
+  end
+
   def self.county_cache_key
     "#{cache_key}-county-report"
   end
@@ -63,6 +67,10 @@ class State
 
   def self.totals_cache_key
     "#{cache_key}-totals-report"
+  end
+
+  def self.hospitals_cache_key
+    "#{cache_key}-hospitals-report"
   end
 
   def self.county_report(query_string)
@@ -98,6 +106,18 @@ class State
     else
       puts "Generating new report ..."
       get_totals_data
+    end
+  end
+
+  def self.hospitals_report(query_string)
+    stored_response = check_cache(hospitals_cache_key)
+
+    if stored_response && !query_string.include?("reload")
+      puts "Using stored_response..."
+      stored_response
+    else
+      puts "Generating new report ..."
+      get_hospitals_data
     end
   end
 
@@ -152,6 +172,35 @@ class State
     }
 
     save_in_cache totals_cache_key, merged_data
+  end
+
+  def self.get_hospitals_data
+    if hospitals_keys
+      metadata = get(hospitals_feature_url)
+      last_edit = last_edit(metadata)
+
+      query = {
+        where: "1=1",
+        returnGeometry: false,
+        outFields: "*",
+        resultType: "standard"
+      }
+
+      response = get("#{hospitals_feature_url}/query", query)
+
+      hospitals_report = generate_hospitals_report(
+        response["features"],
+        initialize_store(hospitals_keys)
+      )
+    end
+
+    merged_data = {
+      edited_at: last_edit,
+      fetched_at: Time.now,
+      data: hospitals_report
+    }
+
+    save_in_cache hospitals_cache_key, merged_data
   end
 
   def self.get_county_data
@@ -270,6 +319,20 @@ class State
     write_cache(cache_key, data)
     set_expiration(cache_key, Time.now + (CACHE_EXPIRATION_IN_MINUTES * 60))
     check_cache(cache_key)
+  end
+
+  def self.generate_hospitals_report(data, store)
+    data.each_with_object(store) do |item, memo|
+      a = item["attributes"]
+
+      hospitals_keys.each do |key, value|
+        if value[:total]
+          memo[key][:value] = a[value[:source]]
+        else
+          memo[key][:value] += a[value[:source]] || 0
+        end
+      end
+    end
   end
 
   def self.generate_totals_report(data, store)

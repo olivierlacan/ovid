@@ -13,6 +13,10 @@ class Texas < State
     "https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/COVID19County_ViewLayer/FeatureServer/0"
   end
 
+  def self.hospitals_feature_url
+    "https://services1.arcgis.com/d9sLvPecHnb8pMfE/arcgis/rest/services/TSA_BedAvailability_ViewTest/FeatureServer/0"
+  end
+
   def self.dashboard_url
     "https://www.arcgis.com/apps/opsdashboard/index.html#/ed483ecd702b4298ab01e8b9cafc8b83"
   end
@@ -43,6 +47,52 @@ class Texas < State
         description: "Tallied from individual county cases.",
         highlight: true,
         source: "Deaths"
+      }
+    }
+  end
+
+  def self.hospitals_keys
+    # Example data:
+    #
+    # OBJECTID_1: 5
+    # TSA:  E
+    # RAC:  North Central Texas
+    # PHR8: 2/3
+    # Sum_Adult_ICU:  721
+    # Sum_Total_Beds: 5091
+    # Sum_Total_Vents_Avail:  1371
+    # Sum_Total_Lab_COVID:  477
+    # Sum_Total_Hosp_Beds:  14021
+    # Sum_POP2019EST: 7888098
+    {
+      sum_adult_icu: {
+        name: "Available ICU beds",
+        highlight: true,
+        source: "Sum_Adult_ICU"
+      },
+      sum_total_beds: {
+        name: "Available hospital beds",
+        highlight: true,
+        source: "Sum_Total_Beds"
+      },
+      sum_vents_available: {
+        name: "Available ventilators",
+        highlight: true,
+        source: "Sum_Total_Vents_Avail"
+      },
+      sum_total_hospitalized_positives: {
+        name: "Hospitalized Positive Patients",
+        description: "Lab-Confirmed COVID-19 Patients Currently In Hospital",
+        highlight: true,
+        source: "Sum_Total_Lab_COVID"
+      },
+      sum_total_hospital_beds: {
+        name: "Staffed Hospital Beds",
+        source: "Sum_Total_Hosp_Beds"
+      },
+      population_estimate: {
+        name: "2019 Population Estimate",
+        source: "Sum_POP2019EST"
       }
     }
   end

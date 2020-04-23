@@ -179,6 +179,25 @@ class App
     HTML
   end
 
+  def self.hospitals_report(class_name, query_string)
+    hospitals_report = class_name.hospitals_report(query_string)
+
+    return nil if hospitals_report&.public_send(:[],:data).nil?
+
+    last_edit_totals = pretty_datetime hospitals_report[:edited_at]
+    last_fetch_totals = pretty_datetime hospitals_report[:fetched_at]
+
+    <<~HTML
+      <h2>Hospitalization Totals</h2>
+      <p>
+        Source: <a href="#{class_name.hospitals_feature_url}">ArcGIS Feature Layer</a>.<br />
+        Edited by #{class_name::ACRONYM} at <strong>#{last_edit_totals}</strong>.<br />
+        Fetched at <strong>#{last_fetch_totals}</strong>.<br />
+      </p>
+      #{report_table(hospitals_report[:data])}
+    HTML
+  end
+
   def self.state_page(class_name, query_string)
 
     <<~HTML
@@ -194,6 +213,8 @@ class App
       #{case_report(class_name, query_string)}
 
       #{county_report(class_name, query_string)}
+
+      #{hospitals_report(class_name, query_string)}
 
       <footer>
         <a href="?reload">Force reload</a>

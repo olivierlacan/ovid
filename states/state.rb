@@ -204,6 +204,27 @@ class State
       }
 
       record_total = total_records_from_feature(cases_feature_url, query)
+
+      begin
+        if record_total == 0
+          message = "No results returned for #{cases_feature_url}"
+          puts message
+          raise message
+        end
+      rescue => error
+        Bugsnag.notify(error) do |report|
+          report.severity = "error"
+
+          report.add_tab(:response, {
+            url: cases_feature_url,
+            last_edit: last_edit,
+            record_total: record_total
+          })
+        end
+
+        return nil
+      end
+
       puts "Total records: #{record_total}"
 
       initial_response = get("#{cases_feature_url}/query", query)

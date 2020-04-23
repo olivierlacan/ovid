@@ -219,6 +219,22 @@ class Florida < State
         highlight: false,
         source: "PUISexUnkn"
       },
+      PUIs_contact_no: {
+        name: "PUIs - Cont - No",
+        source: "PUIContNo"
+      },
+      PUIs_contact_unknown: {
+        name: "PUIs - Cont - Unknown",
+        source: "PUIContUnkn"
+      },
+      PUIs_age_average: {
+        name: "PUIs - Age - Average",
+        source: "PUIAgeAvrg"
+      },
+      PUIs_travel_no: {
+        name: "PUIs - Travel - No",
+        source: "PUITravelNo"
+      },
       positive_age_0_to_4: {
         name: "Positives - Age - 0 to 4",
         highlight: false,
@@ -301,20 +317,30 @@ class Florida < State
         highlight: false,
         source: "C_Women"
       },
-      positive_no_emergency_admission: {
-        name: "Positive Tests - No ER Admission",
+      positive_male: {
+        name: "Positives - Male",
         highlight: false,
-        source: "C_ED_NO"
+        source: "C_Male"
       },
-      positive_emergency_admission: {
-        name: "Positive Tests - ER Admission",
+      positive_female: {
+        name: "Positives - Female",
         highlight: false,
-        source: "C_ED_Yes"
+        source: "C_Female"
       },
-      positive_unknown_emergency_admission: {
-        name: "Positive Tests - Unknown ER Admission",
+      positive_sex_unknown: {
+        name: "Positives - Sex Unknown",
         highlight: false,
-        source: "C_ED_NoData"
+        source: "C_SexUnkn"
+      },
+      positive_emergency_admission_residents: {
+        name: "Positives - Residents - ER Admission",
+        highlight: false,
+        source: "C_EDYes_Res"
+      },
+      positive_emergency_admission_non_residents: {
+        name: "Positives - Non-residents - ER Admission",
+        highlight: false,
+        source: "C_EDYes_NonRes"
       },
       positives_race_white: {
         name: "Positives - Race - White",
@@ -367,12 +393,6 @@ class Florida < State
         description: "The sum total of all positive cases, including Florida residents in Florida, Florida residents outside Florida, and non-Florida residents in Florida",
         source: "CasesAll"
       },
-      pui_lab_yes: {
-        name: "PUIs - Lab - Yes",
-        description: "All persons tested with lab results on file, including negative, positive and inconclusive. Does NOT include those who are waiting to be tested or have submitted tests to labs for which results are still pending. ",
-        highlight: true,
-        source: "PUILab_Yes"
-      },
       positives_total: {
         name: "Positive Tests - Total",
         description: "Florida and non-Florida residents, including residents tested outside of the Florida, and at private facilities.",
@@ -396,16 +416,6 @@ class Florida < State
         description: "Hospitalization occurred at any time during illness. Not count of current hospitalizations.",
         highlight: true,
         source: "C_Hosp_Yes"
-      },
-      cumulative_hospitalized: {
-        name: "Positives - Not Hospitalized",
-        description: "Confirmed positive with no hospital admission noted, which could mean a confirmed person who has not been in the hospital, a person tested while not at a hospital, or any other combination of events that lead to the 'no' designation.",
-        source: "C_Hosp_No"
-      },
-      cumulative_hospitalized_no_data: {
-        name: "Positives - No Hospitalization Data",
-        description: "Positives with no hospital admissions data",
-        source: "C_Hosp_Nodata"
       },
       cumulative_hospitalized_residents: {
         name: "Positives - Hospitalization FL Residents",
@@ -452,27 +462,31 @@ class Florida < State
         description: "Total number of negative non-Florida residents in Florida tested.",
         source: "T_NegNotFLRes"
       },
-      tests_pending_residents: {
-        name: "Tests - Pending Residents",
-        description: "Total number of Florida residents in Florida with results pending.",
-        source: "T_PendRes"
-      },
-      tests_pending_non_residents: {
-        name: "Tests - Pending Non-Residents",
-        description: "Total number of non-Florida residents in Florida with results pending.",
-        source: "T_PendNotRes"
-      },
       tests_total: {
         name: "Tests - Total",
         description: "Total tests administered or pending for all PUIs, including positive, negative and pending results.",
         highlight: true,
         source: "T_total"
       },
-      tests_pending: {
-        name: "Tests - Pending",
-        description: "Total Florida and Non-Florida residents tested with results pending",
-        highlight: true,
-        source: "T_pending"
+      tests_total_residents: {
+        name: "Tests - Residents - Total",
+        source: "T_Total_Res"
+      },
+      tests_private_lab_residents: {
+        name: "Tests - Residents - Private Lab",
+        source: "T_LabPrivate_Res"
+      },
+      tests_doh_residents: {
+        name: "Tests - Residents - DOH",
+        source: "T_LabDOH_Res"
+      },
+      tests_private_lab_non_residents: {
+        name: "Tests - Non-residents - Private Lab",
+        source: "T_LabPrivate_NonRes"
+      },
+      tests_doh_non_residents: {
+        name: "Tests - Non-residents - DOH",
+        source: "T_LabDOH_NonRes"
       },
       PUIs_total: {
         name: "PUIs - Total",
@@ -484,7 +498,19 @@ class Florida < State
         name: "Deaths - Residents",
         description: "May be out of date compared to the individual case death total which is updated more frequently.",
         highlight: true,
-        source: "FLResDeaths"
+        source: "C_FLResDeaths"
+      },
+      deaths_non_residents: {
+        name: "Deaths - Non-residents",
+        description: "May be out of date compared to the individual case death total which is updated more frequently.",
+        highlight: true,
+        source: "C_NonResDeaths"
+      },
+      deaths: {
+        name: "Deaths",
+        description: "Florida does not report out-of-state resident deaths as part of its deaths total.",
+        highlight: true,
+        source: "Deaths"
       }
     }
   end

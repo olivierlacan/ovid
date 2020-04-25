@@ -411,21 +411,17 @@ class Florida < State
         highlight: true,
         source: "TPending"
       },
-      cumulative_hospitalized: {
-        name: "Positives - Hospitalized",
-        description: "Hospitalization occurred at any time during illness. Not count of current hospitalizations.",
-        highlight: true,
-        source: "C_Hosp_Yes"
-      },
       cumulative_hospitalized_residents: {
         name: "Positives - Hospitalization FL Residents",
         description: "Inpatient hospitalizations of confirmed-positive Florida residents only. ",
-        source: "C_HospYes_Res"
+        source: "C_HospYes_Res",
+        highlight: true
       },
       cumulative_hospitalized_non_residents: {
         name: "Positives Hospitalization Non-FL Residents",
         description: "Inpatient hospitalizations of confirmed-positive non-Florida residents only. ",
-        source: "C_HospYes_NonRes"
+        source: "C_HospYes_NonRes",
+        highlight: true
       },
       emergency_yes_resident: {
         name: "Emergency - Residents",

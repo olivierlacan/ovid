@@ -1,0 +1,9 @@
+EventDate,Age,Gender,County,EDvisit,Hospitalized
+2020-04-06 20:00:00 -0400,55,Male,Hillsborough,Unknown,Unknown
+2020-03-31 20:00:00 -0400,62,Female,Lee,Unknown,Yes
+2020-04-02 20:00:00 -0400,65,Male,Desoto,Unknown,No
+2020-04-03 20:00:00 -0400,71,Female,Baker,NA,No
+2020-03-29 20:00:00 -0400,74,Male,St. Lucie,No,No
+2020-04-05 20:00:00 -0400,76,Male,Clay,Unknown,Yes
+2020-03-31 20:00:00 -0400,78,Male,Escambia,No,No
+2020-04-04 20:00:00 -0400,86,Male,Broward,No,No

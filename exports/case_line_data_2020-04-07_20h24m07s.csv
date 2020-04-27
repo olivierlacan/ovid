@@ -1,0 +1,2001 @@
+County,Age,Gender,Jurisdiction,Travel_related,Origin,EDvisit,Hospitalized,Died,Contact,Case_,EventDate,ObjectId
+Dade,38,Unknown,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1586217600000,1
+Brevard,65,Female,FL resident,No,NA,Yes,No,NA,No,1586235600000,1584748800000,2
+Dade,36,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1586217600000,3
+Dade,67,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,4
+Sumter,72,Male,FL resident,No,NA,No,Yes,NA,Yes,1586235600000,1586217600000,5
+Escambia,52,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585612800000,6
+Lee,72,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585267200000,7
+Dade,31,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585526400000,8
+Dade,31,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1585526400000,9
+Palm Beach,61,Male,FL resident,No,NA,NA,Unknown,NA,Unknown,1586235600000,1586044800000,10
+Palm Beach,67,Female,FL resident,Unknown,NA,Yes,Yes,NA,Unknown,1586235600000,1585699200000,11
+Dade,62,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586044800000,12
+Escambia,62,Male,FL resident,No,NA,Yes,Yes,NA,Unknown,1586235600000,1585526400000,13
+Lake,45,Male,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586235600000,1586131200000,14
+Palm Beach,89,Male,FL resident,No,NA,Yes,No,NA,Unknown,1586235600000,1585872000000,15
+Martin,49,Unknown,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1585612800000,16
+Palm Beach,52,Female,FL resident,No,NA,NA,Unknown,NA,Unknown,1586235600000,1585872000000,17
+Escambia,49,Male,FL resident,No,NA,Yes,Yes,NA,No,1586235600000,1586044800000,18
+Lake,42,Female,FL resident,Unknown,NA,Yes,No,NA,Yes,1586235600000,1586131200000,19
+Hillsborough,70,Male,FL resident,No,NA,No,Yes,NA,No,1586235600000,1585008000000,20
+Palm Beach,24,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586217600000,21
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,22
+Orange,85,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,23
+Manatee,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,24
+Hillsborough,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,25
+Hillsborough,35,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585612800000,26
+Clay,80,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,27
+Palm Beach,67,Male,FL resident,Yes,NY,Yes,No,NA,No,1586235600000,1584835200000,28
+Palm Beach,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,29
+Dade,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,30
+Dade,73,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,31
+Orange,80,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,32
+Osceola,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,33
+Broward,73,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,34
+Collier,55,Male,FL resident,Unknown,NA,NA,NA,NA,Yes,1586235600000,1585958400000,35
+Osceola,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,36
+Collier,39,Male,FL resident,No,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,37
+Lake,49,Male,FL resident,Unknown,NA,Yes,No,NA,Yes,1586235600000,1586131200000,38
+Collier,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,39
+Broward,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,40
+Lee,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,41
+Broward,76,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,42
+Broward,80,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,43
+Broward,94,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,44
+Broward,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,45
+Broward,73,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,46
+Broward,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,47
+Broward,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,48
+Broward,80,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,49
+Broward,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,50
+Dade,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,51
+Dade,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1585353600000,52
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,53
+Dade,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,54
+Hillsborough,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586235600000,1585353600000,55
+Duval,20,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,56
+Martin,62,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,57
+Palm Beach,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,58
+Lee,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,59
+Duval,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,60
+Duval,26,Female,FL resident,Unknown,NA,No,No,NA,No,1586235600000,1585267200000,61
+Dade,82,Female,FL resident,Unknown,NA,No,No,NA,No,1586235600000,1585094400000,62
+Duval,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,63
+Duval,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,64
+Dade,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,65
+Dade,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,66
+Duval,75,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,67
+Duval,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,68
+St. Johns,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,69
+Duval,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,70
+Osceola,58,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1586217600000,71
+Osceola,39,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585612800000,72
+Manatee,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,73
+Osceola,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,74
+Orange,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,75
+Osceola,47,Male,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1580083200000,76
+Marion,57,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585008000000,77
+Collier,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,78
+Lee,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,79
+Lee,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,80
+Collier,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,81
+Lee,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,82
+Lee,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,83
+Lee,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,84
+Alachua,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,85
+Hillsborough,70,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,86
+Hillsborough,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,87
+Polk,74,Male,FL resident,No,NA,No,No,NA,No,1586235600000,1585699200000,88
+Polk,43,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585180800000,89
+Pasco,41,Female,FL resident,Unknown,NA,No,No,NA,Yes,1586235600000,1585440000000,90
+Polk,39,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,91
+Broward,73,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,92
+Palm Beach,25,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,93
+Lee,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,94
+Broward,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,95
+Palm Beach,34,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586131200000,96
+Palm Beach,70,Male,FL resident,No,NA,Yes,Yes,NA,Yes,1586235600000,1584489600000,97
+Palm Beach,77,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,98
+Broward,80,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,99
+Palm Beach,95,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,100
+Broward,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,101
+Broward,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,102
+Broward,62,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,103
+Broward,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,104
+Lee,86,Male,FL resident,No,NA,NA,Yes,NA,Unknown,1586235600000,1585699200000,105
+Dade,20,Unknown,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,106
+Broward,77,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,107
+Lee,66,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585872000000,108
+Broward,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,109
+Broward,40,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,110
+Broward,71,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,111
+Broward,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,112
+Broward,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,113
+Lee,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,114
+Brevard,51,Female,FL resident,Unknown,NA,Yes,No,NA,NA,1586235600000,1585526400000,115
+Hillsborough,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,116
+Pinellas,67,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585267200000,117
+Pinellas,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,118
+Pinellas,86,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,119
+Pinellas,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,120
+Pinellas,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,121
+Pinellas,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,122
+Hillsborough,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,123
+Pinellas,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,124
+Hernando,29,Male,FL resident,No,NA,Unknown,No,NA,Unknown,1586235600000,1584403200000,125
+Hernando,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,126
+Pasco,64,Male,FL resident,Yes,FL; SOUTH AMERICA,No,No,NA,No,1586235600000,1585353600000,127
+Polk,NA,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,128
+Polk,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,129
+Broward,NA,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,130
+Dade,24,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,131
+Lake,68,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1584230400000,132
+Dade,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,133
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,134
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,135
+Dade,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,136
+Dade,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,137
+Dade,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,138
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,139
+Dade,49,Unknown,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,140
+Dade,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,141
+Sarasota,53,Female,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1584921600000,142
+Dade,22,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,143
+Dade,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,144
+Dade,62,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,145
+Dade,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,146
+Dade,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,147
+Dade,70,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,148
+Dade,73,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,149
+Dade,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,150
+Dade,74,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,151
+Dade,84,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,152
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,153
+Dade,66,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,154
+Dade,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,155
+Osceola,84,Female,FL resident,No,NA,Yes,Yes,NA,Unknown,1586235600000,1585872000000,156
+Escambia,20,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586131200000,157
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,158
+Dade,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,159
+Dade,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,160
+Dade,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,161
+Dade,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,162
+Dade,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,163
+Dade,49,Unknown,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,164
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,165
+Dade,95,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1585785600000,166
+Dade,22,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,167
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,168
+Dade,39,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,169
+Escambia,39,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586131200000,170
+Dade,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,171
+Dade,71,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,172
+Sarasota,73,Male,FL resident,Unknown,NA,Yes,Yes,NA,NA,1586235600000,1586217600000,173
+Orange,82,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,174
+Orange,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,175
+Hernando,67,Female,FL resident,Unknown,NA,Unknown,No,NA,No,1586235600000,1586217600000,176
+St. Johns,79,Male,Non-FL resident,Yes,PA,Yes,Yes,NA,Yes,1586235600000,1584576000000,177
+Hillsborough,7,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,178
+Brevard,43,Male,FL resident,No,NA,Yes,No,NA,Unknown,1586235600000,1585008000000,179
+Collier,55,Female,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586131200000,180
+Broward,47,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1584489600000,181
+Palm Beach,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,182
+St. Lucie,93,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,183
+St. Lucie,82,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,184
+Martin,92,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,185
+St. Lucie,22,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,186
+St. Lucie,62,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,187
+Okeechobee,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,188
+Orange,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,189
+Sumter,76,Male,FL resident,No,NA,Yes,No,NA,Yes,1586235600000,1584230400000,190
+Putnam,29,Female,FL resident,No,NA,Yes,No,NA,Unknown,1586235600000,1585785600000,191
+Volusia,50,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586131200000,192
+Palm Beach,96,Female,Non-FL resident,Yes,FL; MI,NA,Unknown,NA,Unknown,1586235600000,1585958400000,193
+Dade,79,Male,FL resident,No,NA,NA,Yes,NA,Unknown,1586235600000,1585267200000,194
+Hillsborough,28,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586217600000,195
+Citrus,73,Female,FL resident,No,NA,Yes,Yes,NA,Yes,1586235600000,1585699200000,196
+Lake,21,Male,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586235600000,1586131200000,197
+Orange,87,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586044800000,198
+St. Johns,28,Female,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1585267200000,199
+Dade,59,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1585958400000,200
+Dade,90,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,201
+Palm Beach,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586131200000,202
+Dade,82,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,203
+Dade,62,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,204
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,205
+Dade,19,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,206
+Hillsborough,55,Male,FL resident,Unknown,NA,Unknown,Unknown,Yes,Unknown,1586235600000,1586217600000,207
+Dade,52,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,208
+Dade,71,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,209
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,210
+Palm Beach,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,211
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,212
+Dade,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,213
+Broward,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,214
+Dade,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,215
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,216
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,217
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,218
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,219
+Dade,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,220
+Palm Beach,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,221
+Dade,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,222
+Broward,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,223
+Dade,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,224
+Dade,53,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,225
+Dade,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,226
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,227
+Dade,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,228
+Broward,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,229
+Dade,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,230
+Dade,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,231
+Dade,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,232
+Dade,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,233
+Palm Beach,80,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,234
+Dade,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,235
+Dade,71,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1584489600000,236
+Broward,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,237
+Palm Beach,10,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,238
+Dade,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,239
+Palm Beach,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,240
+Broward,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,241
+Palm Beach,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,242
+Broward,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,243
+Dade,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,244
+Broward,25,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,245
+Dade,76,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,246
+Broward,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,247
+Hillsborough,78,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585353600000,248
+Hillsborough,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,249
+Dade,82,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,250
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,251
+Dade,73,Male,FL resident,Yes,NY,No,No,NA,Yes,1586235600000,1584230400000,252
+Dade,23,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,253
+Dade,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,254
+Citrus,61,Female,FL resident,Yes,NY,No,No,NA,Unknown,1586235600000,1584230400000,255
+Dade,33,Unknown,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,256
+Dade,31,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1585699200000,257
+Dade,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,258
+Dade,91,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,259
+Dade,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,260
+Dade,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,261
+Dade,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,262
+Polk,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,263
+Broward,66,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,264
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,265
+Suwannee,84,Female,FL resident,No,NA,Yes,Yes,NA,Yes,1586235600000,1585699200000,266
+Dade,88,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1585180800000,267
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,268
+Dade,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,269
+Dade,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,270
+Dade,87,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,271
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,272
+Broward,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,273
+Broward,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,274
+Broward,74,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,275
+Dade,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,276
+Broward,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,277
+Dade,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,278
+Dade,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,279
+Dade,44,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,280
+Dade,69,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,281
+Dade,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,282
+Dade,25,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,283
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,284
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,285
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,286
+Dade,10,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,287
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,288
+Dade,66,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,289
+Dade,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,290
+Dade,38,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,291
+Dade,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,292
+Dade,42,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,293
+Dade,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,294
+Dade,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,295
+Dade,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,296
+Dade,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,297
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,298
+Dade,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,299
+Dade,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,300
+Brevard,88,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585785600000,301
+Manatee,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,302
+Manatee,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,303
+Manatee,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,304
+Manatee,76,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,305
+Manatee,23,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,306
+Manatee,84,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,307
+Manatee,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,308
+Pasco,51,Male,FL resident,No,NA,Yes,Yes,NA,No,1586235600000,1584576000000,309
+Palm Beach,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,310
+Dade,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,311
+Palm Beach,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,312
+Dade,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,313
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,314
+Alachua,45,Female,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1586217600000,315
+Sarasota,59,Female,FL resident,No,NA,Yes,Yes,NA,No,1586235600000,1585699200000,316
+Pasco,25,Female,FL resident,No,NA,Unknown,No,NA,Yes,1586235600000,1585008000000,317
+St. Johns,20,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585180800000,318
+Duval,31,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,319
+Duval,40,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,320
+St. Johns,29,Female,FL resident,Unknown,NA,Unknown,No,NA,Yes,1586235600000,1585094400000,321
+Clay,74,Female,FL resident,Yes,FL; SPAIN,No,No,NA,No,1586235600000,1585612800000,322
+Duval,63,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,323
+Duval,34,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,324
+Dade,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,325
+Dade,77,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,326
+Dade,17,Male,FL resident,Unknown,NA,NA,NA,NA,Yes,1586235600000,1586217600000,327
+Dade,19,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,328
+Marion,39,Female,FL resident,Unknown,NA,No,No,NA,Unknown,1586235600000,1584921600000,329
+Gadsden,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,330
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,331
+Palm Beach,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,332
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,333
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,334
+St. Lucie,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,335
+Dade,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,336
+St. Lucie,19,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,337
+Palm Beach,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,338
+Martin,78,Male,FL resident,No,NA,Yes,Yes,NA,NA,1586235600000,1584662400000,339
+Martin,70,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,340
+Martin,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,341
+Manatee,82,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,342
+Dade,73,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,343
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,344
+Palm Beach,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,345
+Duval,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,346
+Broward,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,347
+Dade,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,348
+Martin,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,349
+Dade,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,350
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,351
+Dade,60,Male,FL resident,No,NA,Unknown,Unknown,NA,Yes,1586235600000,1586217600000,352
+Dade,82,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,353
+Palm Beach,29,Male,FL resident,Unknown,NA,Yes,No,NA,Unknown,1586235600000,1585699200000,354
+Dade,20,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,355
+Dade,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,356
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,357
+Palm Beach,86,Male,FL resident,No,NA,Yes,Yes,NA,Unknown,1586235600000,1585872000000,358
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,359
+Palm Beach,90,Male,FL resident,No,NA,Yes,Yes,NA,No,1586235600000,1585785600000,360
+Dade,55,Unknown,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,361
+Dade,74,Male,FL resident,No,NA,Yes,Yes,NA,Yes,1586235600000,1585440000000,362
+Dade,52,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,363
+Dade,25,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,364
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,365
+Dade,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,366
+Palm Beach,63,Female,FL resident,No,NA,Yes,Yes,NA,Unknown,1586235600000,1586131200000,367
+Pinellas,20,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586131200000,368
+Palm Beach,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,369
+Palm Beach,42,Male,FL resident,Unknown,NA,NA,Yes,NA,Unknown,1586235600000,1585958400000,370
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,371
+Dade,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,372
+Dade,68,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1584489600000,373
+Bay,34,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585612800000,374
+Dade,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,375
+Hillsborough,34,Male,FL resident,Unknown,NA,Yes,Yes,NA,Unknown,1586235600000,1586217600000,376
+Dade,63,Unknown,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,377
+Dade,39,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1584489600000,378
+Orange,40,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586131200000,379
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1584489600000,380
+Palm Beach,49,Female,FL resident,No,NA,NA,Yes,NA,Unknown,1586235600000,1585958400000,381
+Dade,45,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1584489600000,382
+Palm Beach,48,Female,FL resident,No,NA,No,Yes,NA,Yes,1586235600000,1585267200000,383
+Pasco,23,Male,FL resident,Unknown,NA,Yes,No,NA,Unknown,1586235600000,1585612800000,384
+Dade,46,Unknown,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1585699200000,385
+Dade,38,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,386
+Dade,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,387
+Broward,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,388
+Dade,38,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,389
+Dade,73,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,390
+Dade,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,391
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,392
+Dade,34,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586235600000,1584576000000,393
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,394
+Dade,77,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,395
+Dade,67,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,396
+Dade,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,397
+Dade,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,398
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,399
+Broward,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,400
+Palm Beach,59,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,401
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,402
+Broward,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,403
+Dade,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,404
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,405
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,406
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,407
+Lee,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,408
+Broward,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,409
+Dade,22,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,410
+Collier,50,Male,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1585008000000,411
+Lee,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,412
+Dade,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,413
+Collier,83,Male,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1585526400000,414
+Dade,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,415
+Collier,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,416
+Dade,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,417
+Palm Beach,38,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,418
+Dade,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,419
+Dade,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,420
+Dade,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,421
+Collier,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,422
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,423
+Collier,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,424
+Broward,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,425
+Palm Beach,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,426
+Dade,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,427
+Palm Beach,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,428
+Dade,68,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585612800000,429
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,430
+Palm Beach,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,431
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,432
+Broward,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,433
+Dade,81,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,434
+Broward,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,435
+Broward,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,436
+Palm Beach,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,437
+Broward,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,438
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,439
+Dade,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,440
+Broward,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,441
+Broward,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,442
+Palm Beach,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,443
+Dade,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,444
+Dade,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,445
+Dade,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,446
+Dade,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,447
+Dade,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,448
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,449
+Lee,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,450
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,451
+Dade,63,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,452
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,453
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,454
+Dade,42,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,455
+Dade,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,456
+Dade,49,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,457
+Dade,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,458
+Dade,9,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,459
+Dade,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,460
+Orange,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,461
+Orange,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,462
+Lee,67,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,463
+Dade,16,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,464
+Brevard,83,Male,FL resident,No,NA,No,No,NA,No,1586235600000,1585526400000,465
+Orange,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,466
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,467
+Monroe,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585180800000,468
+Orange,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,469
+Monroe,63,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1584576000000,470
+Dade,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,471
+Monroe,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,472
+Broward,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,473
+Broward,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,474
+Palm Beach,38,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,475
+Broward,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,476
+Dade,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,477
+Broward,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,478
+Broward,70,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,479
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,480
+Broward,19,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,481
+Dade,23,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,482
+Broward,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,483
+Dade,67,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,484
+Dade,71,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,485
+Dade,62,Male,FL resident,Unknown,NA,NA,NA,NA,Yes,1586235600000,1586217600000,486
+Dade,67,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,487
+Dade,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,488
+Dade,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,489
+Dade,NA,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,490
+Dade,90,Female,FL resident,Unknown,NA,Unknown,Yes,NA,No,1586235600000,1585267200000,491
+Broward,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,492
+Dade,38,Male,FL resident,Unknown,NA,NA,NA,NA,Yes,1586235600000,1586217600000,493
+Broward,69,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,494
+Broward,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,495
+Broward,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,496
+Dade,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,497
+Dade,73,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,498
+Broward,72,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,499
+Broward,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,500
+Dade,72,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,501
+Charlotte,67,Male,FL resident,No,NA,No,No,NA,No,1586235600000,1585440000000,502
+Charlotte,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,503
+Duval,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,504
+Lake,59,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1584835200000,505
+Escambia,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,506
+Santa Rosa,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,507
+Duval,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585267200000,508
+Polk,59,Male,FL resident,No,NA,No,No,NA,No,1586235600000,1585180800000,509
+Escambia,60,Male,FL resident,No,NA,No,No,NA,No,1586235600000,1585094400000,510
+Charlotte,84,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,511
+Pinellas,47,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585094400000,512
+Duval,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,513
+Orange,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,514
+Indian River,70,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1584748800000,515
+Duval,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,516
+Dade,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,517
+Hillsborough,64,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585267200000,518
+Sarasota,64,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585440000000,519
+Dade,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,520
+Duval,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,521
+Manatee,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,522
+Dade,73,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,523
+Manatee,57,Male,FL resident,No,NA,No,No,NA,No,1586235600000,1584835200000,524
+Hillsborough,59,Female,FL resident,Unknown,NA,No,No,NA,No,1586235600000,1585094400000,525
+Dade,22,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,526
+Polk,73,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1586217600000,527
+Duval,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,528
+Broward,52,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,529
+Sarasota,59,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585267200000,530
+Indian River,68,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1584662400000,531
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,532
+Hillsborough,40,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586235600000,1585180800000,533
+Marion,54,Male,FL resident,Unknown,NA,No,No,NA,Unknown,1586235600000,1586217600000,534
+Broward,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586235600000,1584748800000,535
+Duval,79,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586235600000,1586217600000,536
+Duval,70,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,537
+Dade,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,538
+Pinellas,23,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585353600000,539
+Dade,59,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,540
+Duval,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,541
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,542
+Broward,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,543
+Hillsborough,42,Male,FL resident,Unknown,NA,No,No,NA,No,1586235600000,1584316800000,544
+Polk,32,Male,FL resident,Yes,FL; TX,No,No,NA,Unknown,1586235600000,1586217600000,545
+Duval,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,546
+Duval,69,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,547
+Manatee,19,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,548
+Duval,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,549
+Charlotte,68,Female,FL resident,Yes,ISRAEL,No,No,NA,No,1586235600000,1585526400000,550
+Polk,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,551
+Duval,56,Female,FL resident,Unknown,NA,NA,No,NA,Yes,1586235600000,1585526400000,552
+Marion,39,Female,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1584921600000,553
+Duval,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,554
+Levy,33,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585440000000,555
+Hillsborough,42,Female,FL resident,Yes,FL; FRANCE,No,No,NA,No,1586235600000,1585094400000,556
+Hillsborough,53,Male,FL resident,Yes,EUROPE; FL,No,No,NA,No,1586235600000,1584662400000,557
+Pasco,52,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585008000000,558
+Orange,41,Female,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1584662400000,559
+Sumter,60,Female,FL resident,Yes,FL; OR; UT,No,No,NA,Yes,1586235600000,1584835200000,560
+St. Lucie,75,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,561
+Leon,61,Male,FL resident,Yes,FL; GA,No,No,NA,Yes,1586235600000,1585094400000,562
+Sumter,66,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585180800000,563
+Leon,42,Female,FL resident,No,NA,No,Yes,NA,No,1586235600000,1586217600000,564
+Sumter,46,Female,FL resident,No,NA,Yes,No,NA,Yes,1586235600000,1585526400000,565
+Duval,75,Female,Non-FL resident,Unknown,NA,NA,Yes,NA,NA,1586235600000,1585526400000,566
+Seminole,35,Female,FL resident,Yes,UNITED KINGDOM,No,No,NA,No,1586235600000,1584316800000,567
+Leon,27,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585267200000,568
+Manatee,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,569
+Duval,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,570
+Columbia,33,Female,FL resident,Yes,CO,Unknown,No,NA,No,1586235600000,1583798400000,571
+Duval,30,Female,FL resident,Unknown,NA,No,NA,NA,Yes,1586235600000,1586217600000,572
+Duval,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,573
+Hillsborough,28,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1584748800000,574
+Pinellas,34,Female,FL resident,No,NA,Yes,No,NA,No,1586235600000,1585267200000,575
+Pasco,54,Male,FL resident,No,NA,Unknown,No,NA,No,1586235600000,1583107200000,576
+Seminole,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,577
+Duval,25,Female,FL resident,Unknown,NA,NA,No,NA,Yes,1586235600000,1586217600000,578
+Charlotte,69,Male,FL resident,No,NA,No,No,NA,No,1586235600000,1586217600000,579
+Orange,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,580
+Seminole,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,581
+Manatee,37,Male,FL resident,No,NA,Unknown,No,NA,No,1586235600000,1585353600000,582
+Orange,57,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,583
+Dade,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,584
+Broward,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,585
+Dade,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,586
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,587
+Dade,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,588
+Dade,69,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,589
+Dade,90,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,590
+Dade,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,591
+Dade,66,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,592
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,593
+Dade,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,594
+Dade,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,595
+Dade,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,596
+Dade,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,597
+Broward,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,598
+Broward,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,599
+Lee,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,600
+Collier,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,601
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,602
+Broward,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,603
+Broward,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,604
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,605
+Broward,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,606
+Lee,84,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,607
+Dade,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,608
+Dade,26,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,609
+Dade,42,Female,FL resident,No,NA,No,No,NA,No,1586235600000,1585526400000,610
+Dade,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,611
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,612
+Collier,81,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585267200000,613
+Dade,62,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,614
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,615
+Dade,62,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,616
+Dade,80,Male,FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,617
+Palm Beach,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,618
+Dade,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,619
+Lee,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,620
+Dade,18,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,621
+Dade,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,622
+Broward,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,623
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,624
+Dade,95,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,625
+Lee,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,626
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,627
+Lee,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,628
+Dade,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,629
+Palm Beach,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,630
+Dade,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,631
+Dade,11,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,632
+Dade,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,633
+Dade,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,634
+Collier,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,635
+Lee,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,636
+Martin,60,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586235600000,1585526400000,637
+Dade,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,638
+Broward,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,639
+Lee,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,640
+Lee,22,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,641
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,642
+Hillsborough,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,643
+Citrus,58,Female,FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586235600000,1584662400000,644
+Duval,77,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,645
+Hillsborough,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,646
+Dade,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,647
+Pinellas,81,Male,FL resident,No,NA,Unknown,No,NA,No,1586235600000,1584921600000,648
+Polk,59,Male,FL resident,Unknown,NA,Yes,Yes,NA,No,1586235600000,1585267200000,649
+Collier,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,650
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,651
+Hillsborough,56,Female,FL resident,Yes,FL; TX,Unknown,No,NA,No,1586235600000,1585785600000,652
+Alachua,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,653
+Dade,67,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,654
+Dade,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,655
+Dade,34,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,656
+Duval,83,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,657
+Broward,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,658
+Dade,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,659
+Broward,59,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,660
+Collier,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,661
+Broward,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,662
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,663
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,664
+Dade,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,665
+Lee,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,666
+Broward,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,667
+Dade,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,668
+Lee,84,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,669
+Duval,63,Male,FL resident,Unknown,NA,No,No,NA,Yes,1586235600000,1585267200000,670
+Dade,77,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585699200000,671
+Dade,0,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,672
+Dade,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,673
+Broward,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,674
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,675
+Dade,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,676
+Broward,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,677
+Dade,82,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,678
+Seminole,24,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,679
+Dade,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,680
+Dade,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,681
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,682
+Broward,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,683
+Dade,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,684
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,685
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,686
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,687
+Dade,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,688
+Dade,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,689
+Dade,75,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,690
+Dade,75,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,691
+Seminole,35,Female,FL resident,Unknown,NA,No,No,NA,Unknown,1586235600000,1585180800000,692
+Dade,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,693
+Broward,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,694
+Osceola,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,695
+Dade,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,696
+Broward,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,697
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,698
+Dade,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,699
+Dade,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,700
+Broward,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,701
+Dade,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,702
+Dade,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,703
+Dade,2,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,704
+Broward,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,705
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,706
+Dade,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,707
+Broward,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,708
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,709
+Broward,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,710
+Dade,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,711
+Dade,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,712
+Broward,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,713
+Dade,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,714
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,715
+Dade,12,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,716
+Dade,35,Male,FL resident,No,NA,Yes,No,NA,Yes,1586235600000,1584144000000,717
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,718
+Dade,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,719
+Dade,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,720
+Dade,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,721
+Broward,59,Male,FL resident,No,NA,Yes,No,NA,Unknown,1586235600000,1585353600000,722
+Dade,20,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,723
+Dade,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,724
+Broward,66,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,725
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,726
+Dade,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,727
+Broward,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,728
+Broward,67,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,729
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,730
+Dade,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,731
+Dade,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,732
+Broward,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,733
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,734
+Dade,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,735
+Dade,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,736
+Broward,22,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,737
+Dade,80,Male,FL resident,No,NA,No,No,NA,Unknown,1586235600000,1586217600000,738
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,739
+Dade,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,740
+Broward,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,741
+Dade,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,742
+Dade,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,743
+Dade,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,744
+Dade,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,745
+Dade,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,746
+Dade,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,747
+Dade,70,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,748
+Palm Beach,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1586217600000,749
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,750
+Dade,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,751
+Dade,13,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,752
+Orange,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,753
+Dade,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,754
+Orange,31,Male,FL resident,Unknown,NA,No,No,NA,No,1586235600000,1585440000000,755
+Palm Beach,80,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,756
+Alachua,83,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,757
+Alachua,67,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,758
+Orange,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,759
+Sumter,60,Male,FL resident,Yes,FL; OR; UT,No,No,NA,No,1586235600000,1584576000000,760
+Clay,63,Female,FL resident,Yes,MD; MEXICO,No,No,NA,No,1586235600000,1585785600000,761
+Duval,25,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,762
+Lake,63,Male,FL resident,No,NA,NA,No,NA,Yes,1586235600000,1586217600000,763
+Orange,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,764
+Hillsborough,2,Male,FL resident,No,NA,Unknown,No,NA,Unknown,1586235600000,1585872000000,765
+Pinellas,28,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585785600000,766
+Orange,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,767
+Suwannee,5,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,768
+Palm Beach,1,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,769
+Hillsborough,32,Female,FL resident,No,NA,Unknown,No,NA,Yes,1586235600000,1585526400000,770
+Dade,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,771
+Dade,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,772
+Broward,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,773
+Dade,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,774
+Broward,64,Female,FL resident,Unknown,NA,Unknown,No,NA,No,1586235600000,1585440000000,775
+Broward,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,776
+Broward,18,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,777
+Broward,35,Male,FL resident,No,NA,No,No,NA,Yes,1586235600000,1585353600000,778
+Broward,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,779
+Dade,62,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,780
+Broward,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,781
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,782
+Dade,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,783
+Broward,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586235600000,1584748800000,784
+Broward,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,785
+Broward,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,786
+Dade,19,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,787
+Broward,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,788
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,789
+Dade,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,790
+Broward,70,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,791
+Broward,34,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,792
+Broward,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,793
+Dade,NA,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,794
+Broward,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,795
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,796
+Dade,22,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,797
+Dade,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,798
+Broward,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,799
+Broward,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586217600000,800
+Broward,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,801
+Dade,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,802
+Dade,82,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,803
+Baker,71,Female,FL resident,No,NA,NA,No,Yes,Unknown,1586149200000,1585958400000,804
+Dade,55,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,805
+Dade,70,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,806
+Dade,73,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,807
+Hillsborough,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1586131200000,808
+Clay,76,Male,FL resident,Unknown,NA,Unknown,Yes,Yes,Unknown,1586149200000,1586131200000,809
+Duval,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,810
+Dade,49,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,811
+Jefferson,29,Female,FL resident,No,NA,Yes,Yes,NA,Yes,1586149200000,1585267200000,812
+Dade,28,Male,Non-FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1585785600000,813
+Palm Beach,75,Male,FL resident,Unknown,NA,Yes,Yes,NA,Unknown,1586149200000,1586131200000,814
+Dade,72,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585872000000,815
+Palm Beach,65,Male,FL resident,Unknown,NA,Yes,Yes,NA,Unknown,1586149200000,1586044800000,816
+Dade,58,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,817
+Dade,46,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,818
+Okaloosa,59,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585958400000,819
+Okaloosa,68,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585526400000,820
+Okaloosa,40,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584576000000,821
+Okaloosa,75,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585526400000,822
+Sarasota,39,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585526400000,823
+Escambia,83,Female,FL resident,No,NA,Yes,Yes,NA,Yes,1586149200000,1586044800000,824
+Osceola,94,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1586131200000,825
+Osceola,76,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1586131200000,826
+Sarasota,30,Male,FL resident,Yes,CO; FL,No,No,NA,No,1586149200000,1583280000000,827
+Hillsborough,60,Female,FL resident,Unknown,NA,No,No,NA,No,1586149200000,1584921600000,828
+Broward,31,Female,FL resident,Yes,FL; NY,No,No,NA,Yes,1586149200000,1585526400000,829
+Dade,65,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,830
+Palm Beach,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,831
+Duval,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,832
+Duval,86,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,833
+Polk,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,834
+Orange,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,835
+Osceola,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,836
+Lake,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,837
+Lake,40,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,838
+Okaloosa,80,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585958400000,839
+Duval,85,Male,FL resident,Unknown,NA,NA,NA,NA,Yes,1586149200000,1585526400000,840
+Bradford,80,Female,FL resident,Unknown,NA,NA,No,NA,Unknown,1586149200000,1584921600000,841
+Sarasota,30,Male,FL resident,No,NA,Yes,No,NA,No,1586149200000,1585440000000,842
+Broward,69,Female,FL resident,No,NA,Unknown,Unknown,NA,Yes,1586149200000,1585872000000,843
+Broward,59,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585267200000,844
+Dade,73,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,845
+Hillsborough,59,Male,FL resident,No,NA,Yes,No,NA,No,1586149200000,1584748800000,846
+Volusia,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,847
+Volusia,85,Female,Non-FL resident,Yes,MN,Yes,Yes,NA,Yes,1586149200000,1583971200000,848
+Osceola,67,Female,FL resident,Unknown,NA,NA,NA,NA,Yes,1586149200000,1586131200000,849
+Sarasota,82,Male,FL resident,No,NA,NA,Yes,NA,Yes,1586149200000,1585267200000,850
+Washington,49,Male,FL resident,No,NA,NA,No,NA,No,1586149200000,1583539200000,851
+Palm Beach,80,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,852
+Lee,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,853
+Charlotte,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,854
+Charlotte,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,855
+Charlotte,90,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,856
+Charlotte,73,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,857
+Manatee,78,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,858
+Palm Beach,42,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,859
+Santa Rosa,55,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1585353600000,860
+Palm Beach,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,861
+Orange,45,Female,FL resident,No,NA,NA,NA,NA,Yes,1586149200000,1585958400000,862
+Palm Beach,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,863
+Palm Beach,82,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,864
+Collier,26,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585353600000,865
+Dade,33,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1586131200000,866
+Dade,53,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,867
+Martin,70,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,868
+Escambia,86,Female,Non-FL resident,No,NA,NA,Unknown,NA,Unknown,1586149200000,1586044800000,869
+Manatee,59,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,870
+Orange,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,871
+Dade,32,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,872
+Pinellas,61,Female,FL resident,No,NA,Yes,Yes,NA,Yes,1586235600000,1585785600000,873
+Pinellas,70,Male,FL resident,Yes,BOSNIA AND HERZEGOVINA,Yes,Yes,NA,No,1586149200000,1585612800000,874
+Dade,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,875
+Sarasota,64,Female,Non-FL resident,Yes,FL; NY,Yes,No,NA,No,1586149200000,1584748800000,876
+Dade,70,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,877
+Collier,65,Female,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,878
+Polk,82,Male,FL resident,Unknown,NA,Yes,Yes,NA,No,1586235600000,1585526400000,879
+Escambia,60,Male,FL resident,No,NA,Yes,No,NA,Unknown,1586149200000,1585612800000,880
+Dade,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,881
+Dade,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,882
+Palm Beach,80,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585353600000,883
+St. Johns,49,Male,FL resident,Yes,NM,No,No,NA,Yes,1586149200000,1585440000000,884
+Pinellas,39,Female,FL resident,Unknown,NA,Yes,No,NA,No,1586235600000,1585958400000,885
+Desoto,64,Male,FL resident,Yes,CA; FL,No,No,NA,Yes,1586149200000,1584057600000,886
+Palm Beach,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,887
+Dade,77,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1586131200000,888
+Broward,34,Female,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1586044800000,889
+St. Johns,80,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1584057600000,890
+Osceola,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,891
+Sarasota,44,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585180800000,892
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,893
+Escambia,18,Female,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585699200000,894
+Alachua,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,895
+Duval,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,896
+Polk,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,897
+Lee,70,Female,FL resident,No,NA,NA,Unknown,NA,NA,1586149200000,1585958400000,898
+St. Lucie,76,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585699200000,899
+Palm Beach,49,Female,FL resident,Unknown,NA,Yes,Unknown,NA,Unknown,1586149200000,1585699200000,900
+Escambia,29,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585612800000,901
+Escambia,78,Male,FL resident,No,NA,No,No,Yes,Yes,1586149200000,1585699200000,902
+Escambia,40,Male,FL resident,Yes,AL; FL; LA; MS,Yes,No,NA,Unknown,1586149200000,1585008000000,903
+Dade,53,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,904
+St. Lucie,82,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585699200000,905
+Palm Beach,40,Female,FL resident,Unknown,NA,NA,No,NA,Unknown,1586149200000,1585785600000,906
+Dade,53,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585699200000,907
+Escambia,67,Female,FL resident,Yes,FL; LA; MEXICO,No,No,NA,Yes,1586149200000,1585440000000,908
+Escambia,34,Female,Non-FL resident,Yes,FL; NY,NA,No,NA,Unknown,1586149200000,1585612800000,909
+Collier,59,Female,FL resident,Yes,MI,No,No,NA,Yes,1586149200000,1584921600000,910
+Osceola,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,911
+Dade,82,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585699200000,912
+Escambia,69,Male,FL resident,Yes,AL; CO; FL; LA; MS; NM; TX,No,No,NA,Yes,1586149200000,1584576000000,913
+Orange,54,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585872000000,914
+Escambia,21,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585612800000,915
+Dade,46,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585785600000,916
+Palm Beach,50,Female,FL resident,Unknown,NA,Yes,Yes,NA,Unknown,1586149200000,1585699200000,917
+Dade,75,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585526400000,918
+Columbia,20,Female,FL resident,No,NA,NA,No,NA,Yes,1586149200000,1584921600000,919
+Orange,56,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1586044800000,920
+Dade,32,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585785600000,921
+Marion,44,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585872000000,922
+Palm Beach,62,Male,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1585526400000,923
+Sumter,65,Female,FL resident,No,NA,Yes,No,NA,Unknown,1586149200000,1585008000000,924
+Orange,52,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,925
+St. Lucie,52,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585872000000,926
+Dade,65,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,927
+Martin,77,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585440000000,928
+Palm Beach,68,Male,Non-FL resident,Yes,FL; NJ,Yes,Yes,NA,Unknown,1586149200000,1585958400000,929
+Escambia,71,Female,FL resident,No,NA,NA,Yes,NA,No,1586149200000,1585958400000,930
+Orange,52,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585180800000,931
+Santa Rosa,35,Male,FL resident,Yes,LA,NA,No,NA,No,1586149200000,1585180800000,932
+Dade,69,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,933
+Orange,2,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585872000000,934
+Sarasota,59,Female,FL resident,Yes,UNITED KINGDOM,No,No,NA,No,1586149200000,1585180800000,935
+Broward,71,Male,FL resident,No,NA,NA,NA,NA,Yes,1586149200000,1585872000000,936
+Dade,40,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1586131200000,937
+Pinellas,67,Male,Non-FL resident,Yes,FL; NY,Yes,Unknown,NA,Yes,1586149200000,1586131200000,938
+Palm Beach,21,Female,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1585612800000,939
+Dade,17,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585612800000,940
+Highlands,79,Male,FL resident,Unknown,NA,Yes,Yes,NA,No,1586149200000,1585958400000,941
+Broward,86,Male,FL resident,Unknown,NA,No,No,Yes,NA,1586149200000,1586044800000,942
+Pinellas,66,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1586044800000,943
+Dade,87,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,944
+Dade,32,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,945
+Broward,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,946
+Dade,52,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,947
+Dade,79,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,948
+Broward,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,949
+Baker,62,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585872000000,950
+Collier,80,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,951
+Bradford,35,Female,FL resident,No,NA,NA,No,NA,Yes,1586149200000,1585872000000,952
+Charlotte,73,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,953
+Charlotte,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,954
+Palm Beach,89,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,955
+Broward,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,956
+Hillsborough,55,Male,FL resident,Unknown,NA,Unknown,Yes,NA,Yes,1586149200000,1586131200000,957
+Dade,36,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,958
+Dade,68,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,959
+Volusia,26,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585699200000,960
+Citrus,44,Male,FL resident,Yes,FL; NJ,Yes,No,NA,Unknown,1586149200000,1585612800000,961
+Broward,29,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,962
+Broward,77,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585872000000,963
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,964
+Broward,86,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,965
+Broward,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,966
+Broward,59,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585699200000,967
+Broward,46,Female,FL resident,Unknown,NA,Unknown,No,NA,Unknown,1586149200000,1585440000000,968
+Broward,73,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,969
+Palm Beach,NA,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,970
+Orange,75,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,971
+Dade,53,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585958400000,972
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,973
+Sarasota,71,Female,FL resident,No,NA,Yes,Yes,NA,Unknown,1586149200000,1585440000000,974
+Sarasota,74,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585699200000,975
+Sarasota,90,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585958400000,976
+Dade,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,977
+Orange,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,978
+Santa Rosa,51,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584921600000,979
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,980
+Broward,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,981
+Duval,23,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,982
+Orange,39,Female,FL resident,Yes,MI,Yes,Yes,NA,No,1586235600000,1585180800000,983
+Martin,19,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,984
+Dade,83,Unknown,FL resident,No,NA,Yes,Yes,NA,Yes,1586149200000,1585785600000,985
+Dade,42,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585872000000,986
+St. Lucie,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1585699200000,987
+St. Lucie,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,988
+St. Lucie,74,Male,FL resident,No,NA,No,No,Yes,No,1586149200000,1585526400000,989
+Manatee,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,990
+Palm Beach,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,991
+Sarasota,94,Female,FL resident,No,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,992
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,993
+Dade,83,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1586131200000,994
+Lee,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,995
+St. Lucie,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,996
+Dade,52,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,997
+Dade,16,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,998
+Pasco,23,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585440000000,999
+Desoto,77,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584662400000,1000
+Martin,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1001
+Lee,72,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1002
+Dade,66,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1003
+Dade,81,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1004
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1005
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1006
+Dade,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1007
+Dade,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1008
+Dade,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1009
+Dade,5,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1010
+Dade,10,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1011
+Dade,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1012
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1013
+Dade,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1014
+Dade,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1015
+Dade,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1016
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1017
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1018
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1019
+Dade,73,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1020
+Dade,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1021
+Dade,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1022
+Dade,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1023
+Dade,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1024
+Dade,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1025
+Dade,91,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1026
+Dade,74,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1027
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1028
+Dade,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1029
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1030
+Dade,3,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1031
+Dade,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1032
+Dade,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1033
+Dade,20,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1034
+Dade,NA,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1035
+Broward,32,Female,FL resident,Unknown,NA,NA,NA,NA,Yes,1586235600000,1586131200000,1036
+Duval,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1037
+Collier,42,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585526400000,1038
+Lee,74,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1039
+Dade,91,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1040
+Broward,38,Male,FL resident,No,NA,Yes,No,NA,No,1586235600000,1585785600000,1041
+Dade,52,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1042
+Dade,64,Female,FL resident,No,NA,No,No,NA,Yes,1586235600000,1584576000000,1043
+Broward,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1044
+Broward,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1045
+Dade,62,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1046
+Dade,26,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1047
+Broward,19,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1048
+Broward,39,Female,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1049
+Broward,88,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1050
+Broward,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1051
+Broward,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1052
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1053
+Broward,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1054
+Broward,92,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1055
+Broward,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1056
+Dade,76,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1057
+Broward,15,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1058
+Dade,20,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1059
+Broward,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1060
+Broward,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1061
+Broward,38,Female,FL resident,No,NA,Yes,No,NA,Yes,1586235600000,1585872000000,1062
+Broward,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1063
+Alachua,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1064
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1065
+Broward,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1066
+Dade,71,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1067
+Dade,85,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1068
+Broward,53,Female,FL resident,No,NA,Yes,No,NA,Unknown,1586235600000,1585699200000,1069
+Broward,49,Female,FL resident,No,NA,Yes,No,NA,Yes,1586235600000,1585094400000,1070
+Broward,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1071
+Broward,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1072
+Broward,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1073
+Broward,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1074
+Broward,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586131200000,1075
+Broward,88,Male,FL resident,Unknown,NA,Yes,Yes,NA,Unknown,1586235600000,1585699200000,1076
+Broward,54,Female,FL resident,No,NA,Yes,No,NA,Unknown,1586235600000,1585180800000,1077
+Dade,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586044800000,1078
+Broward,94,Female,FL resident,Unknown,NA,Unknown,Yes,NA,Unknown,1586235600000,1585958400000,1079
+Broward,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586235600000,1586044800000,1080
+Escambia,28,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585612800000,1081
+Escambia,21,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585612800000,1082
+Escambia,80,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585526400000,1083
+Escambia,93,Female,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585526400000,1084
+Escambia,30,Female,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585526400000,1085
+Escambia,41,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586235600000,1585526400000,1086
+Martin,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1087
+Martin,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1088
+Martin,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1089
+Dade,75,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585872000000,1090
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1091
+Palm Beach,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1092
+Osceola,33,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585008000000,1093
+Broward,88,Female,FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1094
+Lee,68,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585180800000,1095
+Lee,7,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1096
+Martin,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1097
+Palm Beach,74,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1098
+Polk,23,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1099
+Lee,9,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585440000000,1100
+St. Lucie,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1101
+St. Lucie,74,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1586131200000,1102
+Dade,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1103
+Nassau,36,Female,FL resident,Unknown,NA,Unknown,No,NA,No,1586149200000,1585440000000,1104
+Duval,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1105
+Clay,35,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585267200000,1106
+Duval,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1107
+Clay,60,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585526400000,1108
+Palm Beach,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1109
+Palm Beach,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1110
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1111
+Palm Beach,86,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1112
+Polk,45,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,1113
+Palm Beach,77,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1114
+Palm Beach,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1115
+Palm Beach,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1116
+Palm Beach,81,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1117
+Palm Beach,88,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1118
+Dade,21,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1119
+Broward,24,Female,FL resident,No,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1120
+Lee,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1121
+Charlotte,50,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585612800000,1122
+Lee,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1123
+Collier,45,Female,FL resident,No,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1124
+St. Lucie,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1125
+Escambia,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586044800000,1126
+Santa Rosa,35,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,1127
+Dade,45,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,1128
+Osceola,69,Male,FL resident,No,NA,Yes,Yes,NA,Yes,1586149200000,1585440000000,1129
+Santa Rosa,74,Male,FL resident,Yes,FL; TX,Yes,Yes,NA,No,1586149200000,1585612800000,1130
+Escambia,19,Female,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1584921600000,1131
+St. Lucie,66,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585612800000,1132
+Dade,69,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,1133
+Brevard,85,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1583798400000,1134
+Santa Rosa,65,Female,FL resident,No,NA,NA,No,NA,Yes,1586149200000,1585699200000,1135
+Dade,93,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585699200000,1136
+Marion,29,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1584144000000,1137
+Collier,59,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585008000000,1138
+Sarasota,76,Female,FL resident,No,NA,Yes,No,NA,Unknown,1586149200000,1585353600000,1139
+Osceola,45,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1586131200000,1140
+Sarasota,82,Female,FL resident,Yes,FL; ISRAEL,Yes,No,NA,Yes,1586149200000,1585526400000,1141
+Broward,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1142
+Broward,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1143
+Broward,40,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1144
+Broward,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1145
+Broward,62,Female,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1146
+Broward,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1585008000000,1147
+Broward,80,Female,FL resident,Unknown,NA,Yes,Yes,NA,Unknown,1586149200000,1583020800000,1148
+Broward,63,Male,FL resident,Unknown,NA,Yes,Yes,NA,No,1586149200000,1585353600000,1149
+Broward,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1150
+Broward,61,Female,Non-FL resident,Yes,SOUTH AMERICA,Yes,Yes,NA,Unknown,1586149200000,1585353600000,1151
+Broward,76,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1152
+Broward,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1153
+Broward,81,Male,Non-FL resident,Unknown,NA,Yes,Yes,NA,Unknown,1586149200000,1585440000000,1154
+Broward,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1155
+Escambia,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1156
+Pinellas,31,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584576000000,1157
+Hillsborough,23,Female,FL resident,Yes,NC,No,No,NA,Yes,1586149200000,1585958400000,1158
+Hillsborough,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1159
+Pinellas,50,Female,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585612800000,1160
+Pinellas,55,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585440000000,1161
+Pinellas,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1162
+Dade,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1163
+Lee,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1164
+Dade,76,Male,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1584057600000,1165
+Dade,76,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1166
+Lake,82,Female,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1586131200000,1167
+Hillsborough,26,Unknown,FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1168
+Leon,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1169
+Marion,63,Male,FL resident,Yes,NY,No,No,NA,Yes,1586149200000,1585612800000,1170
+Leon,36,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585526400000,1171
+Dade,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1172
+Marion,51,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585612800000,1173
+Volusia,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1174
+Duval,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1175
+Leon,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1176
+Dade,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586044800000,1177
+Flagler,76,Male,FL resident,Yes,GERMANY; SPAIN,No,No,NA,Unknown,1586149200000,1585699200000,1178
+Santa Rosa,62,Female,FL resident,No,NA,NA,Yes,NA,No,1586149200000,1585008000000,1179
+Polk,50,Female,FL resident,No,NA,Yes,No,NA,Yes,1586149200000,1585699200000,1180
+Escambia,81,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585958400000,1181
+Polk,33,Male,FL resident,Unknown,NA,Yes,No,NA,Unknown,1586149200000,1586131200000,1182
+Taylor,29,Female,FL resident,Yes,FL; MEXICO,NA,No,NA,No,1586149200000,1584316800000,1183
+Walton,65,Female,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585699200000,1184
+Lake,79,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1585785600000,1185
+Lake,77,Male,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1586044800000,1186
+Escambia,91,Female,FL resident,No,NA,NA,No,NA,Yes,1586149200000,1585699200000,1187
+Polk,68,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585785600000,1188
+Lake,82,Female,FL resident,Unknown,NA,NA,NA,NA,Yes,1586149200000,1586044800000,1189
+Citrus,58,Male,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1586131200000,1190
+Pinellas,88,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,1191
+Marion,44,Female,FL resident,Yes,MOROCCO; UNITED KINGDOM,No,No,NA,Yes,1586149200000,1585353600000,1192
+Lee,71,Female,FL resident,Yes,NY,No,No,NA,No,1586149200000,1584230400000,1193
+Sarasota,49,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584489600000,1194
+Escambia,66,Female,FL resident,No,NA,Yes,Yes,NA,Unknown,1586149200000,1585699200000,1195
+Polk,54,Unknown,FL resident,Yes,FL; UT,No,No,NA,Unknown,1586149200000,1585094400000,1196
+Brevard,21,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585785600000,1197
+Holmes,39,Unknown,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585872000000,1198
+Escambia,45,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585440000000,1199
+Pinellas,74,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,1200
+Dade,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1201
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1202
+Dade,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1203
+Dade,69,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1204
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1205
+Dade,85,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1206
+Dade,19,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1207
+Okeechobee,61,Female,FL resident,No,NA,NA,Yes,NA,No,1586149200000,1585958400000,1208
+Dade,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1209
+Dade,72,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1210
+Dade,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1211
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1212
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1213
+Dade,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1214
+Dade,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1215
+Dade,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1216
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1217
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1218
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1219
+Dade,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1220
+Alachua,86,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1221
+Dade,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1222
+Dade,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1223
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1224
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1225
+Dade,24,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1226
+Brevard,13,Female,FL resident,No,NA,Yes,No,NA,Yes,1586149200000,1585094400000,1227
+Monroe,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1228
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1229
+Dade,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1230
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1231
+Hillsborough,76,Male,FL resident,Unknown,NA,NA,Yes,NA,Unknown,1586149200000,1586131200000,1232
+Dade,22,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1233
+Dade,73,Male,FL resident,No,NA,NA,Unknown,NA,Yes,1586149200000,1585699200000,1234
+Dade,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1235
+Dade,24,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1236
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1237
+Dade,19,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1238
+Dade,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1239
+Dade,86,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585699200000,1240
+Dade,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1241
+Dade,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1242
+Broward,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1243
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1244
+Dade,39,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1245
+Dade,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1246
+Dade,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1247
+Dade,52,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1248
+Dade,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1249
+Dade,59,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585180800000,1250
+Orange,65,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,1251
+Dade,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1252
+Palm Beach,11,Female,FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1253
+Lee,56,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584835200000,1254
+Martin,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1255
+Martin,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1256
+Martin,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1257
+Martin,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1258
+Martin,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1259
+Duval,71,Female,FL resident,Unknown,NA,NA,NA,NA,Yes,1586149200000,1586131200000,1260
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1261
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1262
+Orange,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1263
+Orange,38,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585526400000,1264
+Dade,67,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1265
+Palm Beach,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1266
+Lee,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1267
+Escambia,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1268
+Indian River,20,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1269
+Dade,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1270
+St. Johns,31,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585353600000,1271
+Dade,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1272
+Palm Beach,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1273
+Leon,55,Female,FL resident,No,NA,Yes,No,NA,No,1586149200000,1585526400000,1274
+Clay,21,Male,FL resident,Yes,FL; GA,No,No,NA,Yes,1586149200000,1585612800000,1275
+Palm Beach,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1276
+Broward,77,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1277
+Palm Beach,83,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1278
+Palm Beach,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1279
+Palm Beach,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1280
+Palm Beach,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1281
+Palm Beach,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1282
+Palm Beach,84,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1283
+Palm Beach,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1284
+Indian River,82,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1285
+Orange,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1286
+Dade,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1287
+Duval,8,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1288
+Suwannee,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1289
+Dade,58,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585872000000,1290
+Desoto,72,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1586044800000,1291
+Dade,89,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1292
+Lee,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1293
+Hillsborough,57,Female,FL resident,Yes,NY,No,No,NA,Yes,1586149200000,1584748800000,1294
+Polk,79,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1295
+Desoto,65,Male,FL resident,No,NA,Unknown,No,Yes,Unknown,1586149200000,1585872000000,1296
+Pasco,31,Female,FL resident,Yes,PUERTO RICO,Yes,No,NA,Yes,1586149200000,1584921600000,1297
+Polk,43,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585785600000,1298
+Orange,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1299
+Orange,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1300
+Martin,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1301
+Sarasota,75,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585785600000,1302
+Sarasota,45,Female,FL resident,Yes,NY,No,No,NA,Unknown,1586149200000,1585008000000,1303
+Dade,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1304
+Dade,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1305
+Dade,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1306
+Dade,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1307
+Dade,79,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1308
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1584489600000,1309
+Dade,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1310
+Dade,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1311
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1312
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1313
+Lee,80,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1314
+Flagler,68,Female,FL resident,Yes,NY,Yes,Yes,NA,Unknown,1586149200000,1585526400000,1315
+Palm Beach,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586044800000,1316
+Palm Beach,85,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586044800000,1317
+Palm Beach,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586044800000,1318
+Broward,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586044800000,1319
+Hillsborough,78,Male,FL resident,Unknown,NA,Unknown,Yes,NA,Unknown,1586149200000,1586131200000,1320
+Dade,67,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1321
+Dade,24,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1322
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1323
+Volusia,62,Male,FL resident,Yes,FL; NY,No,No,NA,Yes,1586149200000,1584921600000,1324
+Dade,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1325
+Dade,74,Male,Non-FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1326
+Dade,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1327
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1328
+Dade,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1329
+Dade,85,Male,Non-FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586149200000,1585699200000,1330
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1331
+Dade,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1332
+Dade,72,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1333
+Dade,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1334
+Dade,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1335
+Dade,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1336
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1337
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1338
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1339
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1340
+Dade,78,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1584921600000,1341
+Dade,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1342
+Dade,62,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1343
+Dade,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1344
+Dade,69,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1345
+Dade,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1346
+Dade,75,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585958400000,1347
+Dade,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1348
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1349
+Dade,80,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1350
+Dade,70,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1351
+Dade,76,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1352
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1353
+Dade,67,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1354
+Sarasota,63,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1583971200000,1355
+Dade,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1356
+Pinellas,32,Male,FL resident,Yes,CT,No,No,NA,No,1586149200000,1585612800000,1357
+Broward,40,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585699200000,1358
+Pinellas,42,Female,FL resident,No,NA,Yes,No,NA,No,1586149200000,1585008000000,1359
+Pinellas,52,Male,FL resident,Yes,COSTA RICA; FL,No,No,NA,No,1586149200000,1585526400000,1360
+Pasco,44,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585094400000,1361
+Pinellas,59,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585094400000,1362
+Pasco,70,Female,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1584921600000,1363
+Pinellas,48,Male,FL resident,Unknown,NA,No,No,NA,No,1586149200000,1585526400000,1364
+Polk,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1586131200000,1365
+Collier,73,Male,FL resident,No,NA,Yes,No,NA,No,1586149200000,1585267200000,1366
+Volusia,65,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,1367
+Dade,39,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,1368
+Polk,44,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,1369
+Polk,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1370
+Polk,38,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1585267200000,1371
+Collier,41,Male,FL resident,Unknown,NA,NA,No,NA,NA,1586149200000,1586131200000,1372
+Collier,87,Female,FL resident,No,NA,Yes,Yes,NA,Yes,1586149200000,1585180800000,1373
+Dade,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1374
+Dade,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1375
+Dade,80,Female,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585353600000,1376
+Dade,24,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1377
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1378
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1379
+Dade,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1380
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1381
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1382
+Dade,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1383
+Dade,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1384
+Dade,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1385
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1386
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1387
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1388
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1389
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1390
+Dade,39,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1391
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1392
+Dade,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1393
+Dade,NA,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1394
+Dade,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1395
+Dade,NA,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1396
+Dade,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1397
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1398
+Dade,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1399
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1400
+Dade,69,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1401
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1402
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1403
+Dade,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1404
+Dade,NA,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1405
+Dade,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1406
+Dade,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1407
+Dade,88,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1408
+Dade,48,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,1409
+Dade,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1410
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1411
+Dade,80,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1412
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1413
+Dade,84,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1414
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1415
+Dade,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1416
+Brevard,70,Female,FL resident,No,NA,Yes,Yes,NA,Unknown,1586149200000,1585612800000,1417
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1418
+Duval,20,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1419
+Dade,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1420
+Dade,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1421
+Dade,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1422
+Dade,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1423
+Dade,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1424
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1425
+Dade,33,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1426
+Dade,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1427
+Dade,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1428
+Brevard,27,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585353600000,1429
+Dade,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1430
+Dade,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1431
+Dade,59,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1432
+Dade,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1433
+Dade,86,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1434
+Dade,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1435
+Dade,26,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1436
+Dade,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1437
+Dade,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1438
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1439
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1440
+Dade,88,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,1441
+Dade,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1442
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1443
+Dade,20,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1444
+Dade,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1445
+Dade,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1446
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1447
+Dade,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1448
+Dade,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1449
+Dade,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1450
+Dade,76,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1451
+Citrus,48,Female,FL resident,No,NA,NA,No,NA,Yes,1586149200000,1584576000000,1452
+Dade,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1453
+Dade,18,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1454
+Dade,89,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1455
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1456
+Orange,63,Male,FL resident,Unknown,NA,Yes,Unknown,NA,NA,1586149200000,1585785600000,1457
+Dade,36,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,1458
+Palm Beach,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1459
+Lee,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1460
+Polk,44,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585526400000,1461
+Palm Beach,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1462
+Seminole,45,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585267200000,1463
+Martin,50,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585094400000,1464
+Martin,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1465
+Dade,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1466
+Broward,84,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1467
+Broward,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1468
+Orange,39,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1469
+Leon,62,Female,FL resident,Unknown,NA,Unknown,No,NA,No,1586149200000,1585094400000,1470
+Orange,23,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1471
+St. Lucie,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1472
+Duval,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1473
+Lee,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1474
+Lee,75,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1475
+Charlotte,67,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1476
+Palm Beach,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1477
+Palm Beach,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1478
+St. Johns,64,Male,FL resident,Unknown,NA,No,No,NA,No,1586149200000,1584403200000,1479
+Duval,67,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1480
+Palm Beach,34,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1481
+Broward,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1482
+Broward,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1483
+Duval,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1484
+Duval,38,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1485
+Martin,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1486
+Martin,77,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585440000000,1487
+Leon,25,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1585267200000,1488
+Duval,82,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1489
+Palm Beach,22,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1490
+Leon,24,Male,FL resident,Yes,FL; MEXICO,No,No,NA,Yes,1586149200000,1586131200000,1491
+Dade,18,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1492
+Indian River,73,Male,FL resident,Yes,FL; HI; IL,Yes,Yes,NA,Unknown,1586149200000,1584316800000,1493
+Gadsden,24,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1586131200000,1494
+Palm Beach,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1495
+Palm Beach,46,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585440000000,1496
+Palm Beach,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1497
+Palm Beach,80,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1498
+Palm Beach,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1499
+St. Lucie,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1500
+Dade,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1501
+Dade,83,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1502
+Dade,84,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1503
+Pinellas,31,Female,FL resident,No,NA,Yes,No,NA,No,1586149200000,1585872000000,1504
+Dade,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1505
+Hillsborough,45,Female,FL resident,Unknown,NA,Unknown,No,NA,No,1586149200000,1585872000000,1506
+Alachua,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1507
+Dade,47,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1508
+Dade,67,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1509
+Dade,40,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585699200000,1510
+Lee,62,Female,FL resident,Unknown,NA,Unknown,Yes,Yes,Unknown,1586149200000,1585699200000,1511
+Orange,60,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,1512
+Orange,64,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,1513
+Flagler,55,Male,FL resident,Unknown,NA,Yes,No,NA,Unknown,1586149200000,1585526400000,1514
+Orange,64,Female,FL resident,Yes,NY,Yes,Yes,NA,No,1586149200000,1584662400000,1515
+Orange,67,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,1516
+Orange,30,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,1517
+Seminole,81,Male,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1586044800000,1518
+Leon,63,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585872000000,1519
+Leon,52,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585872000000,1520
+Orange,69,Female,FL resident,Unknown,NA,NA,NA,NA,Yes,1586149200000,1586044800000,1521
+Leon,63,Male,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585872000000,1522
+Madison,33,Female,FL resident,No,NA,NA,No,NA,Yes,1586149200000,1585094400000,1523
+Lee,44,Female,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585785600000,1524
+Orange,77,Male,FL resident,Unknown,NA,NA,NA,NA,Yes,1586149200000,1586044800000,1525
+Orange,25,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586044800000,1526
+Orange,51,Male,FL resident,Unknown,NA,NA,NA,NA,Yes,1586149200000,1586044800000,1527
+Palm Beach,75,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1586131200000,1528
+Martin,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1529
+Palm Beach,39,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1530
+Dade,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1531
+Palm Beach,82,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1532
+Okaloosa,43,Male,FL resident,Yes,NJ,Unknown,No,NA,Yes,1586149200000,1584921600000,1533
+Dade,77,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1534
+Broward,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1535
+Nassau,21,Female,FL resident,Yes,CA; PA,No,No,NA,No,1586149200000,1584403200000,1536
+Broward,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1537
+Dade,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1538
+Dade,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1539
+Dade,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1540
+Dade,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1541
+Lee,17,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1542
+Palm Beach,67,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1543
+Dade,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1544
+Dade,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1545
+St. Lucie,67,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1546
+St. Lucie,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1547
+Broward,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1548
+Broward,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1549
+Broward,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1550
+Broward,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1551
+Broward,45,Female,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1584662400000,1552
+Collier,67,Female,FL resident,No,NA,Yes,Yes,NA,No,1586149200000,1585094400000,1553
+Dade,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1554
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1555
+Lake,35,Female,FL resident,No,NA,Yes,No,NA,Yes,1586149200000,1585267200000,1556
+Manatee,39,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1557
+Orange,74,Male,Non-FL resident,Yes,SOUTH AMERICA,Yes,Yes,NA,Yes,1586149200000,1585785600000,1558
+Orange,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1559
+Bradford,62,Female,FL resident,No,NA,Yes,No,NA,Unknown,1586149200000,1584748800000,1560
+Orange,93,Male,FL resident,No,NA,Yes,Yes,NA,Unknown,1586149200000,1585872000000,1561
+Brevard,41,Female,FL resident,Yes,FL; LA,Yes,Yes,NA,Unknown,1586149200000,1585008000000,1562
+St. Lucie,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1563
+Dade,0,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1564
+Hillsborough,24,Female,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1584230400000,1565
+Lake,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1566
+Pasco,40,Female,FL resident,No,NA,Yes,No,NA,Yes,1586149200000,1584835200000,1567
+Dade,92,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1568
+Dade,81,Female,FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1569
+Duval,62,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1570
+Volusia,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1571
+St. Johns,58,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585353600000,1572
+Dade,47,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,1573
+Columbia,62,Male,FL resident,No,NA,Unknown,No,NA,No,1586149200000,1585180800000,1574
+Walton,26,Female,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1586131200000,1575
+Palm Beach,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1576
+Duval,32,Male,FL resident,Unknown,NA,Yes,NA,NA,Yes,1586149200000,1585353600000,1577
+Dade,70,Male,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585526400000,1578
+Palm Beach,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1579
+Palm Beach,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1586131200000,1580
+Palm Beach,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1581
+St. Lucie,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1582
+St. Lucie,70,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1583
+St. Lucie,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1584
+Palm Beach,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1585
+Palm Beach,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1586131200000,1586
+Palm Beach,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1587
+Lee,67,Male,Non-FL resident,Unknown,NA,NA,NA,NA,Unknown,1586149200000,1586044800000,1588
+Lake,49,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585353600000,1589
+Dade,62,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1585699200000,1590
+Sarasota,65,Female,FL resident,No,NA,Yes,Yes,NA,Yes,1586149200000,1585094400000,1591
+Brevard,65,Male,FL resident,Yes,FL; KY,No,No,NA,Unknown,1586149200000,1585353600000,1592
+Sarasota,39,Female,FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586149200000,1585872000000,1593
+Escambia,39,Male,FL resident,No,NA,No,Unknown,NA,No,1586149200000,1585353600000,1594
+Sarasota,46,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1584662400000,1595
+Sarasota,67,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585008000000,1596
+Dade,32,Male,FL resident,Unknown,NA,NA,Unknown,NA,NA,1586149200000,1585699200000,1597
+Sarasota,71,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584921600000,1598
+Hillsborough,82,Male,FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1585872000000,1599
+Collier,69,Female,Non-FL resident,Unknown,NA,NA,Unknown,NA,Unknown,1586149200000,1586131200000,1600
+Broward,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1601
+Broward,31,Male,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1586131200000,1602
+Broward,60,Male,FL resident,Unknown,NA,No,No,NA,Unknown,1586149200000,1585094400000,1603
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1604
+Broward,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1605
+Broward,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1606
+Broward,68,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1607
+Broward,43,Female,FL resident,Yes,PUERTO RICO,No,No,NA,Unknown,1586149200000,1585094400000,1608
+Broward,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1609
+Broward,29,Male,FL resident,Unknown,NA,No,No,NA,Unknown,1586149200000,1585180800000,1610
+Dade,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1611
+Broward,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1584921600000,1612
+Dade,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1586131200000,1613
+Alachua,79,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1614
+Broward,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1585267200000,1615
+Broward,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1616
+Broward,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1585267200000,1617
+Broward,72,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1618
+Broward,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1619
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1620
+Dade,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1621
+Broward,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1585267200000,1622
+Dade,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1623
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1624
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1625
+Dade,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1626
+Dade,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1627
+Dade,23,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1628
+Broward,23,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1629
+Dade,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1630
+Dade,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1631
+Broward,50,Male,FL resident,No,NA,Yes,Yes,NA,Unknown,1586149200000,1585440000000,1632
+Dade,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1633
+Broward,25,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1584662400000,1634
+Broward,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1584230400000,1635
+Broward,39,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1636
+Broward,20,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1584921600000,1637
+Broward,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1638
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1639
+Broward,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1640
+Palm Beach,84,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1641
+Broward,66,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1585612800000,1642
+Broward,29,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584316800000,1643
+Dade,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1644
+Broward,68,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584921600000,1645
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1646
+Dade,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1647
+Broward,30,Male,FL resident,No,NA,Yes,No,NA,Unknown,1586149200000,1585180800000,1648
+Dade,61,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1649
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1650
+Hillsborough,16,Male,FL resident,Unknown,NA,Unknown,No,NA,No,1586149200000,1585872000000,1651
+Sarasota,65,Male,FL resident,No,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1652
+Citrus,64,Female,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1584921600000,1653
+Hernando,59,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585440000000,1654
+Osceola,25,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585180800000,1655
+St. Lucie,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1656
+Lee,50,Female,FL resident,Unknown,NA,Unknown,No,NA,Yes,1586149200000,1585526400000,1657
+Alachua,81,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1658
+Polk,73,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585180800000,1659
+Santa Rosa,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1660
+Dade,54,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1661
+Broward,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1662
+Broward,42,Female,FL resident,No,NA,Unknown,Unknown,NA,Unknown,1586149200000,1585526400000,1663
+Broward,28,Male,FL resident,No,NA,Unknown,Unknown,NA,Yes,1586149200000,1585440000000,1664
+Dade,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1665
+Broward,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1666
+Broward,26,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1667
+Dade,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1668
+Dade,53,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1669
+Dade,26,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1670
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1671
+Dade,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1672
+Dade,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1673
+Duval,56,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1674
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1675
+Sumter,63,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1583798400000,1676
+Dade,29,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1677
+Charlotte,46,Female,FL resident,No,NA,Unknown,No,NA,No,1586149200000,1585612800000,1678
+Dade,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1679
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1680
+Hillsborough,34,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1584921600000,1681
+Dade,25,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1682
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1683
+Broward,79,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1684
+Lake,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1685
+Marion,26,Female,FL resident,No,NA,Yes,No,NA,Yes,1586149200000,1586131200000,1686
+Duval,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1687
+Hillsborough,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1585440000000,1688
+Pasco,60,Male,FL resident,Yes,FL; MN,Yes,Yes,NA,No,1586149200000,1585526400000,1689
+Hillsborough,34,Female,FL resident,Unknown,NA,Unknown,No,NA,No,1586149200000,1584662400000,1690
+Sarasota,30,Male,FL resident,Yes,CA; NY; PA; TX,No,No,NA,No,1586149200000,1584230400000,1691
+Brevard,32,Male,FL resident,No,NA,Unknown,No,NA,No,1586149200000,1585353600000,1692
+Duval,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1693
+Duval,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1694
+Lake,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1695
+Hillsborough,21,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1696
+Pasco,30,Female,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1585353600000,1697
+Hillsborough,33,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584576000000,1698
+Hillsborough,47,Female,FL resident,Yes,IRELAND; NY,No,No,NA,Unknown,1586149200000,1584835200000,1699
+Polk,57,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1585699200000,1700
+Hillsborough,35,Female,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1585094400000,1701
+Duval,27,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1702
+Duval,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1703
+Duval,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1704
+Sumter,73,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585267200000,1705
+Osceola,54,Male,FL resident,Yes,FL; NY,Yes,No,NA,No,1586149200000,1585353600000,1706
+Duval,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1707
+Hillsborough,36,Female,FL resident,Yes,FL; NY,No,No,NA,Yes,1586149200000,1585180800000,1708
+Suwannee,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1584748800000,1709
+Duval,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1710
+Osceola,32,Male,FL resident,Yes,FL; NY,No,No,NA,No,1586149200000,1585267200000,1711
+Brevard,28,Male,FL resident,No,NA,Unknown,No,NA,Yes,1586149200000,1585267200000,1712
+Duval,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1713
+Hernando,34,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1584403200000,1714
+Duval,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1715
+Duval,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1716
+Sarasota,66,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585267200000,1717
+Duval,73,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1718
+Duval,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1719
+Hillsborough,34,Female,FL resident,Yes,FL; NY,No,No,NA,No,1586149200000,1585094400000,1720
+Duval,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1721
+Hillsborough,39,Female,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1584144000000,1722
+Pasco,36,Female,FL resident,No,NA,Unknown,No,NA,Yes,1586149200000,1584921600000,1723
+Sumter,61,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584057600000,1724
+Leon,19,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584921600000,1725
+Walton,39,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1584316800000,1726
+Duval,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1727
+Citrus,79,Female,FL resident,No,NA,Unknown,No,NA,No,1586149200000,1585267200000,1728
+Duval,34,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1729
+Sumter,83,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584835200000,1730
+Sarasota,32,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1583280000000,1731
+Osceola,41,Male,FL resident,No,NA,No,NA,NA,No,1586149200000,1586131200000,1732
+Hillsborough,9,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1733
+Polk,21,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1734
+Hillsborough,34,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1585008000000,1735
+Duval,38,Female,FL resident,Unknown,NA,Unknown,No,NA,Yes,1586149200000,1585094400000,1736
+Duval,58,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1737
+Hillsborough,50,Male,FL resident,Yes,CA,No,No,NA,No,1586149200000,1585180800000,1738
+Duval,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1739
+Hillsborough,39,Female,FL resident,Yes,NY,Yes,No,NA,Yes,1586149200000,1585008000000,1740
+Brevard,64,Male,FL resident,Yes,FL; MI; OH; OK,No,No,NA,Unknown,1586149200000,1585180800000,1741
+Polk,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1742
+Polk,49,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1743
+Polk,62,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1744
+Pinellas,57,Male,FL resident,No,NA,No,No,NA,No,1586149200000,1584057600000,1745
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1746
+Pasco,59,Female,FL resident,Yes,FL; INDIA,No,No,NA,No,1586149200000,1584662400000,1747
+Brevard,29,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585008000000,1748
+Duval,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1749
+Gilchrist,56,Male,FL resident,Yes,NY,No,No,NA,No,1586149200000,1585180800000,1750
+Duval,83,Female,FL resident,Unknown,NA,NA,NA,NA,NA,1586149200000,1586131200000,1751
+Hillsborough,68,Female,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1584662400000,1752
+Duval,66,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1753
+Hillsborough,65,Female,FL resident,Unknown,NA,No,No,NA,No,1586149200000,1584662400000,1754
+Duval,91,Female,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1585526400000,1755
+Hillsborough,35,Male,FL resident,Yes,COLOMBIA,No,No,NA,No,1586149200000,1584230400000,1756
+Hillsborough,54,Female,FL resident,No,NA,Unknown,No,NA,No,1586149200000,1583884800000,1757
+Collier,31,Female,FL resident,Yes,CARIBBEAN,No,No,NA,Yes,1586149200000,1584230400000,1758
+Duval,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1759
+Broward,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1584748800000,1760
+Dade,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1761
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1762
+Duval,19,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1763
+Escambia,46,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1586131200000,1764
+Dade,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1765
+Broward,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1766
+Lee,63,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585353600000,1767
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1768
+Dade,63,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1769
+Dade,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1770
+Dade,74,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1771
+Dade,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1772
+Seminole,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1773
+Dade,43,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1774
+Dade,78,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1775
+Dade,24,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1776
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1777
+Dade,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1778
+Dade,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1779
+Dade,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1780
+Dade,72,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1781
+Dade,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1782
+Dade,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1783
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1784
+Dade,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1785
+Dade,62,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1786
+Dade,78,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1787
+Broward,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1788
+Dade,62,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1789
+Dade,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1790
+Dade,63,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1791
+Dade,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1792
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1793
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1794
+Dade,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1795
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1796
+Palm Beach,28,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1797
+Dade,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1798
+Broward,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1799
+Dade,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1800
+Dade,22,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1801
+Dade,64,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1802
+Broward,36,Male,FL resident,Yes,COLOMBIA; FL,No,No,NA,Yes,1586149200000,1584403200000,1803
+Dade,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1804
+Broward,50,Male,FL resident,No,NA,Unknown,Unknown,NA,Yes,1586149200000,1585180800000,1805
+Dade,48,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1806
+Broward,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1807
+Dade,45,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1808
+Dade,26,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1809
+Dade,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1810
+Broward,44,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585267200000,1811
+Dade,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1812
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1813
+Dade,22,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1814
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1815
+Leon,32,Male,FL resident,Yes,WA,Yes,No,NA,No,1586149200000,1585267200000,1816
+Brevard,50,Female,FL resident,No,NA,Yes,No,NA,Unknown,1586149200000,1585094400000,1817
+Orange,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1818
+Brevard,36,Male,FL resident,No,NA,Unknown,No,NA,Yes,1586149200000,1586131200000,1819
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1820
+Broward,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1821
+Dade,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1822
+Dade,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1823
+Monroe,41,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585353600000,1824
+Dade,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1825
+Broward,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1826
+Dade,40,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1827
+Broward,59,Male,FL resident,Yes,NJ,Unknown,Unknown,NA,No,1586149200000,1585353600000,1828
+Broward,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1829
+Broward,31,Male,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1585180800000,1830
+Dade,26,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1831
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1832
+Dade,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1833
+Dade,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1834
+Dade,32,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1835
+Duval,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1836
+Broward,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1837
+Broward,14,Male,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1585353600000,1838
+Broward,41,Female,FL resident,Unknown,NA,Yes,No,NA,Yes,1586149200000,1585353600000,1839
+Broward,31,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1580601600000,1840
+Broward,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586044800000,1841
+Broward,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586044800000,1842
+Broward,62,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586044800000,1843
+Broward,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586044800000,1844
+Broward,67,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586044800000,1845
+Sarasota,56,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1585785600000,1846
+Duval,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1847
+Duval,59,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1848
+Broward,67,Female,FL resident,No,NA,Yes,No,NA,Yes,1586149200000,1584662400000,1849
+Broward,74,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584662400000,1850
+Dade,70,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1851
+Dade,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1852
+Dade,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1853
+Dade,40,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1854
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1855
+Dade,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1856
+Dade,12,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1857
+Dade,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1858
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1859
+Broward,27,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1860
+Broward,37,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1584748800000,1861
+Dade,64,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1862
+Dade,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1863
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1864
+Broward,64,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585094400000,1865
+Broward,59,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1866
+Dade,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1867
+Dade,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1868
+Dade,18,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1869
+Dade,32,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1870
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1871
+Dade,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1872
+Dade,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1873
+Broward,59,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1874
+Broward,90,Male,FL resident,Unknown,NA,No,No,NA,Unknown,1586149200000,1585612800000,1875
+Dade,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1876
+Broward,34,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1877
+Broward,38,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1878
+Dade,4,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1879
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1880
+Broward,22,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1881
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1882
+Broward,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1883
+Broward,57,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1884
+Broward,47,Male,FL resident,Yes,FL; LA,No,No,NA,Yes,1586149200000,1585008000000,1885
+Broward,84,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1886
+Broward,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1887
+Broward,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1888
+Broward,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1889
+Broward,52,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1890
+Broward,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1891
+Dade,31,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1892
+Broward,46,Female,FL resident,No,NA,No,No,NA,No,1586149200000,1585094400000,1893
+Broward,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1894
+Broward,55,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1895
+Broward,27,Male,FL resident,Yes,BAHAMAS; FL,Yes,No,NA,Unknown,1586149200000,1584489600000,1896
+Broward,62,Male,FL resident,No,NA,Yes,No,NA,Yes,1586149200000,1585526400000,1897
+Broward,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1898
+Broward,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1586131200000,1899
+Broward,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1900
+Broward,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1901
+Broward,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1902
+Broward,38,Male,FL resident,Unknown,NA,No,No,NA,No,1586149200000,1584489600000,1903
+Broward,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1904
+Broward,50,Female,FL resident,No,NA,No,No,NA,Yes,1586149200000,1586131200000,1905
+Broward,24,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1906
+Dade,37,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1907
+Broward,33,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1585440000000,1908
+Dade,21,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1909
+Dade,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1910
+Dade,57,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1911
+Dade,50,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1912
+Dade,47,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1913
+Dade,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1914
+Collier,65,Male,FL resident,Yes,NY,Yes,Yes,NA,Unknown,1586149200000,1585785600000,1915
+Broward,55,Male,FL resident,No,NA,No,No,NA,Unknown,1586149200000,1585008000000,1916
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1917
+Dade,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1918
+Osceola,62,Male,FL resident,No,NA,No,No,NA,Yes,1586149200000,1584316800000,1919
+Orange,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1920
+Dade,44,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1921
+Dade,35,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1922
+Orange,55,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1923
+Polk,65,Female,FL resident,Yes,OH,No,No,NA,No,1586149200000,1585094400000,1924
+Osceola,62,Female,FL resident,No,NA,Yes,No,NA,Yes,1586149200000,1584835200000,1925
+Broward,51,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1584748800000,1926
+Dade,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1927
+Broward,45,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1584489600000,1928
+Broward,30,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1929
+Broward,25,Female,FL resident,Yes,NY,No,No,NA,No,1586149200000,1585267200000,1930
+Orange,65,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1931
+Broward,58,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1932
+Broward,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1933
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1934
+Dade,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1935
+Broward,42,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1936
+Broward,54,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1937
+Orange,24,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1938
+Dade,51,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1939
+Orange,59,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1940
+Broward,52,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1583884800000,1941
+Orange,48,Male,FL resident,No,NA,Yes,No,NA,No,1586149200000,1585008000000,1942
+Dade,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1943
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1944
+Broward,68,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1585008000000,1945
+Palm Beach,50,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1946
+Broward,23,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1585008000000,1947
+Broward,71,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1585180800000,1948
+Dade,44,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1949
+Dade,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1950
+Dade,18,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1951
+Dade,41,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1952
+Dade,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1953
+Dade,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1954
+Dade,46,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1955
+Broward,40,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1956
+Broward,35,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1957
+Dade,77,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1958
+Broward,34,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1959
+Broward,36,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1960
+Dade,60,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1961
+Broward,19,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1962
+Broward,44,Female,FL resident,Yes,NY,No,No,NA,No,1586149200000,1584835200000,1963
+Dade,56,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1964
+Dade,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1965
+Palm Beach,40,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1966
+Dade,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1967
+Dade,26,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1968
+Dade,41,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1969
+Dade,30,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1970
+Dade,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1971
+Dade,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1972
+Dade,84,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1973
+Broward,79,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1974
+Broward,74,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1975
+Broward,36,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1976
+Broward,23,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1977
+Dade,37,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1978
+Broward,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1979
+Broward,42,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,Yes,1586149200000,1585526400000,1980
+Broward,19,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1981
+Broward,53,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,No,1586149200000,1585094400000,1982
+Palm Beach,61,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,Unknown,1586149200000,1586131200000,1983
+Broward,29,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1984
+Broward,28,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1985
+Broward,36,Male,FL resident,Unknown,NA,No,No,NA,Yes,1586149200000,1584489600000,1986
+Dade,66,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1987
+Dade,33,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1988
+Dade,49,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1989
+Dade,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1990
+Dade,43,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1991
+Dade,31,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1992
+Dade,71,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1993
+Dade,45,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1994
+Dade,48,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1995
+Dade,64,Unknown,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1996
+Dade,60,Female,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1997
+Dade,65,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1998
+Dade,69,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,1999
+Dade,25,Male,FL resident,Unknown,NA,Unknown,Unknown,NA,NA,1586149200000,1586131200000,2000

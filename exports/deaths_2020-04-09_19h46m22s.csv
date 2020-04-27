@@ -1,0 +1,372 @@
+EventDate,ObjectId,Age,Gender,County,Jurisdiction,EDvisit,Hospitalized
+2020-04-02 20:00:00 -0400,101648,100,Male,Lee,FL resident,Unknown,Yes
+2020-03-27 20:00:00 -0400,107387,101,Female,Dade,FL resident,No,No
+2020-03-16 20:00:00 -0400,107421,28,Male,Sarasota,FL resident,Yes,No
+2020-03-26 20:00:00 -0400,104629,30,Female,Broward,FL resident,Unknown,Unknown
+2020-03-23 20:00:00 -0400,107100,31,Female,St. Lucie,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,107205,34,Male,Broward,FL resident,Yes,Yes
+2020-03-12 20:00:00 -0400,109654,38,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-23 20:00:00 -0400,109824,38,Female,Broward,FL resident,Yes,Yes
+2020-03-18 20:00:00 -0400,104282,39,Male,Broward,FL resident,Yes,Yes
+2020-03-16 20:00:00 -0400,108442,39,Male,Broward,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,109449,39,Male,Lee,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,105531,40,Female,Pinellas,FL resident,No,Yes
+2020-03-10 20:00:00 -0400,110176,40,Male,Dade,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,108075,41,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,101005,42,Male,Dade,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,104603,42,Male,Dade,FL resident,Yes,No
+2020-03-30 20:00:00 -0400,102997,44,Male,Broward,FL resident,Yes,Yes
+2020-02-20 19:00:00 -0500,103463,44,Female,Dade,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,109180,45,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-10 20:00:00 -0400,100747,45,Female,Orange,FL resident,Yes,Yes
+2020-03-23 20:00:00 -0400,103222,46,Female,Hernando,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,103639,47,Male,Dade,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,104237,49,Male,Dade,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,107772,49,Male,Dade,FL resident,Unknown,Unknown
+2020-03-23 20:00:00 -0400,104012,49,Male,Broward,FL resident,No,No
+2020-03-20 20:00:00 -0400,105657,49,Female,Polk,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,105377,49,Male,Dade,FL resident,Yes,Yes
+2020-04-06 20:00:00 -0400,97206,50,Male,Dade,FL resident,Unknown,Unknown
+2020-03-07 19:00:00 -0500,110926,52,Male,Pinellas,FL resident,Yes,Yes
+2020-03-06 19:00:00 -0500,109950,52,Male,St. Johns,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,103430,54,Male,Putnam,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,107359,55,Male,Osceola,FL resident,Yes,Yes
+2020-04-01 20:00:00 -0400,102529,55,Male,Dade,FL resident,Unknown,Unknown
+2020-03-21 20:00:00 -0400,109535,55,Male,Monroe,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,108619,55,Male,Monroe,FL resident,NA,Yes
+2020-04-06 20:00:00 -0400,96823,55,Male,Hillsborough,FL resident,Unknown,Unknown
+2020-03-14 20:00:00 -0400,106178,56,Female,Pinellas,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,106162,56,Male,Broward,FL resident,Unknown,Unknown
+2020-03-28 20:00:00 -0400,104015,56,Male,Dade,FL resident,Unknown,No
+2020-03-26 20:00:00 -0400,101717,56,Male,Broward,FL resident,No,No
+2020-03-26 20:00:00 -0400,105411,57,Male,Broward,FL resident,Yes,Yes
+2020-03-17 20:00:00 -0400,107120,57,Male,Manatee,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,104016,57,Male,Broward,FL resident,Unknown,Unknown
+2020-03-07 19:00:00 -0500,110940,57,Male,Broward,FL resident,Yes,Yes
+2020-03-27 20:00:00 -0400,103602,58,Male,Marion,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,110432,58,Male,Osceola,FL resident,Yes,Yes
+2020-03-08 20:00:00 -0400,107178,58,Male,Pinellas,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,103115,58,Male,Dade,FL resident,Unknown,Yes
+2020-04-02 20:00:00 -0400,101417,58,Male,Dade,FL resident,Unknown,Unknown
+2020-03-26 20:00:00 -0400,107762,59,Female,Palm Beach,FL resident,Unknown,Unknown
+2020-03-13 20:00:00 -0400,108377,59,Male,St. Lucie,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,101454,60,Male,Broward,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,106236,60,Male,Dade,FL resident,No,No
+2020-03-15 20:00:00 -0400,110430,60,Male,Polk,FL resident,Yes,Yes
+2020-04-06 20:00:00 -0400,96250,61,Male,Highlands,FL resident,Yes,No
+2020-03-15 20:00:00 -0400,106619,61,Male,Collier,FL resident,Yes,No
+2020-04-06 20:00:00 -0400,96538,61,Male,Broward,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,97922,62,Female,Lee,FL resident,Yes,Yes
+2020-03-18 20:00:00 -0400,109313,62,Male,Sarasota,FL resident,Yes,Yes
+2020-02-23 19:00:00 -0500,109714,63,Male,Dade,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,107778,63,Female,Broward,FL resident,NA,No
+2020-03-27 20:00:00 -0400,107545,64,Female,Palm Beach,FL resident,No,No
+2020-03-19 20:00:00 -0400,108789,64,Male,Pinellas,FL resident,Yes,Yes
+2020-03-16 20:00:00 -0400,101588,64,Male,Dade,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,96299,64,Male,Broward,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,107867,64,Male,Broward,FL resident,Yes,No
+2020-03-16 20:00:00 -0400,109803,65,Male,Clay,FL resident,No,No
+2020-04-02 20:00:00 -0400,98059,65,Male,Desoto,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,108750,65,Male,Volusia,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,108834,65,Male,Broward,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,106055,65,Male,Dade,FL resident,Yes,Yes
+2020-04-03 20:00:00 -0400,98597,66,Female,Broward,FL resident,Yes,No
+2020-03-22 20:00:00 -0400,104619,66,Female,Dade,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,110243,66,Male,Baker,FL resident,No,Yes
+2020-03-17 20:00:00 -0400,107928,66,Male,Dade,FL resident,Unknown,Yes
+2020-03-12 20:00:00 -0400,102215,66,Female,Polk,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,103427,66,Female,Osceola,FL resident,Yes,Yes
+2020-04-05 20:00:00 -0400,95409,66,Male,Broward,FL resident,No,No
+2020-04-03 20:00:00 -0400,98598,66,Female,Broward,FL resident,Yes,Yes
+2020-02-14 19:00:00 -0500,110764,67,Male,Lee,FL resident,Yes,Yes
+2020-03-07 19:00:00 -0500,111093,67,Male,Pasco,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,109109,67,Female,Broward,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,109190,67,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-10 20:00:00 -0400,109741,67,Male,Lee,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,110265,67,Male,Dade,FL resident,Yes,Yes
+2020-03-08 20:00:00 -0400,110422,67,Male,St. Johns,FL resident,Yes,Yes
+2020-03-16 20:00:00 -0400,110400,67,Male,Pinellas,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,108363,67,Male,Broward,FL resident,Unknown,Unknown
+2020-03-31 20:00:00 -0400,96488,67,Female,Palm Beach,FL resident,Yes,Yes
+2020-04-04 20:00:00 -0400,98853,68,Male,Palm Beach,FL resident,Unknown,Unknown
+2020-03-06 19:00:00 -0500,111141,68,Female,Orange,Not diagnosed/isolated in FL,Unknown,Unknown
+2020-03-27 20:00:00 -0400,107197,68,Male,Broward,FL resident,Yes,Yes
+2020-03-10 20:00:00 -0400,110105,68,Female,Clay,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,101305,68,Female,Palm Beach,FL resident,Unknown,Unknown
+2020-03-18 20:00:00 -0400,109955,68,Male,Sumter,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,109939,68,Male,Manatee,FL resident,NA,Yes
+2020-03-13 20:00:00 -0400,102548,68,Male,Polk,FL resident,Unknown,Yes
+2020-03-22 20:00:00 -0400,108543,68,Female,Dade,FL resident,Yes,Yes
+2020-03-18 20:00:00 -0400,109139,68,Female,Hillsborough,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,99176,68,Female,Dade,FL resident,Unknown,Unknown
+2020-03-09 20:00:00 -0400,104938,69,Male,Manatee,FL resident,Unknown,Yes
+2020-03-21 20:00:00 -0400,109901,69,Male,Hillsborough,FL resident,Unknown,Yes
+2020-03-11 20:00:00 -0400,110616,69,Male,Dade,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,100828,69,Male,Broward,FL resident,No,Yes
+2020-04-01 20:00:00 -0400,102516,69,Male,Osceola,FL resident,Yes,Yes
+2020-03-15 20:00:00 -0400,109986,70,Male,Orange,FL resident,Unknown,Yes
+2020-03-21 20:00:00 -0400,110171,70,Male,Broward,FL resident,Unknown,Unknown
+2020-03-03 19:00:00 -0500,111046,70,Male,Manatee,FL resident,Yes,Yes
+2020-03-05 19:00:00 -0500,111096,70,Male,Clay,FL resident,Yes,Yes
+2020-03-12 20:00:00 -0400,108737,71,Female,Hillsborough,FL resident,Yes,No
+2020-03-16 20:00:00 -0400,110994,71,Male,Manatee,FL resident,Yes,Yes
+2020-04-03 20:00:00 -0400,97424,71,Female,Baker,FL resident,NA,No
+2020-03-06 19:00:00 -0500,110220,71,Female,Pasco,FL resident,Yes,Yes
+2020-03-16 20:00:00 -0400,109173,71,Male,Broward,FL resident,Yes,No
+2020-03-03 19:00:00 -0500,111188,71,Male,Santa Rosa,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,110665,71,Female,Dade,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,105976,71,Male,Lee,FL resident,No,Yes
+2020-03-26 20:00:00 -0400,108216,72,Female,Palm Beach,FL resident,Unknown,Unknown
+2020-03-18 20:00:00 -0400,110307,72,Female,Flagler,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,110646,72,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,100744,72,Male,Broward,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,97435,72,Female,Dade,FL resident,Unknown,Yes
+2020-03-21 20:00:00 -0400,102140,72,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,104025,72,Male,Broward,FL resident,No,No
+2020-03-17 20:00:00 -0400,108480,72,Male,Dade,FL resident,Unknown,Unknown
+2020-03-19 20:00:00 -0400,105413,73,Male,Collier,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,110967,73,Male,Orange,FL resident,Unknown,Yes
+2020-03-12 20:00:00 -0400,111148,73,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,106938,73,Female,Dade,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,96720,73,Female,Citrus,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,106508,73,Female,Polk,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,103742,73,Male,Broward,FL resident,Yes,Yes
+2020-03-09 20:00:00 -0400,111076,74,Male,Broward,FL resident,Yes,Yes
+2020-03-17 20:00:00 -0400,108463,74,Male,Broward,FL resident,Yes,No
+2020-03-26 20:00:00 -0400,107784,74,Female,Dade,FL resident,Yes,Yes
+2020-03-06 19:00:00 -0500,111155,74,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-12 20:00:00 -0400,107849,74,Female,Sarasota,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,104104,74,Male,Broward,FL resident,Yes,Yes
+2020-03-27 20:00:00 -0400,103354,74,Female,Dade,FL resident,Unknown,Yes
+2020-03-21 20:00:00 -0400,101532,74,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,97630,74,Male,St. Lucie,FL resident,No,No
+2020-03-14 20:00:00 -0400,102549,74,Male,Hillsborough,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,101971,74,Female,Citrus,FL resident,Yes,Yes
+2020-03-09 20:00:00 -0400,108073,74,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,109546,74,Male,Palm Beach,FL resident,Unknown,Unknown
+2020-03-16 20:00:00 -0400,109523,74,Female,Lake,FL resident,Yes,Yes
+2020-03-04 19:00:00 -0500,111017,75,Male,Manatee,FL resident,Yes,Yes
+2020-03-16 20:00:00 -0400,109258,75,Male,Monroe,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,106965,75,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-02 19:00:00 -0500,99414,75,Female,Manatee,FL resident,Unknown,Yes
+2020-03-24 20:00:00 -0400,109167,75,Male,Dade,FL resident,NA,Yes
+2020-03-16 20:00:00 -0400,110704,75,Male,Broward,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,107330,75,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,100942,75,Female,Escambia,FL resident,Yes,Yes
+2020-03-23 20:00:00 -0400,108019,75,Male,Dade,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,106023,75,Female,Broward,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,104557,76,Male,Sumter,FL resident,Yes,Yes
+2020-03-15 20:00:00 -0400,111047,76,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,107856,76,Male,Orange,FL resident,Unknown,Unknown
+2020-03-17 20:00:00 -0400,109907,76,Male,Broward,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,110350,76,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-23 20:00:00 -0400,101079,76,Female,Brevard,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,104023,76,Female,Palm Beach,FL resident,NA,NA
+2020-03-13 20:00:00 -0400,107147,76,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,107797,76,Male,Palm Beach,FL resident,Unknown,Yes
+2020-03-21 20:00:00 -0400,103666,76,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-17 20:00:00 -0400,108524,76,Female,Pinellas,FL resident,Yes,Yes
+2020-04-05 20:00:00 -0400,97429,76,Male,Clay,FL resident,Unknown,Yes
+2020-03-09 20:00:00 -0400,104683,76,Male,Dade,FL resident,Yes,Yes
+2020-03-07 19:00:00 -0500,109521,77,Female,Clay,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,106672,77,Male,Palm Beach,FL resident,Unknown,Unknown
+2020-03-25 20:00:00 -0400,107364,77,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,111030,77,Male,Broward,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,97607,77,Male,Martin,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,105635,77,Male,Broward,FL resident,Yes,Yes
+2020-03-12 20:00:00 -0400,111159,77,Male,Lee,FL resident,Yes,Yes
+2020-03-15 20:00:00 -0400,108011,77,Male,Lee,FL resident,Yes,Yes
+2020-03-17 20:00:00 -0400,108621,77,Male,Dade,FL resident,No,No
+2020-04-01 20:00:00 -0400,101930,77,Male,Desoto,FL resident,Yes,Yes
+2020-03-08 20:00:00 -0400,110384,77,Male,St. Lucie,FL resident,Yes,Yes
+2020-03-27 20:00:00 -0400,106172,77,Male,Manatee,FL resident,Unknown,Yes
+2020-02-16 19:00:00 -0500,111185,77,Female,Lee,FL resident,Yes,Yes
+2020-03-25 20:00:00 -0400,104608,77,Female,Dade,FL resident,Yes,Yes
+2020-03-27 20:00:00 -0400,107051,77,Male,Dade,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,106518,77,Male,Palm Beach,FL resident,Yes,No
+2020-03-17 20:00:00 -0400,110730,77,Female,Polk,FL resident,Yes,Yes
+2020-03-27 20:00:00 -0400,106561,77,Male,Hillsborough,FL resident,Yes,Yes
+2020-03-27 20:00:00 -0400,103162,78,Female,Dade,FL resident,Yes,Yes
+2020-04-05 20:00:00 -0400,97398,78,Female,Charlotte,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,97581,78,Male,Escambia,FL resident,No,No
+2020-04-04 20:00:00 -0400,97831,78,Male,Hillsborough,FL resident,Yes,Yes
+2020-03-09 20:00:00 -0400,100374,78,Male,Dade,FL resident,Yes,Yes
+2020-03-10 20:00:00 -0400,103607,78,Female,Volusia,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,103744,78,Male,Lee,FL resident,NA,Yes
+2020-03-24 20:00:00 -0400,103955,78,Female,Dade,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,107347,78,Female,Charlotte,FL resident,No,Yes
+2020-03-11 20:00:00 -0400,109080,78,Female,Broward,FL resident,Yes,Yes
+2020-03-23 20:00:00 -0400,109673,78,Female,Highlands,FL resident,Yes,Unknown
+2020-03-16 20:00:00 -0400,109790,78,Male,Dade,FL resident,Yes,Yes
+2020-03-17 20:00:00 -0400,109818,78,Female,Volusia,FL resident,Yes,No
+2020-03-22 20:00:00 -0400,109873,78,Male,Broward,FL resident,Yes,Yes
+2020-03-27 20:00:00 -0400,105713,79,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,103259,79,Female,Manatee,FL resident,Unknown,Yes
+2020-03-17 20:00:00 -0400,109581,79,Male,Broward,FL resident,Yes,No
+2020-03-30 20:00:00 -0400,102569,79,Male,Dade,FL resident,Yes,Yes
+2020-03-06 19:00:00 -0500,111086,79,Female,Orange,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,108351,79,Male,Dade,FL resident,Yes,Yes
+2020-04-01 20:00:00 -0400,102137,79,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,106258,79,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-18 20:00:00 -0400,106567,79,Male,Volusia,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,100772,79,Male,Brevard,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,109085,79,Female,Broward,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,107875,80,Male,Broward,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,110913,80,Male,Citrus,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,107828,80,Female,Orange,FL resident,Yes,Yes
+2020-03-25 20:00:00 -0400,104600,80,Male,Dade,FL resident,Unknown,Yes
+2020-03-21 20:00:00 -0400,103213,80,Female,Lee,FL resident,No,No
+2020-04-04 20:00:00 -0400,98959,80,Male,Broward,FL resident,No,No
+2020-03-13 20:00:00 -0400,102028,80,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,108788,81,Female,Santa Rosa,FL resident,Yes,Yes
+2020-03-25 20:00:00 -0400,107047,81,Male,Manatee,FL resident,Unknown,Yes
+2020-03-18 20:00:00 -0400,107267,81,Male,Orange,FL resident,Unknown,Yes
+2020-03-28 20:00:00 -0400,106093,81,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-12 20:00:00 -0400,110633,81,Male,Palm Beach,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,101359,81,Male,Palm Beach,FL resident,Unknown,Unknown
+2020-04-06 20:00:00 -0400,96406,81,Male,Highlands,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,108218,81,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,102448,81,Male,Dade,FL resident,Yes,Yes
+2020-03-18 20:00:00 -0400,109940,81,Male,Sarasota,FL resident,Yes,Yes
+2020-04-06 20:00:00 -0400,96377,81,Female,Manatee,FL resident,No,No
+2020-03-13 20:00:00 -0400,109392,81,Male,Palm Beach,FL resident,Unknown,Unknown
+2020-03-13 20:00:00 -0400,109143,81,Female,Dade,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,106549,82,Female,Broward,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,99093,82,Male,St. Lucie,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,103176,82,Female,Dade,FL resident,Yes,No
+2020-03-19 20:00:00 -0400,108592,82,Male,Pinellas,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,103689,82,Male,Sarasota,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,98590,82,Male,Dade,FL resident,Yes,Yes
+2020-03-12 20:00:00 -0400,110640,82,Female,Orange,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,97591,82,Male,Dade,FL resident,NA,Unknown
+2020-03-12 20:00:00 -0400,110615,82,Male,Clay,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,102020,82,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,110394,82,Female,Duval,FL resident,No,Yes
+2020-03-17 20:00:00 -0400,106257,82,Female,Dade,FL resident,Unknown,Unknown
+2020-03-23 20:00:00 -0400,106563,82,Male,Highlands,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,104254,82,Female,Palm Beach,FL resident,Unknown,Unknown
+2020-03-23 20:00:00 -0400,109825,82,Male,Sarasota,FL resident,Yes,Yes
+2020-03-16 20:00:00 -0400,108074,83,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,107209,83,Female,Sumter,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,102018,83,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,106607,83,Male,Duval,FL resident,Unknown,Unknown
+2020-03-08 20:00:00 -0400,111153,83,Male,Duval,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,110068,83,Female,Broward,FL resident,Yes,Yes
+2020-02-24 19:00:00 -0500,109963,83,Female,Pinellas,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,104267,83,Male,Dade,FL resident,Unknown,Unknown
+2020-03-22 20:00:00 -0400,105345,83,Male,Sumter,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,110896,83,Male,Duval,FL resident,NA,Yes
+2020-03-23 20:00:00 -0400,109595,83,Male,Broward,FL resident,Yes,Yes
+2020-03-10 20:00:00 -0400,110452,83,Male,Palm Beach,FL resident,Unknown,Yes
+2020-03-16 20:00:00 -0400,110386,83,Male,Dade,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,107855,83,Male,Broward,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,101042,84,Male,Polk,FL resident,Yes,Yes
+2020-02-29 19:00:00 -0500,108083,84,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,108213,84,Female,Palm Beach,FL resident,Unknown,Unknown
+2020-03-26 20:00:00 -0400,108282,84,Female,Palm Beach,FL resident,Unknown,Unknown
+2020-03-24 20:00:00 -0400,109169,84,Male,Dade,FL resident,NA,NA
+2020-03-20 20:00:00 -0400,109667,84,Female,Sumter,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,109871,84,Female,Broward,FL resident,Yes,Yes
+2020-04-03 20:00:00 -0400,95246,84,Male,Volusia,FL resident,No,No
+2020-02-27 19:00:00 -0500,110421,84,Female,Duval,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,110444,84,Male,Duval,FL resident,Unknown,Unknown
+2020-03-10 20:00:00 -0400,110449,84,Male,Duval,FL resident,Yes,Yes
+2020-03-18 20:00:00 -0400,99427,84,Male,Citrus,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,101933,85,Female,Broward,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,108294,85,Male,Palm Beach,FL resident,Unknown,Unknown
+2020-03-26 20:00:00 -0400,104056,85,Male,Pinellas,FL resident,No,No
+2020-04-04 20:00:00 -0400,95703,85,Female,Orange,FL resident,Unknown,Unknown
+2020-03-17 20:00:00 -0400,107838,85,Male,Dade,FL resident,Yes,Yes
+2020-04-01 20:00:00 -0400,103233,85,Female,Lee,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,106206,85,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,101051,85,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,109157,85,Male,Sumter,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,101832,85,Female,Broward,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,110193,85,Female,Palm Beach,FL resident,No,No
+2020-03-20 20:00:00 -0400,100630,86,Male,Dade,FL resident,Yes,Yes
+2020-03-25 20:00:00 -0400,106320,86,Male,Dade,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,104223,86,Male,Sarasota,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,103292,86,Male,Lake,FL resident,No,No
+2020-03-25 20:00:00 -0400,105766,86,Male,Dade,FL resident,Yes,Yes
+2020-04-04 20:00:00 -0400,97386,86,Male,Broward,FL resident,No,No
+2020-03-23 20:00:00 -0400,109600,86,Female,Hillsborough,FL resident,Yes,Yes
+2020-03-15 20:00:00 -0400,110561,86,Male,Broward,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,110008,87,Female,Duval,FL resident,Unknown,Unknown
+2020-03-16 20:00:00 -0400,104454,87,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,108732,87,Female,Duval,FL resident,NA,Yes
+2020-03-29 20:00:00 -0400,105150,87,Female,Palm Beach,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,101033,87,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-12 20:00:00 -0400,108003,87,Male,Okaloosa,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,110581,87,Male,Sarasota,FL resident,Yes,Yes
+2020-03-16 20:00:00 -0400,100851,87,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,107880,87,Male,Citrus,FL resident,NA,Yes
+2020-03-31 20:00:00 -0400,104214,87,Male,Palm Beach,FL resident,Unknown,Unknown
+2020-03-24 20:00:00 -0400,101956,88,Female,Sarasota,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,103201,88,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,105490,88,Male,Orange,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,107763,88,Male,Palm Beach,FL resident,Unknown,Unknown
+2020-03-22 20:00:00 -0400,103217,88,Male,Dade,FL resident,Yes,No
+2020-03-16 20:00:00 -0400,107067,88,Female,Orange,FL resident,Yes,Yes
+2020-03-09 20:00:00 -0400,110453,88,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,99379,88,Female,Sarasota,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,107974,88,Male,Marion,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,98974,88,Female,Broward,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,96369,88,Male,Citrus,FL resident,Yes,Yes
+2020-03-17 20:00:00 -0400,107468,88,Female,Palm Beach,FL resident,Unknown,Yes
+2020-03-16 20:00:00 -0400,104238,88,Male,Palm Beach,FL resident,Yes,Yes
+2020-04-03 20:00:00 -0400,99713,88,Male,Broward,FL resident,Unknown,Unknown
+2020-03-10 20:00:00 -0400,107491,88,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-11 20:00:00 -0400,111085,88,Male,Duval,FL resident,Yes,Yes
+2020-04-05 20:00:00 -0400,97399,89,Unknown,Palm Beach,FL resident,Unknown,Unknown
+2020-04-03 20:00:00 -0400,100111,89,Female,Sumter,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,105419,89,Male,Dade,FL resident,Yes,Yes
+2020-03-08 20:00:00 -0400,108087,89,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,105602,89,Male,Dade,FL resident,Unknown,Yes
+2020-03-26 20:00:00 -0400,106535,89,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-17 20:00:00 -0400,106189,89,Male,Glades,FL resident,Yes,Yes
+2020-03-28 20:00:00 -0400,105828,90,Female,Dade,FL resident,Unknown,Unknown
+2020-03-10 20:00:00 -0400,108665,90,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,105684,90,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,102991,90,Female,Broward,FL resident,Yes,Yes
+2020-03-22 20:00:00 -0400,102460,90,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-17 20:00:00 -0400,109635,90,Male,Orange,FL resident,Yes,Yes
+2020-03-31 20:00:00 -0400,97557,91,Female,Escambia,FL resident,NA,No
+2020-03-19 20:00:00 -0400,105323,91,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,108002,91,Male,Desoto,FL resident,Yes,Yes
+2020-03-26 20:00:00 -0400,103621,91,Male,Seminole,FL resident,Yes,Yes
+2020-03-18 20:00:00 -0400,108786,91,Female,Duval,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,107516,91,Male,Osceola,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,106982,92,Female,Clay,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,105624,92,Male,Charlotte,FL resident,No,Yes
+2020-02-29 19:00:00 -0500,108322,92,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,105730,92,Female,Hillsborough,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,101136,92,Female,Palm Beach,FL resident,Unknown,Unknown
+2020-03-16 20:00:00 -0400,110762,92,Male,Broward,FL resident,No,No
+2020-03-26 20:00:00 -0400,99738,92,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,103067,92,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-23 20:00:00 -0400,109532,93,Female,Broward,FL resident,NA,Yes
+2020-03-20 20:00:00 -0400,100856,93,Male,Bay,FL resident,Yes,Yes
+2020-04-01 20:00:00 -0400,101686,93,Female,Broward,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,107348,93,Female,Charlotte,FL resident,Yes,Yes
+2020-03-09 20:00:00 -0400,104019,93,Male,Dade,FL resident,Unknown,No
+2020-03-07 19:00:00 -0500,110829,94,Male,Broward,FL resident,Yes,Yes
+2020-03-18 20:00:00 -0400,106805,94,Female,Dade,FL resident,Yes,Yes
+2020-03-29 20:00:00 -0400,105462,94,Female,Dade,FL resident,Unknown,Yes
+2020-03-28 20:00:00 -0400,102621,94,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,105782,94,Male,Palm Beach,FL resident,Yes,Yes
+2020-03-19 20:00:00 -0400,108096,94,Female,Broward,FL resident,Yes,Yes
+2020-03-24 20:00:00 -0400,108598,94,Female,Broward,FL resident,Yes,Yes
+2020-03-20 20:00:00 -0400,107894,94,Female,Collier,FL resident,Yes,Yes
+2020-03-21 20:00:00 -0400,108774,94,Male,Lee,FL resident,Yes,Yes
+2020-03-15 20:00:00 -0400,109725,94,Male,Dade,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,104024,95,Female,Palm Beach,FL resident,Unknown,Unknown
+2020-03-18 20:00:00 -0400,110596,95,Male,Broward,FL resident,Yes,Yes
+2020-03-13 20:00:00 -0400,108639,95,Female,St. Lucie,FL resident,Yes,Yes
+2020-03-23 20:00:00 -0400,101625,96,Female,Palm Beach,FL resident,Yes,Yes
+2020-03-30 20:00:00 -0400,104759,96,Female,Lee,FL resident,NA,Yes
+2020-03-20 20:00:00 -0400,110081,96,Female,Broward,FL resident,Yes,Yes
+2020-03-14 20:00:00 -0400,110834,96,Female,Broward,FL resident,NA,Yes
+2020-04-07 20:00:00 -0400,95228,96,Male,Broward,FL resident,No,No
+2020-03-24 20:00:00 -0400,109123,97,Male,Broward,FL resident,Yes,Yes
+2020-04-02 20:00:00 -0400,100670,97,Female,Dade,FL resident,NA,Yes
+2020-04-01 20:00:00 -0400,102348,99,Male,Dade,FL resident,Unknown,Unknown

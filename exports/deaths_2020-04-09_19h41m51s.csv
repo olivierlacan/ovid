@@ -1,0 +1,372 @@
+EventDate,Age,Gender,County,EDvisit,Hospitalized
+2020-04-02 20:00:00 -0400,100,Male,Lee,Unknown,Yes
+2020-03-27 20:00:00 -0400,101,Female,Dade,No,No
+2020-03-16 20:00:00 -0400,28,Male,Sarasota,Yes,No
+2020-03-26 20:00:00 -0400,30,Female,Broward,Unknown,Unknown
+2020-03-23 20:00:00 -0400,31,Female,St. Lucie,Yes,Yes
+2020-03-11 20:00:00 -0400,34,Male,Broward,Yes,Yes
+2020-03-12 20:00:00 -0400,38,Male,Palm Beach,Yes,Yes
+2020-03-23 20:00:00 -0400,38,Female,Broward,Yes,Yes
+2020-03-18 20:00:00 -0400,39,Male,Broward,Yes,Yes
+2020-03-16 20:00:00 -0400,39,Male,Broward,Yes,Yes
+2020-03-13 20:00:00 -0400,39,Male,Lee,Yes,Yes
+2020-03-21 20:00:00 -0400,40,Female,Pinellas,No,Yes
+2020-03-10 20:00:00 -0400,40,Male,Dade,Yes,Yes
+2020-03-26 20:00:00 -0400,41,Male,Palm Beach,Yes,Yes
+2020-03-19 20:00:00 -0400,42,Male,Dade,Yes,Yes
+2020-03-21 20:00:00 -0400,42,Male,Dade,Yes,No
+2020-03-30 20:00:00 -0400,44,Male,Broward,Yes,Yes
+2020-02-20 19:00:00 -0500,44,Female,Dade,Yes,Yes
+2020-03-13 20:00:00 -0400,45,Male,Palm Beach,Yes,Yes
+2020-03-10 20:00:00 -0400,45,Female,Orange,Yes,Yes
+2020-03-23 20:00:00 -0400,46,Female,Hernando,Yes,Yes
+2020-03-28 20:00:00 -0400,47,Male,Dade,Yes,Yes
+2020-03-14 20:00:00 -0400,49,Male,Dade,Yes,Yes
+2020-03-22 20:00:00 -0400,49,Male,Dade,Unknown,Unknown
+2020-03-23 20:00:00 -0400,49,Male,Broward,No,No
+2020-03-20 20:00:00 -0400,49,Female,Polk,Yes,Yes
+2020-03-20 20:00:00 -0400,49,Male,Dade,Yes,Yes
+2020-04-06 20:00:00 -0400,50,Male,Dade,Unknown,Unknown
+2020-03-07 19:00:00 -0500,52,Male,Pinellas,Yes,Yes
+2020-03-06 19:00:00 -0500,52,Male,St. Johns,Yes,Yes
+2020-03-22 20:00:00 -0400,54,Male,Putnam,Yes,Yes
+2020-03-14 20:00:00 -0400,55,Male,Osceola,Yes,Yes
+2020-04-01 20:00:00 -0400,55,Male,Dade,Unknown,Unknown
+2020-03-21 20:00:00 -0400,55,Male,Monroe,Yes,Yes
+2020-03-21 20:00:00 -0400,55,Male,Monroe,NA,Yes
+2020-04-06 20:00:00 -0400,55,Male,Hillsborough,Unknown,Unknown
+2020-03-14 20:00:00 -0400,56,Female,Pinellas,Yes,Yes
+2020-03-28 20:00:00 -0400,56,Male,Broward,Unknown,Unknown
+2020-03-28 20:00:00 -0400,56,Male,Dade,Unknown,No
+2020-03-26 20:00:00 -0400,56,Male,Broward,No,No
+2020-03-26 20:00:00 -0400,57,Male,Broward,Yes,Yes
+2020-03-17 20:00:00 -0400,57,Male,Manatee,Yes,Yes
+2020-03-29 20:00:00 -0400,57,Male,Broward,Unknown,Unknown
+2020-03-07 19:00:00 -0500,57,Male,Broward,Yes,Yes
+2020-03-27 20:00:00 -0400,58,Male,Marion,Yes,Yes
+2020-03-14 20:00:00 -0400,58,Male,Osceola,Yes,Yes
+2020-03-08 20:00:00 -0400,58,Male,Pinellas,Yes,Yes
+2020-03-24 20:00:00 -0400,58,Male,Dade,Unknown,Yes
+2020-04-02 20:00:00 -0400,58,Male,Dade,Unknown,Unknown
+2020-03-26 20:00:00 -0400,59,Female,Palm Beach,Unknown,Unknown
+2020-03-13 20:00:00 -0400,59,Male,St. Lucie,Yes,Yes
+2020-04-02 20:00:00 -0400,60,Male,Broward,Yes,Yes
+2020-03-24 20:00:00 -0400,60,Male,Dade,No,No
+2020-03-15 20:00:00 -0400,60,Male,Polk,Yes,Yes
+2020-04-06 20:00:00 -0400,61,Male,Highlands,Yes,No
+2020-03-15 20:00:00 -0400,61,Male,Collier,Yes,No
+2020-04-06 20:00:00 -0400,61,Male,Broward,Yes,Yes
+2020-03-24 20:00:00 -0400,62,Female,Lee,Yes,Yes
+2020-03-18 20:00:00 -0400,62,Male,Sarasota,Yes,Yes
+2020-02-23 19:00:00 -0500,63,Male,Dade,Yes,Yes
+2020-03-21 20:00:00 -0400,63,Female,Broward,NA,No
+2020-03-27 20:00:00 -0400,64,Female,Palm Beach,No,No
+2020-03-19 20:00:00 -0400,64,Male,Pinellas,Yes,Yes
+2020-03-16 20:00:00 -0400,64,Male,Dade,Yes,Yes
+2020-03-30 20:00:00 -0400,64,Male,Broward,Yes,Yes
+2020-03-20 20:00:00 -0400,64,Male,Broward,Yes,No
+2020-03-16 20:00:00 -0400,65,Male,Clay,No,No
+2020-04-02 20:00:00 -0400,65,Male,Desoto,Yes,Yes
+2020-03-11 20:00:00 -0400,65,Male,Volusia,Yes,Yes
+2020-03-22 20:00:00 -0400,65,Male,Broward,Yes,Yes
+2020-03-21 20:00:00 -0400,65,Male,Dade,Yes,Yes
+2020-04-03 20:00:00 -0400,66,Female,Broward,Yes,No
+2020-03-22 20:00:00 -0400,66,Female,Dade,Yes,Yes
+2020-03-19 20:00:00 -0400,66,Male,Baker,No,Yes
+2020-03-17 20:00:00 -0400,66,Male,Dade,Unknown,Yes
+2020-03-12 20:00:00 -0400,66,Female,Polk,Yes,Yes
+2020-03-20 20:00:00 -0400,66,Female,Osceola,Yes,Yes
+2020-04-05 20:00:00 -0400,66,Male,Broward,No,No
+2020-04-03 20:00:00 -0400,66,Female,Broward,Yes,Yes
+2020-02-14 19:00:00 -0500,67,Male,Lee,Yes,Yes
+2020-03-07 19:00:00 -0500,67,Male,Pasco,Yes,Yes
+2020-03-24 20:00:00 -0400,67,Female,Broward,Yes,Yes
+2020-03-24 20:00:00 -0400,67,Male,Palm Beach,Yes,Yes
+2020-03-10 20:00:00 -0400,67,Male,Lee,Yes,Yes
+2020-03-20 20:00:00 -0400,67,Male,Dade,Yes,Yes
+2020-03-08 20:00:00 -0400,67,Male,St. Johns,Yes,Yes
+2020-03-16 20:00:00 -0400,67,Male,Pinellas,Yes,Yes
+2020-03-26 20:00:00 -0400,67,Male,Broward,Unknown,Unknown
+2020-03-31 20:00:00 -0400,67,Female,Palm Beach,Yes,Yes
+2020-04-04 20:00:00 -0400,68,Male,Palm Beach,Unknown,Unknown
+2020-03-06 19:00:00 -0500,68,Female,Orange,Unknown,Unknown
+2020-03-27 20:00:00 -0400,68,Male,Broward,Yes,Yes
+2020-03-10 20:00:00 -0400,68,Female,Clay,Yes,Yes
+2020-04-02 20:00:00 -0400,68,Female,Palm Beach,Unknown,Unknown
+2020-03-18 20:00:00 -0400,68,Male,Sumter,Yes,Yes
+2020-03-22 20:00:00 -0400,68,Male,Manatee,NA,Yes
+2020-03-13 20:00:00 -0400,68,Male,Polk,Unknown,Yes
+2020-03-22 20:00:00 -0400,68,Female,Dade,Yes,Yes
+2020-03-18 20:00:00 -0400,68,Female,Hillsborough,Yes,Yes
+2020-03-29 20:00:00 -0400,68,Female,Dade,Unknown,Unknown
+2020-03-09 20:00:00 -0400,69,Male,Manatee,Unknown,Yes
+2020-03-21 20:00:00 -0400,69,Male,Hillsborough,Unknown,Yes
+2020-03-11 20:00:00 -0400,69,Male,Dade,Yes,Yes
+2020-04-02 20:00:00 -0400,69,Male,Broward,No,Yes
+2020-04-01 20:00:00 -0400,69,Male,Osceola,Yes,Yes
+2020-03-15 20:00:00 -0400,70,Male,Orange,Unknown,Yes
+2020-03-21 20:00:00 -0400,70,Male,Broward,Unknown,Unknown
+2020-03-03 19:00:00 -0500,70,Male,Manatee,Yes,Yes
+2020-03-05 19:00:00 -0500,70,Male,Clay,Yes,Yes
+2020-03-12 20:00:00 -0400,71,Female,Hillsborough,Yes,No
+2020-03-16 20:00:00 -0400,71,Male,Manatee,Yes,Yes
+2020-04-03 20:00:00 -0400,71,Female,Baker,NA,No
+2020-03-06 19:00:00 -0500,71,Female,Pasco,Yes,Yes
+2020-03-16 20:00:00 -0400,71,Male,Broward,Yes,No
+2020-03-03 19:00:00 -0500,71,Male,Santa Rosa,Yes,Yes
+2020-03-11 20:00:00 -0400,71,Female,Dade,Yes,Yes
+2020-03-28 20:00:00 -0400,71,Male,Lee,No,Yes
+2020-03-26 20:00:00 -0400,72,Female,Palm Beach,Unknown,Unknown
+2020-03-18 20:00:00 -0400,72,Female,Flagler,Yes,Yes
+2020-03-11 20:00:00 -0400,72,Male,Palm Beach,Yes,Yes
+2020-03-22 20:00:00 -0400,72,Male,Broward,Yes,Yes
+2020-04-02 20:00:00 -0400,72,Female,Dade,Unknown,Yes
+2020-03-21 20:00:00 -0400,72,Female,Palm Beach,Yes,Yes
+2020-03-30 20:00:00 -0400,72,Male,Broward,No,No
+2020-03-17 20:00:00 -0400,72,Male,Dade,Unknown,Unknown
+2020-03-19 20:00:00 -0400,73,Male,Collier,Yes,Yes
+2020-03-11 20:00:00 -0400,73,Male,Orange,Unknown,Yes
+2020-03-12 20:00:00 -0400,73,Male,Palm Beach,Yes,Yes
+2020-03-19 20:00:00 -0400,73,Female,Dade,Yes,Yes
+2020-03-31 20:00:00 -0400,73,Female,Citrus,Yes,Yes
+2020-03-20 20:00:00 -0400,73,Female,Polk,Yes,Yes
+2020-03-30 20:00:00 -0400,73,Male,Broward,Yes,Yes
+2020-03-09 20:00:00 -0400,74,Male,Broward,Yes,Yes
+2020-03-17 20:00:00 -0400,74,Male,Broward,Yes,No
+2020-03-26 20:00:00 -0400,74,Female,Dade,Yes,Yes
+2020-03-06 19:00:00 -0500,74,Male,Palm Beach,Yes,Yes
+2020-03-12 20:00:00 -0400,74,Female,Sarasota,Yes,Yes
+2020-03-30 20:00:00 -0400,74,Male,Broward,Yes,Yes
+2020-03-27 20:00:00 -0400,74,Female,Dade,Unknown,Yes
+2020-03-21 20:00:00 -0400,74,Female,Palm Beach,Yes,Yes
+2020-03-29 20:00:00 -0400,74,Male,St. Lucie,No,No
+2020-03-14 20:00:00 -0400,74,Male,Hillsborough,Yes,Yes
+2020-03-30 20:00:00 -0400,74,Female,Citrus,Yes,Yes
+2020-03-09 20:00:00 -0400,74,Female,Palm Beach,Yes,Yes
+2020-03-24 20:00:00 -0400,74,Male,Palm Beach,Unknown,Unknown
+2020-03-16 20:00:00 -0400,74,Female,Lake,Yes,Yes
+2020-03-04 19:00:00 -0500,75,Male,Manatee,Yes,Yes
+2020-03-16 20:00:00 -0400,75,Male,Monroe,Yes,Yes
+2020-03-13 20:00:00 -0400,75,Male,Palm Beach,Yes,Yes
+2020-03-02 19:00:00 -0500,75,Female,Manatee,Unknown,Yes
+2020-03-24 20:00:00 -0400,75,Male,Dade,NA,Yes
+2020-03-16 20:00:00 -0400,75,Male,Broward,Yes,Yes
+2020-03-21 20:00:00 -0400,75,Female,Palm Beach,Yes,Yes
+2020-03-29 20:00:00 -0400,75,Female,Escambia,Yes,Yes
+2020-03-23 20:00:00 -0400,75,Male,Dade,Yes,Yes
+2020-03-22 20:00:00 -0400,75,Female,Broward,Yes,Yes
+2020-03-21 20:00:00 -0400,76,Male,Sumter,Yes,Yes
+2020-03-15 20:00:00 -0400,76,Female,Palm Beach,Yes,Yes
+2020-03-26 20:00:00 -0400,76,Male,Orange,Unknown,Unknown
+2020-03-17 20:00:00 -0400,76,Male,Broward,Yes,Yes
+2020-03-11 20:00:00 -0400,76,Male,Palm Beach,Yes,Yes
+2020-03-23 20:00:00 -0400,76,Female,Brevard,Yes,Yes
+2020-03-30 20:00:00 -0400,76,Female,Palm Beach,NA,NA
+2020-03-13 20:00:00 -0400,76,Female,Palm Beach,Yes,Yes
+2020-03-22 20:00:00 -0400,76,Male,Palm Beach,Unknown,Yes
+2020-03-21 20:00:00 -0400,76,Female,Palm Beach,Yes,Yes
+2020-03-17 20:00:00 -0400,76,Female,Pinellas,Yes,Yes
+2020-04-05 20:00:00 -0400,76,Male,Clay,Unknown,Yes
+2020-03-09 20:00:00 -0400,76,Male,Dade,Yes,Yes
+2020-03-07 19:00:00 -0500,77,Female,Clay,Yes,Yes
+2020-03-28 20:00:00 -0400,77,Male,Palm Beach,Unknown,Unknown
+2020-03-25 20:00:00 -0400,77,Female,Palm Beach,Yes,Yes
+2020-03-14 20:00:00 -0400,77,Male,Broward,Yes,Yes
+2020-03-28 20:00:00 -0400,77,Male,Martin,Yes,Yes
+2020-03-29 20:00:00 -0400,77,Male,Broward,Yes,Yes
+2020-03-12 20:00:00 -0400,77,Male,Lee,Yes,Yes
+2020-03-15 20:00:00 -0400,77,Male,Lee,Yes,Yes
+2020-03-17 20:00:00 -0400,77,Male,Dade,No,No
+2020-04-01 20:00:00 -0400,77,Male,Desoto,Yes,Yes
+2020-03-08 20:00:00 -0400,77,Male,St. Lucie,Yes,Yes
+2020-03-27 20:00:00 -0400,77,Male,Manatee,Unknown,Yes
+2020-02-16 19:00:00 -0500,77,Female,Lee,Yes,Yes
+2020-03-25 20:00:00 -0400,77,Female,Dade,Yes,Yes
+2020-03-27 20:00:00 -0400,77,Male,Dade,Yes,Yes
+2020-03-28 20:00:00 -0400,77,Male,Palm Beach,Yes,No
+2020-03-17 20:00:00 -0400,77,Female,Polk,Yes,Yes
+2020-03-27 20:00:00 -0400,77,Male,Hillsborough,Yes,Yes
+2020-03-27 20:00:00 -0400,78,Female,Dade,Yes,Yes
+2020-04-05 20:00:00 -0400,78,Female,Charlotte,Yes,Yes
+2020-03-31 20:00:00 -0400,78,Male,Escambia,No,No
+2020-04-04 20:00:00 -0400,78,Male,Hillsborough,Yes,Yes
+2020-03-09 20:00:00 -0400,78,Male,Dade,Yes,Yes
+2020-03-10 20:00:00 -0400,78,Female,Volusia,Yes,Yes
+2020-03-31 20:00:00 -0400,78,Male,Lee,NA,Yes
+2020-03-24 20:00:00 -0400,78,Female,Dade,Yes,Yes
+2020-03-14 20:00:00 -0400,78,Female,Charlotte,No,Yes
+2020-03-11 20:00:00 -0400,78,Female,Broward,Yes,Yes
+2020-03-23 20:00:00 -0400,78,Female,Highlands,Yes,Unknown
+2020-03-16 20:00:00 -0400,78,Male,Dade,Yes,Yes
+2020-03-17 20:00:00 -0400,78,Female,Volusia,Yes,No
+2020-03-22 20:00:00 -0400,78,Male,Broward,Yes,Yes
+2020-03-27 20:00:00 -0400,79,Female,Palm Beach,Yes,Yes
+2020-03-30 20:00:00 -0400,79,Female,Manatee,Unknown,Yes
+2020-03-17 20:00:00 -0400,79,Male,Broward,Yes,No
+2020-03-30 20:00:00 -0400,79,Male,Dade,Yes,Yes
+2020-03-06 19:00:00 -0500,79,Female,Orange,Yes,Yes
+2020-03-14 20:00:00 -0400,79,Male,Dade,Yes,Yes
+2020-04-01 20:00:00 -0400,79,Male,Palm Beach,Yes,Yes
+2020-03-19 20:00:00 -0400,79,Female,Palm Beach,Yes,Yes
+2020-03-18 20:00:00 -0400,79,Male,Volusia,Yes,Yes
+2020-03-29 20:00:00 -0400,79,Male,Brevard,Yes,Yes
+2020-03-24 20:00:00 -0400,79,Female,Broward,Yes,Yes
+2020-03-26 20:00:00 -0400,80,Male,Broward,Yes,Yes
+2020-03-13 20:00:00 -0400,80,Male,Citrus,Yes,Yes
+2020-03-22 20:00:00 -0400,80,Female,Orange,Yes,Yes
+2020-03-25 20:00:00 -0400,80,Male,Dade,Unknown,Yes
+2020-03-21 20:00:00 -0400,80,Female,Lee,No,No
+2020-04-04 20:00:00 -0400,80,Male,Broward,No,No
+2020-03-13 20:00:00 -0400,80,Male,Palm Beach,Yes,Yes
+2020-03-20 20:00:00 -0400,81,Female,Santa Rosa,Yes,Yes
+2020-03-25 20:00:00 -0400,81,Male,Manatee,Unknown,Yes
+2020-03-18 20:00:00 -0400,81,Male,Orange,Unknown,Yes
+2020-03-28 20:00:00 -0400,81,Male,Palm Beach,Yes,Yes
+2020-03-12 20:00:00 -0400,81,Male,Palm Beach,Yes,Yes
+2020-04-02 20:00:00 -0400,81,Male,Palm Beach,Unknown,Unknown
+2020-04-06 20:00:00 -0400,81,Male,Highlands,Yes,Yes
+2020-03-22 20:00:00 -0400,81,Male,Palm Beach,Yes,Yes
+2020-03-20 20:00:00 -0400,81,Male,Dade,Yes,Yes
+2020-03-18 20:00:00 -0400,81,Male,Sarasota,Yes,Yes
+2020-04-06 20:00:00 -0400,81,Female,Manatee,No,No
+2020-03-13 20:00:00 -0400,81,Male,Palm Beach,Unknown,Unknown
+2020-03-13 20:00:00 -0400,81,Female,Dade,Yes,Yes
+2020-03-28 20:00:00 -0400,82,Female,Broward,Yes,Yes
+2020-03-31 20:00:00 -0400,82,Male,St. Lucie,Yes,Yes
+2020-03-31 20:00:00 -0400,82,Female,Dade,Yes,No
+2020-03-19 20:00:00 -0400,82,Male,Pinellas,Yes,Yes
+2020-03-28 20:00:00 -0400,82,Male,Sarasota,Yes,Yes
+2020-04-02 20:00:00 -0400,82,Male,Dade,Yes,Yes
+2020-03-12 20:00:00 -0400,82,Female,Orange,Yes,Yes
+2020-03-31 20:00:00 -0400,82,Male,Dade,NA,Unknown
+2020-03-12 20:00:00 -0400,82,Male,Clay,Yes,Yes
+2020-03-13 20:00:00 -0400,82,Female,Palm Beach,Yes,Yes
+2020-03-20 20:00:00 -0400,82,Female,Duval,No,Yes
+2020-03-17 20:00:00 -0400,82,Female,Dade,Unknown,Unknown
+2020-03-23 20:00:00 -0400,82,Male,Highlands,Yes,Yes
+2020-03-31 20:00:00 -0400,82,Female,Palm Beach,Unknown,Unknown
+2020-03-23 20:00:00 -0400,82,Male,Sarasota,Yes,Yes
+2020-03-16 20:00:00 -0400,83,Female,Palm Beach,Yes,Yes
+2020-03-13 20:00:00 -0400,83,Female,Sumter,Yes,Yes
+2020-03-26 20:00:00 -0400,83,Female,Palm Beach,Yes,Yes
+2020-03-28 20:00:00 -0400,83,Male,Duval,Unknown,Unknown
+2020-03-08 20:00:00 -0400,83,Male,Duval,Yes,Yes
+2020-03-21 20:00:00 -0400,83,Female,Broward,Yes,Yes
+2020-02-24 19:00:00 -0500,83,Female,Pinellas,Yes,Yes
+2020-03-31 20:00:00 -0400,83,Male,Dade,Unknown,Unknown
+2020-03-22 20:00:00 -0400,83,Male,Sumter,Yes,Yes
+2020-03-11 20:00:00 -0400,83,Male,Duval,NA,Yes
+2020-03-23 20:00:00 -0400,83,Male,Broward,Yes,Yes
+2020-03-10 20:00:00 -0400,83,Male,Palm Beach,Unknown,Yes
+2020-03-16 20:00:00 -0400,83,Male,Dade,Yes,Yes
+2020-03-26 20:00:00 -0400,83,Male,Broward,Yes,Yes
+2020-04-02 20:00:00 -0400,84,Male,Polk,Yes,Yes
+2020-02-29 19:00:00 -0500,84,Female,Palm Beach,Yes,Yes
+2020-03-26 20:00:00 -0400,84,Female,Palm Beach,Unknown,Unknown
+2020-03-26 20:00:00 -0400,84,Female,Palm Beach,Unknown,Unknown
+2020-03-24 20:00:00 -0400,84,Male,Dade,NA,NA
+2020-03-20 20:00:00 -0400,84,Female,Sumter,Yes,Yes
+2020-03-19 20:00:00 -0400,84,Female,Broward,Yes,Yes
+2020-04-03 20:00:00 -0400,84,Male,Volusia,No,No
+2020-02-27 19:00:00 -0500,84,Female,Duval,Yes,Yes
+2020-03-20 20:00:00 -0400,84,Male,Duval,Unknown,Unknown
+2020-03-10 20:00:00 -0400,84,Male,Duval,Yes,Yes
+2020-03-18 20:00:00 -0400,84,Male,Citrus,Yes,Yes
+2020-03-29 20:00:00 -0400,85,Female,Broward,Yes,Yes
+2020-03-26 20:00:00 -0400,85,Male,Palm Beach,Unknown,Unknown
+2020-03-26 20:00:00 -0400,85,Male,Pinellas,No,No
+2020-04-04 20:00:00 -0400,85,Female,Orange,Unknown,Unknown
+2020-03-17 20:00:00 -0400,85,Male,Dade,Yes,Yes
+2020-04-01 20:00:00 -0400,85,Female,Lee,Yes,Yes
+2020-03-28 20:00:00 -0400,85,Male,Palm Beach,Yes,Yes
+2020-03-29 20:00:00 -0400,85,Female,Palm Beach,Yes,Yes
+2020-03-20 20:00:00 -0400,85,Male,Sumter,Yes,Yes
+2020-03-31 20:00:00 -0400,85,Female,Broward,Yes,Yes
+2020-03-13 20:00:00 -0400,85,Female,Palm Beach,No,No
+2020-03-20 20:00:00 -0400,86,Male,Dade,Yes,Yes
+2020-03-25 20:00:00 -0400,86,Male,Dade,Yes,Yes
+2020-03-11 20:00:00 -0400,86,Male,Sarasota,Yes,Yes
+2020-03-31 20:00:00 -0400,86,Male,Lake,No,No
+2020-03-25 20:00:00 -0400,86,Male,Dade,Yes,Yes
+2020-04-04 20:00:00 -0400,86,Male,Broward,No,No
+2020-03-23 20:00:00 -0400,86,Female,Hillsborough,Yes,Yes
+2020-03-15 20:00:00 -0400,86,Male,Broward,Yes,Yes
+2020-03-21 20:00:00 -0400,87,Female,Duval,Unknown,Unknown
+2020-03-16 20:00:00 -0400,87,Male,Palm Beach,Yes,Yes
+2020-03-22 20:00:00 -0400,87,Female,Duval,NA,Yes
+2020-03-29 20:00:00 -0400,87,Female,Palm Beach,Yes,Yes
+2020-04-02 20:00:00 -0400,87,Male,Palm Beach,Yes,Yes
+2020-03-12 20:00:00 -0400,87,Male,Okaloosa,Yes,Yes
+2020-03-14 20:00:00 -0400,87,Male,Sarasota,Yes,Yes
+2020-03-16 20:00:00 -0400,87,Female,Palm Beach,Yes,Yes
+2020-03-20 20:00:00 -0400,87,Male,Citrus,NA,Yes
+2020-03-31 20:00:00 -0400,87,Male,Palm Beach,Unknown,Unknown
+2020-03-24 20:00:00 -0400,88,Female,Sarasota,Yes,Yes
+2020-03-21 20:00:00 -0400,88,Male,Palm Beach,Yes,Yes
+2020-03-28 20:00:00 -0400,88,Male,Orange,Yes,Yes
+2020-03-26 20:00:00 -0400,88,Male,Palm Beach,Unknown,Unknown
+2020-03-22 20:00:00 -0400,88,Male,Dade,Yes,No
+2020-03-16 20:00:00 -0400,88,Female,Orange,Yes,Yes
+2020-03-09 20:00:00 -0400,88,Male,Palm Beach,Yes,Yes
+2020-03-19 20:00:00 -0400,88,Female,Sarasota,Yes,Yes
+2020-03-26 20:00:00 -0400,88,Male,Marion,Yes,Yes
+2020-03-28 20:00:00 -0400,88,Female,Broward,Yes,Yes
+2020-03-29 20:00:00 -0400,88,Male,Citrus,Yes,Yes
+2020-03-17 20:00:00 -0400,88,Female,Palm Beach,Unknown,Yes
+2020-03-16 20:00:00 -0400,88,Male,Palm Beach,Yes,Yes
+2020-04-03 20:00:00 -0400,88,Male,Broward,Unknown,Unknown
+2020-03-10 20:00:00 -0400,88,Male,Palm Beach,Yes,Yes
+2020-03-11 20:00:00 -0400,88,Male,Duval,Yes,Yes
+2020-04-05 20:00:00 -0400,89,Unknown,Palm Beach,Unknown,Unknown
+2020-04-03 20:00:00 -0400,89,Female,Sumter,Yes,Yes
+2020-03-28 20:00:00 -0400,89,Male,Dade,Yes,Yes
+2020-03-08 20:00:00 -0400,89,Male,Palm Beach,Yes,Yes
+2020-03-29 20:00:00 -0400,89,Male,Dade,Unknown,Yes
+2020-03-26 20:00:00 -0400,89,Male,Palm Beach,Yes,Yes
+2020-03-17 20:00:00 -0400,89,Male,Glades,Yes,Yes
+2020-03-28 20:00:00 -0400,90,Female,Dade,Unknown,Unknown
+2020-03-10 20:00:00 -0400,90,Female,Palm Beach,Yes,Yes
+2020-03-26 20:00:00 -0400,90,Female,Palm Beach,Yes,Yes
+2020-03-31 20:00:00 -0400,90,Female,Broward,Yes,Yes
+2020-03-22 20:00:00 -0400,90,Female,Palm Beach,Yes,Yes
+2020-03-17 20:00:00 -0400,90,Male,Orange,Yes,Yes
+2020-03-31 20:00:00 -0400,91,Female,Escambia,NA,No
+2020-03-19 20:00:00 -0400,91,Male,Palm Beach,Yes,Yes
+2020-03-20 20:00:00 -0400,91,Male,Desoto,Yes,Yes
+2020-03-26 20:00:00 -0400,91,Male,Seminole,Yes,Yes
+2020-03-18 20:00:00 -0400,91,Female,Duval,Yes,Yes
+2020-03-13 20:00:00 -0400,91,Male,Osceola,Yes,Yes
+2020-03-24 20:00:00 -0400,92,Female,Clay,Yes,Yes
+2020-03-19 20:00:00 -0400,92,Male,Charlotte,No,Yes
+2020-02-29 19:00:00 -0500,92,Male,Palm Beach,Yes,Yes
+2020-03-29 20:00:00 -0400,92,Female,Hillsborough,Yes,Yes
+2020-04-02 20:00:00 -0400,92,Female,Palm Beach,Unknown,Unknown
+2020-03-16 20:00:00 -0400,92,Male,Broward,No,No
+2020-03-26 20:00:00 -0400,92,Male,Palm Beach,Yes,Yes
+2020-03-19 20:00:00 -0400,92,Female,Palm Beach,Yes,Yes
+2020-03-23 20:00:00 -0400,93,Female,Broward,NA,Yes
+2020-03-20 20:00:00 -0400,93,Male,Bay,Yes,Yes
+2020-04-01 20:00:00 -0400,93,Female,Broward,Yes,Yes
+2020-03-24 20:00:00 -0400,93,Female,Charlotte,Yes,Yes
+2020-03-09 20:00:00 -0400,93,Male,Dade,Unknown,No
+2020-03-07 19:00:00 -0500,94,Male,Broward,Yes,Yes
+2020-03-18 20:00:00 -0400,94,Female,Dade,Yes,Yes
+2020-03-29 20:00:00 -0400,94,Female,Dade,Unknown,Yes
+2020-03-28 20:00:00 -0400,94,Female,Palm Beach,Yes,Yes
+2020-03-14 20:00:00 -0400,94,Male,Palm Beach,Yes,Yes
+2020-03-19 20:00:00 -0400,94,Female,Broward,Yes,Yes
+2020-03-24 20:00:00 -0400,94,Female,Broward,Yes,Yes
+2020-03-20 20:00:00 -0400,94,Female,Collier,Yes,Yes
+2020-03-21 20:00:00 -0400,94,Male,Lee,Yes,Yes
+2020-03-15 20:00:00 -0400,94,Male,Dade,Yes,Yes
+2020-03-30 20:00:00 -0400,95,Female,Palm Beach,Unknown,Unknown
+2020-03-18 20:00:00 -0400,95,Male,Broward,Yes,Yes
+2020-03-13 20:00:00 -0400,95,Female,St. Lucie,Yes,Yes
+2020-03-23 20:00:00 -0400,96,Female,Palm Beach,Yes,Yes
+2020-03-30 20:00:00 -0400,96,Female,Lee,NA,Yes
+2020-03-20 20:00:00 -0400,96,Female,Broward,Yes,Yes
+2020-03-14 20:00:00 -0400,96,Female,Broward,NA,Yes
+2020-04-07 20:00:00 -0400,96,Male,Broward,No,No
+2020-03-24 20:00:00 -0400,97,Male,Broward,Yes,Yes
+2020-04-02 20:00:00 -0400,97,Female,Dade,NA,Yes
+2020-04-01 20:00:00 -0400,99,Male,Dade,Unknown,Unknown

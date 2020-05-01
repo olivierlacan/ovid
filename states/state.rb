@@ -292,7 +292,7 @@ class State
           puts "current offset: #{last_item_id}"
           response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
           puts "Count of results: #{response["features"].count}"
-          @response_data << response["features"]
+          @response_data.push(*response["features"])
 
           last_item_id = response["features"].last["attributes"]["ObjectId"]
         end

@@ -240,6 +240,27 @@ class State
   def self.get_case_data
     if cases_feature_url
       metadata = get(cases_feature_url)
+
+      begin
+        if metadata.has_key?("error")
+          error = metadata["error"]
+          message = "#{error["code"]} - #{error["message"]} for #{cases_feature_url}"
+          puts message
+          raise message
+        end
+      rescue => error
+        Bugsnag.notify(error) do |report|
+          report.severity = "error"
+
+          report.add_tab(:response, {
+            url: cases_feature_url,
+            metadata: metadata
+          })
+        end
+
+        return nil
+      end
+
       last_edit = last_edit(metadata)
 
       maximum_record_count = metadata["standardMaxRecordCount"]

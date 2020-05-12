@@ -22,7 +22,7 @@ class Florida < State
   end
 
   def self.cases_feature_url
-    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/ArcGIS/rest/services/Florida_COVID19_Case_Line_Data/FeatureServer/0"
+    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID19_Case_Line_Data_NEW/FeatureServer/0"
   end
 
   def self.dashboard_url

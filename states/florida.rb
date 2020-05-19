@@ -21,9 +21,12 @@ class Florida < State
     "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/ArcGIS/rest/services/Florida_COVID19_Cases/FeatureServer/0"
   end
 
-  def self.cases_feature_url
-    "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID19_Case_Line_Data_NEW/FeatureServer/0"
-  end
+  # NOTE: temporarily disabled because the case line data exceeds the limit
+  # for single payload fetching. Will fix ASAP.
+  #
+  # def self.cases_feature_url
+  #   "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID19_Case_Line_Data_NEW/FeatureServer/0"
+  # end
 
   def self.dashboard_url
     "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"

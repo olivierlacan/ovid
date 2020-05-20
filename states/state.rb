@@ -9,6 +9,10 @@ class State
   CACHE_EXPIRATION_IN_MINUTES = 30
   @@state_classes = []
 
+  class << self
+    attr_reader :response_data
+  end
+
   def self.inherited(instance)
     @@state_classes << instance
   end
@@ -302,8 +306,8 @@ class State
 
       last_item_id = initial_response["features"].last["attributes"]["ObjectId"]
 
-      @response_data = []
-      @response_data.push(*initial_response["features"])
+      @response_data = { fields: initial_response["fields"], features: [] }
+      @response_data[:features].push(*initial_response["features"])
 
       # we need to iterate because the maximum record count sent back per
       # request is lower than the absolute total number of record.
@@ -313,7 +317,7 @@ class State
           puts "current offset: #{last_item_id}"
           response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
           puts "Count of results: #{response["features"].count}"
-          @response_data.push(*response["features"])
+          @response_data[:features].push(*response["features"])
 
           last_item_id = response["features"].last["attributes"]["ObjectId"]
         end
@@ -322,7 +326,7 @@ class State
       end
 
       case_report = generate_case_report(
-        @response_data,
+        @response_data[:features],
         initialize_store(case_keys)
       )
 

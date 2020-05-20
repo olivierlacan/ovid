@@ -6,7 +6,7 @@ require "json"
 class State
   include Comparable
 
-  CACHE_EXPIRATION_IN_MINUTES = 15
+  CACHE_EXPIRATION_IN_MINUTES = 30
   @@state_classes = []
 
   def self.inherited(instance)

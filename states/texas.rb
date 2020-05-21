@@ -10,7 +10,7 @@ class Texas < State
   ACRONYM = "TDSHS"
 
   def self.counties_feature_url
-    "https://services5.arcgis.com/ACaLB9ifngzawspq/arcgis/rest/services/COVID19County_ViewLayer/FeatureServer/0"
+    "https://services5.arcgis.com/ACaLB9ifngzawspq/ArcGIS/rest/services/DSHS_COVID19_Service/FeatureServer/0"
   end
 
   def self.hospitals_feature_url
@@ -24,29 +24,35 @@ class Texas < State
   def self.county_keys
     # Example data:
     #
-    # OBJECTID_1: 8,
-    # OBJECTID: 8,
-    # County: "Austin",
-    # FIPS: "48015",
-    # COUNTYFP10: "015",
-    # Shape_Leng: 258336.897316,
-    # Count_: 2,
-    # LastUpdate: 1585586821356,
-    # Shape__Area: 1693781284.64355,
-    # Shape__Length: 258336.897316496,
-    # Deaths: null
+    # OBJECTID: 2
+    # County: Andrews
+    # Positive: 22
+    # Fatalities: 0
+    # Recoveries: 21
+    # Active: 1
+    # Shape__Area:  3872439726.24023
+    # Shape__Length:  256968.659368344
+
     {
-      Positive_Cases: {
-        name: "Positives (Counties)",
-        description: "Tallied from individual county cases.",
+      Positive: {
+        name: "Positives",
         highlight: true,
-        source: "Count_"
+        source: "Positive"
       },
-      Deaths: {
-        name: "Deaths (Counties)",
-        description: "Tallied from individual county cases.",
+      Fatalities: {
+        name: "Fatalities",
         highlight: true,
-        source: "Deaths"
+        source: "Fatalities"
+      },
+      Recoveries: {
+        name: "Recoveries",
+        highlight: true,
+        source: "Recoveries"
+      },
+      Active: {
+        name: "Active",
+        highlight: true,
+        source: "Active"
       }
     }
   end

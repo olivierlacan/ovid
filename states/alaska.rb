@@ -13,9 +13,6 @@ class Alaska < State
     nil
   end
 
-  def self.counties_feature_url
-    "https://services1.arcgis.com/WzFsmainVTuD5KML/ArcGIS/rest/services/Cases_current/FeatureServer/0"
-  end
 
   def self.hospitals_feature_url
     "https://services1.arcgis.com/WzFsmainVTuD5KML/ArcGIS/rest/services/COVID_Hospital_Dataset_(prod)/FeatureServer/0"
@@ -23,54 +20,6 @@ class Alaska < State
 
   def self.dashboard_url
     "https://coronavirus-response-alaska-dhss.hub.arcgis.com/"
-  end
-
-  def self.county_keys
-    # name: Matanuska-Susitna Borough
-    # GlobalID: 6f67b271-42f4-4f63-9259-f42484e17715
-    # CreationDate: 3/17/2020 7:10:27 PM
-    # Creator:  mack.wood_Alaska_DHSS
-    # EditDate: 3/17/2020 7:10:27 PM
-    # Editor: mack.wood_Alaska_DHSS
-    # Shape__Area:  302045640682.781
-    # Shape__Length:  2478217.29752402
-    # name_1584379187045: Matanuska-Susitna Borough
-    # reportdt:
-    # confirmed:  4
-    # recovered:  0
-    # deaths: 0
-    # active: 4
-    # GlobalID_1584379187045: 0c8715b9-2f92-45c0-b518-2a828fb37e8e
-    # tested: 0
-    # CreationDate_1584379187045:
-    # Creator_1584379187045:
-    # EditDate_1584379187045:
-    # Editor_1584379187045:
-    # ObjectId:
-    {
-      confirmed: {
-        name: "Confirmed",
-        highlight: true
-      },
-      deaths: {
-        name: "Deaths",
-        highlight: true,
-        source: "deaths"
-      },
-      active: {
-        name: "Active",
-        highlight: true,
-        source: "active"
-      },
-      tested: {
-        name: "Tested",
-        source: "tested"
-      },
-      recovered: {
-        name: "Recovered",
-        source: "recovered"
-      }
-    }
   end
 
   def self.hospitals_keys

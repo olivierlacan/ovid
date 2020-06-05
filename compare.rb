@@ -8,10 +8,10 @@ uri = URI "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Fl
 raw = Net::HTTP.get(uri)
 json = JSON.parse(raw)
 
-timestamp = Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")
+timestamp = DateTime.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")
 
-first_date = Time.strptime(json["features"].first["attributes"]["EventDate"].to_s, "%Q").to_date
-last_date = Time.strptime(json["features"].last["attributes"]["EventDate"].to_s, "%Q").to_date
+first_date = DateTime.strptime(json["features"].first["attributes"]["EventDate"].to_s, "%Q").to_date
+last_date = DateTime.strptime(json["features"].last["attributes"]["EventDate"].to_s, "%Q").to_date
 
 dates = (first_date..last_date).to_a
 
@@ -20,7 +20,7 @@ CSV.open("exports/event_date_grouped_#{timestamp}.csv", "wb") do |csv|
 
   dates.each do |date|
     matching_record = json["features"].find do
-      event_date = Time.strptime(_1["attributes"]["EventDate"].to_s, "%Q").to_date
+      event_date = DateTime.strptime(_1["attributes"]["EventDate"].to_s, "%Q").to_date
 
       event_date == date
     end
@@ -41,7 +41,7 @@ CSV.open("exports/event_date_grouped_by_case_date_#{timestamp}.csv", "wb") do |c
 
   dates.each do |date|
     matching_record = case_date_json["features"].find do
-      event_date = Time.strptime(_1["attributes"]["Case1"].to_s, "%Q").to_date
+      event_date = DateTime.strptime(_1["attributes"]["Case1"].to_s, "%Q").to_date
 
       event_date == date
     end
@@ -63,7 +63,7 @@ CSV.open("exports/deaths_by_day_export_#{timestamp}.csv", "wb") do |csv|
 
   dates.each do |date|
     matching_record = deaths_json["features"].find do
-      event_date = Time.strptime(_1["attributes"]["Date"].to_s, "%Q").to_date
+      event_date = DateTime.strptime(_1["attributes"]["Date"].to_s, "%Q").to_date
 
       event_date == date
     end

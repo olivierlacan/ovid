@@ -10,7 +10,7 @@ class Texas < State
   ACRONYM = "TDSHS"
 
   def self.counties_feature_url
-    "https://services5.arcgis.com/ACaLB9ifngzawspq/ArcGIS/rest/services/DSHS_COVID19_Service/FeatureServer/0"
+    "https://services5.arcgis.com/ACaLB9ifngzawspq/ArcGIS/rest/services/DSHS_COVID19_Cases_Service/FeatureServer/0"
   end
 
   def self.hospitals_feature_url

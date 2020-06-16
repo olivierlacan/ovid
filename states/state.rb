@@ -426,7 +426,7 @@ class State
   end
 
   def self.cache
-    @redis ||= if production?
+    $redis ||= if production?
       Redis.new(url: ENV["REDIS_URL"])
     else
       Redis.new

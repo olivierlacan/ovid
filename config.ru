@@ -10,6 +10,7 @@ require "./states/louisiana"
 require "./states/new_jersey"
 require "./states/minnesota"
 require "./states/missouri"
+require "./states/oklahoma"
 
 if State.production?
   Bugsnag.configure do |config|

@@ -45,6 +45,10 @@ class State
     nil
   end
 
+  def self.hospitals_url
+    nil
+  end
+
   def self.county_keys
     nil
   end
@@ -58,6 +62,10 @@ class State
   end
 
   def self.hospitals_keys
+    nil
+  end
+
+  def self.hospitals_csv_keys
     nil
   end
 
@@ -122,6 +130,21 @@ class State
     else
       puts "Generating new report ..."
       get_hospitals_data
+    end
+  end
+
+  def self.get_csv(url)
+    uri = URI(url)
+    puts "Sending GET request to #{uri} ..."
+    binding.irb
+    response = Net::HTTP.get_response(uri)
+    if response.is_a?(Net::HTTPSuccess)
+      puts "Success!"
+      JSON.parse(response.body)
+    else
+      raise "#{response.code}: #{response.message}"
+      puts "Headers: #{res.to_hash.inspect}"
+      puts res.body if response.response_body_permitted?
     end
   end
 
@@ -191,6 +214,21 @@ class State
       }
 
       response = get("#{hospitals_feature_url}/query", query)
+
+      hospitals_report = generate_hospitals_report(
+        response["features"],
+        initialize_store(hospitals_keys)
+      )
+    elsif hospitals_csv_keys
+      require 'csv'
+      require 'open-uri'
+
+      response = get_csv(hospitals_csv_url)
+
+      binding.irb
+      CSV.read(response, headers: :first_row, col_sep: "  ")
+
+      last_edit = last_edit(metadata)
 
       hospitals_report = generate_hospitals_report(
         response["features"],

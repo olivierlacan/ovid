@@ -136,7 +136,6 @@ class State
   def self.get_csv(url)
     uri = URI(url)
     puts "Sending GET request to #{uri} ..."
-    binding.irb
     response = Net::HTTP.get_response(uri)
     if response.is_a?(Net::HTTPSuccess)
       puts "Success!"
@@ -155,7 +154,8 @@ class State
     puts "Sending GET request to #{uri} ..."
     response = Net::HTTP.get_response(uri)
     if response.is_a?(Net::HTTPSuccess)
-      puts "Success!"
+      puts "Apparent success!"
+      raise response["error"] if response["error"]
       JSON.parse(response.body)
     else
       raise "#{response.code}: #{response.message}"
@@ -225,7 +225,6 @@ class State
 
       response = get_csv(hospitals_csv_url)
 
-      binding.irb
       CSV.read(response, headers: :first_row, col_sep: "  ")
 
       last_edit = last_edit(metadata)
@@ -354,9 +353,7 @@ class State
         while last_item_id < record_total do
           puts "current offset: #{last_item_id}"
           response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
-          
-          raise response["error"] if response["error"]
-            
+
           puts "Count of results: #{response["features"].count}"
           @response_data[:features].push(*response["features"])
 

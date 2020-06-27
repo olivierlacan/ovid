@@ -53,6 +53,26 @@ CSV.open("exports/event_date_grouped_by_case_date_#{timestamp}.csv", "wb") do |c
   end
 end
 
+case_by_day_uri = URI "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/ArcGIS/rest/services/Florida_COVID_19_Cases_by_Day_For_Time_Series/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=standard&outFields=*&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=false&orderByFields=Date&groupByFieldsForStatistics=Date&outStatistics=%5B%7B%0D%0A++++%22statisticType%22%3A+%22sum%22%2C%0D%0A++++%22onStatisticField%22%3A+%22FREQUENCY%22%2C+%0D%0A++++%22outStatisticFieldName%22%3A+%22Count%22%0D%0A%7D%5D&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=json&token="
+case_by_day_raw = Net::HTTP.get(case_by_day_uri)
+case_by_day_json = JSON.parse(case_by_day_raw)
+
+CSV.open("exports/cases_by_day_with_aggregated_frequency_#{timestamp}.csv", "wb") do |csv|
+  csv << ["Date", "Count"]
+
+  dates.each do |date|    
+    matching_record = case_by_day_json["features"].find do
+      event_date = DateTime.strptime(_1["attributes"]["Date"].to_s, "%Q").to_date
+
+      event_date == date
+    end
+
+    csv << [
+      date.iso8601,
+      matching_record ? matching_record["attributes"]["Count"] : nil
+    ]
+  end
+end
 
 deaths_uri = URI "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID_19_Deaths_by_Day/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=standard&outFields=*&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=false&orderByFields=Date&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=pjson&token="
 deaths_raw = Net::HTTP.get(deaths_uri)

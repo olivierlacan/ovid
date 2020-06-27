@@ -354,6 +354,9 @@ class State
         while last_item_id < record_total do
           puts "current offset: #{last_item_id}"
           response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
+          
+          raise response["error"] if response["error"]
+            
           puts "Count of results: #{response["features"].count}"
           @response_data[:features].push(*response["features"])
 

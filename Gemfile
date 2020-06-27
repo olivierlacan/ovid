@@ -18,4 +18,5 @@ group :development do
   gem "rerun"
   gem "terminal-notifier"
   gem "foreman"
+  gem "origami"
 end

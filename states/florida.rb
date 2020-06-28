@@ -108,6 +108,12 @@ class Florida < State
         description: "Number of people who are monitored by have yet to be contacted by a contact tracer.",
         source: "Contact"
       },
+      contact_not_available: {
+        name: "Contact with COVID-19 positive - NA",
+        positive_value: "NA",
+        description: "It's unclear how and why this field is different from NO and UNKNOWN values of the Contact field.",
+        source: "Contact"
+      },
       female: {
         name: "Female",
         positive_value: "Female",

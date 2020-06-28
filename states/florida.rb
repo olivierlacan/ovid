@@ -54,49 +54,41 @@ class Florida < State
         name: "Hospitalized - No",
         description: "Includes both Florida residents and non-residents unlike the FDOH dashboard which excludes non-residents in 'Hospitalizations'",
         positive_value: "NO",
-        highlight: true,
         source: "Hospitalized"
       },
       emergency_visits_yes: {
         name: "Emergency Visits - Yes",
         positive_value: "YES",
-        highlight: true,
         source: "EDvisit"
       },
       emergency_visits_no: {
         name: "Emergency Visits - No",
         positive_value: "NO",
-        highlight: true,
         source: "EDvisit"
       },
       travel_related_yes: {
         name: "Travel Related - Yes",
         positive_value: "Yes",
-        highlight: true,
         source: "Travel_related"
       },
       travel_related_no: {
         name: "Travel Related - No",
         positive_value: "No",
-        highlight: true,
         source: "Travel_related"
       },
       residents: {
         name: "Florida Residents",
         positive_value: "FL resident",
-        highlight: true,
         source: "Jurisdiction"
       },
       non_residents: {
         name: "Non-Florida Residents",
         positive_value: "Non-FL resident",
-        highlight: true,
         source: "Jurisdiction"
       },
       not_diagnosed_in_florida: {
         name: "Not diagnosed/isolated in Florida",
         positive_value: "Not diagnosed/isolated in FL",
-        highlight: true,
         source: "Jurisdiction"
       },
       contact_yes: {
@@ -108,32 +100,27 @@ class Florida < State
       contact_no: {
         name: "Contact with COVID-19 positive - No",
         positive_value: "NO",
-        highlight: true,
         source: "Contact"
       },
       contact_unknown: {
         name: "Contact with COVID-19 positive - Unknown",
         positive_value: "UNKNOWN",
         description: "Number of people who are monitored by have yet to be contacted by a contact tracer.",
-        highlight: true,
         source: "Contact"
       },
       female: {
         name: "Female",
         positive_value: "Female",
-        highlight: true,
         source: "Gender"
       },
       male: {
         name: "Male",
         positive_value: "Male",
-        highlight: true,
         source: "Gender"
       },
       unknown_gender: {
         name: "Unknown Gender",
         positive_value: "Unknown",
-        highlight: true,
         source: "Gender"
       }
     }

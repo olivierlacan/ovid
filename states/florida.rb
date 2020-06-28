@@ -111,6 +111,13 @@ class Florida < State
         highlight: true,
         source: "Contact"
       },
+      contact_unknown: {
+        name: "Contact with COVID-19 positive - Unknown",
+        positive_value: "UNKNOWN",
+        description: "Number of people who are monitored by have yet to be contacted by a contact tracer.",
+        highlight: true,
+        source: "Contact"
+      },
       female: {
         name: "Female",
         positive_value: "Female",

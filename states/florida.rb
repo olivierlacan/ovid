@@ -136,235 +136,213 @@ class Florida < State
     {
       age_0_to_4: {
         name: "PUIs - Age - 0 to 4",
-        highlight: false,
         source: "Age_0_4"
       },
       age_5_to_14: {
         name: "PUIs - Age - 5 to 14",
-        highlight: false,
         source: "Age_5_14"
       },
       age_15_to_24: {
         name: "PUIs - Age - 15 to 24",
-        highlight: false,
         source: "Age_15_24"
       },
       age_25_to_34: {
         name: "PUIs - Age - 25 to 34",
-        highlight: false,
         source: "Age_25_34"
       },
       age_35_to_44: {
         name: "PUIs - Age - 35 to 44",
-        highlight: false,
         source: "Age_35_44"
       },
       age_45_to_54: {
         name: "PUIs - Age - 45 to 54",
-        highlight: false,
         source: "Age_45_54"
       },
       age_55_to_64: {
         name: "PUIs - Age - 55 to 64",
-        highlight: false,
         source: "Age_55_64"
       },
       age_65_to_74: {
         name: "PUIs - Age - 65 to 74",
-        highlight: false,
         source: "Age_65_74"
       },
       age_75_to_84: {
         name: "PUIs - Age - 75 to 84",
-        highlight: false,
         source: "Age_75_84"
       },
       age_85_and_over: {
         name: "PUIs - Age - 85 and over",
-        highlight: false,
         source: "Age_85plus"
       },
       age_unknown: {
         name: "PUIs - Age - Unknown",
-        highlight: false,
         source: "Age_Unkn"
       },
       PUIs_residents: {
         name: "PUIs - Residents",
-        highlight: false,
         source: "PUIFLRes"
       },
       PUIs_non_residents: {
         name: "PUIs - Non-residents",
-        highlight: false,
+        description: "Number of PUIs who are under surveillance in Florida but are not residents of the state",
         source: "PUINotFLRes"
       },
       PUIs_residents_out: {
         name: "PUIs - Residents Out of State",
-        highlight: false,
+        description: "Number of PUIs who are Florida residents located in Florida",
         source: "PUIFLResOut"
       },
       PUIs_female: {
         name: "PUIs - Female",
-        highlight: false,
+        description: "Number of female PUIs",
         source: "PUIFemale"
       },
       PUIs_male: {
         name: "PUIs - Male",
-        highlight: false,
+        description: "Number of male PUIs",
         source: "PUIMale"
       },
       PUIs_sex_unknown: {
         name: "PUIs - Sex Unknown",
-        highlight: false,
+        description: "Number of PUIs where sex was not listed",
         source: "PUISexUnkn"
       },
       PUIs_contact_no: {
         name: "PUIs - Cont - No",
+        description: "PUIs with no known contact with current or previous confirmed cases",
         source: "PUIContNo"
       },
       PUIs_contact_unknown: {
         name: "PUIs - Cont - Unknown",
+        description: "PUIs where contact with current or previous confirmed cases is not known or under investigation",
         source: "PUIContUnkn"
       },
       PUIs_age_average: {
         name: "PUIs - Age - Average",
         source: "PUIAgeAvrg"
       },
+      PUIs_travel_yes: {
+        name: "PUIs - Travel - Yes",
+        description: "Total PUIs designated who recently traveled overseas or to an area with community spread",
+        source: "PUITravelYes"
+      },
       PUIs_travel_no: {
         name: "PUIs - Travel - No",
+        description: "Total PUIs designated as not being a risk related to recent travel",
         source: "PUITravelNo"
+      },
+      PUIs_travel_unknown: {
+        name: "PUIs - Travel - Unknown",
+        description: "Total PUIs designated where a travel-related designation has not yet been made",
+        source: "PUITravelUnkn"
       },
       positive_age_0_to_4: {
         name: "Positives - Age - 0 to 4",
-        highlight: false,
         source: "C_Age_0_4"
       },
       positive_age_5_to_14: {
         name: "Positives - Age - 5 to 14",
-        highlight: false,
         source: "C_Age_5_14"
       },
       positive_age_15_to_24: {
         name: "Positives - Age - 15 to 24",
-        highlight: false,
         source: "C_Age_15_24"
       },
       positive_age_25_to_34: {
         name: "Positives - Age - 25 to 34",
-        highlight: false,
         source: "C_Age_25_34"
       },
       positive_age_35_to_44: {
         name: "Positives - Age - 35 to 44",
-        highlight: false,
         source: "C_Age_35_44"
       },
       positive_age_45_to_54: {
         name: "Positives - Age - 45 to 54",
-        highlight: false,
         source: "C_Age_45_54"
       },
       positive_age_55_to_64: {
         name: "Positives - Age - 55 to 64",
-        highlight: false,
         source: "C_Age_55_64"
       },
       positive_age_65_to_74: {
         name: "Positives - Age - 65 to 74",
-        highlight: false,
         source: "C_Age_65_74"
       },
       positive_age_75_to_84: {
         name: "Positives - Age - 75 to 84",
-        highlight: false,
         source: "C_Age_75_84"
       },
       positive_age_85_and_over: {
         name: "Positives - Age - 85 and over",
-        highlight: false,
         source: "C_Age_85plus"
       },
       positive_age_unknown: {
         name: "Positives - Age - Unknown",
-        highlight: false,
         source: "C_Age_Unkn"
       },
       positive_age_median: {
         name: "Positives - Age - Median",
-        highlight: false,
         source: "C_AgeMedian",
         total: true
       },
       positive_age_range: {
         name: "Positives - Age Range",
-        highlight: false,
         source: "C_AgeRange",
         total: true
       },
       positive_all_residence_types: {
         name: "Positives - All Residence Types",
-        highlight: false,
+        description: "Sum of all Florida residents in and outside of Florida who tested COVID-19 Positive.",
         source: "C_AllResTypes"
-      },
-      positive_men: {
-        name: "Positives - Men",
-        highlight: false,
-        source: "C_Men"
       },
       positive_women: {
         name: "Positives - Women",
-        highlight: false,
+        description: "Sex listed as Female",
         source: "C_Women"
       },
-      positive_male: {
-        name: "Positives - Male",
-        highlight: false,
-        source: "C_Male"
-      },
-      positive_female: {
-        name: "Positives - Female",
-        highlight: false,
-        source: "C_Female"
+      positive_men: {
+        name: "Positives - Men",
+        source: "C_Men"
       },
       positive_sex_unknown: {
         name: "Positives - Sex Unknown",
-        highlight: false,
+        description: "Sex data is missing or listed as “Unknown”",
         source: "C_SexUnkn"
-      },
-      positive_emergency_admission_residents: {
-        name: "Positives - Residents - ER Admission",
-        highlight: false,
-        source: "C_EDYes_Res"
-      },
-      positive_emergency_admission_non_residents: {
-        name: "Positives - Non-residents - ER Admission",
-        highlight: false,
-        source: "C_EDYes_NonRes"
       },
       positives_race_white: {
         name: "Positives - Race - White",
+        description: "Race is listed as White",
         source: "C_RaceWhite"
       },
       positives_race_black: {
         name: "Positives - Race - Black",
+        description: "Race is listed as Black",
         source: "C_RaceBlack"
       },
       positives_race_other: {
         name: "Positives - Race - Other",
+        description: "Race is listed as Other",
         source: "C_RaceOther"
       },
       positives_race_unknown: {
         name: "Positives - Race - Unknown",
+        description: "Race data is missing or listed as “Unknown”",
         source: "C_RaceUnknown"
       },
       positives_hispanic_yes: {
         name: "Positives - Hispanic - Yes",
+        description: "Ethnicity is listed as Hispanic",
         source: "C_HispanicYES"
       },
       positives_hispanic_no: {
         name: "Positives - Hispanic - No",
+        description: "Ethnicity is listed as NOT Hispanic",
         source: "C_HispanicNO"
+      },
+      positives_hispanic_unknown: {
+        name: "Positives - Hispanic - Unknown",
+        description: "Ethnicity data is missing or listed as “Unknown”.",
+        source: "C_HispUnk"
       },
       positives_hispanic_unknown: {
         name: "Positives - Hispanic - Unknown",
@@ -372,19 +350,16 @@ class Florida < State
       },
       inconclusive_total: {
         name: "Inconclusive Test Results - Total",
-        highlight: false,
         source: "TInconc"
       },
       monitored_cumulative: {
         name: "Monitored - Cumulative Total",
         description: "Total number of cases that were at any point being monitored",
-        highlight: false,
         source: "EverMon"
       },
       monitored_currently: {
         name: "Monitored - Current Total",
         description: "Total number of currently monitored persons by county",
-        highlight: false,
         source: "MonNow"
       },
       cases_all: {
@@ -398,6 +373,11 @@ class Florida < State
         description: "Florida and non-Florida residents, including residents tested outside of the Florida, and at private facilities.",
         highlight: true,
         source: "T_positive"
+      },
+      positives_total: {
+        name: "Positive Tests - Total (Excluding Pending & Awaiting)",
+        description: "Number of PUIs with test results, including negative, positive and inconclusive, but excluding pending or awaiting testing. This is the total number of people with test results in our system.",
+        source: "TPositive"
       },
       negatives_total: {
         name: "Negative Tests - Total",
@@ -423,13 +403,13 @@ class Florida < State
         source: "C_HospYes_NonRes",
         highlight: true
       },
-      emergency_yes_resident: {
-        name: "Emergency - Residents",
+      positive_emergency_yes_resident: {
+        name: "Positive - Emergency - Residents",
         description: "Emergency Dept Admissions for Florida Residents Only.",
         source: "C_EDYes_Res"
       },
-      emergency_yes_non_resident: {
-        name: "Emergency - Non-residents",
+      positive_emergency_yes_non_resident: {
+        name: "Positive - Emergency - Non-residents",
         description: "Emergency Dept Admissions for Non-Florida Residents.",
         source: "C_EDYes_NonRes"
       },
@@ -445,7 +425,7 @@ class Florida < State
       },
       positive_florida_residents_out: {
         name: "Positive - Florida Residents Outside Florida",
-        description: "Positive Florida Residents Not in Florida",
+        description: "Total number of positive Florida Residents exposed/tested/isolated outside of Florida",
         source: "C_FLResOut"
       },
       tests_negative_residents: {
@@ -466,27 +446,32 @@ class Florida < State
       },
       tests_total_residents: {
         name: "Tests - Residents - Total",
-        source: "T_Total_Res"
+        description: "Total tests administered or pending for all PUIs that are Florida residents, including positive, negative and pending results.",
+        source: "T_total_Res"
       },
       tests_private_lab_residents: {
         name: "Tests - Residents - Private Lab",
+        description: "Total positive persons who are residents of Florida and had confirmed lab results by a private or commercial lab/hospital/facility",
         source: "T_LabPrivate_Res"
       },
       tests_doh_residents: {
         name: "Tests - Residents - DOH",
+        description: "Total positive persons who are residents of Florida and had confirmed lab results by a private or commercial lab/hospital/facility",
         source: "T_LabDOH_Res"
       },
       tests_private_lab_non_residents: {
         name: "Tests - Non-residents - Private Lab",
+        description: "Total positive persons who are NOT residents of Florida and had confirmed lab results by a private or commercial lab/hospital/facility",
         source: "T_LabPrivate_NonRes"
       },
       tests_doh_non_residents: {
         name: "Tests - Non-residents - DOH",
+        description: "Total positive persons who are NOT residents of Florida and had confirmed lab results by CDC or BPHL",
         source: "T_LabDOH_NonRes"
       },
       PUIs_total: {
         name: "PUIs - Total",
-        description: "Any person who has been or is waiting to be tested.",
+        description: "The sum of all Persons Under Investigations (PUIs) in the state's database system as of the time of data publication. Includes Florida Residents, Non- Florida residents in Florida, and some Florida residents who are not currently in Florida",
         highlight: true,
         source: "PUIsTotal"
       },

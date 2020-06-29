@@ -111,7 +111,7 @@ class Florida < State
       contact_unknown: {
         name: "Contact with COVID-19 positive - Unknown",
         positive_value: "UNKNOWN",
-        description: "Number of people who are monitored by have yet to be contacted by a contact tracer.",
+        description: "Number of people who are monitored but have yet to be contacted by a contact tracer.",
         source: "Contact"
       },
       contact_not_available: {

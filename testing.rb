@@ -8,38 +8,13 @@ require "./states/state"
 require "./states/florida"
 require "redis"
 
-Florida.get_case_data
-case_line_data = Florida.response_data
+Florida.get_county_data
+county_testing_data = Florida.county_response_data
 
-# case_line_data_uri = URI "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_COVID19_Case_Line_Data/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=*&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=pjson&token="
-# case_line_data_raw = Net::HTTP.get(case_line_data_uri)
-# case_line_data_json = JSON.parse(case_line_data_raw)
+# testing_data_uri = URI "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=*&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=pjson&token="
+# testing_data_raw = Net::HTTP.get(testing_data_uri)
+# testing_data_json = JSON.parse(testing_data_raw)
 
-testing_data_uri = URI "https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Testing/FeatureServer/0/query?where=1%3D1&objectIds=&time=&resultType=none&outFields=*&returnIdsOnly=false&returnUniqueIdsOnly=false&returnCountOnly=false&returnDistinctValues=false&cacheHint=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&having=&resultOffset=&resultRecordCount=&sqlFormat=none&f=pjson&token="
-testing_data_raw = Net::HTTP.get(testing_data_uri)
-testing_data_json = JSON.parse(testing_data_raw)
-
-cases = case_line_data
-# {
-#   County: "Duval",
-#   Age: "21",
-#   Age_group: "15-24 years",
-#   Gender: "Female",
-#   Jurisdiction: "FL resident",
-#   Travel_related: "No",
-#   Origin: "NA",
-#   EDvisit: "YES",
-#   Hospitalized: "UNKNOWN",
-#   Died: "NA",
-#   Case_: "Yes",
-#   Contact: "NO",
-#   Case1: 1585630800000,
-#   EventDate: 1584403200000,
-#   ChartDate: 1585630800000,
-#   ObjectId: 1
-# }
-
-testing = testing_data_json["features"]
 # {"OBJECTID_12_13"=>1,
 #  "OBJECTID"=>1,
 #  "DEPCODE"=>21,
@@ -91,13 +66,12 @@ testing = testing_data_json["features"]
 #  "PUITravelNo"=>5,
 #  "PUITravelUnkn"=>27,
 #  "PUITravelYes"=>0,
-#  "C_ED_NO"=>0,
-#  "C_ED_NoData"=>0,
-#  "C_ED_Yes"=>0,
+#  "C_EDYes_Res"=>0,
+#  "C_EDYes_NonRes"=>0,
 #  "C_Hosp_No"=>0,
 #  "C_Hosp_Nodata"=>0,
 #  "C_Hosp_Yes"=>0,
-#  "FLResDeaths"=>0,
+#  "C_FLResDeaths"=>0,
 #  "PUILab_Yes"=>32,
 #  "TPositive"=>0,
 #  "TNegative"=>32,
@@ -124,6 +98,8 @@ testing = testing_data_json["features"]
 #  "Shape__Length"=>1.42926667474908}
 
 testing_keys = %w[
+  cumulative_hospitalized_resident
+  cumulative_hospitalized_non_resident
   cumulative_hospitalized
   PUIs_total
   PUIs_residents
@@ -131,9 +107,8 @@ testing_keys = %w[
   PUIs_residents_out
   deaths_non_residents
   deaths_residents
-  positive_no_emergency_admission
-  positive_emergency_admission
-  positive_unknown_emergency_admission
+  positive_emergency_admission_residents
+  positive_emergency_admission_non_residents
   positives_total_quality
   positives_total
   negatives_total_quality
@@ -150,19 +125,20 @@ testing_totals = testing_keys.each_with_object({}) do |key, store|
   store[key] = 0
 end
 
-testing.each_with_object(testing_totals) do |test, store|
+county_testing_data[:features].each_with_object(testing_totals) do |test, store|
   a = test["attributes"]
 
-  store["cumulative_hospitalized"] += a["C_Hosp_Yes"]
+  store["cumulative_hospitalized_resident"] += a["C_HospYes_Res"]
+  store["cumulative_hospitalized_non_resident"] += a["C_HospYes_NonRes"]
+  store["cumulative_hospitalized_non_resident"] += (a["C_HospYes_Res"] + a["C_HospYes_NonRes"])
   store["PUIs_total"] += a["PUIsTotal"]
   store["PUIs_residents"] += a["PUIFLRes"]
   store["PUIs_non_residents"] += a["PUINotFLRes"]
   store["PUIs_residents_out"] += a["PUIFLResOut"]
   store["deaths_non_residents"] += a["C_NonResDeaths"]
-  store["deaths_residents"] += a["FLResDeaths"]
-  store["positive_no_emergency_admission"] += a["C_ED_NO"]
-  store["positive_emergency_admission"] += a["C_ED_Yes"]
-  store["positive_unknown_emergency_admission"] += a["C_ED_NoData"]
+  store["deaths_residents"] += a["C_FLResDeaths"]
+  store["positive_emergency_admission_residents"] += a["C_EDYes_Res"]
+  store["positive_emergency_admission_non_residents"] += a["C_EDYes_NonRes"]
   store["positives_total_quality"] += a["TPositive"]
   # T_Positive can be nil, hence the `|| 0` to prevent coercion errors
   store["positives_total"] += a["T_Positive"] || 0
@@ -177,41 +153,11 @@ testing.each_with_object(testing_totals) do |test, store|
 end
 
 CSV.open("exports/florida_testing_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
-  csv << testing_data_json["fields"].map { _1["name"] }
+  csv << county_testing_data[:fields].map { _1["name"] }
 
-  testing_data_json["features"].each do |record|
-    csv << record["attributes"].values
-  end
-end
-
-CSV.open("exports/case_line_data_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
-  csv << case_line_data[:fields].map { _1["name"] }
-
-  case_line_data[:features].each do |record|
+  county_testing_data[:features].each do |record|
     csv << record["attributes"].values
   end
 end
 
 pp testing_totals
-
-CSV.open("exports/deaths_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
-  csv << ["EventDate", "ChartDate", "Died", "Age", "Gender", "County", "Jurisdiction", "EDvisit", "Hospitalized", "Travel Related"]
-
-  case_line_data[:features].filter { _1["attributes"]["Died"] == "Yes" }.sort_by { _1["attributes"]["Age"]}.each do |record|
-    a = record["attributes"]
-
-    csv << [
-      Time.strptime(a["EventDate"].to_s, "%Q"),
-      Time.strptime(a["ChartDate"].to_s, "%Q"),
-      a["Died"],
-      a["Age"],
-      a["Gender"],
-      a["County"],
-      a["Jurisdiction"],
-      a["EDvisit"],
-      a["Hospitalized"],
-      a["Travel_related"]
-    ]
-  end
-end
-

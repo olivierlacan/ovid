@@ -6,7 +6,7 @@ require "json"
 class State
   include Comparable
 
-  CACHE_EXPIRATION_IN_MINUTES = 360
+  CACHE_EXPIRATION_IN_MINUTES = 60
   @@state_classes = []
 
   class << self
@@ -84,6 +84,10 @@ class State
 
   def self.hospitals_cache_key
     "#{cache_key}-hospitals-report"
+  end
+
+  def self.case_data_cached?
+    check_cache(case_cache_key).present?
   end
 
   def self.county_report(query_string)

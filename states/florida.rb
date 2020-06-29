@@ -43,6 +43,12 @@ class Florida < State
         highlight: true,
         source: "Died"
       },
+      deaths_unknown: {
+        name: "Deaths - Unavailable",
+        positive_value: "NA",
+        description: "Cases for which there is currently no information about death.",
+        source: "Died"
+      },
       hospitalized_yes: {
         name: "Hospitalized - Yes",
         description: "Includes both Florida residents and non-residents unlike the FDOH dashboard which excludes non-residents in 'Hospitalizations'",
@@ -113,6 +119,66 @@ class Florida < State
         positive_value: "NA",
         description: "It's unclear how and why this field is different from NO and UNKNOWN values of the Contact field.",
         source: "Contact"
+      },
+      origin_not_available: {
+        name: "Origin - Not Available",
+        positive_value: "NA",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was not traced yet.",
+        source: "Origin"
+      },
+      origin_ny: {
+        name: "Origin - New York",
+        positive_value: "NY",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was New York State.",
+        source: "Origin"
+      },
+      origin_fl_ny: {
+        name: "Origin - Florida & New York State",
+        positive_value: "FL; NY",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was Florida and New York State.",
+        source: "Origin"
+      },
+      origin_fl_ga: {
+        name: "Origin - Florida & Georgia",
+        positive_value: "FL; GA",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was Florida and Georgia.",
+        source: "Origin"
+      },
+      origin_ga: {
+        name: "Origin - Georgia",
+        positive_value: "GA",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was Georgia.",
+        source: "Origin"
+      },
+      origin_spain: {
+        name: "Origin - Spain",
+        positive_value: "SPAIN",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was Spain.",
+        source: "Origin"
+      },
+      origin_spain: {
+        name: "Origin - New Jersey",
+        positive_value: "NJ",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was New Jersey.",
+        source: "Origin"
+      },
+      origin_co: {
+        name: "Origin - Colorado",
+        positive_value: "CO",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was Colorado.",
+        source: "Origin"
+      },
+      origin_fl_unknown: {
+        name: "Origin - Florida & Unknown",
+        positive_value: "FL; UNKNOWN",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was Florida and some other unknown location.",
+        source: "Origin"
+      },
+      origin_fl_nj: {
+        name: "Origin - Florida & New Jersey",
+        positive_value: "FL; NJ",
+        description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was Florida and New Jersey.",
+        source: "Origin"
       },
       female: {
         name: "Female",

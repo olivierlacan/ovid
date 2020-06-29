@@ -10,7 +10,8 @@ class State
   @@state_classes = []
 
   class << self
-    attr_reader :response_data
+    attr_reader :case_response_data
+    attr_reader :county_response_data
   end
 
   def self.inherited(instance)
@@ -258,8 +259,11 @@ class State
 
       response = get("#{counties_feature_url}/query", query)
 
+      @county_response_data = { fields: response["fields"], features: [] }
+      @county_response_data[:features].push(*response["features"])
+
       county_report = generate_county_report(
-        response["features"],
+        @county_response_data[:features],
         initialize_store(county_keys)
       )
     end
@@ -269,7 +273,6 @@ class State
       fetched_at: Time.now,
       data: county_report
     }
-
 
     save_in_cache county_cache_key, merged_data
   end
@@ -343,8 +346,8 @@ class State
 
       last_item_id = initial_response["features"].last["attributes"]["ObjectId"]
 
-      @response_data = { fields: initial_response["fields"], features: [] }
-      @response_data[:features].push(*initial_response["features"])
+      @case_response_data = { fields: initial_response["fields"], features: [] }
+      @case_response_data[:features].push(*initial_response["features"])
 
       # we need to iterate because the maximum record count sent back per
       # request is lower than the absolute total number of record.
@@ -355,7 +358,7 @@ class State
           response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
 
           puts "Count of results: #{response["features"].count}"
-          @response_data[:features].push(*response["features"])
+          @case_response_data[:features].push(*response["features"])
 
           last_item_id = response["features"].last["attributes"]["ObjectId"]
         end
@@ -364,7 +367,7 @@ class State
       end
 
       case_report = generate_case_report(
-        @response_data[:features],
+        @case_response_data[:features],
         initialize_store(case_keys)
       )
 

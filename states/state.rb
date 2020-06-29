@@ -6,7 +6,7 @@ require "json"
 class State
   include Comparable
 
-  CACHE_EXPIRATION_IN_MINUTES = 30
+  CACHE_EXPIRATION_IN_MINUTES = 360
   @@state_classes = []
 
   class << self

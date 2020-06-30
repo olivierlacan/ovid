@@ -173,6 +173,15 @@ class State
       puts "Headers: #{res.to_hash.inspect}"
       puts res.body if response.response_body_permitted?
     end
+  rescue Net::ReadTimeout => error
+    Bugsnag.notify(error) do |report|
+      report.severity = "error"
+
+      report.add_tab(:response, {
+        url: cases_feature_url,
+        metadata: metadata
+      })
+    end
   end
 
   def self.last_edit(metadata)
@@ -365,12 +374,24 @@ class State
         puts "Iterating through #{record_total} records to retrieve all ..."
         while last_item_id < record_total do
           puts "current offset: #{last_item_id}"
-          response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
+          begin
+            response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
+            puts "Count of results: #{response["features"].count}"
+            @case_response_data[:features].push(*response["features"])
 
-          puts "Count of results: #{response["features"].count}"
-          @case_response_data[:features].push(*response["features"])
+            last_item_id = response["features"].last["attributes"]["ObjectId"]
+          rescue NoMethodError => error
+            Bugsnag.notify(error) do |report|
+              report.severity = "error"
 
-          last_item_id = response["features"].last["attributes"]["ObjectId"]
+              report.add_tab(:response, {
+                url: cases_feature_url,
+                last_item_id: last_item_id,
+                record_total: record_total,
+                body: response
+              })
+            end
+          end
         end
       else
         puts "All records (#{record_total}) can be fetched in a single request!"

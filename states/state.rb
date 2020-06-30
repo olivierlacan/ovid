@@ -160,7 +160,7 @@ class State
 
     response = Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == "https") do |http|
       request = Net::HTTP::Get.new(uri)
-      http.read_timeout = 100 # defaults to 60 seconds
+      http.read_timeout = 120 # defaults to 60 seconds
       http.request(request)
     end
 

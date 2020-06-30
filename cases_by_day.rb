@@ -16,14 +16,14 @@ last_date = DateTime.strptime(cases_by_day_json["features"].last["attributes"]["
 dates = (first_date..last_date).to_a
 
 CSV.open("exports/cases_by_day_export_#{timestamp}.csv", "wb") do |csv|
-  csv << cases_by_day_json["fields"].map { _1["name"] }
+  csv << cases_by_day_json["fields"].map { _1["name"] }.reverse
 
   cases_by_day_json["features"].each do |row|
     a = row["attributes"]
 
     csv << [
       DateTime.strptime(a["Date"].to_s, "%Q").to_date.iso8601,
-      a["Count"] || 0,
+      a["Count"] || 0
     ]
   end
 end

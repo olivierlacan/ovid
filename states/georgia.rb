@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "date"
 require "time"
 require "net/http"
@@ -32,19 +34,19 @@ class Georgia < State
         name: "Positives",
         description: "Tallied from individual county cases.",
         highlight: true,
-        source: "COVID_Cases"
+        source: :COVID_Cases
       },
       deaths: {
         name: "Deaths",
         description: "Tallied from individual county cases.",
         highlight: true,
-        source: "COVID_Deaths"
+        source: :COVID_Deaths
       },
       recovered: {
         name: "Recovered (Counties)",
         description: "Tallied from individual county cases.",
         highlight: true,
-        source: "COVID_Recovered"
+        source: :COVID_Recovered
       }
     }
   end

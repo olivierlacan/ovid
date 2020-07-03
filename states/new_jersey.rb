@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "date"
 require "time"
 require "net/http"
@@ -34,13 +36,13 @@ class NewJersey < State
         name: "Positives (Counties)",
         description: "Tallied from individual county cases.",
         highlight: true,
-        source: "TOTAL_CASES"
+        source: :TOTAL_CASES
       },
       deaths: {
         name: "Deaths (Counties)",
         description: "Tallied from individual county cases.",
         highlight: true,
-        source: "DEATHS"
+        source: :DEATHS
       }
     }
   end

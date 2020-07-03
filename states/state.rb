@@ -146,7 +146,7 @@ class State
     response = Net::HTTP.get_response(uri)
     if response.is_a?(Net::HTTPSuccess)
       puts "Success!"
-      JSON.parse(response.body)
+      JSON.parse(response.body, symbolize_names: true)
     else
       raise "#{response.code}: #{response.message}"
       puts "Headers: #{res.to_hash.inspect}"
@@ -168,8 +168,11 @@ class State
 
     if response.is_a?(Net::HTTPSuccess)
       puts "Apparent success!"
-      raise response["error"] if response["error"]
-      JSON.parse(response.body)
+      parsed = JSON.parse(response.body, symbolize_names: true)
+
+      raise parsed[:error] if parsed[:error]
+
+      parsed
     else
       raise "#{response.code}: #{response.message}"
       puts "Headers: #{res.to_hash.inspect}"
@@ -187,7 +190,7 @@ class State
   end
 
   def self.last_edit(metadata)
-    raw_edit_date = metadata["editingInfo"]["lastEditDate"]
+    raw_edit_date = metadata[:editingInfo][:lastEditDate]
     converted_edit_date = Time.strptime(raw_edit_date.to_s, "%Q")
     puts "Parsed lastEditDate #{raw_edit_date} converted to #{converted_edit_date} (#{ENV["TZ"]})"
 
@@ -209,7 +212,7 @@ class State
       response = get("#{totals_feature_url}/query", query)
 
       totals_report = generate_totals_report(
-        response["features"],
+        response[:features],
         initialize_store(totals_keys)
       )
     end
@@ -238,7 +241,7 @@ class State
       response = get("#{hospitals_feature_url}/query", query)
 
       hospitals_report = generate_hospitals_report(
-        response["features"],
+        response[:features],
         initialize_store(hospitals_keys)
       )
     elsif hospitals_csv_keys
@@ -252,7 +255,7 @@ class State
       last_edit = last_edit(metadata)
 
       hospitals_report = generate_hospitals_report(
-        response["features"],
+        response[:features],
         initialize_store(hospitals_keys)
       )
     end
@@ -280,8 +283,8 @@ class State
 
       response = get("#{counties_feature_url}/query", query)
 
-      @county_response_data = { fields: response["fields"], features: [] }
-      @county_response_data[:features].push(*response["features"])
+      @county_response_data = { fields: response[:fields], features: [] }
+      @county_response_data[:features].push(*response[:features])
 
       county_report = generate_county_report(
         @county_response_data[:features],
@@ -299,7 +302,7 @@ class State
   end
 
   def self.total_records_from_feature(url, query)
-    get("#{url}/query", query.merge({ returnCountOnly: true }))["count"]
+    get("#{url}/query", query.merge({ returnCountOnly: true }))[:count]
   end
 
   def self.get_case_data
@@ -307,9 +310,9 @@ class State
       metadata = get(cases_feature_url)
 
       begin
-        if metadata.has_key?("error")
-          error = metadata["error"]
-          message = "#{error["code"]} - #{error["message"]} for #{cases_feature_url}"
+        if metadata.has_key?(:error)
+          error = metadata[:error]
+          message = "#{error[:code]} - #{error[:message]} for #{cases_feature_url}"
           puts message
           raise message
         end
@@ -328,7 +331,7 @@ class State
 
       last_edit = last_edit(metadata)
 
-      maximum_record_count = metadata["standardMaxRecordCount"]
+      maximum_record_count = metadata[:standardMaxRecordCount]
 
       query = {
         where: "1=1",
@@ -363,12 +366,12 @@ class State
       puts "Total records: #{record_total}"
 
       initial_response = get("#{cases_feature_url}/query", query)
-      puts "Records in initial response: #{initial_response["features"].count}"
+      puts "Records in initial response: #{initial_response[:features].count}"
 
-      last_item_id = initial_response["features"].last["attributes"]["ObjectId"]
+      last_item_id = initial_response[:features].last[:attributes][:ObjectId]
 
-      @case_response_data = { fields: initial_response["fields"], features: [] }
-      @case_response_data[:features].push(*initial_response["features"])
+      @case_response_data = { fields: initial_response[:fields], features: [] }
+      @case_response_data[:features].push(*initial_response[:features])
 
       # we need to iterate because the maximum record count sent back per
       # request is lower than the absolute total number of record.
@@ -378,10 +381,10 @@ class State
           puts "current offset: #{last_item_id}"
           begin
             response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
-            puts "Count of results: #{response["features"].count}"
-            @case_response_data[:features].push(*response["features"])
+            puts "Count of results: #{response[:features].count}"
+            @case_response_data[:features].push(*response[:features])
 
-            last_item_id = response["features"].last["attributes"]["ObjectId"]
+            last_item_id = response[:features].last[:attributes][:ObjectId]
           rescue NoMethodError => error
             Bugsnag.notify(error) do |report|
               report.severity = "error"
@@ -422,7 +425,7 @@ class State
 
   def self.generate_hospitals_report(data, store)
     data.each_with_object(store) do |item, memo|
-      a = item["attributes"]
+      a = item[:attributes]
 
       hospitals_keys.each do |key, value|
         if value[:total]
@@ -435,7 +438,7 @@ class State
   end
 
   def self.generate_totals_report(data, store)
-    a = data.first["attributes"]
+    a = data.first[:attributes]
 
     totals_keys.each_with_object(store) do |(key, value), store|
       if value[:total]
@@ -448,7 +451,7 @@ class State
 
   def self.generate_county_report(data, store)
     data.each_with_object(store) do |item, memo|
-      a = item["attributes"]
+      a = item[:attributes]
 
       county_keys.each do |key, value|
         if value[:total]
@@ -462,7 +465,7 @@ class State
 
   def self.generate_case_report(data, store)
     data.each_with_object(store) do |item, store|
-      a = item["attributes"]
+      a = item[:attributes]
 
       case_keys.each do |key, value|
         if value[:count_of_total_records]
@@ -512,7 +515,7 @@ class State
 
     if payload
       puts "cache hit for #{key}"
-      JSON.parse(payload, { symbolize_names: true })
+      JSON.parse(payload, symbolize_names: true)
     else
       puts "cache miss for #{key}"
     end

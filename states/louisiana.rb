@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "date"
 require "time"
 require "net/http"
@@ -35,22 +37,22 @@ class Louisiana < State
       positives: {
         name: "Positives",
         highlight: true,
-        source: "Cases"
+        source: :Cases
       },
       deaths: {
         name: "Deaths",
         highlight: true,
-        source: "Deaths"
+        source: :Deaths
       },
       commercial_tests: {
         name: "Tests - Commercial",
         highlight: true,
-        source: "Commercial_Tests"
+        source: :Commercial_Tests
       },
       state_tests: {
         name: "Tests - State",
         highlight: true,
-        source: "State_Tests"
+        source: :State_Tests
       },
     }
   end

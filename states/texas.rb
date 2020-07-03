@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "date"
 require "time"
 require "net/http"
@@ -37,22 +39,22 @@ class Texas < State
       Positive: {
         name: "Positives",
         highlight: true,
-        source: "Positive"
+        source: :Positive
       },
       Fatalities: {
         name: "Fatalities",
         highlight: true,
-        source: "Fatalities"
+        source: :Fatalities
       },
       Recoveries: {
         name: "Recoveries",
         highlight: true,
-        source: "Recoveries"
+        source: :Recoveries
       },
       Active: {
         name: "Active",
         highlight: true,
-        source: "Active"
+        source: :Active
       }
     }
   end
@@ -74,31 +76,31 @@ class Texas < State
       sum_adult_icu: {
         name: "Available ICU beds",
         highlight: true,
-        source: "Sum_Adult_ICU"
+        source: :Sum_Adult_ICU
       },
       sum_total_beds: {
         name: "Available hospital beds",
         highlight: true,
-        source: "Sum_Total_Beds"
+        source: :Sum_Total_Beds
       },
       sum_vents_available: {
         name: "Available ventilators",
         highlight: true,
-        source: "Sum_Total_Vents_Avail"
+        source: :Sum_Total_Vents_Avail
       },
       sum_total_hospitalized_positives: {
         name: "Hospitalized Positive Patients",
         description: "Lab-Confirmed COVID-19 Patients Currently In Hospital",
         highlight: true,
-        source: "Sum_Total_Lab_COVID"
+        source: :Sum_Total_Lab_COVID
       },
       sum_total_hospital_beds: {
         name: "Staffed Hospital Beds",
-        source: "Sum_Total_Hosp_Beds"
+        source: :Sum_Total_Hosp_Beds
       },
       population_estimate: {
         name: "2019 Population Estimate",
-        source: "Sum_POP2019EST"
+        source: :Sum_POP2019EST
       }
     }
   end

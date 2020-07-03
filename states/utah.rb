@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "date"
 require "time"
 require "net/http"
@@ -33,17 +35,17 @@ class Utah < State
       Cases_Utah_Resident: {
         name: "Positives - Utah Resident",
         highlight: true,
-        source: "COVID_Cases_Utah_Resident"
+        source: :COVID_Cases_Utah_Resident
       },
       Cases_Non_Utah_Resident: {
         name: "Positives - Non-Utah Resident",
         highlight: true,
-        source: "COVID_Cases_Non_Utah_Resident"
+        source: :COVID_Cases_Non_Utah_Resident
       },
       Cases_Total: {
         name: "Positives - Total",
         highlight: true,
-        source: "COVID_Cases_Total"
+        source: :COVID_Cases_Total
       }
     }
   end

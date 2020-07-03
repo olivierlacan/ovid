@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "date"
 require "time"
 require "net/http"
@@ -41,24 +43,24 @@ class Washington < State
         name: "County Positives",
         description: "Tallied from individual county cases.",
         highlight: false,
-        source: "CV_PositiveCases"
+        source: :CV_PositiveCases
       },
       Deaths: {
         name: "County Deaths",
         description: "Tallied from individual county cases.",
         highlight: false,
-        source: "CV_Deaths"
+        source: :CV_Deaths
       },
       statewide_cases: {
         name: "Statewide Positives",
         highlight: true,
-        source: "CV_State_Cases",
+        source: :CV_State_Cases,
         total: true
       },
       statewide_deaths: {
         name: "Statewide Deaths",
         highlight: true,
-        source: "CV_State_Deaths",
+        source: :CV_State_Deaths,
         total: true
       }
     }

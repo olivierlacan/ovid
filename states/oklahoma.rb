@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "date"
 require "time"
 require "net/http"
@@ -102,30 +104,30 @@ class Oklahoma < State
       positives: {
         name: "Positives",
         highlight: true,
-        source: "Case_Curr"
+        source: :Case_Curr
       },
       deaths: {
         name: "Deaths",
         highlight: true,
-        source: "Death_Curr"
+        source: :Death_Curr
       },
       recovered: {
         name: "Recovered",
-        source: "Recov_Curr"
+        source: :Recov_Curr
       },
       new_positives: {
         name: "New Positives (Prior Day)",
         highlight: true,
-        source: "Case_1D_Prev"
+        source: :Case_1D_Prev
       },
       new_deaths: {
         name: "New Deaths (Prior Day)",
         highlight: true,
-        source: "Death_1D_Prev"
+        source: :Death_1D_Prev
       },
       new_recovered: {
         name: "New Recovered (Prior Day)",
-        source: "Recov_1D_Prev"
+        source: :Recov_1D_Prev
       }
     }
   end

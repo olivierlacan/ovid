@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "date"
 require "time"
 require "net/http"
@@ -76,226 +78,226 @@ class Minnesota < State
         description: "Positive cases from aggregated report (not from individual case data)",
         highlight: true,
 total: true,
-        source: "TotalCases"
+        source: :TotalCases
       },
       deaths: {
         name: "Deaths",
         description: "Deaths from aggregated report (not from individual case data)",
         highlight: true,
         total: true,
-        source: "OutcmDied"
+        source: :OutcmDied
       },
       released_from_isolation: {
         name: "Released from Isolation",
         total: true,
-        source: "RlsdFrmIsol"
+        source: :RlsdFrmIsol
       },
       age_range: {
         name: "Age Range",
         total: true,
-        source: "AgeRng"
+        source: :AgeRng
       },
       median_age: {
         name: "Median Age",
         total: true,
-        source: "MedAge"
+        source: :MedAge
       },
       ever_hospitalized_yes: {
         name: "Ever Hospitalized Yes",
         highlight: true,
         total: true,
-        source: "EvrHospYes"
+        source: :EvrHospYes
       },
       ever_hospitalized_no: {
         name: "Ever Hospitalized No",
         total: true,
-        source: "EvrHospNo"
+        source: :EvrHospNo
       },
       ever_hospitalized_missing: {
         name: "Ever Hospitalized Missing",
         total: true,
-        source: "EvrHospMisng"
+        source: :EvrHospMisng
       },
       ever_icu_yes: {
         name: "Ever ICU Yes",
         highlight: true,
         total: true,
-        source: "EvrICUYes"
+        source: :EvrICUYes
       },
       residence_private: {
         name: "Residence - Private",
         total: true,
-        source: "ResPriv"
+        source: :ResPriv
       },
       residence_jail: {
         name: "Residence - Jail/Prison",
         total: true,
-        source: "ResJail"
+        source: :ResJail
       },
       residence_college_dorm: {
         name: "Residence - College Dorm",
         total: true,
-        source: "ResCollDrm"
+        source: :ResCollDrm
       },
       residence_assisted: {
         name: "Residence - Assisted Living",
         total: true,
-        source: "ResAssLvg"
+        source: :ResAssLvg
       },
       residence_homeless_shelter: {
         name: "Residence - Homeless Shelter",
         total: true,
-        source: "ResHmlShelt"
+        source: :ResHmlShelt
       },
       residence_long_time_care_facility: {
         name: "Residence - Long Time Care Facility",
         total: true,
-        source: "ResLTCF"
+        source: :ResLTCF
       },
       residence_long_time_acute_care: {
         name: "Residence - Long Term Acute Care",
         total: true,
-        source: "ResLngTrm"
+        source: :ResLngTrm
       },
       residence_other: {
         name: "Residence - Other",
         total: true,
-        source: "ResOther"
+        source: :ResOther
       },
       residence_missing: {
         name: "Residence - Missing",
         total: true,
-        source: "ResMsng"
+        source: :ResMsng
       },
       healthcare_worker: {
         name: "Healthcare Worker",
         total: true,
-        source: "HlthCarWrker"
+        source: :HlthCarWrker
       },
       school_children_or_employee: {
         name: "School Children or Employee",
         total: true,
-        source: "SchlChldorEmp"
+        source: :SchlChldorEmp
       },
       exposure_cruise_ship: {
         name: "Exposure - Cruise Ship",
         total: true,
-        source: "ExpsrCrzShp"
+        source: :ExpsrCrzShp
       },
       exposure_international_travel: {
         name: "Exposure - International Travel",
         total: true,
-        source: "ExpsrIntrntnl"
+        source: :ExpsrIntrntnl
       },
       exposure_likely: {
         name: "Exposure - Likely",
         total: true,
-        source: "ExpsrLklyExpsr"
+        source: :ExpsrLklyExpsr
       },
       exposure_another_state: {
         name: "Exposure - Another State",
         total: true,
-        source: "ExpsrAnthrState"
+        source: :ExpsrAnthrState
       },
       exposure_in_minnesota: {
         name: "Exposure - Minnesota Community Spread",
         total: true,
-        source: "ExpsrInMN"
+        source: :ExpsrInMN
       },
       exposure_missing: {
         name: "Exposure - Missing",
         total: true,
-        source: "ExpsrMsng"
+        source: :ExpsrMsng
       },
       male: {
         name: "Male",
         total: true,
-        source: "Male"
+        source: :Male
       },
       female: {
         name: "Female",
         total: true,
-        source: "Female"
+        source: :Female
       },
       sex_missing: {
         name: "Sex Missing",
         total: true,
-        source: "SexMsng"
+        source: :SexMsng
       },
       race_white: {
         name: "Race - White",
         total: true,
-        source: "RaceWht"
+        source: :RaceWht
       },
       race_black: {
         name: "Race - Black",
         total: true,
-        source: "RaceBlk"
+        source: :RaceBlk
       },
       ethnicity_hispanic: {
         name: "Ethnicity - Hispanic",
         total: true,
-        source: "EthnHisp"
+        source: :EthnHisp
       },
       ethnicity_non_hispanic: {
         name: "Ethnicity - Non-Hispanic",
         total: true,
-        source: "EthnNonHisp"
+        source: :EthnNonHisp
       },
       race_asian: {
         name: "Race - Asian Pacific Islander",
         total: true,
-        source: "RaceAsnPacIsld"
+        source: :RaceAsnPacIsld
       },
       race_native: {
         name: "Race - American Native",
         total: true,
-        source: "RaceAmerIndAlaNativ"
+        source: :RaceAmerIndAlaNativ
       },
       race_unknown: {
         name: "Race - Unknown",
         total: true,
-        source: "RaceUnk"
+        source: :RaceUnk
       },
       ethnicity_unknown: {
         name: "Ethnicity - Unknown",
         total: true,
-        source: "EthnUnk"
+        source: :EthnUnk
       },
       race_other: {
         name: "Race - Other",
         total: true,
-        source: "RaceOther"
+        source: :RaceOther
       },
       test_lab_mdh: {
         name: "Test Lab - Minnesota Department of Health",
         total: true,
-        source: "TstLabMDH"
+        source: :TstLabMDH
       },
       test_lab_mayo: {
         name: "Test Lab - Mayo Clinic",
         total: true,
-        source: "TstLabMayo"
+        source: :TstLabMayo
       },
       test_lab_arup: {
         name: "Test Lab - ARUP",
         total: true,
-        source: "TstLabARUP"
+        source: :TstLabARUP
       },
       test_lab_qwest: {
         name: "Test Lab - Qwest",
         total: true,
-        source: "TstLabQwest"
+        source: :TstLabQwest
       },
       test_lab_other: {
         name: "Test Lab - Other",
         total: true,
-        source: "TstLabOthr"
+        source: :TstLabOthr
       },
       test_lab_missing: {
         name: "Test Lab - Missing",
         total: true,
-        source: "TstLabMsng"
+        source: :TstLabMsng
       }
     }
   end
@@ -325,7 +327,7 @@ total: true,
       positives: {
         name: "Positives",
         highlight: true,
-        source: "MLMIS_CTY"
+        source: :MLMIS_CTY
       }
     }
   end

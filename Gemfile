@@ -12,11 +12,15 @@ gem "bugsnag", "~> 6.13"
 gem "hanami-router"
 gem "puma"
 gem "rack-ssl-enforcer"
+gem "sidekiq"
+gem "ice_nine"
+gem "oj"
 
 group :development do
   gem "dotenv"
   gem "rerun"
   gem "terminal-notifier"
   gem "foreman"
-  gem "origami"
+  gem "pdf-reader"
+  gem "memory_profiler"
 end

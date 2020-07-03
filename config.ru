@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "./states/state"
 require "./states/florida"
 require "./states/utah"

@@ -158,7 +158,7 @@ class Florida < State
         description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was Spain.",
         source: :Origin
       },
-      origin_spain: {
+      origin_new_jersey: {
         name: "Origin - New Jersey",
         positive_value: "NJ",
         description: "Cases for which the likely origin for where the virus was contracted before arriving/returning to Florida was New Jersey.",
@@ -409,11 +409,6 @@ class Florida < State
       },
       positives_hispanic_unknown: {
         name: "Positives - Hispanic - Unknown",
-        description: "Ethnicity data is missing or listed as “Unknown”.",
-        source: :C_HispUnk
-      },
-      positives_hispanic_unknown: {
-        name: "Positives - Hispanic - Unknown",
         source: :C_HispanicUnk
       },
       inconclusive_total: {
@@ -442,7 +437,7 @@ class Florida < State
         highlight: true,
         source: :T_positive
       },
-      positives_total: {
+      positives_total_excluding: {
         name: "Positive Tests - Total (Excluding Pending & Awaiting)",
         description: "Number of PUIs with test results, including negative, positive and inconclusive, but excluding pending or awaiting testing. This is the total number of people with test results in our system.",
         source: :TPositive

@@ -32,7 +32,7 @@ class Florida < State
   end
 
   def self.case_keys
-    {
+    @_case_keys ||= {
       positives: {
         name: "Positives",
         description: "Includes both Florida residents and non-residents.",

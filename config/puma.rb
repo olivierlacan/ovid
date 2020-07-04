@@ -1,14 +1,4 @@
-require 'rubygems'
-require 'bundler'
-
-Bundler.require
-
-if ENV["RACK_ENV"] == "production"
-  # don't use Dotenv
-else
-  require 'dotenv'
-  Dotenv.load
-end
+require "./config/boot"
 
 workers ENV["RACK_ENV"] == "production" ? Integer(ENV['WEB_CONCURRENCY'] || 2) : 0
 threads_count = 5

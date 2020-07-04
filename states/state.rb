@@ -5,6 +5,9 @@ require "time"
 require "net/http"
 require "json"
 
+require "./lib/request"
+require "./workers/case_data_worker"
+
 class State
   include Comparable
 
@@ -112,7 +115,17 @@ class State
       stored_response
     else
       puts "Generating new report ..."
-      get_case_data
+      job_id = get_case_data
+
+      until Sidekiq::Status::complete?(job_id)
+        status = Sidekiq::Status::status(job_id)
+
+        puts "Job #{job_id} #{status}..."
+
+        sleep 1
+      end
+
+      check_cache(case_cache_key)
     end
   end
 
@@ -154,41 +167,6 @@ class State
     end
   end
 
-  def self.get(url, params = {})
-    params = params.merge({ f: "pjson" })
-    uri = URI(url)
-    uri.query = URI.encode_www_form(params)
-    puts "Sending GET request to #{uri} ..."
-
-    response = Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == "https") do |http|
-      request = Net::HTTP::Get.new(uri)
-      http.read_timeout = 120 # defaults to 60 seconds
-      http.request(request)
-    end
-
-    if response.is_a?(Net::HTTPSuccess)
-      puts "Apparent success!"
-      parsed = JSON.parse(response.body, symbolize_names: true)
-
-      raise parsed[:error] if parsed[:error]
-
-      parsed
-    else
-      raise "#{response.code}: #{response.message}"
-      puts "Headers: #{res.to_hash.inspect}"
-      puts res.body if response.response_body_permitted?
-    end
-  rescue Net::ReadTimeout => error
-    Bugsnag.notify(error) do |report|
-      report.severity = "error"
-
-      report.add_tab(:response, {
-        url: cases_feature_url,
-        metadata: metadata
-      })
-    end
-  end
-
   def self.last_edit(metadata)
     raw_edit_date = metadata[:editingInfo][:lastEditDate]
     converted_edit_date = Time.strptime(raw_edit_date.to_s, "%Q")
@@ -199,7 +177,7 @@ class State
 
   def self.get_totals_data
     if totals_keys
-      metadata = get(totals_feature_url)
+      metadata = Request.get(totals_feature_url)
       last_edit = last_edit(metadata)
 
       query = {
@@ -209,7 +187,7 @@ class State
         resultType: "standard"
       }
 
-      response = get("#{totals_feature_url}/query", query)
+      response = Request.get("#{totals_feature_url}/query", query)
 
       totals_report = generate_totals_report(
         response[:features],
@@ -228,7 +206,7 @@ class State
 
   def self.get_hospitals_data
     if hospitals_keys
-      metadata = get(hospitals_feature_url)
+      metadata = Request.get(hospitals_feature_url)
       last_edit = last_edit(metadata)
 
       query = {
@@ -238,7 +216,7 @@ class State
         resultType: "standard"
       }
 
-      response = get("#{hospitals_feature_url}/query", query)
+      response = Request.get("#{hospitals_feature_url}/query", query)
 
       hospitals_report = generate_hospitals_report(
         response[:features],
@@ -271,7 +249,7 @@ class State
 
   def self.get_county_data
     if county_keys
-      metadata = get(counties_feature_url)
+      metadata = Request.get(counties_feature_url)
       last_edit = last_edit(metadata)
 
       query = {
@@ -281,7 +259,7 @@ class State
         resultType: "standard"
       }
 
-      response = get("#{counties_feature_url}/query", query)
+      response = Request.get("#{counties_feature_url}/query", query)
 
       @county_response_data = { fields: response[:fields], features: [] }
       @county_response_data[:features].push(*response[:features])
@@ -302,118 +280,12 @@ class State
   end
 
   def self.total_records_from_feature(url, query)
-    get("#{url}/query", query.merge({ returnCountOnly: true }))[:count]
+    Request.get("#{url}/query", query.merge({ returnCountOnly: true }))[:count]
   end
 
   def self.get_case_data
     if cases_feature_url
-      metadata = get(cases_feature_url)
-
-      begin
-        if metadata.has_key?(:error)
-          error = metadata[:error]
-          message = "#{error[:code]} - #{error[:message]} for #{cases_feature_url}"
-          puts message
-          raise message
-        end
-      rescue => error
-        Bugsnag.notify(error) do |report|
-          report.severity = "error"
-
-          report.add_tab(:response, {
-            url: cases_feature_url,
-            metadata: metadata
-          })
-        end
-
-        return nil
-      end
-
-      last_edit = last_edit(metadata)
-
-      maximum_record_count = metadata[:standardMaxRecordCount]
-
-      query = {
-        where: "1=1",
-        returnGeometry: false,
-        outFields: "*",
-        resultRecordCount: maximum_record_count,
-        resultType: "standard"
-      }
-
-      record_total = total_records_from_feature(cases_feature_url, query)
-
-      begin
-        if record_total == 0
-          message = "No results returned for #{cases_feature_url}"
-          puts message
-          raise message
-        end
-      rescue => error
-        Bugsnag.notify(error) do |report|
-          report.severity = "error"
-
-          report.add_tab(:response, {
-            url: cases_feature_url,
-            last_edit: last_edit,
-            record_total: record_total
-          })
-        end
-
-        return nil
-      end
-
-      puts "Total records: #{record_total}"
-
-      initial_response = get("#{cases_feature_url}/query", query)
-      puts "Records in initial response: #{initial_response[:features].count}"
-
-      last_item_id = initial_response[:features].last[:attributes][:ObjectId]
-
-      @case_response_data = { fields: initial_response[:fields], features: [] }
-      @case_response_data[:features].push(*initial_response[:features])
-
-      # we need to iterate because the maximum record count sent back per
-      # request is lower than the absolute total number of record.
-      if record_total > maximum_record_count
-        puts "Iterating through #{record_total} records to retrieve all ..."
-        while last_item_id < record_total do
-          puts "current offset: #{last_item_id}"
-          begin
-            response = get("#{cases_feature_url}/query", query.merge(resultOffset: last_item_id))
-            puts "Count of results: #{response[:features].count}"
-            @case_response_data[:features].push(*response[:features])
-
-            last_item_id = response[:features].last[:attributes][:ObjectId]
-          rescue NoMethodError => error
-            Bugsnag.notify(error) do |report|
-              report.severity = "error"
-
-              report.add_tab(:response, {
-                url: cases_feature_url,
-                last_item_id: last_item_id,
-                record_total: record_total,
-                body: response
-              })
-            end
-          end
-        end
-      else
-        puts "All records (#{record_total}) can be fetched in a single request!"
-      end
-
-      case_report = generate_case_report(
-        @case_response_data[:features],
-        initialize_store(case_keys)
-      )
-
-      merged_data = {
-        edited_at: last_edit,
-        fetched_at: Time.now,
-        data: case_report
-      }
-
-      save_in_cache case_cache_key, merged_data
+      worker = CaseDataWorker.perform_async(cases_feature_url, case_cache_key, self)
     end
   end
 
@@ -494,16 +366,8 @@ class State
     end
   end
 
-  def self.production?
-    ENV["RACK_ENV"] == "production"
-  end
-
-  def self.development?
-    !production?
-  end
-
   def self.cache
-    $redis ||= if production?
+    $redis ||= if Config.production?
       Redis.new(url: ENV["REDIS_URL"])
     else
       Redis.new

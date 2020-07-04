@@ -13,8 +13,10 @@ gem "hanami-router"
 gem "puma"
 gem "rack-ssl-enforcer"
 gem "sidekiq"
+gem "sidekiq-status"
 gem "ice_nine"
 gem "oj"
+gem "sequel"
 
 group :development do
   gem "dotenv"

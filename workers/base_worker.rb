@@ -27,14 +27,16 @@ class BaseWorker
     payload = value.to_json
     puts "caching serialized payload: #{payload.inspect}"
 
-    cache.multi do
-      cache.set(key, payload)
-      cache.get(key)
+    self.class.cache.with do
+      _1.multi do
+        self.class.cache.with { |c| c.set(key, payload) }
+        self.class.cache.with { |c| c.get(key) }
+      end
     end
   end
 
   def check_cache(key)
-    payload = cache.get(key)
+    payload = self.class.cache.with { _1.get(key) }
 
     if payload
       puts "cache hit for #{key}"
@@ -45,15 +47,11 @@ class BaseWorker
   end
 
   def set_expiration(key, time)
-    cache.expireat(key, time.to_i)
+    self.class.cache.with { _1.expireat(key, time.to_i) }
   end
 
-  def cache
-    $redis ||= if Config.production?
-      Redis.new(url: ENV["REDIS_URL"])
-    else
-      Redis.new
-    end
+  def self.cache
+    Config.redis_pool
   end
 
   def initialize_store(key_defaults)

@@ -367,15 +367,11 @@ class State
   end
 
   def self.cache
-    $redis ||= if Config.production?
-      Redis.new(url: ENV["REDIS_URL"])
-    else
-      Redis.new
-    end
+    Config.redis_pool
   end
 
   def self.check_cache(key)
-    payload = cache.get(key)
+    payload = cache.with { _1.get(key) }
 
     if payload
       puts "cache hit for #{key}"
@@ -390,14 +386,16 @@ class State
     payload = value.to_json
     puts "caching serialized payload: #{payload.inspect}"
 
-    cache.multi do
-      cache.set(key, payload)
-      cache.get(key)
+    cache.with do
+      _1.multi do
+        cache.with { |c| c.set(key, payload) }
+        cache.with { |c| c.get(key) }
+      end
     end
   end
 
   def self.set_expiration(key, time)
-    cache.expireat(key, time.to_i)
+    cache.with { _1.expireat(key, time.to_i) }
   end
 
   def self.deconstantize

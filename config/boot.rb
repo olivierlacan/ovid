@@ -11,6 +11,18 @@ module Config
   def self.development?
     !production?
   end
+
+  def self.redis_pool
+    redis_conn = proc {
+      if Config.production?
+        Redis.new(url: ENV["REDIS_URL"])
+      else
+        Redis.new
+      end
+    }
+
+    $pool ||= ConnectionPool.new(size: 5, &redis_conn)
+  end
 end
 
 if ENV["RACK_ENV"] == "production"

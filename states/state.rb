@@ -98,7 +98,7 @@ class State
   def self.county_report(query_string)
     stored_response = check_cache(county_cache_key)
 
-    if stored_response && !query_string.include?("reload")
+    if stored_response
       puts "Using stored_response..."
       stored_response
     else
@@ -110,7 +110,7 @@ class State
   def self.case_report(query_string)
     stored_response = check_cache(case_cache_key)
 
-    if stored_response && !query_string.include?("reload")
+    if stored_response
       puts "Using stored_response..."
       stored_response
     else
@@ -132,7 +132,7 @@ class State
   def self.totals_report(query_string)
     stored_response = check_cache(totals_cache_key)
 
-    if stored_response && !query_string.include?("reload")
+    if stored_response
       puts "Using stored_response..."
       stored_response
     else
@@ -144,7 +144,7 @@ class State
   def self.hospitals_report(query_string)
     stored_response = check_cache(hospitals_cache_key)
 
-    if stored_response && !query_string.include?("reload")
+    if stored_response
       puts "Using stored_response..."
       stored_response
     else

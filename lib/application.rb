@@ -170,8 +170,6 @@ class Application
       #{hospitals_report(class_name, query_string)}
 
       <footer>
-        <a href="?reload">Force reload</a>
-
         #{class_name.nomenclature if defined?(class_name.nomenclature)}
       </footer>
     HTML

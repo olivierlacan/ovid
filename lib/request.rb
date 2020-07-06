@@ -15,7 +15,7 @@ class Request
       puts "Apparent success!"
       parsed = JSON.parse(response.body, symbolize_names: true)
 
-      raise parsed[:error] if parsed[:error]
+      raise "#{parsed[:error]}" if parsed[:error]
 
       parsed
     else

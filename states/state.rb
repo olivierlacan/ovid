@@ -117,13 +117,7 @@ class State
       puts "Generating new report ..."
       job_id = get_case_data
 
-      until Sidekiq::Status::complete?(job_id)
-        status = Sidekiq::Status::status(job_id)
-
-        puts "Job #{job_id} #{status}..."
-
-        sleep 1
-      end
+      return { refreshing: true }
 
       check_cache(case_cache_key)
     end

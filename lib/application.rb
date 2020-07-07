@@ -78,20 +78,41 @@ class Application
 
     case_report = class_name.case_report(query_string)
 
-    return nil if case_report&.public_send(:[],:data).nil?
+    # empty report
+    if case_report&.public_send(:[],:data).nil?
+      return nil
+    end
 
     last_edit_case = pretty_datetime case_report[:edited_at]
     last_fetch_case = pretty_datetime case_report[:fetched_at]
 
-    <<~HTML
-      <h2>Data Aggregated from Individual Cases</h2>
-      <p>
-        Source: <a href="#{class_name.cases_feature_url}">ArcGIS Feature Layer</a>.<br />
-        Edited by #{class_name::ACRONYM} at <strong>#{last_edit_case}</strong>.<br />
-        Fetched at <strong>#{last_fetch_case}</strong>.<br />
-      </p>
-      #{report_table(case_report[:data])}
-    HTML
+    payload = ""
+
+    if case_report&.public_send(:[],:refreshing) == true
+      payload << <<~HTML
+        <h2>Data Aggregated from Individual Cases</h2>
+        <p>
+          Source: <a href="#{class_name.cases_feature_url}">ArcGIS Feature Layer</a>.<br />
+          Edited by #{class_name::ACRONYM} at <strong>#{last_edit_case}</strong>.<br />
+          Fetched at <strong>#{last_fetch_case}</strong><br />
+        </p>
+
+        <p>Case line data is being refreshed, please reload in a few seconds...</p>
+      HTML
+    else
+      payload << <<~HTML
+        <h2>Data Aggregated from Individual Cases</h2>
+        <p>
+          Source: <a href="#{class_name.cases_feature_url}">ArcGIS Feature Layer</a>.<br />
+          Edited by #{class_name::ACRONYM} at <strong>#{last_edit_case}</strong>.<br />
+          Fetched at <strong>#{last_fetch_case}</strong> (refreshing now).<br />
+        </p>
+
+        #{report_table(case_report[:data])}
+      HTML
+    end
+
+    payload
   end
 
   def self.county_report(class_name, query_string)

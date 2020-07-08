@@ -105,10 +105,14 @@ tally = {
 
 puts tally
 
-CSV.generate("exports/resident_vs_non_resident_percentages.csv", "wb") do |csv|
-  csv << *tally[:cases].keys
+timestamp = DateTime.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")
+CSV.open("exports/resident_vs_non_resident_percentages_#{timestamp}.csv", "wb") do |csv|
+  csv << ["jurisdiction", *tally[:cases].keys.map(&:to_s).reverse]
 
-  tally.keys.each do |k|
+  tally.keys.each do |key|
+    csv << [key.to_s, *tally[key].values.reverse]
+  end
+end
 
 
 # [{:jurisdiction=>"FL resident",

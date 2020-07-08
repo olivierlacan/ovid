@@ -77,15 +77,6 @@ class Application
     return nil if class_name.cases_feature_url.nil?
 
     case_report = class_name.case_report(query_string)
-
-    # empty report
-    if case_report&.public_send(:[],:data).nil?
-      return nil
-    end
-
-    last_edit_case = pretty_datetime case_report[:edited_at]
-    last_fetch_case = pretty_datetime case_report[:fetched_at]
-
     payload = ""
 
     if case_report&.public_send(:[],:refreshing) == true
@@ -100,6 +91,9 @@ class Application
         <p>Case line data is being refreshed, please reload in a few seconds...</p>
       HTML
     else
+      last_edit_case = pretty_datetime case_report[:edited_at]
+      last_fetch_case = pretty_datetime case_report[:fetched_at]
+
       payload << <<~HTML
         <h2>Data Aggregated from Individual Cases</h2>
         <p>

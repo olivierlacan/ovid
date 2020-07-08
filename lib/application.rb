@@ -76,31 +76,29 @@ class Application
   def self.case_report(class_name, query_string)
     return nil if class_name.cases_feature_url.nil?
 
+    payload = <<~HTML
+      <h2>Data Aggregated from Individual Cases</h2>
+      <p>
+        Source: <a href="#{class_name.cases_feature_url}">ArcGIS Feature Layer</a>.<br />
+    HTML
+
     case_report = class_name.case_report(query_string)
-    payload = ""
 
-    if case_report&.public_send(:[],:refreshing) == true
-      payload << <<~HTML
-        <h2>Data Aggregated from Individual Cases</h2>
-        <p>
-          Source: <a href="#{class_name.cases_feature_url}">ArcGIS Feature Layer</a>.<br />
-          Edited by #{class_name::ACRONYM} at <strong>#{last_edit_case}</strong>.<br />
-          Fetched at <strong>#{last_fetch_case}</strong><br />
-        </p>
-
-        <p>Case line data is being refreshed, please reload in a few seconds...</p>
-      HTML
-    else
+    if case_report.has_key?(:edited_at) && case_report.has_key?(:fetched_at)
       last_edit_case = pretty_datetime case_report[:edited_at]
       last_fetch_case = pretty_datetime case_report[:fetched_at]
 
       payload << <<~HTML
-        <h2>Data Aggregated from Individual Cases</h2>
-        <p>
-          Source: <a href="#{class_name.cases_feature_url}">ArcGIS Feature Layer</a>.<br />
           Edited by #{class_name::ACRONYM} at <strong>#{last_edit_case}</strong>.<br />
-          Fetched at <strong>#{last_fetch_case}</strong> (refreshing now).<br />
+          Fetched at <strong>#{last_fetch_case}</strong><br />
         </p>
+      HTML
+    end
+
+    if case_report&.public_send(:[],:refreshing)
+      payload << "Fetching new data from FDOH, please refresh in 1 minute..."
+    else
+      payload << <<~HTML
 
         #{report_table(case_report[:data])}
       HTML

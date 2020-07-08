@@ -3,27 +3,40 @@ class Request
     params = params.merge({ f: "pjson" })
     uri = URI(url)
     uri.query = URI.encode_www_form(params)
-    puts "Sending GET request to #{uri} ..."
 
-    response = Net::HTTP.start(uri.host, uri.port, use_ssl: uri.scheme == "https") do |http|
-      request = Net::HTTP::Get.new(uri)
-      http.read_timeout = 120 # defaults to 60 seconds
-      http.request(request)
+    connection = Faraday.new(uri) do |builder|
+      builder.request :timer
+      builder.response :detailed_logger, Logger.new(STDOUT, level: Logger::INFO)
+      builder.adapter :net_http_persistent do |http|
+        http.read_timeout = 60
+        http.idle_timeout = 30
+      end
+      builder.request :retry, {
+        max: 3,
+        interval: 0.05,
+        interval_randomness: 0.5,
+        backoff_factor: 2
+      }
     end
 
-    if response.is_a?(Net::HTTPSuccess)
-      puts "Apparent success!"
+    puts "GET #{uri} ..."
+
+    response = connection.get
+    duration = response.env[:duration]
+
+    if response.success?
+      puts "Request duration: #{duration}"
       parsed = JSON.parse(response.body, symbolize_names: true)
 
       raise "#{parsed[:error]}" if parsed[:error]
 
       parsed
     else
-      raise "#{response.code}: #{response.message}"
-      puts "Headers: #{res.to_hash.inspect}"
-      puts res.body if response.response_body_permitted?
+      raise "#{response.status}: #{response.body}"
+      puts "Headers: #{response.headers}"
+      puts res.body
     end
-  rescue Net::ReadTimeout => error
+  rescue Faraday::TimeoutError => error
     Bugsnag.notify(error) do |report|
       report.severity = "error"
 

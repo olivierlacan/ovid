@@ -17,6 +17,10 @@ gem "sidekiq-status"
 gem "ice_nine"
 gem "oj"
 gem "sequel"
+gem "net-http-persistent"
+gem "faraday"
+gem "faraday-request-timer"
+gem "faraday-detailed_logger"
 
 group :development do
   gem "dotenv"

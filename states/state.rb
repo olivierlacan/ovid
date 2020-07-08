@@ -378,7 +378,6 @@ class State
   def self.write_cache(key, value)
     puts "cache write for #{key}"
     payload = value.to_json
-    puts "caching serialized payload: #{payload.inspect}"
 
     cache.with do
       _1.multi do

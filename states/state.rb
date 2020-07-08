@@ -15,7 +15,6 @@ class State
   @@state_classes = []
 
   class << self
-    attr_reader :case_response_data
     attr_reader :county_response_data
   end
 
@@ -279,7 +278,7 @@ class State
 
   def self.get_case_data
     if cases_feature_url
-      worker = CaseDataWorker.perform_async(cases_feature_url, case_cache_key, self)
+      worker = CaseDataWorker.perform_async(cases_feature_url, case_cache_key, self.to_s)
     end
   end
 

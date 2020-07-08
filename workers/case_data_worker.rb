@@ -8,6 +8,8 @@ class CaseDataWorker < BaseWorker
   attr_reader :case_response_data
 
   def perform(url, cache_key, klass)
+    state_klass = Object.const_get(klass)
+
     puts "Processing #{url} for #{cache_key}"
 
     metadata = Request.get(url)
@@ -33,6 +35,10 @@ class CaseDataWorker < BaseWorker
     end
 
     last_edit = get_last_edit(metadata)
+
+    cached_data = state_klass.check_cache(state_klass.case_cache_key)
+
+    return cached_data if cached_data
 
     maximum_record_count = metadata[:standardMaxRecordCount]
 
@@ -105,7 +111,7 @@ class CaseDataWorker < BaseWorker
       puts "All records (#{record_total}) can be fetched in a single request!"
     end
 
-    case_keys = Object.const_get(klass).case_keys
+    case_keys = state_klass.case_keys
 
     case_report = generate_case_report(
       @case_response_data[:features],

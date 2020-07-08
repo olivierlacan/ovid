@@ -26,7 +26,6 @@ results = files.each_with_object({}) do |file, memo|
   memo[file] = { total_tested: matches&.captures&.first }
 end
 
-binding.irb
 # case_x=grepl("line list of cases",text1)
 # case_tables=which(case_x==TRUE)
 # mm=length(case_tables)

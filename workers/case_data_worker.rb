@@ -5,6 +5,8 @@ class CaseDataWorker < BaseWorker
   include Sidekiq::Worker
   include Sidekiq::Status::Worker
 
+  attr_reader :case_response_data
+
   def perform(url, cache_key, klass)
     puts "Processing #{url} for #{cache_key}"
 
@@ -79,10 +81,10 @@ class CaseDataWorker < BaseWorker
     if record_total > maximum_record_count
       puts "Iterating through #{record_total} records to retrieve all ..."
       while last_item_id < record_total do
-        puts "current offset: #{last_item_id}"
+        puts "Offset: #{last_item_id}"
         begin
           response = Request.get("#{url}/query", query.merge(resultOffset: last_item_id))
-          puts "Count of results: #{response[:features].count}"
+          puts "Results: #{response[:features].count}"
           @case_response_data[:features].push(*response[:features])
 
           last_item_id = response[:features].last[:attributes][:ObjectId]

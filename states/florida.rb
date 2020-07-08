@@ -492,43 +492,43 @@ class Florida < State
         source: :C_FLResOut
       },
       tests_negative_residents: {
-        name: "Tests - Negative Residents",
+        name: "Tested - Negative Residents",
         description: "Total number of negative Florida Residents tested.",
         source: :T_NegRes
       },
       tests_negative_non_residents: {
-        name: "Tests - Negative Non-Residents",
+        name: "Tested - Negative Non-Residents",
         description: "Total number of negative non-Florida residents in Florida tested.",
         source: :T_NegNotFLRes
       },
       tests_total: {
-        name: "Tests - Total",
-        description: "Total tests administered or pending for all PUIs, including positive, negative and pending results.",
+        name: "Tested - Total",
+        description: "Total tests administered or pending for all PUIs, including positive, negative and pending results. This matches the state report's 'Total tested' in the 'Persons tested' summary.",
         highlight: true,
         source: :T_total
       },
       tests_total_residents: {
-        name: "Tests - Residents - Total",
+        name: "Tested - Residents - Total",
         description: "Total tests administered or pending for all PUIs that are Florida residents, including positive, negative and pending results.",
         source: :T_total_Res
       },
       tests_private_lab_residents: {
-        name: "Tests - Residents - Private Lab",
+        name: "Tested - Residents - Private Lab",
         description: "Total positive persons who are residents of Florida and had confirmed lab results by a private or commercial lab/hospital/facility",
         source: :T_LabPrivate_Res
       },
       tests_doh_residents: {
-        name: "Tests - Residents - DOH",
+        name: "Tested - Residents - DOH",
         description: "Total positive persons who are residents of Florida and had confirmed lab results by a private or commercial lab/hospital/facility",
         source: :T_LabDOH_Res
       },
       tests_private_lab_non_residents: {
-        name: "Tests - Non-residents - Private Lab",
+        name: "Tested - Non-residents - Private Lab",
         description: "Total positive persons who are NOT residents of Florida and had confirmed lab results by a private or commercial lab/hospital/facility",
         source: :T_LabPrivate_NonRes
       },
       tests_doh_non_residents: {
-        name: "Tests - Non-residents - DOH",
+        name: "Tested - Non-residents - DOH",
         description: "Total positive persons who are NOT residents of Florida and had confirmed lab results by CDC or BPHL",
         source: :T_LabDOH_NonRes
       },

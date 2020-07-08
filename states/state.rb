@@ -117,8 +117,6 @@ class State
       job_id = get_case_data
 
       return { refreshing: true }
-
-      check_cache(case_cache_key)
     end
   end
 

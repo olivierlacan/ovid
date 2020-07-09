@@ -326,25 +326,6 @@ class State
     end
   end
 
-  def self.generate_case_report(data, store)
-    data.each_with_object(store) do |item, store|
-      a = item[:attributes]
-
-      case_keys.each do |key, value|
-        if value[:count_of_total_records]
-          store[key][:value] = data.count
-        elsif value[:total]
-          store[key][:value] = a[value[:source]]
-        elsif value[:positive_value]
-          positive_value = a[value[:source]] == value[:positive_value]
-          store[key][:value] += 1 if positive_value
-        else
-          store[key][:value] += a[value[:source]] || 0
-        end
-      end
-    end
-  end
-
   def self.initialize_store(key_defaults)
     key_defaults.each_with_object({}) do |(key, metric), store|
       store[key] = {

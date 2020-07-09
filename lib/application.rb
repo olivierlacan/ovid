@@ -194,6 +194,7 @@ class Application
         <tr>
           <td title="#{metric[:source]}">#{metric[:name]}</td>
           <td class="#{'highlight' if metric[:highlight]}">#{metric[:value]}</td>
+          <td>#{metric[:source]}</td>
           <td>#{metric[:description]}</td>
         </tr>
       HTML
@@ -204,6 +205,7 @@ class Application
         <tr>
           <th>Metric</th>
           <th>Value</th>
+          <th>Source</th>
           <th>Description</th>
         </tr>
         #{rows}

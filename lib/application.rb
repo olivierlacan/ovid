@@ -190,11 +190,12 @@ class Application
 
   def self.report_table(data)
     rows = data.map do |_key, metric|
+      positive_value = metric[:positive_value] ? "Positive value: #{metric[:positive_value]}" : nil
       <<~HTML
         <tr>
           <td title="#{metric[:source]}">#{metric[:name]}</td>
           <td class="#{'highlight' if metric[:highlight]}">#{metric[:value]}</td>
-          <td>#{metric[:source]}</td>
+          <td title="#{positive_value}">#{metric[:source]}</td>
           <td>#{metric[:description]}</td>
         </tr>
       HTML

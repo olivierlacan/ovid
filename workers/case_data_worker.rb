@@ -138,6 +138,7 @@ class CaseDataWorker < BaseWorker
         elsif value[:total]
           store[key][:value] = a[value[:source]]
         elsif value[:positive_value]
+          store[key][:positive_value] = value[:positive_value]
           positive_value = a[value[:source]] == value[:positive_value]
           store[key][:value] += 1 if positive_value
         else

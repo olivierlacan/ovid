@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "net/http"
 require "json"
 require "csv"
@@ -60,7 +62,7 @@ case_by_day_json = JSON.parse(case_by_day_raw)
 CSV.open("exports/cases_by_day_with_aggregated_frequency_#{timestamp}.csv", "wb") do |csv|
   csv << ["Date", "Count"]
 
-  dates.each do |date|    
+  dates.each do |date|
     matching_record = case_by_day_json["features"].find do
       event_date = DateTime.strptime(_1["attributes"]["Date"].to_s, "%Q").to_date
 

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # library(XML);library(pdftools);library(stringr)
 
 # url <- ('http://ww11.doh.state.fl.us/comm/_partners/action/report_archive/state/state_reports_latest.pdf')

@@ -274,6 +274,34 @@ class State
     save_in_cache county_cache_key, merged_data
   end
 
+  def self.get_beds_data
+    if bed_keys
+      response = Request.get_raw(hospital_bed_county_capacity_current_url)
+
+      data = CSV.parse(response, headers: true)
+      county_values = data.map(&:to_h).group_by { _1["County"] }.each_with_object([]) do |(county, values), memo|
+        payload = { "County" => county }
+        values.each do
+          payload[_1["Measure Names"]] = _1["Measure Values"]
+        end
+
+        memo << payload
+      end
+
+      hospital_bed_county_report = generate_beds_report(
+        county_values,
+        initialize_store(bed_keys)
+      )
+    end
+
+    merged_data = {
+      fetched_at: Time.now,
+      data: hospital_bed_county_report
+    }
+
+    save_in_cache hospital_bed_county_cache_key, merged_data
+  end
+
   def self.total_records_from_feature(url, query)
     Request.get("#{url}/query", params: query.merge({ returnCountOnly: true }))[:count]
   end
@@ -330,10 +358,28 @@ class State
     end
   end
 
+  def self.generate_beds_report(data, store)
+    data.each_with_object(store) do |item, memo|
+      bed_keys.each do |key, value|
+        converted_value = if item[value[:source].to_s].nil?
+          nil
+        else
+          item[value[:source].to_s]&.gsub(",", "")&.to_f
+        end
+
+        if value[:percentage]
+          memo[key][:value].push(converted_value)
+        else
+          memo[key][:value] += converted_value || 0
+        end
+      end
+    end
+  end
+
   def self.initialize_store(key_defaults)
     key_defaults.each_with_object({}) do |(key, metric), store|
       store[key] = {
-        value: 0,
+        value: metric[:percentage] ? [] : 0,
         name: metric[:name],
         description: metric[:description],
         highlight: metric[:highlight],

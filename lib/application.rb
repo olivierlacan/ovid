@@ -177,7 +177,6 @@ class Application
 
     return nil if report&.public_send(:[],:data).nil?
 
-    binding.irb
     last_edit = pretty_datetime report.fetch(:edited_at) { nil }
     last_fetch = pretty_datetime report[:fetched_at]
 

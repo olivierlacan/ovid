@@ -19,7 +19,8 @@ class Application
     end.join("\n")
   end
 
-  def self.payload(query_string, class_name)
+
+  def self.payload(class_name)
     <<~HTML
     <!DOCTYPE html>
     <html>
@@ -41,7 +42,7 @@ class Application
         </ul>
       </nav>
 
-      #{class_name ? state_page(class_name, query_string) : home_page}
+      #{class_name ? state_page(class_name) : home_page}
 
       <hr />
       <p>
@@ -78,7 +79,7 @@ class Application
     HTML
   end
 
-  def self.case_report(class_name, query_string)
+  def self.case_report(class_name)
     return nil if class_name.cases_feature_url.nil?
     title = "Data Aggregated from Individual Cases"
 
@@ -88,7 +89,7 @@ class Application
         Source: <a href="#{class_name.cases_feature_url}">ArcGIS Feature Layer</a>.<br />
     HTML
 
-    case_report = class_name.case_report(query_string)
+    case_report = class_name.case_report
 
     if case_report.has_key?(:edited_at) && case_report.has_key?(:fetched_at)
       last_edit = pretty_datetime case_report[:edited_at]
@@ -113,70 +114,8 @@ class Application
     payload
   end
 
-  def self.county_report(class_name, query_string)
-    title = "Data Aggregated from County Totals"
-    report = class_name.report(:county, query_string)
-
-    return nil if report&.public_send(:[],:data).nil?
-
-    last_edit = pretty_datetime report[:edited_at]
-    last_fetch = pretty_datetime report[:fetched_at]
-
-    <<~HTML
-      <h2>#{title}</h2>
-      <p>
-        Source: <a href="#{class_name.counties_feature_url}">ArcGIS Feature Layer</a>.<br />
-        Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
-        Fetched at <strong>#{last_fetch}</strong>.<br />
-      </p>
-      #{report_table(report, title, class_name, last_fetch)}
-    HTML
-  end
-
-  def self.totals_report(class_name, query_string)
-    title = "State Level Totals"
-    report = class_name.report(:totals, query_string)
-
-    return nil if report&.public_send(:[],:data).nil?
-
-    last_edit = pretty_datetime report[:edited_at]
-    last_fetch = pretty_datetime report[:fetched_at]
-
-    <<~HTML
-      <h2>#{title}</h2>
-      <p>
-        Source: <a href="#{class_name.totals_feature_url}">ArcGIS Feature Layer</a>.<br />
-        Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
-        Fetched at <strong>#{last_fetch}</strong>.<br />
-      </p>
-      #{report_table(report, title, class_name, last_fetch)}
-    HTML
-  end
-
-  def self.hospitals_report(class_name, query_string)
-    title = "Hospitalization Totals"
-    report = class_name.report(:hospitals, query_string)
-
-    return nil if report&.public_send(:[],:data).nil?
-
-    last_edit = pretty_datetime report[:edited_at]
-    last_fetch = pretty_datetime report[:fetched_at]
-
-    <<~HTML
-      <h2>#{title}</h2>
-      <p>
-        Source: <a href="#{class_name.hospitals_feature_url}">ArcGIS Feature Layer</a>.<br />
-        Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
-        Fetched at <strong>#{last_fetch}</strong>.<br />
-      </p>
-      #{report_table(report, title, class_name, last_fetch)}
-    HTML
-  end
-
-  def self.beds_report(class_name)
-    title = "Current Hospital Bed Capacity"
-    report = class_name.report(:beds)
-
+  def self.generic_report(class_name, type, title, source_title, source_url)
+    report = class_name.report(type)
     return nil if report&.public_send(:[],:data).nil?
 
     last_edit = pretty_datetime report.fetch(:edited_at) { nil }
@@ -185,31 +124,28 @@ class Application
     <<~HTML
       <h2>#{title}</h2>
       <p>
-        Source: <a href="#{class_name.beds_county_current_url}">AHCA Hospital Bed Capacity by County</a>.<br />
+        Source: <a href="#{source_url}">#{source_title}</a>.<br />
+        #{last_edit ? "Source last updated at <strong>#{last_edit}</strong>.<br />" : nil }
         Fetched at <strong>#{last_fetch}</strong>.<br />
       </p>
       #{report_table(report, title, class_name, last_fetch)}
     HTML
   end
 
-  def self.state_page(class_name, query_string)
+  def self.state_page(class_name)
     <<~HTML
       <h1>#{class_name.state_name} COVID-19 Report</h1>
       <p>
-        This report is generated from the same #{class_name::DEPARTMENT}'s COVID-19
-        data used to generate the <a href="#{class_name.dashboard_url}">
-        ArcGIS dashboard</a>.
+        This report is generated from the same data used to generate the
+        <a href="#{class_name.dashboard_url}"> ArcGIS dashboard</a>.
       </p>
 
-      #{totals_report(class_name, query_string)}
-
-      #{case_report(class_name, query_string)}
-
-      #{county_report(class_name, query_string)}
-
-      #{beds_report(class_name)}
-
-      #{hospitals_report(class_name, query_string)}
+      #{generic_report(class_name, :totals, "State Level Totals", "AHCA Hospital Bed Capacity by County", class_name.totals_feature_url)}
+      #{case_report(class_name)}
+      #{generic_report(class_name, :county, "Data Aggregated from County Totals", "ArcGIS Feature Layer", class_name.counties_feature_url)}
+      #{generic_report(class_name, :beds, "Current Hospital Bed Capacity", "AHCA Hospital Bed Capacity by County", class_name.beds_county_current_url)}
+      #{generic_report(class_name, :icu, "Current Hospital ICU Capacity", "AHCA Hospital ICU Capacity by County", class_name.icu_county_current_url)}
+      #{generic_report(class_name, :hospitals, "Hospitalization Totals", "ArcGIS Feature Layer", class_name.hospitals_feature_url)}
     HTML
   end
 
@@ -222,18 +158,9 @@ class Application
     average = compacted_values.inject{ |sum, el| sum + el }.to_f / size
 
     <<~STRING
-      <table>
-        <tr>
-          <th>Min</th>
-          <th>Max</th>
-          <th>Average</th>
-        </tr>
-        <tr>
-          <td>#{(min * 100).truncate(2)}%</td>
-          <td>#{(max * 100).truncate(2)}%</td>
-          <td>#{(average * 100).truncate(2)}%</td>
-        </tr>
-      </table>
+      Min:&nbsp;#{(min * 100).truncate(2)}%\n
+      Max:&nbsp;#{(max * 100).truncate(2)}%\n
+      Avg:&nbsp;#{(average * 100).truncate(2)}%\n
     STRING
   end
 

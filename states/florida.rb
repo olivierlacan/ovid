@@ -35,7 +35,11 @@ class Florida < State
     "https://bi.ahca.myflorida.com/t/ABICC/views/Public/HospitalBedsCounty.csv"
   end
 
-  def self.hospital_icu_county_capacity_current_url
+  def self.icu_county_current_url
+    "https://bi.ahca.myflorida.com/t/ABICC/views/Public/ICUBedsCounty.csv"
+  end
+
+  def self.covid_hospitalizations_county_url
     "https://bi.ahca.myflorida.com/t/ABICC/views/Public/COVIDHospitalizationsCounty.csv"
   end
 
@@ -586,6 +590,45 @@ class Florida < State
         name: "Total Staffed Bed Capacity",
         source: :"Total Staffed Bed Capacity"
       }
+    }
+  end
+
+  def self.icu_keys
+    @_icu_keys ||= {
+      adult_census: {
+        name: "Adult ICU Census",
+        source: :"Adult ICU Census"
+      },
+      available_adult: {
+        name: "Available Adult ICU",
+        source: :"Available Adult ICU"
+      },
+      total_adult_capacity: {
+        name: "Total AdultICU Capacity",
+        source: :"Total AdultICU Capacity"
+      },
+      available_adult_percentage: {
+        name: "Available Adult ICU%",
+        source: :"Available Adult ICU%",
+        percentage: true
+      },
+      pediatric_census: {
+        name: "Pediatric ICU Census",
+        source: :"Pediatric ICU Census"
+      },
+      available_pediatric: {
+        name: "Available Pediatric ICU",
+        source: :"Available Pediatric ICU"
+      },
+      total_pediatric_capacity: {
+        name: "Total PediatricICU Capacity",
+        source: :"Total PediatricICU Capacity"
+      },
+      available_pediatric_percentage: {
+        name: "Available Pediatric ICU%",
+        source: :"Available Pediatric ICU%",
+        percentage: true
+      },
     }
   end
 end

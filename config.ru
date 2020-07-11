@@ -19,7 +19,7 @@ app = Hanami::Router.new do
     get "/", to: ->(env) {
       [
         200, {"Content-Type" => "text/html"},
-        StringIO.new(Application.payload(env["QUERY_STRING"], nil))
+        StringIO.new(Application.payload(nil))
       ]
     }
   end
@@ -31,7 +31,7 @@ app = Hanami::Router.new do
       get "/#{state.parameterize}", to: ->(env) {
         [
           200, {"Content-Type" => "text/html"},
-          StringIO.new(Application.payload(env["QUERY_STRING"], state))
+          StringIO.new(Application.payload(state))
         ]
       }
     end

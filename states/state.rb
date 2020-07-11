@@ -59,6 +59,14 @@ class State
     nil
   end
 
+  def self.totals_feature_url
+    nil
+  end
+
+  def self.hospitals_feature_url
+    nil
+  end
+
   def self.county_keys
     nil
   end
@@ -99,11 +107,15 @@ class State
     "#{cache_key}-beds-report"
   end
 
+  def self.icu_cache_key
+    "#{cache_key}-icu-report"
+  end
+
   def self.case_data_cached?
     check_cache(case_cache_key).present?
   end
 
-  def self.case_report(query_string)
+  def self.case_report
     stored_response = check_cache(case_cache_key)
 
     if stored_response
@@ -117,7 +129,7 @@ class State
     end
   end
 
-  def self.report(type, query_string = nil)
+  def self.report(type)
     type = type.to_s
     key = "#{type}_cache_key"
     stored_response = check_cache(key)
@@ -268,12 +280,12 @@ class State
     save_in_cache county_cache_key, merged_data
   end
 
-  def self.get_beds_data
-    if bed_keys
-      response = Request.get_raw(beds_county_current_url)
+  def self.get_ahca_data(url, hash_keys, ahca_cache_key)
+    if hash_keys
+      response = Request.get_raw(url)
 
       data = CSV.parse(response, headers: true)
-      county_values = data.map(&:to_h).group_by { _1["County"] }.each_with_object([]) do |(county, values), memo|
+      values = data.map(&:to_h).group_by { _1["County"] }.each_with_object([]) do |(county, values), memo|
         next if county == "All" # we'd rather tally things ourselves
 
         payload = { "County" => county }
@@ -284,18 +296,27 @@ class State
         memo << payload
       end
 
-      hospital_bed_county_report = generate_beds_report(
-        county_values,
-        initialize_store(bed_keys)
+      report = generate_ahca_report(
+        values,
+        hash_keys,
+        initialize_store(hash_keys)
       )
     end
 
     merged_data = {
       fetched_at: Time.now,
-      data: hospital_bed_county_report
+      data: report
     }
 
-    save_in_cache beds_cache_key, merged_data
+    save_in_cache ahca_cache_key, merged_data
+  end
+
+  def self.get_beds_data
+    get_ahca_data(beds_county_current_url, bed_keys, beds_cache_key) if bed_keys
+  end
+
+  def self.get_icu_data
+    get_ahca_data(icu_county_current_url, icu_keys, icu_cache_key) if bed_keys
   end
 
   def self.total_records_from_feature(url, query)
@@ -354,9 +375,9 @@ class State
     end
   end
 
-  def self.generate_beds_report(data, store)
+  def self.generate_ahca_report(data, keys, store)
     data.each_with_object(store) do |item, memo|
-      bed_keys.each do |key, value|
+      keys.each do |key, value|
         converted_value = if item[value[:source].to_s].nil?
           nil
         else

@@ -210,10 +210,6 @@ class Application
       #{beds_report(class_name)}
 
       #{hospitals_report(class_name, query_string)}
-
-      <footer>
-        #{class_name.nomenclature if defined?(class_name.nomenclature)}
-      </footer>
     HTML
   end
 

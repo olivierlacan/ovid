@@ -1,6 +1,10 @@
 class Request
-  def self.get(url, params = {})
-    params = params.merge({ f: "pjson" })
+  def self.get_raw(url, params: {})
+    get(url, params, parse_json: false)
+  end
+
+  def self.get(url, params: {}, parse_json: true)
+    params = params.merge({ f: "pjson" }) if parse_json
     uri = URI(url)
     uri.query = URI.encode_www_form(params)
 
@@ -27,11 +31,15 @@ class Request
 
     if response.success?
       puts "Request duration: #{duration}"
-      parsed = JSON.parse(response.body, symbolize_names: true)
+      if parse_json
+        parsed = JSON.parse(response.body, symbolize_names: true)
 
-      raise "#{parsed[:error]}" if parsed[:error]
+        raise "#{parsed[:error]}" if parsed[:error]
 
-      parsed
+        parsed
+      else
+        response.body
+      end
     else
       raise "#{response.status}: #{response.body}"
       puts "Headers: #{response.headers}"

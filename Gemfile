@@ -19,6 +19,7 @@ gem "oj"
 gem "sequel"
 gem "net-http-persistent"
 gem "faraday"
+gem "faraday_middleware"
 gem "faraday-request-timer"
 gem "faraday-detailed_logger"
 

@@ -17,6 +17,7 @@ class Request
         interval_randomness: 0.5,
         backoff_factor: 2
       }
+      builder.use FaradayMiddleware::FollowRedirects
     end
 
     puts "GET #{uri} ..."

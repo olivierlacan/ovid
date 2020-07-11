@@ -205,6 +205,8 @@ class Application
 
       #{county_report(class_name, query_string)}
 
+      #{beds_report(class_name)}
+
       #{hospitals_report(class_name, query_string)}
 
       <footer>

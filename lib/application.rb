@@ -89,12 +89,12 @@ class Application
     case_report = class_name.case_report(query_string)
 
     if case_report.has_key?(:edited_at) && case_report.has_key?(:fetched_at)
-      last_edit_case = pretty_datetime case_report[:edited_at]
-      last_fetch_case = pretty_datetime case_report[:fetched_at]
+      last_edit = pretty_datetime case_report[:edited_at]
+      last_fetch = pretty_datetime case_report[:fetched_at]
 
       payload << <<~HTML
-          Edited by #{class_name::ACRONYM} at <strong>#{last_edit_case}</strong>.<br />
-          Fetched at <strong>#{last_fetch_case}</strong><br />
+          Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
+          Fetched at <strong>#{last_fetch}</strong><br />
         </p>
       HTML
     end

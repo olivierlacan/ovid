@@ -111,6 +111,10 @@ class State
     "#{cache_key}-icu-report"
   end
 
+  def self.covid_hospitalizations_cache_key
+    "#{cache_key}-covid_hospitalizationst"
+  end
+
   def self.case_data_cached?
     check_cache(case_cache_key).present?
   end
@@ -285,15 +289,27 @@ class State
       response = Request.get_raw(url)
 
       data = CSV.parse(response, headers: true)
-      values = data.map(&:to_h).group_by { _1["County"] }.each_with_object([]) do |(county, values), memo|
-        next if county == "All" # we'd rather tally things ourselves
 
-        payload = { "County" => county }
-        values.each do
-          payload[_1["Measure Names"]] = _1["Measure Values"]
+      values = if ahca_cache_key.include? "covid_hospitalizations"
+        data.map(&:to_h).group_by { _1["County"] }.each_with_object([]) do |(county, values), memo|
+          next if county == "All" # we'd rather tally things ourselves
+
+          payload = { "County" => county }
+          values.each do |keys|
+            memo << keys
+          end
         end
+      else
+        data.map(&:to_h).group_by { _1["County"] }.each_with_object([]) do |(county, values), memo|
+          next if county == "All" # we'd rather tally things ourselves
 
-        memo << payload
+          payload = { "County" => county }
+          values.each do
+            payload[_1["Measure Names"]] = _1["Measure Values"]
+          end
+
+          memo << payload
+        end
       end
 
       report = generate_ahca_report(
@@ -316,7 +332,11 @@ class State
   end
 
   def self.get_icu_data
-    get_ahca_data(icu_county_current_url, icu_keys, icu_cache_key) if bed_keys
+    get_ahca_data(icu_county_current_url, icu_keys, icu_cache_key) if icu_keys
+  end
+
+  def self.get_covid_hospitalizations_data
+    get_ahca_data(covid_hospitalizations_county_url, covid_hospitalizations_keys, covid_hospitalizations_cache_key) if covid_hospitalizations_keys
   end
 
   def self.total_records_from_feature(url, query)

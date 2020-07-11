@@ -143,6 +143,7 @@ class Application
       #{generic_report(class_name, :totals, "State Level Totals", "AHCA Hospital Bed Capacity by County", class_name.totals_feature_url)}
       #{case_report(class_name)}
       #{generic_report(class_name, :county, "Data Aggregated from County Totals", "ArcGIS Feature Layer", class_name.counties_feature_url)}
+      #{generic_report(class_name, :covid_hospitalizations, "Current COVID-19 Hospitalizations", "AHCA COVID-19 Hospitalizations by County", class_name.covid_hospitalizations_county_url)}
       #{generic_report(class_name, :beds, "Current Hospital Bed Capacity", "AHCA Hospital Bed Capacity by County", class_name.beds_county_current_url)}
       #{generic_report(class_name, :icu, "Current Hospital ICU Capacity", "AHCA Hospital ICU Capacity by County", class_name.icu_county_current_url)}
       #{generic_report(class_name, :hospitals, "Hospitalization Totals", "ArcGIS Feature Layer", class_name.hospitals_feature_url)}

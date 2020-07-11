@@ -631,4 +631,15 @@ class Florida < State
       },
     }
   end
+
+  def self.covid_hospitalizations_keys
+    @_covid_hospitalizations_keys ||= {
+      hospitalizations: {
+        name: "Total COVID Hospitalizations",
+        source: :"COVID Hospitalizations",
+        hightlight: true,
+        description: "Tally of all *current* hospitalizations with a primary diagnosis of COVID-19. Updated continuously throughout the day."
+      }
+    }
+  end
 end

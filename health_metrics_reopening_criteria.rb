@@ -193,7 +193,7 @@ summary = reopening.each_with_object([]) do |county, memo|
   }
 end
 
-File.open("exports/reopening_metrics_per_county_summary.json", "wb") do |file|
+File.open("exports/reopening_metrics_per_county_summary#{timestamp}.json", "wb") do |file|
   file << Oj.dump(summary)
 end
 

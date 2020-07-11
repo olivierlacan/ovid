@@ -27,6 +27,9 @@ class Application
       <style type="text/css">
         #{css}
       </style>
+      <script type="text/javascript">
+        #{javascript}
+      </script>
     </head>
     <body>
       <nav>
@@ -188,21 +191,41 @@ class Application
     HTML
   end
 
-  def self.report_table(data)
+  def percentage_tally(values)
+    size = values.compact.size
+
+    average = values.compact.inject{ |sum, el| sum + el }.to_f / size
+    maximum = values.max
+    minimum = values.min
+    median = begin
+      sorted = values.sort
+      (sorted[(size - 1) / 2] + sorted[size / 2]) / 2.0
+    end
+
+    "Min: #{minimum}, Max: #{max}, Median: #{median}, Average: #{avg}"
+  end
+
+  def self.report_table(data, title, class_name, last_fetch)
+    timestamp = DateTime.parse(last_fetch).iso8601.gsub(":", "-")
+    filename = "#{class_name.to_s.downcase}_#{title.downcase.gsub(/\s/, '_')}"
+    table_identifier = "#{filename}_#{timestamp}"
+
     rows = data.map do |_key, metric|
       positive_value = metric[:positive_value] ? "Positive value: #{metric[:positive_value]}" : nil
+      value = metric[:percentage] ? percentage_tally(metric[:value]) : metric[:value]
       <<~HTML
         <tr>
           <td title="#{metric[:source]}">#{metric[:name]}</td>
-          <td class="#{'highlight' if metric[:highlight]}">#{metric[:value]}</td>
+          <td class="#{'highlight' if metric[:highlight]}">#{value}</td>
           <td title="#{positive_value}">#{metric[:source]}</td>
           <td>#{metric[:description]}</td>
         </tr>
       HTML
     end.join("\n")
 
+
     output = <<~HTML
-      <table>
+      <table id="#{table_identifier}">
         <tr>
           <th>Metric</th>
           <th>Value</th>
@@ -211,11 +234,46 @@ class Application
         </tr>
         #{rows}
       </table>
+      <a href="#" onclick="download_table_as_csv('#{table_identifier}');">Download as CSV</a>
     HTML
   end
 
+  def self.javascript
+    <<~JAVASCRIPT
+      function download_table_as_csv(table_id) {
+        // Select rows from table_id
+        var rows = document.querySelectorAll('#' + table_id + ' tbody tr');
+        // Construct csv
+        var csv = [];
+        for (var i = 0; i < rows.length; i++) {
+          var row = [], cols = rows[i].querySelectorAll('td, th');
+          for (var j = 0; j < cols.length; j++) {
+            // Clean innertext to remove multiple spaces and jumpline (break csv)
+            var data = cols[j].innerText.replace(/(\\r\\n|\\n|\\r)/gm, '').replace(/(\\s\\s)/gm, ' ');
+            // Escape double-quote with double-double-quote (see https://stackoverflow.com/questions/17808511/properly-escape-a-double-quote-in-csv)
+            data = data.replace(/"/g, '""');
+            // Push escaped string
+            row.push('"' + data + '"');
+          }
+          csv.push(row.join(";"));
+        }
+        var csv_string = csv.join('\\n');
+        // Download it
+        var filename = table_id + '.csv';
+        var link = document.createElement('a');
+        link.style.display = 'none';
+        link.setAttribute('target', '_blank');
+        link.setAttribute('href', 'data:text/csv;charset=utf-8,' + encodeURIComponent(csv_string));
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    JAVASCRIPT
+  end
+
   def self.css
-    <<~HTML
+    <<~CSS
       body {
         font-family: Tahoma, sans-serif;
       }
@@ -260,6 +318,6 @@ class Application
       tr:nth-child(odd) { background: #FFF }
 
       .highlight { font-weight: bold; }
-    HTML
+    CSS
   end
 end

@@ -31,6 +31,10 @@ class Florida < State
     "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
   end
 
+  def self.beds_county_current_url
+    "https://bi.ahca.myflorida.com/t/ABICC/views/Public/HospitalBedsCounty.csv"
+  end
+
   def self.hospital_icu_county_capacity_current_url
     "https://bi.ahca.myflorida.com/t/ABICC/views/Public/COVIDHospitalizationsCounty.csv"
   end

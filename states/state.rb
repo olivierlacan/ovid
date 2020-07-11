@@ -4,6 +4,7 @@ require "date"
 require "time"
 require "net/http"
 require "json"
+require "csv"
 
 require "./lib/request"
 require "./workers/case_data_worker"
@@ -51,6 +52,10 @@ class State
   end
 
   def self.hospitals_url
+    nil
+  end
+
+  def self.beds_county_current_url
     nil
   end
 
@@ -256,7 +261,8 @@ class State
     merged_data = {
       edited_at: last_edit,
       fetched_at: Time.now,
-      data: county_report
+      data: county_report,
+      show_source: true
     }
 
     save_in_cache county_cache_key, merged_data
@@ -264,10 +270,12 @@ class State
 
   def self.get_beds_data
     if bed_keys
-      response = Request.get_raw(hospital_bed_county_capacity_current_url)
+      response = Request.get_raw(beds_county_current_url)
 
       data = CSV.parse(response, headers: true)
       county_values = data.map(&:to_h).group_by { _1["County"] }.each_with_object([]) do |(county, values), memo|
+        next if county == "All" # we'd rather tally things ourselves
+
         payload = { "County" => county }
         values.each do
           payload[_1["Measure Names"]] = _1["Measure Values"]
@@ -287,7 +295,7 @@ class State
       data: hospital_bed_county_report
     }
 
-    save_in_cache hospital_bed_county_cache_key, merged_data
+    save_in_cache beds_cache_key, merged_data
   end
 
   def self.total_records_from_feature(url, query)
@@ -356,6 +364,7 @@ class State
         end
 
         if value[:percentage]
+          memo[key][:percentage] = value[:percentage]
           memo[key][:value].push(converted_value)
         else
           memo[key][:value] += converted_value || 0

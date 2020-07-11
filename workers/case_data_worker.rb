@@ -122,7 +122,8 @@ class CaseDataWorker < BaseWorker
     merged_data = {
       edited_at: last_edit,
       fetched_at: Time.now,
-      data: case_report
+      data: case_report,
+      show_source: true
     }
 
     save_in_cache cache_key, merged_data

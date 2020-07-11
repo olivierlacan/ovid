@@ -1,5 +1,7 @@
 class Application
   def self.pretty_datetime(time)
+    return nil if time.nil?
+
     format = "%Y-%m-%d at %H:%M:%S %Z".freeze
 
     if time.respond_to? :strftime
@@ -104,7 +106,7 @@ class Application
     else
       payload << <<~HTML
 
-        #{report_table(case_report[:data], title, class_name, last_fetch)}
+        #{report_table(case_report, title, class_name, last_fetch)}
       HTML
     end
 
@@ -127,7 +129,7 @@ class Application
         Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
         Fetched at <strong>#{last_fetch}</strong>.<br />
       </p>
-      #{report_table(report[:data], title, class_name, last_fetch)}
+      #{report_table(report, title, class_name, last_fetch)}
     HTML
   end
 
@@ -147,7 +149,7 @@ class Application
         Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
         Fetched at <strong>#{last_fetch}</strong>.<br />
       </p>
-      #{report_table(report[:data], title, class_name, last_fetch)}
+      #{report_table(report, title, class_name, last_fetch)}
     HTML
   end
 
@@ -167,7 +169,7 @@ class Application
         Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
         Fetched at <strong>#{last_fetch}</strong>.<br />
       </p>
-      #{report_table(report[:data], title, class_name, last_fetch)}
+      #{report_table(report, title, class_name, last_fetch)}
     HTML
   end
 
@@ -183,10 +185,10 @@ class Application
     <<~HTML
       <h2>#{title}</h2>
       <p>
-        Source: <a href="#{class_name.hospital_bed_county_capacity_current_url}">AHCA Hospital Bed Capacity by County</a>.<br />
+        Source: <a href="#{class_name.beds_county_current_url}">AHCA Hospital Bed Capacity by County</a>.<br />
         Fetched at <strong>#{last_fetch}</strong>.<br />
       </p>
-      #{report_table(report[:data], title, class_name, last_fetch)}
+      #{report_table(report, title, class_name, last_fetch)}
     HTML
   end
 
@@ -215,45 +217,54 @@ class Application
     HTML
   end
 
-  def percentage_tally(values)
+  def self.percentage_tally(values)
     size = values.compact.size
+    compacted_values = values.compact
 
-    average = values.compact.inject{ |sum, el| sum + el }.to_f / size
-    maximum = values.max
-    minimum = values.min
-    median = begin
-      sorted = values.sort
-      (sorted[(size - 1) / 2] + sorted[size / 2]) / 2.0
-    end
+    max = compacted_values.max
+    min = compacted_values.min
+    average = compacted_values.inject{ |sum, el| sum + el }.to_f / size
 
-    "Min: #{minimum}, Max: #{max}, Median: #{median}, Average: #{avg}"
+    <<~STRING
+      <table>
+        <tr>
+          <th>Min</th>
+          <th>Max</th>
+          <th>Average</th>
+        </tr>
+        <tr>
+          <td>#{(min * 100).truncate(2)}%</td>
+          <td>#{(max * 100).truncate(2)}%</td>
+          <td>#{(average * 100).truncate(2)}%</td>
+        </tr>
+      </table>
+    STRING
   end
 
-  def self.report_table(data, title, class_name, last_fetch)
+  def self.report_table(report, title, class_name, last_fetch)
     timestamp = DateTime.parse(last_fetch).iso8601.gsub(":", "-")
     filename = "#{class_name.to_s.downcase}_#{title.downcase.gsub(/\s/, '_')}"
     table_identifier = "#{filename}_#{timestamp}"
 
-    rows = data.map do |_key, metric|
+    rows = report[:data].map do |_key, metric|
       positive_value = metric[:positive_value] ? "Positive value: #{metric[:positive_value]}" : nil
       value = metric[:percentage] ? percentage_tally(metric[:value]) : metric[:value]
       <<~HTML
         <tr>
           <td title="#{metric[:source]}">#{metric[:name]}</td>
           <td class="#{'highlight' if metric[:highlight]}">#{value}</td>
-          <td title="#{positive_value}">#{metric[:source]}</td>
+          #{report[:show_source] ? "<td title='#{positive_value}'>#{metric[:source]}</td>" : nil}
           <td>#{metric[:description]}</td>
         </tr>
       HTML
     end.join("\n")
-
 
     output = <<~HTML
       <table id="#{table_identifier}">
         <tr>
           <th>Metric</th>
           <th>Value</th>
-          <th>Source</th>
+          #{report[:show_source] ? '<th>Source</th>' : nil}
           <th>Description</th>
         </tr>
         #{rows}
@@ -279,7 +290,7 @@ class Application
             // Push escaped string
             row.push('"' + data + '"');
           }
-          csv.push(row.join(";"));
+          csv.push(row.join(","));
         }
         var csv_string = csv.join('\\n');
         // Download it

@@ -78,9 +78,10 @@ class Application
 
   def self.case_report(class_name, query_string)
     return nil if class_name.cases_feature_url.nil?
+    title = "Data Aggregated from Individual Cases"
 
     payload = <<~HTML
-      <h2>Data Aggregated from Individual Cases</h2>
+      <h2>#{title}</h2>
       <p>
         Source: <a href="#{class_name.cases_feature_url}">ArcGIS Feature Layer</a>.<br />
     HTML
@@ -103,7 +104,7 @@ class Application
     else
       payload << <<~HTML
 
-        #{report_table(case_report[:data])}
+        #{report_table(case_report[:data], title, class_name, last_fetch)}
       HTML
     end
 
@@ -111,64 +112,68 @@ class Application
   end
 
   def self.county_report(class_name, query_string)
-    county_report = class_name.county_report(query_string)
+    title = "Data Aggregated from County Totals"
+    report = class_name.county_report(query_string)
 
-    return nil if county_report&.public_send(:[],:data).nil?
+    return nil if report&.public_send(:[],:data).nil?
 
-    last_edit_county = pretty_datetime county_report[:edited_at]
-    last_fetch_county = pretty_datetime county_report[:fetched_at]
+    last_edit = pretty_datetime report[:edited_at]
+    last_fetch = pretty_datetime report[:fetched_at]
 
     <<~HTML
-      <h2>Data Aggregated from County Totals</h2>
+      <h2>#{title}</h2>
       <p>
         Source: <a href="#{class_name.counties_feature_url}">ArcGIS Feature Layer</a>.<br />
-        Edited by #{class_name::ACRONYM} at <strong>#{last_edit_county}</strong>.<br />
-        Fetched at <strong>#{last_fetch_county}</strong>.<br />
+        Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
+        Fetched at <strong>#{last_fetch}</strong>.<br />
       </p>
-      #{report_table(county_report[:data])}
+      #{report_table(report[:data], title, class_name, last_fetch)}
     HTML
   end
 
   def self.totals_report(class_name, query_string)
-    totals_report = class_name.totals_report(query_string)
+    title = "State Level Totals"
+    report = class_name.totals_report(query_string)
 
-    return nil if totals_report&.public_send(:[],:data).nil?
+    return nil if report&.public_send(:[],:data).nil?
 
-    last_edit_totals = pretty_datetime totals_report[:edited_at]
-    last_fetch_totals = pretty_datetime totals_report[:fetched_at]
+    last_edit = pretty_datetime report[:edited_at]
+    last_fetch = pretty_datetime report[:fetched_at]
 
     <<~HTML
-      <h2>State Level Totals</h2>
+      <h2>#{title}</h2>
       <p>
         Source: <a href="#{class_name.totals_feature_url}">ArcGIS Feature Layer</a>.<br />
-        Edited by #{class_name::ACRONYM} at <strong>#{last_edit_totals}</strong>.<br />
-        Fetched at <strong>#{last_fetch_totals}</strong>.<br />
+        Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
+        Fetched at <strong>#{last_fetch}</strong>.<br />
       </p>
-      #{report_table(totals_report[:data])}
+      #{report_table(report[:data], title, class_name, last_fetch)}
     HTML
   end
 
   def self.hospitals_report(class_name, query_string)
-    hospitals_report = class_name.hospitals_report(query_string)
+    title = "Hospitalization Totals"
+    report = class_name.hospitals_report(query_string)
 
-    return nil if hospitals_report&.public_send(:[],:data).nil?
+    return nil if report&.public_send(:[],:data).nil?
 
-    last_edit_totals = pretty_datetime hospitals_report[:edited_at]
-    last_fetch_totals = pretty_datetime hospitals_report[:fetched_at]
+    last_edit = pretty_datetime report[:edited_at]
+    last_fetch = pretty_datetime report[:fetched_at]
 
     <<~HTML
-      <h2>Hospitalization Totals</h2>
+      <h2>#{title}</h2>
       <p>
         Source: <a href="#{class_name.hospitals_feature_url}">ArcGIS Feature Layer</a>.<br />
-        Edited by #{class_name::ACRONYM} at <strong>#{last_edit_totals}</strong>.<br />
-        Fetched at <strong>#{last_fetch_totals}</strong>.<br />
+        Edited by #{class_name::ACRONYM} at <strong>#{last_edit}</strong>.<br />
+        Fetched at <strong>#{last_fetch}</strong>.<br />
       </p>
-      #{report_table(hospitals_report[:data])}
+      #{report_table(report[:data], title, class_name, last_fetch)}
     HTML
   end
 
   def self.state_page(class_name, query_string)
 
+  def self.state_page(class_name, query_string)
     <<~HTML
       <h1>#{class_name.state_name} COVID-19 Report</h1>
       <p>

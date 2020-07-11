@@ -1,6 +1,6 @@
 class Request
   def self.get_raw(url, params: {})
-    get(url, params, parse_json: false)
+    get(url, params: params, parse_json: false)
   end
 
   def self.get(url, params: {}, parse_json: true)

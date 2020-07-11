@@ -90,6 +90,10 @@ class State
     "#{cache_key}-hospitals-report"
   end
 
+  def self.hospital_bed_county_cache_key
+    "#{cache_key}-hospital-bed-county-report"
+  end
+
   def self.case_data_cached?
     check_cache(case_cache_key).present?
   end

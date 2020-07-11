@@ -171,7 +171,25 @@ class Application
     HTML
   end
 
-  def self.state_page(class_name, query_string)
+  def self.beds_report(class_name)
+    title = "Current Hospital Bed Capacity"
+    report = class_name.beds_report
+
+    return nil if report&.public_send(:[],:data).nil?
+
+    binding.irb
+    last_edit = pretty_datetime report.fetch(:edited_at) { nil }
+    last_fetch = pretty_datetime report[:fetched_at]
+
+    <<~HTML
+      <h2>#{title}</h2>
+      <p>
+        Source: <a href="#{class_name.hospital_bed_county_capacity_current_url}">AHCA Hospital Bed Capacity by County</a>.<br />
+        Fetched at <strong>#{last_fetch}</strong>.<br />
+      </p>
+      #{report_table(report[:data], title, class_name, last_fetch)}
+    HTML
+  end
 
   def self.state_page(class_name, query_string)
     <<~HTML

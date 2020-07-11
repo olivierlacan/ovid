@@ -31,6 +31,10 @@ class Florida < State
     "https://experience.arcgis.com/experience/96dd742462124fa0b38ddedb9b25e429"
   end
 
+  def self.hospital_icu_county_capacity_current_url
+    "https://bi.ahca.myflorida.com/t/ABICC/views/Public/COVIDHospitalizationsCounty.csv"
+  end
+
   def self.case_keys
     @_case_keys ||= {
       positives: {
@@ -555,6 +559,28 @@ class Florida < State
         description: "Florida does not report out-of-state resident deaths as part of its deaths total.",
         highlight: true,
         source: :Deaths
+      }
+    }
+  end
+
+  def self.bed_keys
+    @_case_keys ||= {
+      census: {
+        name: "Bed Census",
+        source: :"Bed Census"
+      },
+      available: {
+        name: "Available",
+        source: :"Available"
+      },
+      available_capacity: {
+        name: "Available Capacity",
+        percentage: true,
+        source: :"Available Capacity"
+      },
+      staffed_capacity: {
+        name: "Total Staffed Bed Capacity",
+        source: :"Total Staffed Bed Capacity"
       }
     }
   end

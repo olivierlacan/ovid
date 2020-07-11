@@ -90,24 +90,12 @@ class State
     "#{cache_key}-hospitals-report"
   end
 
-  def self.hospital_bed_county_cache_key
-    "#{cache_key}-hospital-bed-county-report"
+  def self.beds_cache_key
+    "#{cache_key}-beds-report"
   end
 
   def self.case_data_cached?
     check_cache(case_cache_key).present?
-  end
-
-  def self.county_report(query_string)
-    stored_response = check_cache(county_cache_key)
-
-    if stored_response
-      puts "Using stored_response..."
-      stored_response
-    else
-      puts "Generating new report ..."
-      get_county_data
-    end
   end
 
   def self.case_report(query_string)
@@ -124,28 +112,28 @@ class State
     end
   end
 
-  def self.totals_report(query_string)
-    stored_response = check_cache(totals_cache_key)
+  def self.report(type, query_string = nil)
+    type = type.to_s
+    key = "#{type}_cache_key"
+    stored_response = check_cache(key)
 
     if stored_response
-      puts "Using stored_response..."
+      puts "Using stored_response for #{type} report..."
       stored_response
     else
-      puts "Generating new report ..."
-      get_totals_data
+      puts "Generating new #{type} report ..."
+      public_send("get_#{type}_data")
     end
-  end
+  rescue => error
+    Bugsnag.notify(error) do |report|
+      report.severity = "error"
 
-  def self.hospitals_report(query_string)
-    stored_response = check_cache(hospitals_cache_key)
-
-    if stored_response
-      puts "Using stored_response..."
-      stored_response
-    else
-      puts "Generating new report ..."
-      get_hospitals_data
+      report.add_tab(:response, {
+        report_type: type
+      })
     end
+
+    return nil
   end
 
   def self.get_csv(url)

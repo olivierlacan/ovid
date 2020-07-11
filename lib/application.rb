@@ -113,7 +113,7 @@ class Application
 
   def self.county_report(class_name, query_string)
     title = "Data Aggregated from County Totals"
-    report = class_name.county_report(query_string)
+    report = class_name.report(:county, query_string)
 
     return nil if report&.public_send(:[],:data).nil?
 
@@ -133,7 +133,7 @@ class Application
 
   def self.totals_report(class_name, query_string)
     title = "State Level Totals"
-    report = class_name.totals_report(query_string)
+    report = class_name.report(:totals, query_string)
 
     return nil if report&.public_send(:[],:data).nil?
 
@@ -153,7 +153,7 @@ class Application
 
   def self.hospitals_report(class_name, query_string)
     title = "Hospitalization Totals"
-    report = class_name.hospitals_report(query_string)
+    report = class_name.report(:hospitals, query_string)
 
     return nil if report&.public_send(:[],:data).nil?
 
@@ -173,7 +173,7 @@ class Application
 
   def self.beds_report(class_name)
     title = "Current Hospital Bed Capacity"
-    report = class_name.beds_report
+    report = class_name.report(:beds)
 
     return nil if report&.public_send(:[],:data).nil?
 

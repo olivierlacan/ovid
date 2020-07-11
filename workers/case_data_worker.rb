@@ -74,7 +74,7 @@ class CaseDataWorker < BaseWorker
 
     puts "Total records: #{record_total}"
 
-    initial_response = Request.get("#{url}/query", query)
+    initial_response = Request.get("#{url}/query", params: query)
     puts "Records in initial response: #{initial_response[:features].count}"
 
     last_item_id = initial_response[:features].last[:attributes][:ObjectId]
@@ -89,7 +89,7 @@ class CaseDataWorker < BaseWorker
       while last_item_id < record_total do
         puts "Offset: #{last_item_id}"
         begin
-          response = Request.get("#{url}/query", query.merge(resultOffset: last_item_id))
+          response = Request.get("#{url}/query", params: query.merge(resultOffset: last_item_id))
           puts "Results: #{response[:features].count}"
           @case_response_data[:features].push(*response[:features])
 

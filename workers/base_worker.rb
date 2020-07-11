@@ -13,7 +13,7 @@ class BaseWorker
   end
 
   def total_records_from_feature(url, query)
-    Request.get("#{url}/query", query.merge({ returnCountOnly: true }))[:count]
+    Request.get("#{url}/query", params: query.merge({ returnCountOnly: true }))[:count]
   end
 
   def save_in_cache(cache_key, data, expiration_time = Time.now)

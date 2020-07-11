@@ -182,7 +182,7 @@ class State
         resultType: "standard"
       }
 
-      response = Request.get("#{totals_feature_url}/query", query)
+      response = Request.get("#{totals_feature_url}/query", params: query)
 
       totals_report = generate_totals_report(
         response[:features],
@@ -211,7 +211,7 @@ class State
         resultType: "standard"
       }
 
-      response = Request.get("#{hospitals_feature_url}/query", query)
+      response = Request.get("#{hospitals_feature_url}/query", params: query)
 
       hospitals_report = generate_hospitals_report(
         response[:features],
@@ -254,7 +254,7 @@ class State
         resultType: "standard"
       }
 
-      response = Request.get("#{counties_feature_url}/query", query)
+      response = Request.get("#{counties_feature_url}/query", params: query)
 
       @county_response_data = { fields: response[:fields], features: [] }
       @county_response_data[:features].push(*response[:features])
@@ -275,7 +275,7 @@ class State
   end
 
   def self.total_records_from_feature(url, query)
-    Request.get("#{url}/query", query.merge({ returnCountOnly: true }))[:count]
+    Request.get("#{url}/query", params: query.merge({ returnCountOnly: true }))[:count]
   end
 
   def self.get_case_data

@@ -67,6 +67,10 @@ class State
     nil
   end
 
+  def self.covid_hospitalizations_county_url
+    nil
+  end
+
   def self.county_keys
     nil
   end

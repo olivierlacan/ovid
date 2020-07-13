@@ -71,6 +71,10 @@ class State
     nil
   end
 
+  def self.icu_county_current_url
+    nil
+  end
+
   def self.county_keys
     nil
   end

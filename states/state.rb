@@ -91,6 +91,10 @@ class State
     nil
   end
 
+  def self.bed_keys
+    nil
+  end
+
   def self.county_cache_key
     "#{cache_key}-county-report"
   end

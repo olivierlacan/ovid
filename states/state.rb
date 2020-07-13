@@ -99,6 +99,14 @@ class State
     nil
   end
 
+  def self.icu_keys
+    nil
+  end
+
+  def self.covid_hospitalizations_keys
+    nil
+  end
+
   def self.county_cache_key
     "#{cache_key}-county-report"
   end

@@ -12,7 +12,7 @@ class Louisiana < State
   ACRONYM = "LDH"
 
   def self.counties_feature_url
-    "https://services5.arcgis.com/O5K6bb5dZVZcTo5M/arcgis/rest/services/Cases_by_Parish/FeatureServer/0"
+    "https://services5.arcgis.com/O5K6bb5dZVZcTo5M/ArcGIS/rest/services/Cases_and_Deaths_by_Race_by_Parish/FeatureServer/0"
   end
 
   def self.dashboard_url
@@ -21,38 +21,76 @@ class Louisiana < State
 
   def self.county_keys
     # Example data:
-    #
-    # OBJECTID: 8,
-    # PFIPS: "22015",
-    # Latitude: 32.67963,
-    # Longitude: -93.6052,
-    # LDHH: 7,
-    # Parish: "Bossier",
-    # Cases: 75,
-    # Deaths: 1,
-    # Commercial_Tests: 1212,
-    # State_Tests: 27,
-    # FID: 8
+    # OBJECTID: 50
+    # PFIPS:  22095
+    # Latitude: 30.0771
+    # Longitude:  -90.5468
+    # LDHH: 3
+    # Parish: St. John the Baptist
+    # Deaths_Black: 48
+    # Deaths_White: 39
+    # Deaths_Other: 0
+    # Deaths_Unknown: 0
+    # Cases_Black:  677
+    # Cases_White:  214
+    # Cases_Other:  40
+    # Cases_Unknown:  81
+    # Black_2018pop:  24963
+    # White_2018pop:  16854
+    # Other_2018pop:  1367
+    # FID:  49
     {
-      positives: {
-        name: "Positives",
+      cases_black: {
+        name: "Cases - Black",
         highlight: true,
-        source: :Cases
+        source: :Cases_Black
       },
-      deaths: {
-        name: "Deaths",
+      cases_white: {
+        name: "Cases - White",
         highlight: true,
-        source: :Deaths
+        source: :Cases_White
       },
-      commercial_tests: {
-        name: "Tests - Commercial",
-        highlight: true,
-        source: :Commercial_Tests
+      cases_other: {
+        name: "Cases - Other",
+        source: :Cases_Other
       },
-      state_tests: {
-        name: "Tests - State",
+      cases_unknown: {
+        name: "Cases - Unknown",
         highlight: true,
-        source: :State_Tests
+        source: :Cases_Unknown
+      },
+      deaths_black: {
+        name: "Deaths - Black",
+        highlight: true,
+        source: :Deaths_Black
+      },
+      deaths_white: {
+        name: "Deaths - White",
+        highlight: true,
+        source: :Deaths_White
+      },
+      deaths_other: {
+        name: "Deaths - Other",
+        source: :Deaths_Other
+      },
+      deaths_unknown: {
+        name: "Deaths - Unknown",
+        highlight: true,
+        source: :Deaths_Unknown
+      },
+      population_black: {
+        name: "Population - Black",
+        highlight: true,
+        source: :Black_2018pop
+      },
+      population_white: {
+        name: "Population - White",
+        highlight: true,
+        source: :White_2018pop
+      },
+      population_other: {
+        name: "Population - Other",
+        source: :Other_2018pop
       },
     }
   end

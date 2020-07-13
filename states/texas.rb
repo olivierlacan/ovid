@@ -16,7 +16,7 @@ class Texas < State
   end
 
   def self.hospitals_feature_url
-    "https://services1.arcgis.com/d9sLvPecHnb8pMfE/arcgis/rest/services/TSA_BedAvailability_ViewTest/FeatureServer/0"
+    "https://services5.arcgis.com/ACaLB9ifngzawspq/ArcGIS/rest/services/DSHS_COVID_Hospital_Data/FeatureServer/0"
   end
 
   def self.dashboard_url
@@ -61,46 +61,46 @@ class Texas < State
 
   def self.hospitals_keys
     # Example data:
-    #
-    # OBJECTID_1: 5
-    # TSA:  E
-    # RAC:  North Central Texas
-    # PHR8: 2/3
-    # Sum_Adult_ICU:  721
-    # Sum_Total_Beds: 5091
-    # Sum_Total_Vents_Avail:  1371
-    # Sum_Total_Lab_COVID:  477
-    # Sum_Total_Hosp_Beds:  14021
-    # Sum_POP2019EST: 7888098
+    # OBJECTID: 1
+    # TSA:  A
+    # RAC:  Panhandle RAC
+    # PopEst2020: 440127
+    # TotalStaff: 1064
+    # AvailHospi: 369
+    # AvailICUBe: 29
+    # AvailVenti: 117
+    # COVIDPatie: 47
+    # Shape__Area:  65076563229.2397
+    # Shape__Length:  1138687.50123686
+
     {
-      sum_adult_icu: {
+      covid_19_patients: {
+        name: "COVID-19 patients",
+        description: "Lab Confirmed COVID-19 Patients currently in Texas hospitals.",
+        source: :COVIDPatie
+      },
+      total_staffed_beds: {
+        name: "Total Staffed Hospital Beds",
+        source: :TotalStaff
+      },
+      available_beds: {
+        name: "Available Hospital Beds",
+        highlight: true,
+        source: :AvailHospi
+      },
+      available_icu_bed: {
         name: "Available ICU beds",
         highlight: true,
-        source: :Sum_Adult_ICU
+        source: :AvailICUBe
       },
-      sum_total_beds: {
-        name: "Available hospital beds",
-        highlight: true,
-        source: :Sum_Total_Beds
-      },
-      sum_vents_available: {
+      available_vents: {
         name: "Available ventilators",
         highlight: true,
-        source: :Sum_Total_Vents_Avail
-      },
-      sum_total_hospitalized_positives: {
-        name: "Hospitalized Positive Patients",
-        description: "Lab-Confirmed COVID-19 Patients Currently In Hospital",
-        highlight: true,
-        source: :Sum_Total_Lab_COVID
-      },
-      sum_total_hospital_beds: {
-        name: "Staffed Hospital Beds",
-        source: :Sum_Total_Hosp_Beds
+        source: :AvailVenti
       },
       population_estimate: {
         name: "2019 Population Estimate",
-        source: :Sum_POP2019EST
+        source: :PopEst2020
       }
     }
   end

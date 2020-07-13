@@ -186,10 +186,10 @@ class Application
     output = <<~HTML
       <table id="#{table_identifier}">
         <tr>
-          <th>Metric</th>
-          <th>Value</th>
-          #{report[:show_source] ? '<th>Source</th>' : nil}
-          <th>Description</th>
+          <th title="The metric represented by this value.">Metric</th>
+          <th title="The raw or computed value for this metric.">Value</th>
+          #{report[:show_source] ? '<th title="The source field name used to extract this value">Source</th>' : nil}
+          <th title="Descriptions are either source from available data definitions or inferred/corroborated with external sources.">Description</th>
         </tr>
         #{rows}
       </table>

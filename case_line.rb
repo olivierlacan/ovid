@@ -27,7 +27,11 @@ else
 end
 
 CSV.open("exports/case_line_data_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
-  csv << ["MD5fingerprint", *raw_data[:fields].map { _1[:name].downcase }.reverse]
+  headers = raw_data[:fields].map { _1[:name].downcase.to_sym }.reverse.reject do
+    [:age_group, :chartdate].include?(_1) ||
+    _1 == :case_ && !raw_data[:features].first[:attributes][:Case_].match?(/\d+/)
+  end
+  csv << ["MD5fingerprint", *headers]
 
   raw_data[:features].sort_by { _1[:attributes][:EventDate] }.each do |record|
     a = record[:attributes]
@@ -36,6 +40,10 @@ CSV.open("exports/case_line_data_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv"
     event_date = DateTime.strptime(a.delete(:EventDate).to_s, "%Q").to_date.iso8601
     case_date = DateTime.strptime(a.delete(:Case1).to_s, "%Q").to_date.iso8601
     fingerprint = Digest::MD5.hexdigest "#{a[:Age]}#{a[:Gender]}#{a[:County]}#{a[:Jurisdiction]}#{event_date}#{case_date}"
+
+    a[:Age_group] && a.delete(:Age_group)
+    a[:Case_]&.match?(/Yes/) && a.delete(:Case_)
+    a[:ChartDate] && a.delete(:ChartDate)
 
     csv << [fingerprint, obj_id, chart_date, event_date, case_date, *record[:attributes].values.reverse]
   end

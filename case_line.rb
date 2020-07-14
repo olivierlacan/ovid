@@ -5,6 +5,7 @@ require "json"
 require "csv"
 require "date"
 require "time"
+require "digest"
 
 require "./config/boot"
 require "./states/state"
@@ -26,10 +27,17 @@ else
 end
 
 CSV.open("exports/case_line_data_#{Time.now.strftime("%Y-%m-%d_%Hh%Mm%Ss")}.csv", "wb") do |csv|
-  csv << raw_data[:fields].map { _1[:name] }
+  csv << ["MD5fingerprint", *raw_data[:fields].map { _1[:name].downcase }.reverse]
 
-  raw_data[:features].each do |record|
-    csv << record[:attributes].values
+  raw_data[:features].sort_by { _1[:attributes][:EventDate] }.each do |record|
+    a = record[:attributes]
+    obj_id = a.delete(:ObjectId)
+    chart_date = DateTime.strptime(a.delete(:ChartDate).to_s, "%Q").to_date.iso8601
+    event_date = DateTime.strptime(a.delete(:EventDate).to_s, "%Q").to_date.iso8601
+    case_date = DateTime.strptime(a.delete(:Case1).to_s, "%Q").to_date.iso8601
+    fingerprint = Digest::MD5.hexdigest "#{a[:Age]}#{a[:Gender]}#{a[:County]}#{a[:Jurisdiction]}#{event_date}#{case_date}"
+
+    csv << [fingerprint, obj_id, chart_date, event_date, case_date, *record[:attributes].values.reverse]
   end
 end
 

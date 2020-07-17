@@ -11,37 +11,38 @@ endpoint = URI "https://covidtracking.com/api/v1/states/daily.json"
 response = Net::HTTP.get(endpoint)
 
 # Parse the response JSON string representation of the data into a native
-# Ruby Hash (dictionnary or object in other languages) instance.
+# Ruby Hash (dictionary or object in other languages) instance.
 data = JSON.parse(response)
 
 # Pretty print the first result in the data array, which happens to be Alaska
 pp data.first
-{"date"=>20200716,
- "state"=>"AK",
- "positive"=>2032,
- "negative"=>160990,
- "pending"=>nil,
- # ...
-}
+# {"date"=>20200716,
+#  "state"=>"AK",
+#  "positive"=>2032,
+#  "negative"=>160990,
+#  "pending"=>nil,
+#  ...
+# }
 
 # Group the daily results by state abbreviation
 states = data.group_by { _1["state"] }
 
 # Find just the data for Florida and collect all days
-florida = states.find { |key, value| key == "FL" }.last
+florida = states.find { |key, _value| key == "FL" }.last
 
 # Print data for the most recent day
 pp florida.first
 
-{"date"=>20200716,
- "state"=>"FL",
- "positive"=>315775,
- "negative"=>2499843,
- "pending"=>2163,
- # ...
-}
+# {"date"=>20200716,
+#  "state"=>"FL",
+#  "positive"=>315775,
+#  "negative"=>2499843,
+#  "pending"=>2163,
+#  ...
+# }
 
-# Export Florida data for all days to a CSV file
+# Export Florida data for all days to a CSV file located in the same directory
+# and named covid_tracking_project_florida_daily.csv
 CSV.open("covid_tracking_project_florida_daily.csv", "wb") do |csv|
   csv << florida.first.keys
   florida.each { csv << _1.values }

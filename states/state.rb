@@ -79,6 +79,10 @@ class State
     nil
   end
 
+  def self.county_exclusion_field
+    nil
+  end
+
   def self.case_keys
     nil
   end
@@ -401,15 +405,25 @@ class State
     end
   end
 
+  def self.excluded_record?(row)
+    if !county_exclusion_field.nil?
+      row[county_exclusion_field[:field_name]] == county_exclusion_field[:field_value]
+    else
+      false
+    end
+  end
+
   def self.generate_county_report(data, store)
     data.each_with_object(store) do |item, memo|
-      a = item[:attributes]
+      row = item[:attributes]
+
+      next if excluded_record?(row)
 
       county_keys.each do |key, value|
         if value[:total]
-          memo[key][:value] = a[value[:source]]
+          memo[key][:value] = row[value[:source]]
         else
-          memo[key][:value] += a[value[:source]].to_i || 0
+          memo[key][:value] += row[value[:source]].to_i || 0
         end
       end
     end

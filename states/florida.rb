@@ -43,6 +43,13 @@ class Florida < State
     "https://bi.ahca.myflorida.com/t/ABICC/views/Public/COVIDHospitalizationsCounty.csv"
   end
 
+  def self.county_exclusion_field
+    {
+      field_name: :COUNTYNAME,
+      field_value: "A State"
+    }
+  end
+
   def self.case_keys
     @_case_keys ||= {
       positives: {

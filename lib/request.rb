@@ -45,14 +45,17 @@ class Request
       puts "Headers: #{response.headers}"
       puts res.body
     end
-  rescue Faraday::TimeoutError => error
+  rescue => error
     Bugsnag.notify(error) do |report|
       report.severity = "error"
 
       report.add_tab(:response, {
         url: cases_feature_url,
-        metadata: metadata
+        params: params,
+        parse_json: parse_json
       })
     end
+
+    raise error
   end
 end

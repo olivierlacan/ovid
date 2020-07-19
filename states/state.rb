@@ -363,10 +363,6 @@ class State
     get_ahca_data(covid_hospitalizations_county_url, covid_hospitalizations_keys, covid_hospitalizations_cache_key) if covid_hospitalizations_keys
   end
 
-  def self.total_records_from_feature(url, query)
-    Request.get("#{url}/query", params: query.merge({ returnCountOnly: true }))[:count]
-  end
-
   def self.get_case_data
     if cases_feature_url
       worker = CaseDataWorker.perform_async(cases_feature_url, case_cache_key, self.to_s)

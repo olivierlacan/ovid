@@ -69,6 +69,8 @@ class CaseDataWorker < BaseWorker
         })
       end
 
+      # don't re-raise this error and let the job think it completed
+      # successfully since we don't want to retry ad infinitum
       return nil
     end
 
@@ -105,6 +107,10 @@ class CaseDataWorker < BaseWorker
               body: response
             })
           end
+
+          # don't re-raise this error and let the job think it completed
+          # successfully since we don't want to retry ad infinitum
+          return nil
         end
       end
     else

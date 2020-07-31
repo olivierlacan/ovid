@@ -109,9 +109,7 @@ class CaseDataWorker < BaseWorker
             end
           end
 
-          # don't re-raise this error and let the job think it completed
-          # successfully since we don't want to retry ad infinitum
-          return nil
+          nil
         end
       end
 

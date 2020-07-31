@@ -113,7 +113,7 @@ class CaseDataWorker < BaseWorker
         end
       end
 
-      values = thread_workers.flat_map(&:value)
+      values = thread_workers.flat_map { _1.value.flatten }
       thread_workers.map(&:join)
 
       if values.size < record_total

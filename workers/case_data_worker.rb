@@ -93,12 +93,6 @@ class CaseDataWorker < BaseWorker
             response = Request.get("#{url}/query", params: query.merge(resultOffset: offset))
             last_item_id = response[:features].last[:attributes][:ObjectId]
             puts "Thread #{Thread.current.name}, offset: #{offset}, results: #{response[:features].count}, last item: #{last_item_id}"
-
-            if response[:features].nil?
-              puts "No results for #{Thread.current.name}"
-              puts response.inspect
-            end
-
             response[:features]
           rescue NoMethodError => error
             Bugsnag.notify(error) do |report|
@@ -116,11 +110,8 @@ class CaseDataWorker < BaseWorker
       end
 
       values = thread_workers.flat_map(&:value)
-      # close all threads
       thread_workers.map(&:join)
-
       raise "Failed to retrieve all results" if values.size < record_total
-
       sorted_results = values.sort_by { _1[:attributes][:ObjectId] }
 
       @case_response_data[:features] = sorted_results

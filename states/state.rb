@@ -12,7 +12,7 @@ require "./workers/case_data_worker"
 class State
   include Comparable
 
-  CACHE_EXPIRATION_IN_MINUTES = 60
+  CACHE_EXPIRATION_IN_MINUTES = 30
   @@state_classes = []
 
   class << self

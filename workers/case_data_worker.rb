@@ -88,7 +88,6 @@ class CaseDataWorker < BaseWorker
       thread_workers = (0..threads_needed).map do |thread_number|
         Thread.new do
           Thread.current.name = "#{thread_number}"
-
           offset = maximum_record_count * (thread_number)
 
           begin
@@ -104,16 +103,16 @@ class CaseDataWorker < BaseWorker
                 url: url,
                 last_item_id: last_item_id,
                 record_total: record_total,
-                body: response
+                records_in_response_count: response[:features].size
               })
             end
-          end
 
-          nil
+            raise error
+          end
         end
       end
 
-      values = thread_workers.flat_map { _1.value.flatten }
+      values = thread_workers.flat_map(&:value)
       thread_workers.map(&:join)
 
       if values.size < record_total

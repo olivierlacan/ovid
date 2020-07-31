@@ -115,7 +115,11 @@ class CaseDataWorker < BaseWorker
 
       values = thread_workers.flat_map(&:value)
       thread_workers.map(&:join)
-      raise "Failed to retrieve all results" if values.size < record_total
+
+      if values.size < record_total
+        raise "Failed to retrieve all results: values (#{values.length}), total records: #{record_total}"
+      end
+
       sorted_results = values.sort_by { _1[:attributes][:ObjectId] }
 
       @case_response_data[:features] = sorted_results
@@ -139,6 +143,17 @@ class CaseDataWorker < BaseWorker
     }
 
     save_in_cache cache_key, merged_data
+  rescue => error
+    Bugsnag.notify(error) do |report|
+      report.severity = "error"
+
+      report.add_tab(:response, {
+        values: values.length,
+        record_total: record_total
+      })
+    end
+
+    # let the job die
   end
 
   def generate_case_report(data, store, case_keys)

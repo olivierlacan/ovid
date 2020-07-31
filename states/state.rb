@@ -136,7 +136,7 @@ class State
   end
 
   def self.covid_hospitalizations_cache_key
-    "#{cache_key}-covid_hospitalizationst"
+    "#{cache_key}-covid_hospitalizations"
   end
 
   def self.case_data_cached?

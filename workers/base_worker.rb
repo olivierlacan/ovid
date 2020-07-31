@@ -1,7 +1,10 @@
 require "./lib/request"
+require "./lib/cache"
 require "./workers/base_worker"
 
 class BaseWorker
+  include Cache
+
   CACHE_EXPIRATION_IN_MINUTES = 60
 
   def get_last_edit(metadata)

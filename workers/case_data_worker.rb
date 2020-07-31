@@ -36,7 +36,7 @@ class CaseDataWorker < BaseWorker
 
     last_edit = get_last_edit(metadata)
 
-    cached_data = state_klass.check_cache(state_klass.case_cache_key)
+    cached_data = check_cache(state_klass.case_cache_key)
 
     return cached_data if cached_data
 

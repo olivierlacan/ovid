@@ -24,8 +24,6 @@ class Request
       builder.use FaradayMiddleware::FollowRedirects
     end
 
-    puts "GET #{uri} ..."
-
     response = connection.get
     duration = response.env[:duration]
 

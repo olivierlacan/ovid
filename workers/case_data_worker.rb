@@ -76,36 +76,37 @@ class CaseDataWorker < BaseWorker
 
     puts "Total records: #{record_total}"
 
-    initial_response = Request.get("#{url}/query", params: query)
-    puts "Records in initial response: #{initial_response[:features].count}"
-
-    last_item_id = initial_response[:features].last[:attributes][:ObjectId]
-
-    @case_response_data = { fields: initial_response[:fields], features: [] }
-    @case_response_data[:features].push(*initial_response[:features])
+    @case_response_data = { fields: fields_from_feature(url), features: [] }
 
     # we need to iterate because the maximum record count sent back per
     # request is lower than the absolute total number of record.
     if record_total > maximum_record_count
       puts "Iterating through #{record_total} records to retrieve all ..."
-      while last_item_id < record_total do
-        puts "Offset: #{last_item_id}"
-        begin
-          response = Request.get("#{url}/query", params: query.merge(resultOffset: last_item_id))
-          puts "Results: #{response[:features].count}"
-          @case_response_data[:features].push(*response[:features])
 
-          last_item_id = response[:features].last[:attributes][:ObjectId]
-        rescue NoMethodError => error
-          Bugsnag.notify(error) do |report|
-            report.severity = "error"
+      threads_needed = record_total / maximum_record_count
 
-            report.add_tab(:response, {
-              url: url,
-              last_item_id: last_item_id,
-              record_total: record_total,
-              body: response
-            })
+      thread_workers = (0..threads_needed).map do |thread_number|
+        Thread.new do
+          Thread.current.name = "#{thread_number}"
+
+          offset = maximum_record_count * (thread_number)
+
+          begin
+            response = Request.get("#{url}/query", params: query.merge(resultOffset: offset))
+            last_item_id = response[:features].last[:attributes][:ObjectId]
+            puts "Thread #{Thread.current.name}, offset: #{offset}, results: #{response[:features].count}, last item: #{last_item_id}"
+            response[:features]
+          rescue NoMethodError => error
+            Bugsnag.notify(error) do |report|
+              report.severity = "error"
+
+              report.add_tab(:response, {
+                url: url,
+                last_item_id: last_item_id,
+                record_total: record_total,
+                body: response
+              })
+            end
           end
 
           # don't re-raise this error and let the job think it completed
@@ -113,6 +114,13 @@ class CaseDataWorker < BaseWorker
           return nil
         end
       end
+
+      values = thread_workers.flat_map(&:value)
+      thread_workers.map(&:join)
+      raise "Failed to retrieve all results" if values.size < record_total
+      sorted_results = values.sort_by { _1[:attributes][:ObjectId] }
+
+      @case_response_data[:features] = sorted_results
     else
       puts "All records (#{record_total}) can be fetched in a single request!"
     end
@@ -153,5 +161,8 @@ class CaseDataWorker < BaseWorker
         end
       end
     end
+  rescue => error
+    puts a
+    raise error
   end
 end

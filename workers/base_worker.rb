@@ -16,6 +16,10 @@ class BaseWorker
     Request.get("#{url}/query", params: query.merge({ returnCountOnly: true }))[:count]
   end
 
+  def fields_from_feature(url)
+    Request.get(url)[:fields].map { _1[:name] }
+  end
+
   def save_in_cache(cache_key, data, expiration_time = Time.now)
     write_cache(cache_key, data)
     set_expiration(cache_key, Time.now + (CACHE_EXPIRATION_IN_MINUTES * 60))

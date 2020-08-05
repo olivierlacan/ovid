@@ -12,7 +12,7 @@ class Request
       builder.request :timer
       builder.response :detailed_logger, Logger.new(STDOUT, level: Logger::INFO)
       builder.adapter :net_http_persistent do |http|
-        http.read_timeout = 60
+        http.read_timeout = 120
         http.idle_timeout = 30
       end
       builder.request :retry, {

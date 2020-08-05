@@ -48,7 +48,7 @@ class Request
       report.severity = "error"
 
       report.add_tab(:response, {
-        url: cases_feature_url,
+        url: url,
         params: params,
         parse_json: parse_json
       })

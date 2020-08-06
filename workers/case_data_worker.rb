@@ -85,13 +85,18 @@ class CaseDataWorker < BaseWorker
 
       threads_needed = record_total / maximum_record_count
 
+      puts "Creating #{threads_needed} threads to retrieve data ..."
       thread_workers = (0..threads_needed).map do |thread_number|
         Thread.new do
-          Thread.current.name = "#{thread_number}"
+          Thread.current.name = "#{threaputs "Thread #{Thread.current.name}, offset: #{offset}, results: #{response[:features].count}, last item: #{last_item_id}"d_number}"
           offset = maximum_record_count * (thread_number)
 
           begin
-            response = Request.get("#{url}/query", params: query.merge(resultOffset: offset))
+            params = query.merge(resultOffset: offset)
+            uri = URI(url)
+            uri.query = URI.encode_www_form(params)
+            puts "Thread #{Thread.current.name}, uri: #{uri}"
+            response = Request.get("#{url}/query", params: params)
             last_item_id = response[:features].last[:attributes][:ObjectId]
             puts "Thread #{Thread.current.name}, offset: #{offset}, results: #{response[:features].count}, last item: #{last_item_id}"
             response[:features]

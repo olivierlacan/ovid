@@ -88,8 +88,11 @@ class CaseDataWorker < BaseWorker
       puts "Creating #{threads_needed} threads to retrieve data ..."
       thread_workers = (0..threads_needed).map do |thread_number|
         Thread.new do
-          Thread.current.name = "#{threaputs "Thread #{Thread.current.name}, offset: #{offset}, results: #{response[:features].count}, last item: #{last_item_id}"d_number}"
+          Thread.current.name = "#{thread_number}"
           offset = maximum_record_count * (thread_number)
+
+          puts "Thread #{Thread.current.name}, offset: #{offset}, results: #{response[:features].count}, last item: #{last_item_id}"
+
 
           begin
             params = query.merge(resultOffset: offset)

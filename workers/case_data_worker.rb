@@ -83,7 +83,7 @@ class CaseDataWorker < BaseWorker
     if record_total > maximum_record_count
       puts "Iterating through #{record_total} records to retrieve all ..."
 
-      threads_needed = record_total / maximum_record_count
+      threads_needed = record_total.fdiv(maximum_record_count).ceil
 
       puts "Creating #{threads_needed} threads to retrieve data ..."
       thread_workers = (0..threads_needed).map do |thread_number|

@@ -120,6 +120,8 @@ class CaseDataWorker < BaseWorker
       values = thread_workers.flat_map(&:value)
       thread_workers.map(&:join)
 
+      GC.start
+
       if !(values.size == record_total)
         raise "Failed to retrieve all results: values (#{values.length}), total records: #{record_total}"
       end

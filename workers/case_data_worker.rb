@@ -91,9 +91,6 @@ class CaseDataWorker < BaseWorker
           Thread.current.name = "#{thread_number}"
           offset = maximum_record_count * (thread_number)
 
-          puts "Thread #{Thread.current.name}, offset: #{offset}, results: #{response[:features].count}, last item: #{last_item_id}"
-
-
           begin
             params = query.merge(resultOffset: offset)
             uri = URI(url)

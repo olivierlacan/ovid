@@ -51,7 +51,8 @@ class Request
         url: url,
         uri: uri,
         params: params,
-        parse_json: parse_json
+        parse_json: parse_json,
+        duration: duration
       })
     end
 

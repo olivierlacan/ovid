@@ -49,6 +49,7 @@ class Request
 
       report.add_tab(:response, {
         url: url,
+        uri: uri,
         params: params,
         parse_json: parse_json
       })

@@ -106,6 +106,7 @@ class CaseDataWorker < BaseWorker
 
               report.add_tab(:response, {
                 url: url,
+                uri: uri,
                 last_item_id: last_item_id,
                 record_total: record_total,
                 records_in_response_count: response[:features].size

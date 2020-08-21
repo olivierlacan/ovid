@@ -48,6 +48,7 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
+    pg (1.2.3)
     puma (4.3.5)
       nio4r (~> 2.0)
     rack (2.2.3)
@@ -93,6 +94,7 @@ DEPENDENCIES
   net-http-persistent
   oj
   pdf-reader
+  pg
   puma
   rack
   rack-ssl-enforcer

@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+Bundler.require
+
+Sequel.extension :migration
+Sequel::Migrator.run(ENV["DATABASE_URL"], 'db/migrations', use_transactions: true)

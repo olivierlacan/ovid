@@ -44,10 +44,14 @@ class Florida < State
   end
 
   def self.county_exclusion_field
-    {
+    [{
       field_name: :COUNTYNAME,
       field_value: "A State"
-    }
+    },
+    {
+      field_name: :COUNTYNAME,
+      field_value: "Unknown"
+    }]
   end
 
   def self.case_keys

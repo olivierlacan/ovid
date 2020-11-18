@@ -403,7 +403,9 @@ class State
 
   def self.excluded_record?(row)
     if !county_exclusion_field.nil?
-      row[county_exclusion_field[:field_name]] == county_exclusion_field[:field_value]
+      county_exclusion_field.any? do |exclusion|
+        row[exclusion[:field_name]] == exclusion[:field_value]
+      end
     else
       false
     end

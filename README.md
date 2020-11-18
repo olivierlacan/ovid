@@ -4,7 +4,7 @@ Metamorphising raw COVID-19 JSON testing data from U.S. state Health Department
 into high-level aggregate counts for journalistic, epidemiologic, and data
 science purposes.
 
-This project is currently hosted on [Heroku](https://flovid.herokuapp.com) and
+This project is currently hosted on [Heroku](https://o-vid.herokuapp.com) and
 serves as a data entry support tool for [COVID Tracking Project][CTP] volunteers.
 
 ## Sources

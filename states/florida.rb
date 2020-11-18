@@ -589,7 +589,8 @@ class Florida < State
       },
       new_percent_positive: {
         name: "New Percent Positive",
-        source: :NewPercPos
+        source: :NewPercPos,
+        percentage: true
       }
     }
   end

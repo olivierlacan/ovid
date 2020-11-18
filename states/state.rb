@@ -418,6 +418,9 @@ class State
       county_keys.each do |key, value|
         if value[:total]
           memo[key][:value] = row[value[:source]]
+        elsif value[:percentage]
+          memo[key][:percentage] = value[:percentage]
+          memo[key][:value].push(row[value[:source]])
         else
           memo[key][:value] += row[value[:source]].to_i || 0
         end

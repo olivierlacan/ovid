@@ -574,6 +574,22 @@ class Florida < State
         description: "Florida does not report out-of-state resident deaths as part of its deaths total.",
         highlight: true,
         source: :Deaths
+      },
+      new_positives: {
+        name: "New Positives",
+        source: :NewPos
+      },
+      new_negatives: {
+        name: "New Negatives",
+        source: :NewNeg
+      },
+      new_tested: {
+        name: "New Tested",
+        source: :NewTested
+      },
+      new_percent_positive: {
+        name: "New Percent Positive",
+        source: :NewPercPos
       }
     }
   end

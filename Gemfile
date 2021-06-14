@@ -22,6 +22,7 @@ gem "faraday"
 gem "faraday_middleware"
 gem "faraday-request-timer"
 gem "faraday-detailed_logger"
+gem "pg"
 
 group :development do
   gem "dotenv"

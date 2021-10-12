@@ -39,7 +39,7 @@ GEM
     multipart-post (2.1.1)
     net-http-persistent (4.0.0)
       connection_pool (~> 2.2)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     numerizer (0.1.1)
     oj (3.10.6)
     pdf-reader (2.4.0)
@@ -48,7 +48,7 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
-    puma (4.3.5)
+    puma (4.3.9)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.0.8.1)
